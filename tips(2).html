@@ -1,0 +1,312 @@
+
+
+
+
+
+
+campo
+
+
+
+import  { FormControl, Validators,FormGroup,FormBuilder } from '@angular/forms';
+
+    private fb: FormBuilder
+
+
+    this.validationForm = fb.group({
+      emailFormEx: [null, [Validators.required, Validators.email]],
+      passwordFormEx: [null, Validators.required],
+      noValidation: [null, Validators.required],
+      noSuccessValidation: [null, Validators.required],
+      noErrorValidation: [null, Validators.required],
+      customMessages: [null, Validators.required]
+    });
+
+
+      this.validationForm.controls.noValidation.setValue("");
+
+
+
+
+<form [formGroup]="validationForm">
+  <div class="md-form">
+    <i class="fa fa-envelope prefix"></i>
+    <input mdbInputDirective data-error="wrong email" data-success="valid email" formControlName="emailFormEx" minLength="8"
+      maxLength="25" type="email" class="form-control" id="form9">
+    <label for="form9">Type your e-mail</label>
+  </div>
+
+  <div class="md-form">
+    <i class="fa fa-lock prefix"></i>
+    <input mdbInputDirective data-error="wrong password" data-success="valid password" formControlName="passwordFormEx"
+      minLength="10" maxLength="25" type="password" class="form-control" id="form10">
+    <label for="form10">Type your password</label>
+  </div>
+
+  <div class="md-form">
+    <input mdbInputDirective data-error="wrong password" [(ngModel)]="campo"  [mdbValidate]="false" formControlName="noValidation"
+      data-success="valid password" type="text" class="form-control" id="form11">
+    <label for="form11">Turn off validation</label>
+  </div>
+
+  <div class="md-form">
+    <input mdbInputDirective data-error="wrong password" [validateSuccess]="false" formControlName="noSuccessValidation"
+      data-success="valid password" type="text" class="form-control" id="form12">
+    <label for="form12">Turn off success validation</label>
+  </div>
+
+  <div class="md-form">
+    <input mdbInputDirective data-error="wrong password" [validateError]="false" formControlName="noErrorValidation"
+      data-success="valid password" type="text" class="form-control" id="form13">
+    <label for="form13">Turn off error validation</label>
+  </div>
+
+  <div class="md-form">
+    <input mdbInputDirective [errorMessage]="errorMessage" [successMessage]="'Custom success message'" formControlName="customMessages"
+      type="text" class="form-control" id="form14">
+    <label for="form14">Custom validation messages</label>
+  </div>
+
+  {{validationForm.valid || json}}
+</form>
+
+
+router
+import { Router } from '@angular/router';
+
+this.router.navigate(["home"]);
+
+<a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+<a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+
+tooltip
+
+<i mdbTooltip="Editar" placement="top" class="cursor_pointer fa fa-edit  fa-lg" aria-hidden="true"></i>
+
+
+Formularios
+import { ReactiveFormsModule } from '@angular/forms';  // <-- #1 import module
+importar en imports
+
+
+  for
+  <div *ngFor="let option of test" [value]="option.id"}>
+    if
+  <li *ngIf="option">
+    class
+  <p [ngClass]="{'azul':true}">
+  <p [ngClass]="clase">
+    style
+  <p [ngStyle]="{'font-family':'12px'}">
+    ngModel
+  <p [(ngModel)]="mySelect">
+    dropdown
+  <select [(ngModel)]="mySelect">
+    <option *ngIf=!mySelect value="">Seleccione</option>
+    <option *ngFor="let option of test" [value]="option.id"}>
+    <option [selected]="let">
+    this.myselect="";
+
+  <li [disabled]="isDisabled">
+    show/hide
+  <li [hidden]="isHidden">  css => [hidden]{ "display": none !important }
+    src
+  <img [src]="img">
+    Eventos
+      click
+    <button (click)="myFuncion()">
+      change
+    <button (ngModelChange)="myFuncion()";
+
+ngOnInit();
+
+EMC6
+
+var result= users.filtros(item=> item.user== user && item.password== passowrd);
+
+
+IONIC
+
+crear componentes
+
+ng g service nombre
+ng g page nombre
+ng g pipe nombre
+
+Constantes
+
+import { URL_SERVICIOS } from "../config/url.servicios";
+export const URL_SERVICIOS = "http://localhost/rest/index.php";
+el archivo se llama url.servicios.ts
+
+<button ion-button block >
+
+Navegación, inyectar
+
+import { NavController, NavParams } from 'ionic-angular';
+
+NavController
+
+ir atras
+<button ion-button block color="danger" navPop> ir atras </button>
+
+this.navCtrl.pop();
+this.navCtrl.popToRoot();   //ir a raiz
+
+voler a raiz
+this.navCtrl.parent.parent.pop();
+
+this.navCtrl.setRoot(inicio);
+
+
+ir adelante
+
+<button ion-button block color="danger" [navPush]="pagina2">
+
+pagina2:any:pagina2Page;
+this.navCtrl.push( pagina2 );
+
+parametros inyectar
+
+NavParams
+
+this.mutante=this.navParams;
+console.log(this.mutante.get("mutante"))
+
+<button ion-button block color="primary" [navParams]="{ 'mutante': 'mutante' }" [navPush]="segunda" >mandar par�metros</button>
+
+ //cache false..
+  ionViewDidEnter(){ }
+
+
+Pipe
+import { Pipe, PipeTransform } from '@angular/core';
+import { URL_IMAGENES } from "../config/url.servicios";
+@Pipe({
+  name: 'imagen',
+})
+export class ImagenPipe implements PipeTransform {
+  transform( codigo: string ) {
+    return URL_IMAGENES + codigo +".jpg";
+  }
+}
+
+
+
+http, alerta
+import { AlertController, Platform, ModalController } from "ionic-angular";
+import { Http, URLSearchParams } from '@angular/http';
+
+//data son los parametros a enviar por post
+let data = new URLSearchParams();
+let codigos:string[]=[];
+
+for( let item of this.items ){
+  codigos.push( item.codigo );
+}
+
+data.append("items", codigos.join(","));
+
+let url = `${ URL_SERVICIOS }/pedidos/realizar_orden/${ this._us.token }/${ this._us.id_usuario }`;
+
+this.http.post( url, data )
+         .subscribe( resp =>{
+
+           let respuesta = resp.json();
+
+           if( respuesta.error ){
+             // mostramos error
+             this.alertCtrl.create({
+               title: "Error en la orden",
+               subTitle: respuesta.mensaje,
+               buttons: ["OK"]
+             }).present();
+
+           }else{
+             // todo bien!
+            this.items = [];
+            this.alertCtrl.create({
+              title: "Orden realizada!",
+              subTitle: "Nos contactaremos con usted próximamente",
+              buttons: ["OK"]
+            }).present();
+           }
+
+
+      })
+
+modal
+let modal= this.modalCtrl.create(ModalPage,{"hola":"hola"});
+modal.present();
+
+modal.onDidDismiss(data => {
+  console.log(data);
+});
+
+y alla para recibir
+ionViewDidLoad() {
+  console.log('ionViewDidLoad ModalPage');
+  console.log(this.navParams.data);
+}
+y para devolver y cerrar modal
+
+cerrar(){
+  //this.viewCtrl.dismiss();
+  let data = { 'foo': 'bar' };
+  this.viewCtrl.dismiss(data);
+}
+
+
+
+com.app.tinapp
+com.app.tinapp.MainActivity
+RrHpWJszGPDqclOXZWqgNYC67TQ=
+
+
+
+
+What you can do is to add route guards.
+
+You will just add a canActivate property on routes you want to guard.
+
+Take a look at this example service:
+
+// src/app/auth/auth-guard.service.ts
+import { Injectable } from '@angular/core';
+import { Router, CanActivate } from '@angular/router';
+import { AuthService } from './auth.service';
+@Injectable()
+export class AuthGuardService implements CanActivate {
+  constructor(public auth: AuthService, public router: Router) {}
+  canActivate(): boolean {
+    if (!this.auth.isAuthenticated()) {
+      this.router.navigate(['login']);
+      return false;
+    }
+    return true;
+  }
+}
+The service injects AuthService and Router and has a single method called canActivate. This method is necessary to properly implement the CanActivate interface.
+
+The canActivate method returns a boolean indicating whether or not navigation to a route should be allowed. If the user isn�t authenticated, they are re-routed to some other place, in this case a route called /login.
+
+And in the file where you have your routes:
+
+export const ROUTES: Routes = [
+  { path: '', component: HomeComponent },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    canActivate: [AuthGuard]
+  }
+];
+As you can see, the profile page has canActivate property. You will just add it to routes that you want to secure.
+
+Full implementation is here https://medium.com/@ryanchenkie_40935/angular-authentication-using-route-guards-bf7a4ca13ae3
+
+shareeditflag
+
+
+
+
+https://stackoverflow.com/questions/34370693/error-in-success-callbackid-geolocation?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa

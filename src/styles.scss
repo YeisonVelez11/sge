@@ -1,3 +1,66 @@
+.engranen{
+  position:relative; 
+  z-index: 1;   
+  width:499px;
+  height:499px; 
+  -webkit-transition: all 0.5s ease;
+  -webkit-animation-fill-mode: forwards;    
+  cursor:pointer;
+}
+
+.engranen:hover{
+  width:510px;
+  height:510px;
+    filter: drop-shadow(0 0 9px #333);
+
+}
+
+
+.engranen:hover ~ .texto_engranen{
+    -webkit-animation: fadein 0.5s ease-in;
+    -moz-animation: fadein 0.5s ease-in;
+    animation: fadein 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 1;left:93px;z-index:2;  }
+    to { opacity: 0; left:310px;z-index:3; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 1;left:93px;z-index:2;  }
+    to { opacity: 0; left:310px;z-index:3; }
+}
+
+@keyframes fadein {
+    from { opacity: 1;left:93px;z-index:2;  }
+    to { opacity: 0; left:310px;z-index:3; }
+}
+
+.engranen:hover ~ .icon_1{
+    -webkit-animation: appearIzq 0.5s ease-in;
+    -moz-animation: appearIzq 0.5s ease-in;
+    animation: appearIzq 0.5s ease-in;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes appearIzq {
+    from { opacity: 0;left:91px;  }
+    to { opacity: 1; left:178px; }
+}
+
+@-moz-keyframes appearIzq {
+    from { opacity: 0;left:91px;  }
+    to { opacity: 1; left:178px; }
+}
+
+@keyframes appearIzq {
+    from { opacity: 0;left:91px;  }
+    to { opacity: 1; left:178px; }
+}
+
+
 .links line {
   stroke: #999;
   stroke-opacity: 0.6;
@@ -12,7 +75,12 @@ text {
   font-family: sans-serif;
   font-size: 10px;
 }
-
+.clase{
+  font-size:59px
+}
+.clase:hover{
+  font-size:13px
+}
 
 .testimonial-card.card{
   height: 41vh !important;
