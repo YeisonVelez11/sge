@@ -1,9 +1,11 @@
 .forma_titulos{
-  height: 50px;
+  height: 38px;
   width: 558px;
   margin: 0 auto;
   -webkit-transition: all 0.5s ease;
   -webkit-animation-fill-mode: forwards;    
+  z-index: 2;
+  filter: drop-shadow(0 0 1px #333);
 
 }
 
@@ -11,14 +13,42 @@
   opacity: 0.5
 }
 
-.texto_titulo_1{
-  position:absolute;
-  top: 14px;
-  right: 47%;  
+.centrado_horizontal{
+    position:absolute;
+    left: 50%;
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(-50%, 0%);
 }
 
+.centrado_texto_titulos {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(-50%, -31%);
+}
+
+.centrado_hv{
+    position:absolute;
+    left: 50%;
+    top: 50%;    
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/*
+.texto_titulo_1:hover #gerenciales{
+  opacity:  0.5;
+}*/
 .texto_titulos{
-  font-weight: 700
+  font-weight: 700;
+  z-index: 3;
+  top: 14px
+}
+
+.texto_titulos:hover  ~ .forma_titulos{
+    opacity:  0.5;
 }
 
 .fondo_categorias {
@@ -28,13 +58,97 @@
   -webkit-transition: all 0.5s ease;
   -webkit-animation-fill-mode: forwards;
   height: 141px;
+
+}
+
+.bloque_izq{
+  /* position: relative; */
+  height: 507px;
+  width: 111px;
+  background-color: rgba(168,207,69,1);
+  top: 50%;
+  /* -webkit-transform: translate(0, -50%); */
+  /* transform: translate(0, -50%); */
+  border-radius: 32px;
+  left: 17px;
+  -webkit-transition: all 0.5s ease;
+  -webkit-animation-fill-mode: forwards; 
+  opacity:  1;
+}
+
+.texto_bloque_izquierdo{
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: absolute;
+  top: 49%;
+  left: 29%;
+  __transform: translate(-50%, -50%);
+  transform: rotate(270deg);
+  width: 200px;
+}
+
+.texto_bloque_derecho{
+  position: absolute;
+  top: 49%;
+  right: 7%;
+  transform: rotate(270deg);
+
+
+
+  justify-content:flex-start;  
+  transform: rotate(450deg); 
+  width: 300px;  
+}
+
+
+.bloque_izq:hover{
+  background-color: rgba(168,207,69,0.8);
+
+}
+
+.contenedor_bloque_izq{
+  display: flex;
+  justify-content: flex-end ;
+  align-items: center;
+}
+.contenedor_bloque_derecho{
+  display: flex;
+  justify-content: flex-start ;
+  align-items: center;
+}
+
+.flecha_derecha_derecha{
+  position: absolute;
+  right:  8px;
+  font-size: 65px;
+}
+
+.flecha_derecha{
+  position: absolute;
+  left: 8px;
+  font-size: 65px;
 }
 
 .fondo_categorias:hover {
   opacity: 0.8;
 }
 
+.flecha_abajo{
+  padding: 0px;
+  z-index: 0;
+  margin: 6px auto;
+  display: block;
+  font-size: 37px;
+}
 
+.flecha{
+  height: 27px;
+  width: 24px;
+  padding: 0px;
+  /* margin: 0px; */
+  z-index: 0;
+  margin: 6px auto;
+}
 
 
 .fondo_categoria_1{
@@ -46,11 +160,9 @@
 
 
 .engranen_1{
-  left: 32%;
-  top: -139px;
   width: 123px;
   height: 123px;
-  z-index: 1;   
+  z-index: 2;   
   -webkit-transition: all 0.5s ease;
   -webkit-animation-fill-mode: forwards;    
   cursor:pointer;
@@ -60,14 +172,14 @@
   width:123px;
   height:123px;
   filter: drop-shadow(0 0 2px #333);
-
+  z-index: 2;
 }
 
 .bola_1{
   position: absolute !important;
-  left: 33%;
+  left: 6%;
   top: 14px;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
   width: 100px;
   height:100px;
@@ -77,76 +189,98 @@
   line-height: 1;
   pointer-events: none;
   position: absolute;
-  z-index: 2;
-  top: 51px;
-  left: 436px;
+  z-index: 1;
+  /* left: 436px; */
   font-size: 13px;
-  width: 104px;
+  width: 71px;
   font-weight: 400;
   pointer-events: none;
   line-height: 1;
-
+  transition:0.5s all ease-out;
+  __left:10px;
+  opacity: 1;
+  transform: translate(-35px,-22px);
 }
 
 .icon_1{
   position: absolute !important;
   width: 57px;
   z-index: 1;
-  left: 32.5%;
-  top: 32px;
+  transition:0.5s all ease-out;
+  transform: translate(-2px, -90px);  
   opacity: 0;
   pointer-events: none;
 }
 
+.contenedor_engranen{
+  position: relative;
+  margin-top: 8px;
+}
+
+.contenedor_categorias{
+  display: table;
+  margin:-15px auto;
+  width: 709px; 
+  height: 141px; 
+  __background: rgba(0,0,0,0);
+  transition:0.5s all ease-out;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
 
+.contenedor_categorias::before {
+  transition:0.5s all ease-out;
+  content: '';
+  background-image: url(/assets/img/fondo_categorias_1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  /* top: 0; */
+  left: 50%;
+  transform: translate(-50%,0%);
+  width: 709px;
+  height: 141px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+
+.contenedor_categorias:hover::before{
+  opacity: 0.8;
+}
 
 .engranen_1:hover ~ .texto_engranen_1{
-    -webkit-animation: fadein_1 0.2s ease-in;
-    -moz-animation: fadein_1 0.2s ease-in;
-    animation: fadein_1 0.2s ease-in;
-    -webkit-animation-fill-mode: forwards;
+ transform: translate(-15px,-22px);
+  opacity: 0;
+
 }
 .engranen_1:hover ~ .fondo_categoria_1{
    opacity:0.7;
 }
 
 
-@-webkit-keyframes fadein_1 {
-    from { opacity: 1;left:436px;z-index:2;  }
-    to { opacity: 0; left:455px;z-index:3; }
-}
-
-@-moz-keyframes fadein_1 {
-    from { opacity: 1;left:436px;z-index:2;  }
-    to { opacity: 0; left:455px;z-index:3; }
-}
-
-@keyframes fadein_1 {
-    from { opacity: 1;left:436px;z-index:2;  }
-    to { opacity: 0; left:455px;z-index:3; }
-}
-
 .engranen_1:hover ~ .icon_1{
-    -webkit-animation: appearIzq_1 0.5s ease-in;
-    -moz-animation: appearIzq_1 0.5s ease-in;
-    animation: appearIzq_1 0.5s ease-in;
-    -webkit-animation-fill-mode: forwards;
+  opacity:1;
+  transform: translate(32px,-90px);
+
+
 }
 
 @-webkit-keyframes appearIzq_1 {
-    from { opacity: 0;left:32.5%;  }
-    to { opacity: 1; left:34.3%; }
+    from { opacity: 0;left:0px;  }
+    to { opacity: 1; left:30px; }
 }
 
 @-moz-keyframes appearIzq_1 {
-    from { opacity: 0;left:32.5%;  }
-    to { opacity: 1; left:34.3%; }
+    from { opacity: 0;left:0px;  }
+    to { opacity: 1; left:30px; }
 }
 
 @keyframes appearIzq_1 {
-    from { opacity: 0;left:32.5%;  }
-    to { opacity: 1; left:34.3%; }
+    from { opacity: 0;left:0px;  }
+    to { opacity: 1; left:30px; }
 }
 
 .forma_titulos_2{
@@ -191,7 +325,7 @@
   position: absolute !important;
   left: 60.7%;
   top: 14px;
-  z-index: 0;
+  z-index: 1;
   pointer-events: none;
   width: 100px;
   height:100px;
