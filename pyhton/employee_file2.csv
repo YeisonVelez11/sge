@@ -1,0 +1,15 @@
+column_1,ID,aux1,anio,mes,word1,word2,score,sub,emotion
+1,201891,1,2018,9,bienvenido,chec,0,Deconocida,Deconocida
+2,201891,1,2018,9,chec,atender,0,Deconocida,Deconocida
+3,201891,1,2018,9,atender,asesorar,0,Deconocida,Deconocida
+4,201892,2,2018,9,muy,bienvenido,0,Deconocida,Deconocida
+5,201892,2,2018,9,bienvenido,chec,0,Deconocida,Deconocida
+6,201892,2,2018,9,chec,nombrar,0,Deconocida,Deconocida
+7,201892,2,2018,9,nombrar,deysi,0,Deconocida,Deconocida
+8,201892,2,2018,9,deysi,gil,0,Deconocida,Deconocida
+9,201892,2,2018,9,gil,asesorar,0,Deconocida,Deconocida
+10,201892,2,2018,9,asesorar,estaconsulta,0,Deconocida,Deconocida
+11,201893,3,2018,9,hola,nadie,6,Negaciones,Negaciones
+12,201893,3,2018,9,nadie,ayudar,2,Aterrado,Miedo
+13,201893,3,2018,9,ayudar,problema,3,Sin Calificar,Sin Calificar
+14,201893,3,2018,9,problema,molestar,3,Sin Calificar,Sin Calificar
