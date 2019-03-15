@@ -18,6 +18,8 @@ icon_flip:boolean=true;
 bSeleccionFuente:boolean=false;
 oFuente:any;
 iIndexBolas:number=0;
+titulo="";
+categoria="";
   constructor(
     private ServicesProvider: ServicesProvider,
 private http: HttpClient
