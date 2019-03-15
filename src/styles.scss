@@ -146,7 +146,8 @@
 
 
 .bloque_izq:hover{
-  background-color: rgba(168,207,69,0.8);
+  __background-color: rgba(168,207,69,0.8);
+    background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(104,192,77,0.8);
 
 }
 
@@ -210,7 +211,7 @@
   position: absolute;
   bottom: -43px;
   font-size: 47px;
-  left: 37%;  
+  left: 42%;  
   color:#666666;
 }
 
