@@ -85,12 +85,13 @@
 .texto_bloque_izquierdo{
   transform: rotate(270deg);
   white-space: nowrap;
+  font-size: 23px;
 }
 
 .texto_bloque_derecho{
   transform: rotate(450deg); 
   white-space: nowrap;
-
+  font-size: 23px;
 }
 
 
@@ -131,7 +132,7 @@
   z-index: 0;
   margin: 12px auto;
   display: block;
-  font-size: 37px;
+  font-size: 28px;
 }
 
 .flecha{
