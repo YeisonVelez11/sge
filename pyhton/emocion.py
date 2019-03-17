@@ -50,7 +50,7 @@ def fn_limpiarPalabra(palabra,palabra_original):
                 json_palabra["lemma"]=aSeparar[0]
                 json_palabra["categoria"]=aSeparar[1]
             json_palabra["categoria"]=json_palabra["categoria"].replace("+"," ") 
-            if json_palabra["categoria"].lower().find("infini")!=-1 or json_palabra["categoria"].lower().find("parti")!=-1:
+            if json_palabra["categoria"].lower().find("infini")!=-1 or json_palabra["categoria"].lower().find("parti")!=-1 or json_palabra["categoria"].lower().find("impe")!=-1:
                 json_palabra["categoria"]="Verbos"
             elif json_palabra["categoria"].lower().find("nombre")!=-1:
                 json_palabra["categoria"]="Sustantivos"
@@ -220,7 +220,7 @@ with open('chatprueba.csv') as csv_leido:
                         if fn_checkUrl(token):
                            token_tmp["lemma"]=token
                            token_tmp["palabra_original"]=token
-                           token_tmp["tipo"]="Dirección"
+                           token_tmp["tipo"]="Enlace Web"
                            token="link"
                            omitirPalabra=True
                         #verificar que sea una palabra valida
