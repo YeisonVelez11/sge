@@ -183,7 +183,7 @@ with open('chatprueba.csv') as csv_leido:
                                 sentimiento="negativo"
                             break
                         else:
-                            score=-0
+                            score="-0"
                             sentimiento="sin catalogar"
                             
 #                            #negaciones

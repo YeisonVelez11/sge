@@ -22,6 +22,12 @@ iPeticionWebFirstTime=0
 vocales="aeiou"
 punctuation = [",", ";", ".", "..","...", ",.", "...."] # The tokens that you want to skip
 
+def fn_checkUrl(url):
+    re.compile(r'((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(:[0-9]+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-]*)?\??(?:[-\+=&;%@.\w]*)#?(?:[\w]*))?)')
+    if expr.match(url):
+        return True
+    else:
+        return False
 
 
 def fn_limpiarPalabra(palabra,palabra_original):
@@ -77,7 +83,6 @@ with open('nuevo_corpus.csv', newline='') as File:
     reader = csv.reader(File,delimiter='|')
     for row in reader:
         aCorpusCiad.append({"word":row[0],"score":row[1],"sub":row[2],"emotion":row[3]})
-
 csv_reader=""
 operador="system"
 with open('chatprueba.csv') as csv_leido:
@@ -86,7 +91,7 @@ with open('chatprueba.csv') as csv_leido:
     line_count = 0
     column_1=0
     idOperador=1 #define el id para quien esta hablando
-    with open('employee_file2.csv', mode='w',newline='') as csv_creado:
+    with open('emocion.csv', mode='w',newline='') as csv_creado:
         fieldnames = ['column_1', 'ID', 'aux1', "anio","mes","word1","word2","score","sub","emotion"]
         writer = csv.DictWriter(csv_creado, fieldnames=fieldnames)
         writer.writeheader()
@@ -144,7 +149,7 @@ with open('chatprueba.csv') as csv_leido:
                 
                 
                 #quitando stopwords
-                aFrase_sin_stopwords = []
+                aFrase_sin_stopwords = [" "] #primera posicion una cadena vacia para que se analicen todos los elementos del bigrama
                 for word in palabras_tokenizadas:
                     if word not in aStop_words:
                      aFrase_sin_stopwords.append(word)
@@ -157,86 +162,8 @@ with open('chatprueba.csv') as csv_leido:
                 #convierte un array en un string ' '.join(new_sentence) esto lo pide nlp(text)
                 aFraseLematizada=[];
                 aLemmasOracion=[]
-                
-                for token in aFrase_sin_stopwords:
-                #for token in nlp(' '.join(aFrase_sin_stopwords)):
-                    iPeticionWebFirstTime=iPeticionWebFirstTime+1
-                    token_tmp={}
-                    if iPeticionWebFirstTime==1:
-                        getIdPeticion= requests.post(url, headers = cabecera1, data = {"url":"/lematizador.html","version":"2.1.1","jaxurl":"JaxcentServlet" },timeout=timeout)
-                        idPeticion=getIdPeticion.text.split("&")
-                        idPeticion=idPeticion[1]
-                        inicializarpeticon= requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"load":1 })
-                        print("00")
-                        try:
-                            reiniciar = requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"event":5},timeout=timeout)
-                        except requests.ReadTimeout:
-                            print("server", timeout)
-
-                        json_masivo={
-                        "conid": idPeticion,
-                        "elementFound": 7,
-                        "response": "2_llevadero"
-                        }                
-                        solicitudmasiva = requests.post(url, headers = cabecera1, data = json_masivo)
-                    try:
-                        reiniciar = requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"event":5},timeout=timeout)
-                    except requests.ReadTimeout:
-                        print("server", timeout)
-                    #verificar que sea una url valida
-                    #para no tener que mover mucho el codigo, esta bandera indica si no es una palabra valida, no se agregue el elemento 
-                    omitirPalabra=False
-                    if validators.url(token):
-                       token_tmp["lemma"]=token
-                       token_tmp["palabra_original"]=token
-                       token_tmp["tipo"]="Dirección"
-                       token="link"
-                       omitirPalabra=True
-                    #verificar que sea una palabra valida
-                    elif token.isalpha()==False:
-                       token_tmp["lemma"]=token
-                       token_tmp["palabra_original"]=token
-                       token_tmp["tipo"]="Palabra sin Catalogar"
-                       token="error"
-                       omitirPalabra=True
-
-                    idregistroc=str(idregistro)+"_"+str(token)
-                    obtener_palabra=requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"elementFound":elementFound,"response":idregistroc})
-                    idregistro=idregistro+1
-                    idregistroc=str(idregistro)+"_"+str(token)
-                    obtener_palabra=requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"elementFound":elementFound,"response":idregistroc})
-                    #se obtiene lo necseairo del servicio y se elimina codigo basura
-                    idregistro=idregistro+1
-
-                    if(omitirPalabra==False):
                             
-                        lemmaService=fn_limpiarPalabra(obtener_palabra.text,token)
-                        if lemmaService:
-                           token_tmp["lemma"]=lemmaService["lemma"]
-                           token_tmp["tipo"]=lemmaService["categoria"]
-                           token_tmp["palabra_original"]=token
-
-        #                   if token_tmp["tipo"]=="Sin catalogar":
-        #                       corregirPalabra=requests.post("https://languagetool.org/api/v2/check", headers = cabecera1, data = {"disabledRules": "WHITESPACE_RULE","allowIncompleteResults":True,"text":token_tmp["texto"],"language": "es"})
-        #                       corregirPalabra=corregirPalabra.text
-        #                       print(corregirPalabra.text.matches[0].replacements[0].value)
-                        else:
-                           token_tmp["lemma"]=token
-                           token_tmp["tipo"]="sin catalogar"
-                    print(token_tmp)       
-                    elementFound=elementFound+1
-                    #aFraseLematizada.append(token_tmp)
-                    aLemmasOracion.append(token_tmp["palabra_original"])    
-                            #print(token_tmp["texto"], token_tmp["lemma"], token_tmp["tipo"])                                
-                aBigrama=(list(nltk.bigrams(aLemmasOracion)))
-                #freq = nltk.FreqDist(aLemmasOracion)
-                #for key,val in freq.items():
-                #print (str(key) + ':' + str(val))
-                #print(palabras_tokenizadas)
-                
-                #print(aFraseLematizada)STOP_WORDS
-                #spacy_stopwords = spacy.lang.es.stop_words.
-                #print(spacy_stopwords)
+                aBigrama=(list(nltk.bigrams(aFrase_sin_stopwords)))
 
                 for idx,bigrama in enumerate(aBigrama):
                     column_1=column_1+1
@@ -245,9 +172,12 @@ with open('chatprueba.csv') as csv_leido:
                     for corp in aCorpusCiad:
                         sub="Deconocida"
                         emotion="Deconocida"
-                        score="0"
+                        score="999"
                         negacion=0
-                        if corp["word"]==aBigrama[idx][1]:
+                        token=aBigrama[idx][1]
+                        palabraEncontrada=False #indica si se encontró la palabra en el corpus
+                        if corp["word"].lower()==aBigrama[idx][1]:
+                            print("encuentra",token)
                             sub=corp["sub"]
                             emotion=corp["emotion"]
                             score=corp["score"]
@@ -257,9 +187,82 @@ with open('chatprueba.csv') as csv_leido:
                                 #para afectar la siguiente fila, entonces se sumará de a 1 para evitar afectarseen la siguiente iteracion para cuando sea 2 se reinicie
                                 # hola, nadie aqui se sabe que se niega negacion=1
                                 #nadie, ayudar en esta iteraicon será 2 entonces se debe reiniciar 
+                            palabraEncontrada=True
                             break
-                            #print(corp["word"], " == ",aBigrama[idx][1])
-                            #print(sub, emotion)
+                    if palabraEncontrada==False:
+                        print("no encuentra",token)
+                        iPeticionWebFirstTime=iPeticionWebFirstTime+1
+                        token_tmp={}
+                        if iPeticionWebFirstTime==1:
+                            getIdPeticion= requests.post(url, headers = cabecera1, data = {"url":"/lematizador.html","version":"2.1.1","jaxurl":"JaxcentServlet" },timeout=timeout)
+                            idPeticion=getIdPeticion.text.split("&")
+                            idPeticion=idPeticion[1]
+                            inicializarpeticon= requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"load":1 })
+                            print("00")
+                            try:
+                                reiniciar = requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"event":5},timeout=timeout)
+                            except requests.ReadTimeout:
+                                print("server", timeout)
+    
+                            json_masivo={
+                            "conid": idPeticion,
+                            "elementFound": 7,
+                            "response": "2_llevadero"
+                            }                
+                            solicitudmasiva = requests.post(url, headers = cabecera1, data = json_masivo)
+                        try:
+                            reiniciar = requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"event":5},timeout=timeout)
+                        except requests.ReadTimeout:
+                            print("server", timeout)
+                        #verificar que sea una url valida
+                        #para no tener que mover mucho el codigo, esta bandera indica si no es una palabra valida, no se agregue el elemento 
+                        omitirPalabra=False
+                        if fn_checkUrl(token):
+                           token_tmp["lemma"]=token
+                           token_tmp["palabra_original"]=token
+                           token_tmp["tipo"]="Dirección"
+                           token="link"
+                           omitirPalabra=True
+                        #verificar que sea una palabra valida
+                        elif token.isalpha()==False:
+                           token_tmp["lemma"]=token
+                           token_tmp["palabra_original"]=token
+                           token_tmp["tipo"]="Palabra sin Catalogar"
+                           token="error"
+                           omitirPalabra=True
+    
+                        idregistroc=str(idregistro)+"_"+str(token)
+                        obtener_palabra=requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"elementFound":elementFound,"response":idregistroc})
+                        idregistro=idregistro+1
+                        idregistroc=str(idregistro)+"_"+str(token)
+                        obtener_palabra=requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"elementFound":elementFound,"response":idregistroc})
+                        #se obtiene lo necseairo del servicio y se elimina codigo basura
+                        idregistro=idregistro+1
+    
+                        if(omitirPalabra==False):
+                                
+                            lemmaService=fn_limpiarPalabra(obtener_palabra.text,token)
+                            if lemmaService:
+                               token_tmp["lemma"]=lemmaService["lemma"]
+                               token_tmp["tipo"]=lemmaService["categoria"]
+                               token_tmp["palabra_original"]=token
+    
+            #                   if token_tmp["tipo"]=="Sin catalogar":
+            #                       corregirPalabra=requests.post("https://languagetool.org/api/v2/check", headers = cabecera1, data = {"disabledRules": "WHITESPACE_RULE","allowIncompleteResults":True,"text":token_tmp["texto"],"language": "es"})
+            #                       corregirPalabra=corregirPalabra.text
+            #                       print(corregirPalabra.text.matches[0].replacements[0].value)
+                            else:
+                               token_tmp["lemma"]=token
+                               token_tmp["tipo"]="sin catalogar"
+                        print(token_tmp)       
+                        elementFound=elementFound+1
+                        #aFraseLematizada.append(token_tmp)
+                        #aLemmasOracion.append(token_tmp["palabra_original"]) 
+    
+                                #print(token_tmp["texto"], token_tmp["lemma"], token_tmp["tipo"])    
+                        
+                        #print(corp["word"], " == ",aBigrama[idx][1])
+                        #print(sub, emotion)
                     if negacion==2 and emotion.lower()=="sorpresa":
                         sub="Descontento"
                         emotion="Enfado"
