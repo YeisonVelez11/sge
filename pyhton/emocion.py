@@ -229,7 +229,7 @@ with open('chatprueba.csv') as csv_leido:
                     aLemmasOracion.append(token_tmp["palabra_original"])    
                             #print(token_tmp["texto"], token_tmp["lemma"], token_tmp["tipo"])                                
                 aBigrama=(list(nltk.bigrams(aLemmasOracion)))
-                freq = nltk.FreqDist(aLemmasOracion)
+                #freq = nltk.FreqDist(aLemmasOracion)
                 #for key,val in freq.items():
                 #print (str(key) + ':' + str(val))
                 #print(palabras_tokenizadas)
