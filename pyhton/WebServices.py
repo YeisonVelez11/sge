@@ -3,6 +3,10 @@ from html.parser import HTMLParser
 import re
 session = requests.Session()
 aLemma=[]
+import csv
+
+
+
 class BExtractor(HTMLParser):
     def __init__(self, *args, **kwargs):
         super(BExtractor, self).__init__(*args, **kwargs)
@@ -20,6 +24,12 @@ class BExtractor(HTMLParser):
             aLemma.append(data)
             print(data)
             
+
+with open("mycsv.csv", "r") as rfh:
+    r = csv.DictReader(rfh)
+    for row in r:
+        print(r)    
+    with open("mycsv.csv", "a") as wfh:
 
 
 #

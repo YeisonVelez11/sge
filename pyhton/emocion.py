@@ -6,7 +6,7 @@ import csv
 import json
 import requests
 import threading
-from threading import Timer
+import re
 #tokeniza el texto pero el problema es que incluye puntuacion
 from nltk.tokenize import word_tokenize
 numeroPeticiones=0
@@ -23,46 +23,73 @@ vocales="aeiou"
 punctuation = [",", ";", ".", "..","...", ",.", "...."] # The tokens that you want to skip
 
 def fn_checkUrl(url):
-    re.compile(r'((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(:[0-9]+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-]*)?\??(?:[-\+=&;%@.\w]*)#?(?:[\w]*))?)')
+    expr=re.compile(r'((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(:[0-9]+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-]*)?\??(?:[-\+=&;%@.\w]*)#?(?:[\w]*))?)')
     if expr.match(url):
         return True
     else:
         return False
 
+#
+#def fn_limpiarPalabra(palabra,palabra_original):
+#    json_palabra={"lemma":"", "categoria":""}
+#    aSeparar=palabra.split("&3&3&3&")
+#    if len(aSeparar)>1:
+#        aSeparar=aSeparar[1].replace("%3B","%23")
+#        aSeparar=aSeparar.replace("&3&","%23")
+#        aSeparar=aSeparar.split("%23")
+#        
+#        if len(aSeparar)>2:
+#          for i, item in enumerate(aSeparar):
+#            if aSeparar[i].lower().find("adjetiv")!=-1:
+#                json_palabra={ "lemma":aSeparar[0], "categoria":"Adjetivos"}
+#                break
+#            if aSeparar[i].lower().find("adjetiv")!=-1:
+#                json_palabra={ "lemma":aSeparar[0], "categoria":"Adjetivos"}
+#                break
+#            else:
+#                json_palabra["lemma"]=aSeparar[0]
+#                json_palabra["categoria"]=aSeparar[1]
+#            json_palabra["categoria"]=json_palabra["categoria"].replace("+"," ") 
+#            if json_palabra["categoria"].lower().find("infini")!=-1 or json_palabra["categoria"].lower().find("parti")!=-1 or json_palabra["categoria"].lower().find("impe")!=-1:
+#                json_palabra["categoria"]="Verbos"
+#            elif json_palabra["categoria"].lower().find("nombre")!=-1:
+#                json_palabra["categoria"]="Sustantivos"
+#            if json_palabra["lemma"].find("%")!=-1:
+#                json_palabra["lemma"]=palabra_original
+#            json_palabra["palabra_original"]=palabra_original
+#        #print(json_palabra)
+#        return json_palabra
+#    else:
+#        return False
 
-def fn_limpiarPalabra(palabra,palabra_original):
-    json_palabra={"lemma":"", "categoria":""}
-    aSeparar=palabra.split("&3&3&3&")
-    if len(aSeparar)>1:
-        aSeparar=aSeparar[1].replace("%3B","%23")
-        aSeparar=aSeparar.replace("&3&","%23")
-        aSeparar=aSeparar.split("%23")
+def fn_limpiarPalabra(palabra,  palabra_original):
+    lemma=palabra[1].replace(" ","")
+    if lemma=="-":
+        lemma=palabra_original
+    categoria=palabra[0].replace(" ","")
+    if categoria.lower()=="n":
+        categoria="Sustantivo"
+    elif categoria.lower()=="v":
+        categoria="Verbo"
+    elif categoria.lower()=="unkn":
+        categoria="Sin Catalogar"
+    elif categoria.lower()=="adj":
+        categoria="Adjetivo"
+    elif len(categoria.lower().split("|"))>=1:
+        categoria=categoria.lower().split("|")[1]
+        if categoria.lower()=="n":
+            categoria="Sustantivo"
+        elif categoria.lower()=="v":
+            categoria="Verbo"
+        elif categoria.lower()=="unkn":
+            categoria="Sin Catalogar"
+        elif categoria.lower()=="adj":
+            categoria="Adjetivo"      
         
-        if len(aSeparar)>2:
-          for i, item in enumerate(aSeparar):
-            if aSeparar[i].lower().find("adjetiv")!=-1:
-                json_palabra={ "lemma":aSeparar[0], "categoria":"Adjetivos"}
-                break
-            if aSeparar[i].lower().find("adjetiv")!=-1:
-                json_palabra={ "lemma":aSeparar[0], "categoria":"Adjetivos"}
-                break
-            else:
-                json_palabra["lemma"]=aSeparar[0]
-                json_palabra["categoria"]=aSeparar[1]
-            json_palabra["categoria"]=json_palabra["categoria"].replace("+"," ") 
-            if json_palabra["categoria"].lower().find("infini")!=-1 or json_palabra["categoria"].lower().find("parti")!=-1 or json_palabra["categoria"].lower().find("impe")!=-1:
-                json_palabra["categoria"]="Verbos"
-            elif json_palabra["categoria"].lower().find("nombre")!=-1:
-                json_palabra["categoria"]="Sustantivos"
-            if json_palabra["lemma"].find("%")!=-1:
-                json_palabra["lemma"]=palabra_original
-            json_palabra["palabra_original"]=palabra_original
-        #print(json_palabra)
-        return json_palabra
-    else:
-        return False
-
-
+        
+        
+    json_palabra={"lemma":lemma, "categoria":categoria,palabra_original:palabra_original}
+    return json_palabra
 #print (json.dumps(['foo', {'bar': ('baz', None, 1.0, 2)}]))
 
 #corpus de stopwords
@@ -75,7 +102,7 @@ with open('stopWords.csv', newline='') as File:
         aStop_words.append(row[0])
 
 aCorpusCiad= []
-
+File.close()
 
 #with open('CorpusCIAD.csv', newline='') as File:  
 with open('nuevo_corpus.csv', newline='') as File:  
@@ -83,6 +110,7 @@ with open('nuevo_corpus.csv', newline='') as File:
     reader = csv.reader(File,delimiter='|')
     for row in reader:
         aCorpusCiad.append({"word":row[0],"score":row[1],"sub":row[2],"emotion":row[3]})
+File.close()
 csv_reader=""
 operador="system"
 with open('chatprueba.csv') as csv_leido:
@@ -194,26 +222,18 @@ with open('chatprueba.csv') as csv_leido:
                         iPeticionWebFirstTime=iPeticionWebFirstTime+1
                         token_tmp={}
                         if iPeticionWebFirstTime==1:
-                            getIdPeticion= requests.post(url, headers = cabecera1, data = {"url":"/lematizador.html","version":"2.1.1","jaxurl":"JaxcentServlet" },timeout=timeout)
-                            idPeticion=getIdPeticion.text.split("&")
-                            idPeticion=idPeticion[1]
-                            inicializarpeticon= requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"load":1 })
-                            print("00")
-                            try:
-                                reiniciar = requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"event":5},timeout=timeout)
-                            except requests.ReadTimeout:
-                                print("server", timeout)
-    
-                            json_masivo={
-                            "conid": idPeticion,
-                            "elementFound": 7,
-                            "response": "2_llevadero"
-                            }                
-                            solicitudmasiva = requests.post(url, headers = cabecera1, data = json_masivo)
-                        try:
-                            reiniciar = requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"event":5},timeout=timeout)
-                        except requests.ReadTimeout:
-                            print("server", timeout)
+                            #petición web para alimentar el corpus
+                            session = requests.Session()
+                            getId=session.get('http://cartago.lllf.uam.es/grampal/grampal.cgi')
+                            cookie=session.cookies.get_dict()
+                            getId=session.cookies.get_dict()
+                            getId=getId["CGISESSID"]
+        
+                        getLemma=requests.get("http://cartago.lllf.uam.es/grampal/grampal.cgi?m=analiza&csrf="+getId+"&e="+token, cookies=cookie)
+                        respuestaLemma=getLemma.text
+                        getId=re.search('name="csrf" value="(.+)?"',respuestaLemma)[1]
+                        aLemma = re.findall(r'<span style="font-weight:bold">(.*?)<', respuestaLemma)
+
                         #verificar que sea una url valida
                         #para no tener que mover mucho el codigo, esta bandera indica si no es una palabra valida, no se agregue el elemento 
                         omitirPalabra=False
@@ -231,17 +251,13 @@ with open('chatprueba.csv') as csv_leido:
                            token="error"
                            omitirPalabra=True
     
-                        idregistroc=str(idregistro)+"_"+str(token)
-                        obtener_palabra=requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"elementFound":elementFound,"response":idregistroc})
-                        idregistro=idregistro+1
-                        idregistroc=str(idregistro)+"_"+str(token)
-                        obtener_palabra=requests.post(url, headers = cabecera1, data = {"conid":idPeticion,"elementFound":elementFound,"response":idregistroc})
+
                         #se obtiene lo necseairo del servicio y se elimina codigo basura
-                        idregistro=idregistro+1
+
     
                         if(omitirPalabra==False):
                                 
-                            lemmaService=fn_limpiarPalabra(obtener_palabra.text,token)
+                            lemmaService=fn_limpiarPalabra(aLemma,token)
                             if lemmaService:
                                token_tmp["lemma"]=lemmaService["lemma"]
                                token_tmp["tipo"]=lemmaService["categoria"]
@@ -255,7 +271,6 @@ with open('chatprueba.csv') as csv_leido:
                                token_tmp["lemma"]=token
                                token_tmp["tipo"]="sin catalogar"
                         print(token_tmp)       
-                        elementFound=elementFound+1
                         #aFraseLematizada.append(token_tmp)
                         #aLemmasOracion.append(token_tmp["palabra_original"]) 
     
@@ -293,7 +308,7 @@ with open('chatprueba.csv') as csv_leido:
                     negacion=negacion+1
                     writer.writerow({'column_1': column_1, 'ID': row[3]+row[4]+str(idOperador), 'aux1': idOperador,'anio':row[3],'mes': row[4], "word1":aBigrama[idx][0],"word2":aBigrama[idx][1],"score":score, "sub":sub, "emotion":emotion})    
             line_count=line_count+1
-
+    csv_creado.close()
         
 
 

@@ -10,7 +10,7 @@ accesible|2|Seguridad|Confianza||
 accidente|2|Aterrado|Miedo||
 accidentes|1|Aterrado|Miedo||
 Admiración|2|Admiración|Sorpresa|*|
-acciones|2|Admiración|Sorpresa||*
+acciones|2|Admiración|Sorpresa||
 aceptada|3|Encantado|Alegría||
 acepta|3|Encantado|Alegría||
 aceptado|1|Encantado|Alegría||
@@ -18,891 +18,2064 @@ aceptable|1|Encantado|Alegría||
 aceptación|1|Encantado|Alegría||
 aceptando|1|Fascinado|Alegría||
 aceptar|3|Encantado|Alegría||
-acoso|1|Aterrado|Miedo||
+aclarar|3|Encantado|Alegría|*|
+acoso|-1|Aterrado|Miedo||
 activo|3|Seguridad|Confianza||
 activos|2|Seguridad|Confianza||
 acuerda|2|Seguridad|Confianza||
 acuerdo|1|Seguridad|Confianza||
 aconsejable|2|Fe|Confianza|*|
-acusado|1|Molestia|Enfado||
+acusado|-1|Molestia|Enfado||
 acuerdo|1|Franqueza|Confianza||
 apta|1|Seguridad|Confianza|*|
 apto|1|Seguridad|Confianza|*|
 adaptado|1|Seguridad|Confianza||
 adecuada|1|Seguridad|Confianza||
 adecuado|2|Seguridad|Confianza||
+adecuar|1|Esperanza|Confianza||
 admisible|2|Esperanza|Confianza|*|
-adecuar|1|Sin Calificar|Sin Calificar||
-admite|1|Sin Calificar|Sin Calificar||
-admitido|-2|Sin Calificar|Sin Calificar||
-admitir|2|Sin Calificar|Sin Calificar||
-adoptar|2|Sin Calificar|Sin Calificar||
-advertencia|-1|Sin Calificar|Sin Calificar||
-advertencias|-1|Sin Calificar|Sin Calificar||
-advertido|-2|Sin Calificar|Sin Calificar||
-afectado|1|Sin Calificar|Sin Calificar||
-afortunado|-2|Sin Calificar|Sin Calificar||
-agradable|1|Sin Calificar|Sin Calificar||
-agradecer|1|Sin Calificar|Sin Calificar||
-agradecido|3|Sin Calificar|Sin Calificar||
-agresivo|2|Sin Calificar|Sin Calificar||
-ahorro|1|Sin Calificar|Sin Calificar||
-aislado|1|Sin Calificar|Sin Calificar||
-ajuste|1|Sin Calificar|Sin Calificar||
-alabanza|4|Sin Calificar|Sin Calificar||
-alarma|2|Sin Calificar|Sin Calificar||
-alcance|-1|Sin Calificar|Sin Calificar||
-alcanza|1|Sin Calificar|Sin Calificar||
-alcanzado|1|Sin Calificar|Sin Calificar||
-alegre|2|Sin Calificar|Sin Calificar||
-alegría|-3|Sin Calificar|Sin Calificar||
-alentado|-2|Sin Calificar|Sin Calificar||
-alentando|2|Sin Calificar|Sin Calificar||
-alentar|-2|Sin Calificar|Sin Calificar||
-alerta|1|Sin Calificar|Sin Calificar||
-alienta|3|Sin Calificar|Sin Calificar||
-amable|1|Sin Calificar|Sin Calificar||
-amado|-2|Sin Calificar|Sin Calificar||
-amar|-2|Sin Calificar|Sin Calificar||
-amenaza|-3|Sin Calificar|Sin Calificar||
-amenazado|1|Sin Calificar|Sin Calificar||
-amenazante|2|Sin Calificar|Sin Calificar||
-amenazas|-1|Sin Calificar|Sin Calificar||
-amigable|2|Sin Calificar|Sin Calificar||
-amigo|2|Sin Calificar|Sin Calificar||
-amistad|-3|Sin Calificar|Sin Calificar||
-amor|2|Sin Calificar|Sin Calificar||
-amores|1|Sin Calificar|Sin Calificar||
-anhelo|1|Sin Calificar|Sin Calificar||
-ansiedad|2|Sin Calificar|Sin Calificar||
-anti|1|Sin Calificar|Sin Calificar||
-apesta|2|Sin Calificar|Sin Calificar||
-aplausos|-1|Sin Calificar|Sin Calificar||
-apoyar|1|Sin Calificar|Sin Calificar||
-apoyo|2|Sin Calificar|Sin Calificar||
-apreciación|2|Sin Calificar|Sin Calificar||
-apreciado|2|Sin Calificar|Sin Calificar||
-apreciar|3|Sin Calificar|Sin Calificar||
-aprobación|1|Sin Calificar|Sin Calificar||
-aprobado|3|Sin Calificar|Sin Calificar||
-apropiado|1|Sin Calificar|Sin Calificar||
-armonía|2|Sin Calificar|Sin Calificar||
-arrastre|4|Sin Calificar|Sin Calificar||
-arrestado|-1|Sin Calificar|Sin Calificar||
-arresto|2|Sin Calificar|Sin Calificar||
-arriba|3|Sin Calificar|Sin Calificar||
-arriesgado|2|Sin Calificar|Sin Calificar||
-asalto|1|Sin Calificar|Sin Calificar||
-ascenso|2|Sin Calificar|Sin Calificar||
-asegurado|-4|Sin Calificar|Sin Calificar||
-asegurando|2|Sin Calificar|Sin Calificar||
-asegurar|-1|Sin Calificar|Sin Calificar||
-asentamiento|2|Sin Calificar|Sin Calificar||
-asequible|-1|Sin Calificar|Sin Calificar||
-asesinado|2|Sin Calificar|Sin Calificar||
-asesinato|-1|Sin Calificar|Sin Calificar||
-asqueroso|3|Sin Calificar|Sin Calificar||
-asset|3|Sin Calificar|Sin Calificar||
-asustado|2|Sin Calificar|Sin Calificar||
-atacado|3|Sin Calificar|Sin Calificar||
-ataque|1|Sin Calificar|Sin Calificar||
-ataques|2|Sin Calificar|Sin Calificar||
-atascado|3|Sin Calificar|Sin Calificar||
-aterrador|-3|Sin Calificar|Sin Calificar||
-atracción|1|Sin Calificar|Sin Calificar||
-atracciones|2|Sin Calificar|Sin Calificar||
-atractivo|1|Sin Calificar|Sin Calificar||
-atraer|3|Sin Calificar|Sin Calificar||
-atroz|3|Sin Calificar|Sin Calificar||
-aumentado|1|Sin Calificar|Sin Calificar||
-aumento|2|Sin Calificar|Sin Calificar||
-autoridad|2|Sin Calificar|Sin Calificar||
-avanzado|1|Sin Calificar|Sin Calificar||
-aventura|3|Sin Calificar|Sin Calificar||
-aventuras|1|Sin Calificar|Sin Calificar||
-awesome|2|Sin Calificar|Sin Calificar||
-ayudar|2|fe|Confianza||
-ayudando|2|Sin Calificar|Sin Calificar||
-ayuda|2|Complacido|Alegría||
-ayudar|2|Sin Calificar|Sin Calificar||
-bajo|2|Sin Calificar|Sin Calificar||
-barrera|1|Sin Calificar|Sin Calificar||
-basura|-4|Sin Calificar|Sin Calificar||
-batalla|-1|Sin Calificar|Sin Calificar||
-bellamente|-2|Sin Calificar|Sin Calificar||
-belleza|2|Sin Calificar|Sin Calificar||
-bendiga|3|Sin Calificar|Sin Calificar||
-beneficio|2|Sin Calificar|Sin Calificar||
-beneficios|-1|Sin Calificar|Sin Calificar||
-beneplácito|1|Sin Calificar|Sin Calificar||
-beso|2|Sin Calificar|Sin Calificar||
-bien|-2|Sin Calificar|Sin Calificar||
-bienvenida|-3|Sin Calificar|Sin Calificar||
-bizarro|2|Sin Calificar|Sin Calificar||
-bla|2|Sin Calificar|Sin Calificar||
-bloque|-2|Sin Calificar|Sin Calificar||
-bloqueado|-4|Sin Calificar|Sin Calificar||
-bloquear|2|Sin Calificar|Sin Calificar||
-bloqueo|2|Sin Calificar|Sin Calificar||
-bomba|2|Sin Calificar|Sin Calificar||
-bonito|2|Sin Calificar|Sin Calificar||
-borracho|1|Sin Calificar|Sin Calificar||
-borrado|1|Sin Calificar|Sin Calificar||
-brillante|3|Sin Calificar|Sin Calificar||
-broma|2|Sin Calificar|Sin Calificar||
-bromas|1|Sin Calificar|Sin Calificar||
-brutal|-3|Sin Calificar|Sin Calificar||
-bueno|2|Sin Calificar|Sin Calificar||
-caído|2|Sin Calificar|Sin Calificar||
-calidad|2|Sin Calificar|Sin Calificar||
-cálido|-1|Sin Calificar|Sin Calificar||
-calmar|2|Sin Calificar|Sin Calificar||
-campeón|1|Sin Calificar|Sin Calificar||
-campeones|1|Sin Calificar|Sin Calificar||
-cancelado|3|Sin Calificar|Sin Calificar||
-cancelar|-1|Sin Calificar|Sin Calificar||
-cáncer|-2|Sin Calificar|Sin Calificar||
-cansado|-1|Sin Calificar|Sin Calificar||
-caos|1|Sin Calificar|Sin Calificar||
-capacidad|-2|Sin Calificar|Sin Calificar||
-capacidades|2|Sin Calificar|Sin Calificar||
-capaz|-1|Sin Calificar|Sin Calificar||
-carga|-3|Sin Calificar|Sin Calificar||
-cargado|-2|Sin Calificar|Sin Calificar||
-cargos|1|Sin Calificar|Sin Calificar||
-caritativo|1|Sin Calificar|Sin Calificar||
-castigada|-2|Sin Calificar|Sin Calificar||
-castigado|1|Sin Calificar|Sin Calificar||
-castigo|-4|Sin Calificar|Sin Calificar||
-cayendo|2|Sin Calificar|Sin Calificar||
-celebración|1|Sin Calificar|Sin Calificar||
-celebrar|2|Sin Calificar|Sin Calificar||
-censurado|1|Sin Calificar|Sin Calificar||
-choque|1|Sin Calificar|Sin Calificar||
-chupar|-2|Sin Calificar|Sin Calificar||
-ciego|-5|Sin Calificar|Sin Calificar||
-cielo|2|Sin Calificar|Sin Calificar||
-cierto|1|Sin Calificar|Sin Calificar||
-claramente|-1|Sin Calificar|Sin Calificar||
-claridad|2|Sin Calificar|Sin Calificar||
-claro|-1|Sin Calificar|Sin Calificar||
-colapso|2|Sin Calificar|Sin Calificar||
-combate|2|Sin Calificar|Sin Calificar||
-comedia|1|Sin Calificar|Sin Calificar||
-cometido|-1|Sin Calificar|Sin Calificar||
-comic|1|Sin Calificar|Sin Calificar||
-comodidad|-2|Sin Calificar|Sin Calificar||
-cómodo|1|Sin Calificar|Sin Calificar||
-compartido|-2|Sin Calificar|Sin Calificar||
-compartir|-1|Sin Calificar|Sin Calificar||
-compatible|-3|Sin Calificar|Sin Calificar||
-competente|1|Sin Calificar|Sin Calificar||
-competitivo|1|Sin Calificar|Sin Calificar||
-complicado|-2|Sin Calificar|Sin Calificar||
-comprometido|-3|Sin Calificar|Sin Calificar||
-compromiso|1|Sin Calificar|Sin Calificar||
-con cuidado|-1|Sin Calificar|Sin Calificar||
-con seguridad|-1|Sin Calificar|Sin Calificar||
-concesión|-3|Sin Calificar|Sin Calificar||
-condenado|-2|Sin Calificar|Sin Calificar||
-confía|2|Sin Calificar|Sin Calificar||
-confiable|1|Sin Calificar|Sin Calificar||
-confianza|2|Sin Calificar|Sin Calificar||
-conflicto|2|Sin Calificar|Sin Calificar||
-conflictos|2|Sin Calificar|Sin Calificar||
-confundido|4|Sin Calificar|Sin Calificar||
-consentimiento|2|Sin Calificar|Sin Calificar||
-conspiración|-3|Sin Calificar|Sin Calificar||
-contaminación|2|Sin Calificar|Sin Calificar||
-contenta|1|Sin Calificar|Sin Calificar||
-contento|-1|Sin Calificar|Sin Calificar||
-controversia|1|Sin Calificar|Sin Calificar||
-controvertido|2|Sin Calificar|Sin Calificar||
-convencido|1|Sin Calificar|Sin Calificar||
-coño|4|Sin Calificar|Sin Calificar||
-cool|1|Sin Calificar|Sin Calificar||
-coraje|1|Sin Calificar|Sin Calificar||
-corrupción|-1|Sin Calificar|Sin Calificar||
-cortar|1|Sin Calificar|Sin Calificar||
-corte|2|Sin Calificar|Sin Calificar||
-cortes|2|Sin Calificar|Sin Calificar||
-cortesía|-2|Sin Calificar|Sin Calificar||
-creativo|-1|Sin Calificar|Sin Calificar||
-creciente|-1|Sin Calificar|Sin Calificar||
-crecimiento|-1|Sin Calificar|Sin Calificar||
-crímenes|1|Sin Calificar|Sin Calificar||
-criminal|-2|Sin Calificar|Sin Calificar||
-crisis|-1|Sin Calificar|Sin Calificar||
-crítica|-1|Sin Calificar|Sin Calificar||
-críticos|-2|Sin Calificar|Sin Calificar||
-crudo|-2|Sin Calificar|Sin Calificar||
-cualidades|2|Sin Calificar|Sin Calificar||
-cuidado|2|Sin Calificar|Sin Calificar||
-cuidadoso|2|Sin Calificar|Sin Calificar||
-cuidando|-2|Sin Calificar|Sin Calificar||
-culo|1|Sin Calificar|Sin Calificar||
-culpa|-2|Sin Calificar|Sin Calificar||
-culpable|3|Sin Calificar|Sin Calificar||
-curioso|1|Sin Calificar|Sin Calificar||
-dañado|2|Sin Calificar|Sin Calificar||
-dañino|1|Sin Calificar|Sin Calificar||
-daño|2|Sin Calificar|Sin Calificar||
-daños|-3|Sin Calificar|Sin Calificar||
-de acuerdo|2|Sin Calificar|Sin Calificar||
-de confianza|2|Sin Calificar|Sin Calificar||
-débil|4|Sin Calificar|Sin Calificar||
-decepcionado|1|Sin Calificar|Sin Calificar||
-dedicada|2|Sin Calificar|Sin Calificar||
-defectos|-2|Sin Calificar|Sin Calificar||
-déficit|1|Sin Calificar|Sin Calificar||
-dejado|2|Sin Calificar|Sin Calificar||
-deleite|2|Sin Calificar|Sin Calificar||
-delicioso|-1|Sin Calificar|Sin Calificar||
-delito|2|Sin Calificar|Sin Calificar||
-demanda|4|Sin Calificar|Sin Calificar||
-demandar|1|Sin Calificar|Sin Calificar||
-demorado|2|Sin Calificar|Sin Calificar||
-demostración|-1|Sin Calificar|Sin Calificar||
-denegado|-1|Sin Calificar|Sin Calificar||
-derrota|1|Sin Calificar|Sin Calificar||
-desacuerdo|-3|Sin Calificar|Sin Calificar||
-desafío|3|Sin Calificar|Sin Calificar||
-desagradable|-2|Sin Calificar|Sin Calificar||
-desastre|2|Sin Calificar|Sin Calificar||
-desconectado|-4|Sin Calificar|Sin Calificar||
-descontado|-1|Sin Calificar|Sin Calificar||
-deseable|-3|Sin Calificar|Sin Calificar||
-deseado|-2|Sin Calificar|Sin Calificar||
-desear|-2|Sin Calificar|Sin Calificar||
-desechar|1|Sin Calificar|Sin Calificar||
-desempleo|1|Sin Calificar|Sin Calificar||
-deseo|2|Sin Calificar|Sin Calificar||
-deseos|-1|Sin Calificar|Sin Calificar||
-desesperado|2|Sin Calificar|Sin Calificar||
-desorden|-3|Sin Calificar|Sin Calificar||
-despedido|-1|Sin Calificar|Sin Calificar||
-desperdicio|1|Sin Calificar|Sin Calificar||
-destrucción|-3|Sin Calificar|Sin Calificar||
-destruido|2|Sin Calificar|Sin Calificar||
-destruir|-2|Sin Calificar|Sin Calificar||
-detener|1|Sin Calificar|Sin Calificar||
-detenido|2|Sin Calificar|Sin Calificar||
-deteriorado|-1|Sin Calificar|Sin Calificar||
-determinada|1|Sin Calificar|Sin Calificar||
-detiene|-4|Sin Calificar|Sin Calificar||
-deuda|2|Sin Calificar|Sin Calificar||
-devoto|1|Sin Calificar|Sin Calificar||
-diamante|-1|Sin Calificar|Sin Calificar||
-dick|-3|Sin Calificar|Sin Calificar||
-difícil|1|Sin Calificar|Sin Calificar||
-dificultad|4|Sin Calificar|Sin Calificar||
-digno|2|Sin Calificar|Sin Calificar||
-dios|2|Sin Calificar|Sin Calificar||
-discapacidad|-1|Sin Calificar|Sin Calificar||
-discapacidades|-1|Sin Calificar|Sin Calificar||
-disfrutado|-1|Sin Calificar|Sin Calificar||
-disfrutano|2|Sin Calificar|Sin Calificar||
-disfrutar|-2|Sin Calificar|Sin Calificar||
-disparar|4|Sin Calificar|Sin Calificar||
-disputa|1|Sin Calificar|Sin Calificar||
-disputas|2|Sin Calificar|Sin Calificar||
-distinguido|5|Sin Calificar|Sin Calificar||
-diversión|2|Sin Calificar|Sin Calificar||
-divertida|-2|Sin Calificar|Sin Calificar||
-dolencia|-2|Sin Calificar|Sin Calificar||
-dolor|-2|Sin Calificar|Sin Calificar||
-doloroso|-1|Sin Calificar|Sin Calificar||
-donación|-3|Sin Calificar|Sin Calificar||
-donaciones|-3|Sin Calificar|Sin Calificar||
-donado|-3|Sin Calificar|Sin Calificar||
-donar|2|Sin Calificar|Sin Calificar||
-duda|2|Sin Calificar|Sin Calificar||
-dulce|2|Sin Calificar|Sin Calificar||
-durable|2|Sin Calificar|Sin Calificar||
-efectivamente|-1|Sin Calificar|Sin Calificar||
-efectividad|-2|Sin Calificar|Sin Calificar||
-efectivo|-1|Sin Calificar|Sin Calificar||
-elegante|-2|Sin Calificar|Sin Calificar||
-emergencia|2|Sin Calificar|Sin Calificar||
-emocionante|2|Sin Calificar|Sin Calificar||
-empeorar|2|Sin Calificar|Sin Calificar||
-encantador|2|Sin Calificar|Sin Calificar||
-encanto|-1|Sin Calificar|Sin Calificar||
-endosado|-1|Sin Calificar|Sin Calificar||
-enemigo|4|Sin Calificar|Sin Calificar||
-enemigos|3|Sin Calificar|Sin Calificar||
-enfermedad|2|Sin Calificar|Sin Calificar||
-enfermedades|2|Sin Calificar|Sin Calificar||
-enfermo|2|Sin Calificar|Sin Calificar||
-enfocado|1|Sin Calificar|Sin Calificar||
-engañar|2|Sin Calificar|Sin Calificar||
-engaño|2|Sin Calificar|Sin Calificar||
-enojado|-3|Sin Calificar|Sin Calificar||
-enorme|1|Sin Calificar|Sin Calificar||
-entretenido|-1|Sin Calificar|Sin Calificar||
-entusiasta|-2|Sin Calificar|Sin Calificar||
-equilibrado|1|Sin Calificar|Sin Calificar||
-error|-2|Sin Calificar|Sin Calificar||
-errores|1|Sin Calificar|Sin Calificar||
-escape|-1|Sin Calificar|Sin Calificar||
-esclavo|-2|Sin Calificar|Sin Calificar||
-espantado|-2|Sin Calificar|Sin Calificar||
-esperando|-1|Sin Calificar|Sin Calificar||
-esperanza|2|Sin Calificar|Sin Calificar||
-esperanzas|1|Sin Calificar|Sin Calificar||
-espíritu|-1|Sin Calificar|Sin Calificar||
-espléndido|2|Sin Calificar|Sin Calificar||
-estable|2|Sin Calificar|Sin Calificar||
-estrés|2|Sin Calificar|Sin Calificar||
-estupendo|1|Sin Calificar|Sin Calificar||
-estúpido|-2|Sin Calificar|Sin Calificar||
-ético|2|Sin Calificar|Sin Calificar||
-evitar|3|Sin Calificar|Sin Calificar||
-excelencia|1|Sin Calificar|Sin Calificar||
-excelente|-2|Sin Calificar|Sin Calificar||
-excepcional|2|Sin Calificar|Sin Calificar||
-excitación|2|Sin Calificar|Sin Calificar||
-excitado|1|Sin Calificar|Sin Calificar||
-excluido|2|Sin Calificar|Sin Calificar||
-excluir|1|Sin Calificar|Sin Calificar||
-exclusión|-2|Sin Calificar|Sin Calificar||
-exclusivo|1|Sin Calificar|Sin Calificar||
-excusa|4|Sin Calificar|Sin Calificar||
-exento|1|Sin Calificar|Sin Calificar||
-exige|2|Sin Calificar|Sin Calificar||
-exigente|-2|Sin Calificar|Sin Calificar||
-éxito|-2|Sin Calificar|Sin Calificar||
-exitosamente|-2|Sin Calificar|Sin Calificar||
-exitoso|-2|Sin Calificar|Sin Calificar||
-expandir|-3|Sin Calificar|Sin Calificar||
-exploración|-2|Sin Calificar|Sin Calificar||
-expuesto|3|Sin Calificar|Sin Calificar||
-exquisito|2|Sin Calificar|Sin Calificar||
-extender|3|Sin Calificar|Sin Calificar||
-extiende|2|Sin Calificar|Sin Calificar||
-extraño|3|Sin Calificar|Sin Calificar||
-extraviado|1|Sin Calificar|Sin Calificar||
-fabuloso|2|Sin Calificar|Sin Calificar||
-fácil|-1|Sin Calificar|Sin Calificar||
-facilidad|-3|Sin Calificar|Sin Calificar||
-fake|-2|Sin Calificar|Sin Calificar||
-falla|1|Sin Calificar|Sin Calificar||
-fallas|3|Sin Calificar|Sin Calificar||
-fallo|3|Sin Calificar|Sin Calificar||
-falló|-2|Sin Calificar|Sin Calificar||
-fallos|-2|Sin Calificar|Sin Calificar||
-falta|3|Sin Calificar|Sin Calificar||
-faltante|-2|Sin Calificar|Sin Calificar||
-fama|2|Sin Calificar|Sin Calificar||
-famoso|-3|Sin Calificar|Sin Calificar||
-fan|1|Sin Calificar|Sin Calificar||
-fantasma|1|Sin Calificar|Sin Calificar||
-fantástico|-2|Sin Calificar|Sin Calificar||
-fascinante|-2|Sin Calificar|Sin Calificar||
-fatal|3|Sin Calificar|Sin Calificar||
-fatalidad|-3|Sin Calificar|Sin Calificar||
-favor|-3|Sin Calificar|Sin Calificar||
-favor|-1|Sin Calificar|Sin Calificar||
-favores|1|Sin Calificar|Sin Calificar||
-favorito|3|Sin Calificar|Sin Calificar||
-favorito|-4|Sin Calificar|Sin Calificar||
-favoritos|4|Sin Calificar|Sin Calificar||
-favoritos|-2|Sin Calificar|Sin Calificar||
-fe|2|Sin Calificar|Sin Calificar||
-felicidad|-2|Sin Calificar|Sin Calificar||
-felicitaciones|1|Sin Calificar|Sin Calificar||
-feliz|-2|Sin Calificar|Sin Calificar||
-feo|1|Sin Calificar|Sin Calificar||
-fiabilidad|2|Sin Calificar|Sin Calificar||
-fiebre|-3|Sin Calificar|Sin Calificar||
-fitness|-1|Sin Calificar|Sin Calificar||
-follado|-1|Sin Calificar|Sin Calificar||
-fortalecer|1|Sin Calificar|Sin Calificar||
-fortalecimiento|-2|Sin Calificar|Sin Calificar||
-fortuna|-2|Sin Calificar|Sin Calificar||
-forzado|2|Sin Calificar|Sin Calificar||
-fracaso|2|Sin Calificar|Sin Calificar||
-fraude|2|Sin Calificar|Sin Calificar||
-fuego|1|Sin Calificar|Sin Calificar||
-fuerte|2|Sin Calificar|Sin Calificar||
-fuerza|3|Sin Calificar|Sin Calificar||
-funeral|4|Sin Calificar|Sin Calificar||
-funky|2|Sin Calificar|Sin Calificar||
-furioso|-1|Sin Calificar|Sin Calificar||
-gana|-2|Sin Calificar|Sin Calificar||
-ganado|2|Sin Calificar|Sin Calificar||
-ganador|-2|Sin Calificar|Sin Calificar||
-ganancia|-1|Sin Calificar|Sin Calificar||
-ganancias|3|Sin Calificar|Sin Calificar||
-ganando|3|Sin Calificar|Sin Calificar||
-ganar|-1|Sin Calificar|Sin Calificar||
-ganó|2|Sin Calificar|Sin Calificar||
-garantía|-2|Sin Calificar|Sin Calificar||
-gema|-2|Sin Calificar|Sin Calificar||
-generoso|-4|Sin Calificar|Sin Calificar||
-glory|-2|Sin Calificar|Sin Calificar||
-golpeado|3|Sin Calificar|Sin Calificar||
-golpes|-2|Sin Calificar|Sin Calificar||
-gracia|2|Sin Calificar|Sin Calificar||
-gracias|2|Sin Calificar|Sin Calificar||
-grand|2|Sin Calificar|Sin Calificar||
-grande|3|Sin Calificar|Sin Calificar||
-gratis|2|Sin Calificar|Sin Calificar||
-gravemente|-1|Sin Calificar|Sin Calificar||
-greater|-2|Sin Calificar|Sin Calificar||
-gripe|1|Sin Calificar|Sin Calificar||
-gris|1|Sin Calificar|Sin Calificar||
-gris|-3|Sin Calificar|Sin Calificar||
-guardado|1|Sin Calificar|Sin Calificar||
-guardar|-2|Sin Calificar|Sin Calificar||
-guau|1|Sin Calificar|Sin Calificar||
-guerra|-2|Sin Calificar|Sin Calificar||
-gusta|2|Sin Calificar|Sin Calificar||
-gustado|-3|Sin Calificar|Sin Calificar||
-gustas|3|Sin Calificar|Sin Calificar||
-habilidad|-2|Sin Calificar|Sin Calificar||
-habilidades|1|Sin Calificar|Sin Calificar||
-hambre|3|Sin Calificar|Sin Calificar||
-hermoso|2|Sin Calificar|Sin Calificar||
-héroe|-2|Sin Calificar|Sin Calificar||
-héroes|1|Sin Calificar|Sin Calificar||
-honesto|-2|Sin Calificar|Sin Calificar||
-honor|-1|Sin Calificar|Sin Calificar||
-horrible|2|Sin Calificar|Sin Calificar||
-hueco|-1|Sin Calificar|Sin Calificar||
-huelga|-1|Sin Calificar|Sin Calificar||
-humor|2|Sin Calificar|Sin Calificar||
-hurt|2|Sin Calificar|Sin Calificar||
-ignorado|1|Sin Calificar|Sin Calificar||
-ignorar|-1|Sin Calificar|Sin Calificar||
-ilegal|2|Sin Calificar|Sin Calificar||
-impar|-3|Sin Calificar|Sin Calificar||
-imponer|2|Sin Calificar|Sin Calificar||
-importa|2|Sin Calificar|Sin Calificar||
-importancia|3|Sin Calificar|Sin Calificar||
-importante|-3|Sin Calificar|Sin Calificar||
-impresionado|-2|Sin Calificar|Sin Calificar||
-impresionante|2|Sin Calificar|Sin Calificar||
-improbable|-3|Sin Calificar|Sin Calificar||
-impuesto|-2|Sin Calificar|Sin Calificar||
-impulso|2|Sin Calificar|Sin Calificar||
-inapropiado|-1|Sin Calificar|Sin Calificar||
-incapaz|-1|Sin Calificar|Sin Calificar||
-incompleto|-4|Sin Calificar|Sin Calificar||
-incorrecto|-3|Sin Calificar|Sin Calificar||
-increible|1|Sin Calificar|Sin Calificar||
-increíble|-2|Sin Calificar|Sin Calificar||
-incumplimiento|-3|Sin Calificar|Sin Calificar||
-indispuesto|2|Sin Calificar|Sin Calificar||
-infección|1|Sin Calificar|Sin Calificar||
-infecciones|-3|Sin Calificar|Sin Calificar||
-infeccioso|-2|Sin Calificar|Sin Calificar||
-infectado|-2|Sin Calificar|Sin Calificar||
-infierno|2|Sin Calificar|Sin Calificar||
-infracción|2|Sin Calificar|Sin Calificar||
-inmune|-3|Sin Calificar|Sin Calificar||
-innovación|-1|Sin Calificar|Sin Calificar||
-innovador|2|Sin Calificar|Sin Calificar||
-inquieto|2|Sin Calificar|Sin Calificar||
-inspiración|-1|Sin Calificar|Sin Calificar||
-inspirado|3|Sin Calificar|Sin Calificar||
-integral|-2|Sin Calificar|Sin Calificar||
-integridad|2|Sin Calificar|Sin Calificar||
-inteligente|2|Sin Calificar|Sin Calificar||
-intenso|2|Sin Calificar|Sin Calificar||
-interés|1|Sin Calificar|Sin Calificar||
-interesado|-2|Sin Calificar|Sin Calificar||
-interesante|-4|Sin Calificar|Sin Calificar||
-intereses|2|Sin Calificar|Sin Calificar||
-invasión|-2|Sin Calificar|Sin Calificar||
-invitar|-2|Sin Calificar|Sin Calificar||
-ira|-2|Sin Calificar|Sin Calificar||
-jaja|2|Sin Calificar|Sin Calificar||
-jesús|-3|Sin Calificar|Sin Calificar||
-joder|1|Sin Calificar|Sin Calificar||
-jodido|-2|Sin Calificar|Sin Calificar||
-joya|-2|Sin Calificar|Sin Calificar||
-justicia|-2|Sin Calificar|Sin Calificar||
-justo|1|Sin Calificar|Sin Calificar||
-lágrimas|2|Sin Calificar|Sin Calificar||
-lanzado|-2|Sin Calificar|Sin Calificar||
-leading|-2|Sin Calificar|Sin Calificar||
-lealtad|-2|Sin Calificar|Sin Calificar||
-legal|2|Sin Calificar|Sin Calificar||
-legalmente|1|Sin Calificar|Sin Calificar||
-lerdo|-2|Sin Calificar|Sin Calificar||
-lesión|3|Sin Calificar|Sin Calificar||
-lesionado|-3|Sin Calificar|Sin Calificar||
-lesiones|-1|Sin Calificar|Sin Calificar||
-libertad|2|Sin Calificar|Sin Calificar||
-liderazgo|-2|Sin Calificar|Sin Calificar||
-limitación|2|Sin Calificar|Sin Calificar||
-limitado|-2|Sin Calificar|Sin Calificar||
-límites|-2|Sin Calificar|Sin Calificar||
-limpiador|-3|Sin Calificar|Sin Calificar||
-limpio|3|Sin Calificar|Sin Calificar||
-lindo|-3|Sin Calificar|Sin Calificar||
-lío|-2|Sin Calificar|Sin Calificar||
-listo|-3|Sin Calificar|Sin Calificar||
-litigio|2|Sin Calificar|Sin Calificar||
-llegar|-1|Sin Calificar|Sin Calificar||
-llorar|2|Sin Calificar|Sin Calificar||
-lobby|1|Sin Calificar|Sin Calificar||
-loco|2|Sin Calificar|Sin Calificar||
-locura|2|Sin Calificar|Sin Calificar||
-lograr|4|Sin Calificar|Sin Calificar||
-lol|1|Sin Calificar|Sin Calificar||
-lucha|2|Sin Calificar|Sin Calificar||
-lucro|2|Sin Calificar|Sin Calificar||
-lujo|2|Sin Calificar|Sin Calificar||
-luminoso|-2|Sin Calificar|Sin Calificar||
-maduro|-3|Sin Calificar|Sin Calificar||
-magnífico|-1|Sin Calificar|Sin Calificar||
-mal|-2|Sin Calificar|Sin Calificar||
-maldito|-2|Sin Calificar|Sin Calificar||
-malo|1|Sin Calificar|Sin Calificar||
-malvado|1|Sin Calificar|Sin Calificar||
-maravilla|1|Sin Calificar|Sin Calificar||
-maravilloso|-3|Sin Calificar|Sin Calificar||
-mareado|-1|Sin Calificar|Sin Calificar||
-más fuerte|-1|Sin Calificar|Sin Calificar||
-más grande|3|Sin Calificar|Sin Calificar||
-más seguro|-2|Sin Calificar|Sin Calificar||
-mata|1|Sin Calificar|Sin Calificar||
-matando|-3|Sin Calificar|Sin Calificar||
-matar|-4|Sin Calificar|Sin Calificar||
-materia|1|Sin Calificar|Sin Calificar||
-meando|-3|Sin Calificar|Sin Calificar||
-mear|-2|Sin Calificar|Sin Calificar||
-medalla|2|Sin Calificar|Sin Calificar||
-mejor|-2|Sin Calificar|Sin Calificar||
-mejor|3|Sin Calificar|Sin Calificar||
-mejora|3|Sin Calificar|Sin Calificar||
-mejorado|2|Sin Calificar|Sin Calificar||
-mejorando|1|Sin Calificar|Sin Calificar||
-mejorar|-1|Sin Calificar|Sin Calificar||
-miedo|-1|Sin Calificar|Sin Calificar||
-mierda|-2|Sin Calificar|Sin Calificar||
-milagro|-1|Sin Calificar|Sin Calificar||
-misericordia|2|Sin Calificar|Sin Calificar||
-mito|-5|Sin Calificar|Sin Calificar||
-molestar|3|Sin Calificar|Sin Calificar||
-molesto|-1|Sin Calificar|Sin Calificar||
-morir|-1|Sin Calificar|Sin Calificar||
-mortal|-3|Sin Calificar|Sin Calificar||
-motivación|-1|Sin Calificar|Sin Calificar||
-motivado|-2|Sin Calificar|Sin Calificar||
-muerte|1|Sin Calificar|Sin Calificar||
-muertes|-2|Sin Calificar|Sin Calificar||
-muerto|-2|Sin Calificar|Sin Calificar||
-muriendo|-3|Sin Calificar|Sin Calificar||
-murió|2|Sin Calificar|Sin Calificar||
-natural|2|Sin Calificar|Sin Calificar||
-negación|-1|Sin Calificar|Sin Calificar||
-negado|-3|Sin Calificar|Sin Calificar||
-negar|2|Sin Calificar|Sin Calificar||
-negativo|-3|Sin Calificar|Sin Calificar||
-negociar|-2|Sin Calificar|Sin Calificar||
-negrita|-1|Sin Calificar|Sin Calificar||
-nervioso|2|Sin Calificar|Sin Calificar||
-no|-1|Sin Calificar|Sin Calificar||
-noble|2|Sin Calificar|Sin Calificar||
-notable|-3|Sin Calificar|Sin Calificar||
-novela|-1|Sin Calificar|Sin Calificar||
-nueces|-3|Sin Calificar|Sin Calificar||
-nuevo|2|Sin Calificar|Sin Calificar||
-nunca|-1|Sin Calificar|Sin Calificar||
-obligatorio|-3|Sin Calificar|Sin Calificar||
-ocultar|-2|Sin Calificar|Sin Calificar||
-odio|3|Sin Calificar|Sin Calificar||
-ofensa|3|Sin Calificar|Sin Calificar||
-ofensivo|-2|Sin Calificar|Sin Calificar||
-ojalá|2|Sin Calificar|Sin Calificar||
-olvidado|-2|Sin Calificar|Sin Calificar||
-olvidar|3|Sin Calificar|Sin Calificar||
-olvidé|2|Sin Calificar|Sin Calificar||
-oops|-1|Sin Calificar|Sin Calificar||
-oportunidades|-1|Sin Calificar|Sin Calificar||
-opportunit y|-1|Sin Calificar|Sin Calificar||
-oración|-2|Sin Calificar|Sin Calificar||
-oraciones|-2|Sin Calificar|Sin Calificar||
-orar|-2|Sin Calificar|Sin Calificar||
-orgullo|-2|Sin Calificar|Sin Calificar||
-orgulloso|-3|Sin Calificar|Sin Calificar||
-oro|-3|Sin Calificar|Sin Calificar||
-oscuridad|-2|Sin Calificar|Sin Calificar||
-otorgado|1|Sin Calificar|Sin Calificar||
-pacífico|2|Sin Calificar|Sin Calificar||
-pagar|2|Sin Calificar|Sin Calificar||
-pánico|-1|Sin Calificar|Sin Calificar||
-paradise|-1|Sin Calificar|Sin Calificar||
-parcialidad|-3|Sin Calificar|Sin Calificar||
-participar|2|Sin Calificar|Sin Calificar||
-partidarios|1|Sin Calificar|Sin Calificar||
-pasión|4|Sin Calificar|Sin Calificar||
-pasivo|-2|Sin Calificar|Sin Calificar||
-paz|-2|Sin Calificar|Sin Calificar||
-pecado|-1|Sin Calificar|Sin Calificar||
-pelea|-2|Sin Calificar|Sin Calificar||
-pelear|2|Sin Calificar|Sin Calificar||
-peligro|1|Sin Calificar|Sin Calificar||
-peligroso|-2|Sin Calificar|Sin Calificar||
-penalización|-2|Sin Calificar|Sin Calificar||
-peor|-5|Sin Calificar|Sin Calificar||
-perder|-2|Sin Calificar|Sin Calificar||
-pérdida|-2|Sin Calificar|Sin Calificar||
-pérdidas|-2|Sin Calificar|Sin Calificar||
-perdido|1|Sin Calificar|Sin Calificar||
-perdón|1|Sin Calificar|Sin Calificar||
-perezoso|-2|Sin Calificar|Sin Calificar||
-perfectamente|-3|Sin Calificar|Sin Calificar||
-perfecto|-2|Sin Calificar|Sin Calificar||
-perjuicio|-2|Sin Calificar|Sin Calificar||
-permitir|-2|Sin Calificar|Sin Calificar||
-perra|3|Sin Calificar|Sin Calificar||
-perspectivas|-2|Sin Calificar|Sin Calificar||
-perturbado|-2|Sin Calificar|Sin Calificar||
-pistola|-3|Sin Calificar|Sin Calificar||
-placer|2|Sin Calificar|Sin Calificar||
-pobre|3|Sin Calificar|Sin Calificar||
-pobreza|1|Sin Calificar|Sin Calificar||
-poderoso|-2|Sin Calificar|Sin Calificar||
-polla|-1|Sin Calificar|Sin Calificar||
-polución|2|Sin Calificar|Sin Calificar||
-popular|-2|Sin Calificar|Sin Calificar||
-popularidad|-2|Sin Calificar|Sin Calificar||
-por favor|1|Sin Calificar|Sin Calificar||
-porquería|5|Sin Calificar|Sin Calificar||
-posibilidad|2|Sin Calificar|Sin Calificar||
-posibilidades|2|Sin Calificar|Sin Calificar||
-positive|-2|Sin Calificar|Sin Calificar||
-precioso|2|Sin Calificar|Sin Calificar||
-premiado|2|Sin Calificar|Sin Calificar||
-premio|2|Sin Calificar|Sin Calificar||
-premios|2|Sin Calificar|Sin Calificar||
-preocupación|3|Sin Calificar|Sin Calificar||
-preocupado|-3|Sin Calificar|Sin Calificar||
-preparado|-2|Sin Calificar|Sin Calificar||
-presión|1|Sin Calificar|Sin Calificar||
-preso|-2|Sin Calificar|Sin Calificar||
-presos|-2|Sin Calificar|Sin Calificar||
-prevenir|1|Sin Calificar|Sin Calificar||
-previnindo|-2|Sin Calificar|Sin Calificar||
-primicia|2|Sin Calificar|Sin Calificar||
-prisión|1|Sin Calificar|Sin Calificar||
-problema|3|Sin Calificar|Sin Calificar||
-problemas|-2|Sin Calificar|Sin Calificar||
-profit|2|Sin Calificar|Sin Calificar||
-progreso|-1|Sin Calificar|Sin Calificar||
-prohibido|-2|Sin Calificar|Sin Calificar||
-prohibir|-2|Sin Calificar|Sin Calificar||
-promesa|-1|Sin Calificar|Sin Calificar||
-promesas|2|Sin Calificar|Sin Calificar||
-prometido|3|Sin Calificar|Sin Calificar||
-prominente|1|Sin Calificar|Sin Calificar||
-promocionar|2|Sin Calificar|Sin Calificar||
-promoting|-3|Sin Calificar|Sin Calificar||
-promovido|-2|Sin Calificar|Sin Calificar||
-promueve|-3|Sin Calificar|Sin Calificar||
-prontitud|-1|Sin Calificar|Sin Calificar||
-prospecto|2|Sin Calificar|Sin Calificar||
-proteger|2|Sin Calificar|Sin Calificar||
-protegido|-2|Sin Calificar|Sin Calificar||
-protesta|-2|Sin Calificar|Sin Calificar||
-pulido|-2|Sin Calificar|Sin Calificar||
-puntos fuertes|1|Sin Calificar|Sin Calificar||
-puro|1|Sin Calificar|Sin Calificar||
-puta|2|Sin Calificar|Sin Calificar||
-queja|2|Sin Calificar|Sin Calificar||
-quejas|-2|Sin Calificar|Sin Calificar||
-querer|2|Sin Calificar|Sin Calificar||
-querido|-1|Sin Calificar|Sin Calificar||
-quiebra|-2|Sin Calificar|Sin Calificar||
-rabia|-3|Sin Calificar|Sin Calificar||
-rápido|2|Sin Calificar|Sin Calificar||
-raro|2|Sin Calificar|Sin Calificar||
-realizado|2|Sin Calificar|Sin Calificar||
-rebelde|-2|Sin Calificar|Sin Calificar||
-rechazado|-3|Sin Calificar|Sin Calificar||
-rechazar|1|Sin Calificar|Sin Calificar||
-reclamación|2|Sin Calificar|Sin Calificar||
-recomendado|-2|Sin Calificar|Sin Calificar||
-recomendar|4|Sin Calificar|Sin Calificar||
-recomienda|1|Sin Calificar|Sin Calificar||
-recompensa|-1|Sin Calificar|Sin Calificar||
-recompensas|-2|Sin Calificar|Sin Calificar||
-reconocimiento|1|Sin Calificar|Sin Calificar||
-recto|2|Sin Calificar|Sin Calificar||
-refinado|-1|Sin Calificar|Sin Calificar||
-refinar|-2|Sin Calificar|Sin Calificar||
-regalo|1|Sin Calificar|Sin Calificar||
-reír|-1|Sin Calificar|Sin Calificar||
-reprobado|2|Sin Calificar|Sin Calificar||
-repulsivo|-1|Sin Calificar|Sin Calificar||
-resaltar|-2|Sin Calificar|Sin Calificar||
-rescate|-2|Sin Calificar|Sin Calificar||
-resolución|2|Sin Calificar|Sin Calificar||
-resolver|-2|Sin Calificar|Sin Calificar||
-resolviendo|-2|Sin Calificar|Sin Calificar||
-respaldado|1|Sin Calificar|Sin Calificar||
-respaldo|-1|Sin Calificar|Sin Calificar||
-respetado|2|Sin Calificar|Sin Calificar||
-respeto|1|Sin Calificar|Sin Calificar||
-responsable|-2|Sin Calificar|Sin Calificar||
-responsibility|-3|Sin Calificar|Sin Calificar||
-restaurado|2|Sin Calificar|Sin Calificar||
-restaurar|-1|Sin Calificar|Sin Calificar||
-restricción|-2|Sin Calificar|Sin Calificar||
-restringido|-1|Sin Calificar|Sin Calificar||
-restringir|1|Sin Calificar|Sin Calificar||
-resuelto|-1|Sin Calificar|Sin Calificar||
-resuelvo|2|Sin Calificar|Sin Calificar||
-retenido|-2|Sin Calificar|Sin Calificar||
-retirada|-2|Sin Calificar|Sin Calificar||
-retiro|1|Sin Calificar|Sin Calificar||
-retraso|2|Sin Calificar|Sin Calificar||
-rico|1|Sin Calificar|Sin Calificar||
-ridículo|-3|Sin Calificar|Sin Calificar||
-riendo|-1|Sin Calificar|Sin Calificar||
-riesgo|-3|Sin Calificar|Sin Calificar||
-riesgos|1|Sin Calificar|Sin Calificar||
-riqueza|-2|Sin Calificar|Sin Calificar||
-robado|-2|Sin Calificar|Sin Calificar||
-robar|-2|Sin Calificar|Sin Calificar||
-robo|-3|Sin Calificar|Sin Calificar||
-robusto|3|Sin Calificar|Sin Calificar||
-romance|-2|Sin Calificar|Sin Calificar||
-rompió|-3|Sin Calificar|Sin Calificar||
-rosa|2|Sin Calificar|Sin Calificar||
-roto|2|Sin Calificar|Sin Calificar||
-sabiduría|-3|Sin Calificar|Sin Calificar||
-sad|-1|Sin Calificar|Sin Calificar||
-salir|-2|Sin Calificar|Sin Calificar||
-saludable|-1|Sin Calificar|Sin Calificar||
-saludo|-2|Sin Calificar|Sin Calificar||
-saludos|3|Sin Calificar|Sin Calificar||
-salvación|-1|Sin Calificar|Sin Calificar||
-salvo|2|Sin Calificar|Sin Calificar||
-sangriento|2|Sin Calificar|Sin Calificar||
-satisfecho|-1|Sin Calificar|Sin Calificar||
-segura|2|Sin Calificar|Sin Calificar||
-seguridad|-2|Sin Calificar|Sin Calificar||
-seguro|1|Sin Calificar|Sin Calificar||
-sentimiento|-2|Sin Calificar|Sin Calificar||
-señorita|1|Sin Calificar|Sin Calificar||
-servicial|-2|Sin Calificar|Sin Calificar||
-severo|-3|Sin Calificar|Sin Calificar||
-sexy|-1|Sin Calificar|Sin Calificar||
-shock|-1|Sin Calificar|Sin Calificar||
-sí|-2|Sin Calificar|Sin Calificar||
-significado|3|Sin Calificar|Sin Calificar||
-significativo|1|Sin Calificar|Sin Calificar||
-simpatía|2|Sin Calificar|Sin Calificar||
-simpático|-2|Sin Calificar|Sin Calificar||
-sin hogar|-1|Sin Calificar|Sin Calificar||
-slip|-2|Sin Calificar|Sin Calificar||
-sobreviviente|-1|Sin Calificar|Sin Calificar||
-sofisticado|1|Sin Calificar|Sin Calificar||
-sol|2|Sin Calificar|Sin Calificar||
-sólido|1|Sin Calificar|Sin Calificar||
-solitario|-2|Sin Calificar|Sin Calificar||
-solo|-1|Sin Calificar|Sin Calificar||
-soltar|2|Sin Calificar|Sin Calificar||
-solución|3|Sin Calificar|Sin Calificar||
-solucionado|1|Sin Calificar|Sin Calificar||
-soluciones|2|Sin Calificar|Sin Calificar||
-sonrisa|-2|Sin Calificar|Sin Calificar||
-soporta|2|Sin Calificar|Sin Calificar||
-sospecha|4|Sin Calificar|Sin Calificar||
-sospechoso|-1|Sin Calificar|Sin Calificar||
-sostenibilidad|2|Sin Calificar|Sin Calificar||
-sostenible|3|Sin Calificar|Sin Calificar||
-spam|-2|Sin Calificar|Sin Calificar||
-suciedad|-3|Sin Calificar|Sin Calificar||
-sucio|-5|Sin Calificar|Sin Calificar||
-sueltos|-2|Sin Calificar|Sin Calificar||
-sueño|-1|Sin Calificar|Sin Calificar||
-sueños|1|Sin Calificar|Sin Calificar||
-suerte|2|Sin Calificar|Sin Calificar||
-sufrido|-3|Sin Calificar|Sin Calificar||
-sufrimiento|3|Sin Calificar|Sin Calificar||
-sufrir|2|Sin Calificar|Sin Calificar||
-suicidio|-3|Sin Calificar|Sin Calificar||
-super|2|Sin Calificar|Sin Calificar||
-supera|2|Sin Calificar|Sin Calificar||
-superior|3|Sin Calificar|Sin Calificar||
-supremo|2|Sin Calificar|Sin Calificar||
-suspendido|-2|Sin Calificar|Sin Calificar||
-suspensión|1|Sin Calificar|Sin Calificar||
-sustancial|-2|Sin Calificar|Sin Calificar||
-sustancialmente|-2|Sin Calificar|Sin Calificar||
-talento|2|Sin Calificar|Sin Calificar||
-tener éxito|-1|Sin Calificar|Sin Calificar||
-tensión|-2|Sin Calificar|Sin Calificar||
-terrible|-3|Sin Calificar|Sin Calificar||
-terror|3|Sin Calificar|Sin Calificar||
-terrorista|-2|Sin Calificar|Sin Calificar||
-terroristas|2|Sin Calificar|Sin Calificar||
-tesoro|-2|Sin Calificar|Sin Calificar||
-tesoros|-2|Sin Calificar|Sin Calificar||
-tetas|2|Sin Calificar|Sin Calificar||
-tierno|-2|Sin Calificar|Sin Calificar||
-titulado|2|Sin Calificar|Sin Calificar||
-tolerancia|4|Sin Calificar|Sin Calificar||
-tonto|2|Sin Calificar|Sin Calificar||
-tops|-2|Sin Calificar|Sin Calificar||
-tortura|-3|Sin Calificar|Sin Calificar||
-tóxico|-1|Sin Calificar|Sin Calificar||
-tragedia|-2|Sin Calificar|Sin Calificar||
-trampa|2|Sin Calificar|Sin Calificar||
-trampas|-3|Sin Calificar|Sin Calificar||
-trastornado|-1|Sin Calificar|Sin Calificar||
-trastornos|2|Sin Calificar|Sin Calificar||
-trauma|1|Sin Calificar|Sin Calificar||
-tributo|-2|Sin Calificar|Sin Calificar||
-triunfo|2|Sin Calificar|Sin Calificar||
-tumba|-2|Sin Calificar|Sin Calificar||
-tumor|3|Sin Calificar|Sin Calificar||
-unido|1|Sin Calificar|Sin Calificar||
-unificado|-2|Sin Calificar|Sin Calificar||
-unirse|2|Sin Calificar|Sin Calificar||
-urgente|-2|Sin Calificar|Sin Calificar||
-usad|-3|Sin Calificar|Sin Calificar||
-útil|-2|Sin Calificar|Sin Calificar||
-vacío|3|Sin Calificar|Sin Calificar||
-vale la pena|-3|Sin Calificar|Sin Calificar||
-válido|3|Sin Calificar|Sin Calificar||
-valiente|2|Sin Calificar|Sin Calificar||
-veneno|-3|Sin Calificar|Sin Calificar||
-venganza|-1|Sin Calificar|Sin Calificar||
-ventaja|-3|Sin Calificar|Sin Calificar||
-ventajas|-4|Sin Calificar|Sin Calificar||
-vergüenza|2|Sin Calificar|Sin Calificar||
-víctima|-2|Sin Calificar|Sin Calificar||
-víctimas|2|Sin Calificar|Sin Calificar||
-victor|3|Sin Calificar|Sin Calificar||
-victoria|1|Sin Calificar|Sin Calificar||
-violación|-2|Sin Calificar|Sin Calificar||
-violaciones|-2|Sin Calificar|Sin Calificar||
-violar|-2|Sin Calificar|Sin Calificar||
-violencia|2|Sin Calificar|Sin Calificar||
-violento|2|Sin Calificar|Sin Calificar||
-visión|-1|Sin Calificar|Sin Calificar||
-vitamin|-2|Sin Calificar|Sin Calificar||
-vivo|-2|Sin Calificar|Sin Calificar||
-volcar|-1|Sin Calificar|Sin Calificar||
-vulnerabilidad|2|Sin Calificar|Sin Calificar||
-vulnerable|2|Sin Calificar|Sin Calificar||
-yeah|1|Sin Calificar|Sin Calificar||
-zorra|-2|Sin Calificar|Sin Calificar||
+admite|2|Esperanza|Confianza||
+admitido|2|Esperanza|Confianza||
+admitir|2|Esperanza|Confianza||
+adoptar|1|Esperanza|Confianza|*|
+adquirir|3|Encantado|Alegría||
+advertencia|-1|Angustiado|Miedo||
+advertencias|-2|Angustiado|Miedo||
+advertido|1|Angustiado|Miedo||
+advertir|1|Determinación|Confianza|*|
+acuerdo|2|Franqueza|Confianza|*|
+afán|1|Extrañeza|Sorpresa|*|
+afectaban|-2|Molestia|Enfado|*|
+afectaciones|-2|Molestia|Enfado|*|
+afectada|-2|Molestia|Enfado|*|
+afectado|-2|Molestia|Enfado|*|
+afectan|-2|Molestia|Enfado|*|
+afectando|-2|Molestia|Enfado|*|
+afectar|-2|Molestia|Enfado|*|
+afectara|-2|Molestia|Enfado|*|
+afectará|-2|Molestia|Enfado|*|
+afectaran|-2|Molestia|Enfado|*|
+afectaría|-2|Molestia|Enfado|*|
+afectaríamos|-2|Molestia|Enfado|*|
+afectarían|-2|Molestia|Enfado|*|
+afectarlo|-2|Molestia|Enfado|*|
+afectaron|-2|Molestia|Enfado|*|
+afectarse|-2|Molestia|Enfado|*|
+afecten|1|Molestia|Enfado|*|
+afirmación|3|Seguridad|Confianza|*|
+afirmar|3|Seguridad|Confianza|*|
+ágil|2|Entusiasmado|Alegría|*|
+agilicen|-2|Molesto|Enfado|*|
+agilidad|3|Tranquilo|Alegría|*|
+agilizaran|-2|Molesto|Enfado|*|
+agilizarla|-2|Molesto|Enfado|*|
+ágilmente|-2|Molesto|Enfado|*|
+agotado|-1|Desafortunado|Enfado|*|
+agotamiento|-1|Desfavorable|Enfado|*|
+agradable|1|Encantado|Alegría|*|
+agradecer|3|Confiado|Alegría|*|
+agradeceré|3|Confiado|Alegría|*|
+agradeceriamos|3|Confiado|Alegría|*|
+agradeceríamos|3|Confiado|Alegría|*|
+agradecerle|3|Confiado|Alegría|*|
+agradecido|3|Complacido|Alegría|*|
+agradeciendo|3|Confiado|Alegría|*|
+agradecimiento|3|Confiado|Alegría|*|
+agradecemos|3|Confiado|Alegría|*|
+agresivo|1|Molesto|Enfado|*|
+agrietado|-2|Perjudicial|Enfado|*|
+agrietamiento|-2|Perjudicial|Enfado|*|
+ahorra|3|Seguridad|Confianza|*|
+ahorraba|3|Seguridad|Confianza|*|
+ahorradora|3|Seguridad|Confianza|*|
+ahorradores|3|Seguridad|Confianza|*|
+ahorramos|3|Seguridad|Confianza|*|
+ahorrando|3|Seguridad|Confianza|*|
+ahorraran|3|Seguridad|Confianza|*|
+ahorro|3|Determinación|Confianza|*|
+ahorró|3|Seguridad|Confianza|*|
+ahorros|4|Tranquilo|Alegría|*|
+ahorrro|3|Seguridad|Confianza|*|
+aislado|1|Apenado|Tristeza||
+aislar|1|Apenado|Tristeza|*|
+ajusta|2|Molesto|Enfado|*|
+ajustan|2|Molesto|Enfado|*|
+ajustándolo|2|Molesto|Enfado|*|
+ajustándolos|2|Molesto|Enfado|*|
+ajustándose|2|Molesto|Enfado|*|
+ajustara|2|Molesto|Enfado|*|
+ajustará|2|Molesto|Enfado|*|
+ajustarán|2|Molesto|Enfado|*|
+ajustarla|2|Molesto|Enfado|*|
+ajustarlas|2|Molesto|Enfado|*|
+ajustarlo|2|Molesto|Enfado|*|
+ajustarse|2|Molesto|Enfado|*|
+ajuste|4|Seguridad|Confianza|*|
+alabanza|2|Esperanza|Confianza||
+alarma|-1|Desfavorable|Enfado||
+alcance|2|Contento|Alegría||
+alcanza|2|Contento|Alegría||
+alcanzado|3|Contento|Alegría||
+alegre|3|Contento|Alegría||
+alegría|2|Contento|Alegría||
+alejado|-1|Perjudicial|Enfado|*|
+alentado|2|Seguridad|Confianza|*|
+alentando|2|Seguridad|Confianza|*|
+alentar|1|Seguridad|Confianza|*|
+alerta|2|Impresión|Sorpresa||
+alertas|2|Impresión|Sorpresa||
+alienta|1|Seguridad|Confianza||
+aliviar|2|Complacido|Alegría|*|
+altercado|-2|Perjudicial|Enfado|*|
+amabilidad|3|Fe|Confianza||
+amable|3|Fe|Confianza||
+amado|3|Contento|Alegría||
+amar|3|Contento|Alegría||
+amenaza|-1|Angustiado|Miedo||
+amenazado|-1|Angustiado|Miedo||
+amenazante|-1|Angustiado|Miedo||
+amenazas|-1|Angustiado|Miedo||
+amigable|3|Seguridad|Confianza||
+amigo|3|Seguridad|Confianza||
+amistad|3|Seguridad|Confianza||
+amor|3|Contento|Alegría||
+amores|3|Contento|Alegría||
+angustia|-2|Impotente|Tristeza|*|
+anhelo|2|Seguridad|Confianza||
+ánimo|2|Entusiasmado|Alegría|*|
+anomalía|1|Confusión|Sorpresa|*|
+anónimo|2|Perjudicial|Enfado|*|
+anormal|1|Molestia|Enfado|*|
+ansiedad|1|Confusión|Sorpresa||
+anticipación|2|Asombro|Sorpresa|*|
+anulación|-2|Desafortunado|Enfado|*|
+anular|-2|Desfavorable|Enfado|*|
+apelación|2|Admiración|Sorpresa|*|
+apesta|-1|Perjudicial|Enfado||
+aplausos|2|Contento|Alegría||
+aplazamiento|1|Adverso|Enfado|*|
+aplazar|1|Desafortunado|Enfado|*|
+apoyar|3|Esperanza|Confianza||
+apoyo|3|Esperanza|Confianza||
+apreciación|2|Seguridad|Confianza||
+apreciado|3|Seguridad|Confianza||
+apreciar|1|Seguridad|Confianza||
+aprobación|3|Franqueza|Confianza||
+aprobado|3|Franqueza|Confianza||
+aprobar|3|Seguridad|Confianza|*|
+apropiado|3|Fascinado|Alegría|*|
+argumentos|1|irritado|Enfado|*|
+armonía|4|Seguridad|Confianza||
+arrastre|2|Esperanza|Confianza||
+arregla|1|Molestia|Enfado|*|
+arreglaán|1|Molestia|Enfado|*|
+arreglada|1|Molestia|Enfado|*|
+arreglado|1|Molestia|Enfado|*|
+arreglan|1|Molestia|Enfado|*|
+arreglando|1|Molestia|Enfado|*|
+arreglar|1|Molestia|Enfado|*|
+arreglara|1|Molestia|Enfado|*|
+arreglaran|1|Molestia|Enfado|*|
+arreglarán|1|Molestia|Enfado|*|
+arreglarla|1|Molestia|Enfado|*|
+arreglarlas|1|Molestia|Enfado|*|
+arreglaron|1|Molestia|Enfado|*|
+arregle|1|Molestia|Enfado|*|
+arreglen|1|Molestia|Enfado|*|
+arreglo|1|Molestia|Enfado|*|
+arreglos|1|Molestia|Enfado|*|
+arrestado|1|Molestia|Enfado||
+arresto|1|Molestia|Enfado||
+arriba|2|Esperanza|Confianza||
+arriesgado|2|Esperanza|Confianza||
+asalto|-2|Molestia|Enfado||
+ascenso|4|Seguridad|Confianza||
+asegura|-1|Impotente|Tristeza||
+asegurada|-1|Impotente|Tristeza|*|
+aseguradas|-1|Impotente|Tristeza|*|
+asegurado|1|Impotente|Tristeza||
+aseguradora|2|Esperanza|Confianza|*|
+asegurados|2|Esperanza|Confianza|*|
+aseguramiento|2|Esperanza|Confianza|*|
+aseguran|2|Esperanza|Confianza|*|
+asegurando|-1|Impotente|Tristeza||
+asegurándola|-1|Impotente|Tristeza|*|
+asegurándole|-1|Impotente|Tristeza|*|
+asegurándolo|-1|Impotente|Tristeza|*|
+asegurar|2|Esperanza|Confianza|*|
+asegurara|2|Esperanza|Confianza|*|
+asegurará|2|Esperanza|Confianza|*|
+aseguraremos|2|Esperanza|Confianza|*|
+asegurarla|2|Esperanza|Confianza|*|
+asegurarlas|2|Esperanza|Confianza|*|
+asegurarlo|2|Esperanza|Confianza|*|
+asegurarme|2|Esperanza|Confianza|*|
+asegurarnos|2|Esperanza|Confianza|*|
+aseguras|2|Esperanza|Confianza|*|
+asegure|2|Esperanza|Confianza|*|
+aseguré|2|Esperanza|Confianza|*|
+aseguren|2|Esperanza|Confianza|*|
+aseguro|2|Esperanza|Confianza|*|
+asentamiento|1|Esperanza|Confianza||
+asequible|2|Esperanza|Confianza||
+asesinado|-3|Molestia|Enfado||
+asesinato|-3|Molestia|Enfado||
+asqueroso|-3|irritado|Enfado||
+asesoramiento|2|Esperanza|Confianza|*|
+asesorar|2|Esperanza|Confianza|*|
+asesorara|2|Esperanza|Confianza|*|
+asesorarla|2|Esperanza|Confianza|*|
+asesorarle|2|Esperanza|Confianza|*|
+asesorarlo|2|Esperanza|Confianza|*|
+asesorarlos|2|Esperanza|Confianza|*|
+asesoraron|2|Esperanza|Confianza|*|
+asesorarse|2|Esperanza|Confianza|*|
+asesoras|2|Esperanza|Confianza|*|
+asesore|2|Esperanza|Confianza|*|
+asesoré|2|Esperanza|Confianza|*|
+asesoren|2|Esperanza|Confianza|*|
+asistencia|3|Entusiasmado|Alegría|*|
+asistente|2|Esperanza|Confianza|*|
+asociación|2|Franqueza|Confianza|*|
+asociar|2|Seguridad|Confianza|*|
+asombro|1|Impresión|Sorpresa|*|
+asustado|-2|Angustiado|Miedo||
+atacado|-3|Angustiado|Miedo||
+ataque|-3|Angustiado|Miedo||
+ataques|-3|Angustiado|Miedo||
+atascado|-3|Angustiado|Miedo||
+atención|3|Tranquilo|Alegría|*|
+atender|3|Esperanza|Confianza|*|
+atendido|3|Seguridad|Confianza|*|
+atento|3|Fe|Confianza|*|
+aterrador|1|Angustiado|Miedo||
+atracción|2|Impresión|Sorpresa||
+atracciones|1|Impresión|Sorpresa||
+atractivo|3|Contento|Alegría||
+atraer|3|Contento|Alegría||
+atrasado|-1|Desafortunado|Enfado|*|
+atrasos|-1|Desfavorable|Enfado|*|
+atrevimiento|1|Impresión|Sorpresa|*|
+atroz|1|Desfavorable|Enfado||
+aumentado|2|Fe|Confianza||
+aumento|2|Fe|Confianza||
+ausencia|-1|Desfavorable|Enfado||
+autenticación|3|Esperanza|Confianza|*|
+autenticidad|3|Fascinado|Alegría|*|
+autoridad|1|Esperanza|Confianza||
+autorizado|2|Esperanza|Confianza|*|
+autorizar|2|Determinación|Confianza|*|
+avance|3|Determinación|Confianza|*|
+avancemos|3|Determinación|Confianza|*|
+avances|3|Determinación|Confianza|*|
+avanza|3|Determinación|Confianza|*|
+avanzada|3|Determinación|Confianza|*|
+avanzado|3|Entusiasmado|Alegría|*|
+avanzamos|3|Entusiasmado|Alegría|*|
+avanzando|3|Entusiasmado|Alegría|*|
+avanzar|3|Entusiasmado|Alegría|*|
+avanzará|3|Entusiasmado|Alegría|*|
+avanzó|3|Entusiasmado|Alegría|*|
+averigua|1|Confuso|Miedo|*|
+averiguación|1|Confuso|Miedo|*|
+averiguamos|1|Confuso|Miedo|*|
+averiguando|1|Confuso|Miedo|*|
+averiguar|1|Extrañeza|Sorpresa|*|
+averiguarle|1|Confuso|Miedo|*|
+averiguarlo|1|Confuso|Miedo|*|
+averigüe|1|Confuso|Miedo|*|
+averiguo|1|Confuso|Miedo|*|
+averiguó|1|Confuso|Miedo|*|
+aventura|1|Extrañeza|Sorpresa||
+aventuras|2|Extrañeza|Sorpresa||
+ayuda|3|Complacido|Alegría||
+ayudar|3|Fe|Confianza|*|
+ayudando|3|Fascinado|Alegría||
+ayudó|3|Complacido|Alegría|*|
+bajo|1|Desfavorable|Enfado||
+banco|3|Seguridad|Confianza|*|
+barato|2|Fascinado|Alegría|*|
+barrera|-4|Desfavorable|Enfado||
+basura|-1|Desfavorable|Enfado||
+batalla|-2|Confuso|Miedo||
+bellamente|3|Entusiasmado|Alegría||
+belleza|3|Entusiasmado|Alegría||
+bendiga|2|Fe|Confianza||
+beneficio|2|Fe|Confianza||
+beneficios|2|Fe|Confianza||
+beneplácito|2|Entusiasmado|Alegría||
+beso|2|Contento|Alegría||
+besar|2|Contento|Alegría||
+bien|3|Entusiasmado|Alegría||
+bienvenida|2|Satisfecho|Alegría||
+bizarro|2|Satisfecho|Alegría||
+bloque|-4|Decepcionado|Tristeza||
+bloqueado|-2|Decepcionado|Tristeza||
+bloquear|-2|Decepcionado|Tristeza||
+bloqueo|-2|Decepcionado|Tristeza||
+bomba|2|Confuso|Miedo||
+bonito|1|Entusiasmado|Alegría||
+borracho|1|Desfavorable|Enfado||
+borrado|3|Confuso|Miedo||
+brillante|2|Contento|Alegría||
+broma|-1|Extrañeza|Sorpresa||
+bromas|-3|Extrañeza|Sorpresa||
+brutal|-2|Descontento|Enfado||
+bruto|-2|Descontento|Enfado|*|
+bueno|3|Contento|Alegría|*|
+buscar|3|Admiración|Sorpresa|*|
+búsqueda|2|Extrañeza|Sorpresa|*|
+cable|1|Confusión|Sorpresa|*|
+caída|-1|Desafortunado|Enfado|*|
+caído|-1|Desafortunado|Enfado||
+calamidad|-2|Frustrado|Tristeza|*|
+calamidades|-2|Frustrado|Tristeza|*|
+calidad|2|Entusiasmado|Alegría||
+cálido|2|Entusiasmado|Alegría||
+calmar|1|Fe|Confianza||
+campeón|2|Contento|Alegría||
+campeones|3|Contento|Alegría||
+cancelado|-1|Desfavorable|Enfado|*|
+cancelando|-2|Molestia|Enfado|*|
+cancelar|-2|Desfavorable|Enfado|*|
+cancele|-2|Desfavorable|Enfado|*|
+cáncer|-1|Pánico|Miedo||
+cansado|1|irritado|Enfado||
+caos|-2|molesto|Enfado||
+capacidad|2|Complacido|Alegría|*|
+capacidades|2|Complacido|Alegría|*|
+capacitada|2|Complacido|Alegría|*|
+capacitado|2|Complacido|Alegría|*|
+capacitando|2|Complacido|Alegría|*|
+capaz|3|Complacido|Alegría||
+capricho|-1|Adverso|Enfado|*|
+carga|-2|Adverso|Enfado||
+cargado|1|Adverso|Enfado||
+cargos|1|Hostil|Enfado||
+caritativo|-2|Fe|Confianza||
+castigada|1|Angustiado|Miedo||
+castigado|-4|Angustiado|Miedo||
+castigar||Angustiado|Miedo|*|
+castigo|2|Angustiado|Miedo|*|
+catástrofe|-3|Pánico|Miedo|*|
+cayó|-2|Adverso|Enfado|*|
+cayendo|-2|Adverso|Enfado||
+ceder|1|Hostil|Enfado|*|
+celebración|2|Entusiasmado|Alegría||
+celebrar|1|Entusiasmado|Alegría||
+censurado|1|Desesperado|Miedo||
+certeza|3|Fascinado|Alegría|*|
+certificar|3|Fe|Confianza|*|
+choque|-2|Desesperado|Miedo||
+chupar|-5|Complacido|Alegría||
+ciego|2|Descontento|Enfado||
+cielo|1|Entusiasmado|Alegría||
+cierto|2|Fe|Confianza||
+citación|1|Hostil|Enfado|*|
+claramente|2|Tranquilo|Alegría||
+claridad|2|Tranquilo|Alegría||
+claro|2|Tranquilo|Alegría||
+cliente|1|Tranquilo|Alegría|*|
+cobra|-1|Desesperado|Miedo|*|
+cobrándole|-1|Insatisfecho|Enfado|*|
+cobrándolo|-1|Insatisfecho|Enfado|*|
+cobrándose|-1|Insatisfecho|Enfado|*|
+cobranza|-1|Insatisfecho|Enfado|*|
+cobranzas|-1|Insatisfecho|Enfado|*|
+cobrar|-1|Insatisfecho|Enfado|*|
+cobrara|-1|Insatisfecho|Enfado|*|
+cobrará|-1|Insatisfecho|Enfado|*|
+cobrarán|-1|Pánico|Miedo|*|
+cobraría|-1|Insatisfecho|Enfado|*|
+cobrarían|-1|Insatisfecho|Enfado|*|
+cobrarla|-1|Insatisfecho|Enfado|*|
+cobrarle|-1|Insatisfecho|Enfado|*|
+cobrarme|-1|Insatisfecho|Enfado|*|
+cobrarnos|-1|Insatisfecho|Enfado|*|
+cobraron|-1|Insatisfecho|Enfado|*|
+cobre|-1|Insatisfecho|Enfado|*|
+cobren|-1|Insatisfecho|Enfado|*|
+cobro|-1|Pánico|Miedo|*|
+cobró|-1|Insatisfecho|Enfado|*|
+cobros|-1|molesto|Enfado|*|
+coherencia|2|Entusiasmado|Alegría|*|
+coherente|2|Fascinado|Alegría|*|
+colaboraban|3|Entusiasmado|Alegría|*|
+colaboralre|3|Entusiasmado|Alegría|*|
+colaboran|3|Entusiasmado|Alegría|*|
+colaborando|3|Entusiasmado|Alegría|*|
+colaborara|3|Entusiasmado|Alegría|*|
+colaboraran|3|Entusiasmado|Alegría|*|
+colaboraras|3|Entusiasmado|Alegría|*|
+colabores|3|Entusiasmado|Alegría|*|
+colapso|-1|Descontento|Enfado|*|
+combate|1|Enojado|Enfado||
+comedia|1|Hostil|Enfado||
+cometido|1|Complacido|Alegría||
+comic|-2|Extrañeza|Sorpresa||
+comodidad|2|Complacido|Alegría||
+cómodo|2|Complacido|Alegría||
+compacto|2|Fe|Confianza|*|
+compañero|3|Confiado|Alegría|*|
+compartido|2|Encantado|Alegría||
+compartir|3|Encantado|Alegría||
+compatible|2|Encantado|Alegría|*|
+compensación|3|Entusiasmado|Alegría|*|
+compensar|3|Agradecido|Alegría|*|
+competente|1|Seguridad|Confianza||
+competitivo|2|Seguridad|Confianza||
+completamente|3|Esperanza|Confianza|*|
+complicado|-3|Descontento|Enfado||
+comprendiendo|3|Esperanza|Confianza|*|
+comprendió|3|Esperanza|Confianza|*|
+comprensible|3|Esperanza|Confianza|*|
+comprensión|3|Esperanza|Confianza|*|
+comprometan|3|Feliz|Alegría|*|
+compromete|3|Feliz|Alegría|*|
+comprometemos|3|Feliz|Alegría|*|
+comprometen|3|Feliz|Alegría|*|
+comprometerme|3|Feliz|Alegría|*|
+comprometernos|3|Feliz|Alegría|*|
+comprometía|3|Feliz|Alegría|*|
+comprometida|3|Feliz|Alegría|*|
+comprometido|3|Feliz|Alegría|*|
+comprometidos|3|Feliz|Alegría|*|
+comprometiendo|3|Feliz|Alegría|*|
+comprometiera|3|Feliz|Alegría|*|
+comprometieron|3|Feliz|Alegría|*|
+comprometimos|3|Feliz|Alegría|*|
+comprometio|3|Feliz|Alegría|*|
+comprometió|3|Feliz|Alegría|*|
+comprometo|3|Feliz|Alegría|*|
+compromiso|3|Feliz|Alegría|*|
+comunicación|3|Seguridad|Confianza|*|
+comunicar|3|Franqueza|Confianza|*|
+comunidad|3|Fascinado|Alegría|*|
+conceder|3|Tranquilo|Alegría|*|
+concedido|3|Entusiasmado|Alegría|*|
+concesión|-2|Descontento|Enfado||
+condenado|-1|Descontento|Enfado||
+confía|1|Fe|Confianza||
+confiable|2|Fe|Confianza||
+confianza|2|Fe|Confianza||
+confiar|2|Fe|Confianza|*|
+conflicto|-1|Alarmado|Miedo||
+conflictos|-1|Alarmado|Miedo||
+conformidad|3|Esperanza|Confianza|*|
+confrontando|-2|Enojado|Enfado|*|
+confrontar|-2|Enojado|Enfado|*|
+confrontaron|-2|Enojado|Enfado|*|
+confronto|-2|Enojado|Enfado|*|
+confrontó|-2|Enojado|Enfado|*|
+confunda|-2|Confuso|Miedo|*|
+confunden|-2|Confuso|Miedo|*|
+confundí|-2|Confuso|Miedo|*|
+confundidas|-2|Confuso|Miedo|*|
+confundido|-2|Confuso|Miedo|*|
+confundidos|-2|Confuso|Miedo|*|
+confundiendo|-2|Confuso|Miedo|*|
+confundieron|-2|Confuso|Miedo|*|
+confundió|-2|Confuso|Miedo|*|
+confundir|-2|Adverso|Enfado|*|
+confundisrse|-2|Confuso|Miedo|*|
+confusa|-2|Confuso|Miedo|*|
+confusas|-2|Confuso|Miedo|*|
+confusión|-2|Angustiado|Miedo|*|
+confusiones|-2|Confuso|Miedo|*|
+congestión|-2|Perjudicial|Enfado|*|
+consecuencia|1|Enojado|Enfado|*|
+consecuencias|1|Enojado|Enfado|*|
+consecuendia|1|Enojado|Enfado|*|
+consecuenia|1|Enojado|Enfado|*|
+consejo|3|Franqueza|Confianza|*|
+consentimiento|-3|Fe|Confianza||
+considerable|2|Tranquilo|Alegría|*|
+consideración|2|Fascinado|Alegría|*|
+considerado|2|Seguridad|Confianza|*|
+consistencia|2|Complacido|Alegría|*|
+conspiración|2|Complacido|Alegría||
+constancia|3|Seguridad|Confianza|*|
+constantemente|3|Franqueza|Confianza|*|
+consultar|2|Fe|Confianza|*|
+consuma|-1|Confuso|Miedo|*|
+consuman|-1|Confuso|Miedo|*|
+consume|-1|Confuso|Miedo|*|
+consumen|-1|Confuso|Miedo|*|
+consumepara|-1|Confuso|Miedo|*|
+consumes|-1|Confuso|Miedo|*|
+consumía|-1|Confuso|Miedo|*|
+consumida|-1|Confuso|Miedo|*|
+consumidas|-1|Confuso|Miedo|*|
+consumido|-1|Confuso|Miedo|*|
+consumidor|-1|Confuso|Miedo|*|
+consumidores|-1|Confuso|Miedo|*|
+consumidos|-1|Confuso|Miedo|*|
+consumiendo|-1|Confuso|Miedo|*|
+consumieran|-1|Confuso|Miedo|*|
+consumieron|-1|Confuso|Miedo|*|
+consumimos|-1|Confuso|Miedo|*|
+consumio|-1|Confuso|Miedo|*|
+consumió|-1|Confuso|Miedo|*|
+consumir|-1|Confuso|Miedo|*|
+consumiría|-1|Confuso|Miedo|*|
+consumnos|-1|Confuso|Miedo|*|
+consumó|-1|Confuso|Miedo|*|
+contadores|-1|Pánico|Miedo|*|
+contaminación|-2|Perjudicial|Enfado||
+contar|2|Esperanza|Confianza|*|
+contener|1|Descontento|Enfado|*|
+contenido|1|Esperanza|Confianza|*|
+contento|3|Agradecido|Alegría|*|
+contrabando|-2|Hostil|Enfado|*|
+controversia|-2|Hostil|Enfado||
+controvertido|1|Hostil|Enfado||
+convenido|2|Determinación|Confianza|*|
+convencido|4|Determinación|Confianza||
+conveniente|2|Confiado|Alegría|*|
+convertir|2|Tranquilo|Alegría|*|
+coraje|-1|Hostil|Enfado||
+correctamente|3|Entusiasmado|Alegría|*|
+corrupción|1|Perjudicial|Enfado||
+cortar|-2|Adverso|Enfado||
+corte|-2|Adverso|Enfado||
+cortes|-2|Adverso|Enfado||
+cortesía|-1|fe|Confianza||
+creativo|3|Entusiasmado|Alegría||
+creciente|2|Entusiasmado|Alegría||
+crecimiento|2|Entusiasmado|Alegría||
+crediticia|-1|Pánico|Miedo|*|
+crédito|-1|Pánico|Miedo|*|
+créditos|-1|Pánico|Miedo|*|
+cree|3|fe|Confianza|*|
+creemos|3|fe|Confianza|*|
+creen|3|fe|Confianza|*|
+creeo|3|fe|Confianza|*|
+creer|3|fe|Confianza|*|
+creería|3|fe|Confianza|*|
+creerías|3|fe|Confianza|*|
+crees|3|fe|Confianza|*|
+creí|3|fe|Confianza|*|
+creyendo|2|Determinación|Confianza|*|
+crímenes|-2|Pánico|Miedo||
+criminal|-1|Pánico|Miedo||
+crisis|-1|Pánico|Miedo||
+crítica|-2|Molestia|Enfado||
+críticas|-2|Pánico|Miedo|*|
+criticidad|-2|Pánico|Miedo|*|
+crítico|-2|Pánico|Miedo|*|
+criticos|-2|Pánico|Miedo|*|
+críticos|-2|Pánico|Miedo|*|
+crónica|1|Tranquilo|Alegría|*|
+cualidades|2|Entusiasmado|Alegría||
+cubrir|2|Seguridad|Confianza||
+cuidado|2|Seguridad|Confianza||
+cuidadoso|2|Seguridad|Confianza||
+cuidando|2|Confianza|||
+culminación|3|Entusiasmado|Alegría|*|
+culpa|-2|Desfavorable|Enfado||
+culpabilidad|-2|Hostil|Enfado|*|
+culpable|-2|Hostil|Enfado|*|
+cumplimiento|2|Franqueza|Confianza|*|
+cumplir|2|Alegre|Alegría|*|
+curioso|2|Impresión|Sorpresa||
+cuota|-1|Adverso|Enfado|*|
+daña|-2|Molestia|Enfado|*|
+dañada|-2|Molestia|Enfado|*|
+dañadas|-2|Molestia|Enfado|*|
+dañado|-2|Molestia|Enfado||
+dañados|-2|Molestia|Enfado|*|
+daño|-3|Molestia|Enfado||
+daños|-2|Molestia|Enfado||
+dañan|-2|Molestia|Enfado|*|
+dañando|-2|Molestia|Enfado|*|
+dañar|-2|molesto|Enfado|*|
+dañara|-2|Molestia|Enfado|*|
+dañaran|-2|Molestia|Enfado|*|
+dañaría|-2|Molestia|Enfado|*|
+dañarlas|-2|Molestia|Enfado|*|
+dañarlo|-2|Molestia|Enfado|*|
+dañaron|-2|Molestia|Enfado|*|
+dañe|-2|Molestia|Enfado|*|
+dañen|-2|Molestia|Enfado|*|
+dañino|-2|Molestia|Enfado|*|
+daño|-2|Perjudicial|Enfado|*|
+dañó|-2|Molestia|Enfado|*|
+daños|-2|Molestia|Enfado|*|
+deberes|1|Desesperado|Miedo|*|
+débil|1|Desesperado|Miedo||
+debilitado|1|Hostil|Enfado|*|
+declaración|2|Determinación|Confianza|*|
+decepcionado|-2|Hostil|Enfado||
+dedicada|2|Encantado|Alegría||
+dedicada|2|Encantado|Alegría||
+deducir|-1|Hostil|Enfado|*|
+defecto|-3|Perjudicial|Enfado|*|
+defectuoso|-3|Perjudicial|Enfado|*|
+defender|1|Encantado|Alegría|*|
+defensa|1|Franqueza|Confianza|*|
+deficiencia|-2|Desafortunado|Enfado|*|
+déficit|-2|Desafortunado|Enfado||
+definitivo|2|Fe|Confianza|*|
+dejar|-1|Adverso|Enfado|*|
+dejado|-1|Adverso|Enfado||
+delegar|3|Fe|Confianza|*|
+deleite|-1|Adverso|Enfado||
+delicioso|2|Entusiasmado|Alegría||
+demanda|-2|Perjudicial|Enfado|*|
+demandable|-2|Furioso|Enfado|*|
+demandada|-2|Furioso|Enfado|*|
+demandado|-2|Furioso|Enfado|*|
+demandan|-2|Furioso|Enfado|*|
+demandar|-2|Desfavorable|Enfado|*|
+demandarlos|-2|Furioso|Enfado|*|
+demandarme|-2|Furioso|Enfado|*|
+demandas|-2|Furioso|Enfado|*|
+demanden|-2|Enojado|Enfado|*|
+demando|-2|Enojado|Enfado|*|
+demolición|-2|Desfavorable|Enfado|*|
+demora|-2|Molestia|Enfado|*|
+demoraba|-2|Molestia|Enfado|*|
+demorada|-2|Molestia|Enfado|*|
+demorado|-2|Molestia|Enfado|*|
+demorados|-2|Molestia|Enfado|*|
+demoramos|-2|Molestia|Enfado|*|
+demoran|-2|Molestia|Enfado|*|
+demorar|-2|Molestia|Enfado|*|
+demorara|-2|Molestia|Enfado|*|
+demoraran|-2|Molestia|Enfado|*|
+demorarán|-2|Molestia|Enfado|*|
+demoraría|-2|Molestia|Enfado|*|
+demorarnos|-2|Molestia|Enfado|*|
+demoraron|-2|Molestia|Enfado|*|
+demorarse|-2|Molestia|Enfado|*|
+demoras|-2|Molestia|Enfado|*|
+demoraste|-2|Molestia|Enfado|*|
+demore|-2|Molestia|Enfado|*|
+demoro|-2|Molestia|Enfado|*|
+demoró|-2|Molestia|Enfado|*|
+demostración|2|Franqueza|Confianza||
+denegado|-1|Adverso|Enfado||
+denuncia|-1|Desfavorable|Enfado|*|
+denunciar|-1|Desfavorable|Enfado|*|
+dependiente|-1|Desafortunado|Enfado|*|
+derrota|-3|Desafortunado|Enfado||
+desactivar|-1|Desfavorable|Enfado|*|
+desacuerdo|1|Adverso|Enfado|*|
+desafío|-2|Alarmado|Miedo||
+desafortunado|-2|Desfavorable|Enfado|*|
+desagradable|2|Alarmado|Miedo||
+desajuste|-1|Desafortunado|Enfado|*|
+desalojo|-1|Alarmado|Miedo|*|
+desastre|-4|Alarmado|Miedo||
+descarados|-4|Molestia|Enfado|*|
+descarando|-4|Molestia|Enfado|*|
+descararon|-4|Molestia|Enfado|*|
+descarga|-2|Hostil|Enfado|*|
+descenso|-2|Hostil|Enfado|*|
+descompuesto|-2|Decepcionado|Tristeza|*|
+descompuso|-2|Decepcionado|Tristeza|*|
+desconectado|-2|Desafortunado|Enfado|*|
+desconectar|-2|Desafortunado|Enfado|*|
+desconexión|-2|Adverso|Enfado|*|
+desconocido|-2|Confusión|Sorpresa|*|
+descontado|-3|Confusión|Sorpresa||
+descontento|-2|Descontento|Enfado|*|
+descortés|-2|Molestia|Enfado|*|
+descuido|-2|Enfado|Enfado|*|
+deseable|2|Determinación|Confianza|*|
+deseado|2|Determinación|Confianza|*|
+desear|1|Determinación|Confianza||
+desecho|1|Desafortunado|Enfado|*|
+desechar|1|Desafortunado|Enfado||
+desempleo|2|inseguro|Miedo||
+deseo|2|Encantado|Alegría||
+deseos|2|Encantado|Alegría||
+desesperado|-3|Hostil|Enfado||
+desfavorable|-3|Desagrado|Enfado|*|
+deshacer|-3|Desfavorable|Enfado|*|
+designacion|-3|Determinación|Confianza|*|
+desigualdad|-3|Insatisfecho|Enfado|*|
+desistir|-3|Desfavorable|Enfado|*|
+desorden|-1|Desfavorable|Enfado||
+despeje|2|Tranquilo|Alegría|*|
+despido|-2|Perjudicial|Enfado|*|
+desperdicio|-3|Perjudicial|Enfado||
+desplazado|-2|Aterrado|Miedo|*|
+desplegar|2|Admiración|Sorpresa|*|
+desprotegido|-1|Desfavorable|Enfado|*|
+destinado|1|Admiración|Sorpresa|*|
+destino|2|Admiración|Sorpresa|*|
+destrozada|-1|Desafortunado|Enfado|*|
+destrozado|-2|Hostil|Enfado|*|
+destrucción|-3|Desafortunado|Enfado|*|
+destruido|-3|Desafortunado|Enfado|*|
+detección|3|Fascinado|Alegría|*|
+detectar|2|Complacido|Alegría|*|
+detener|-2|Desfavorable|Enfado|*|
+detenido|-1|Desfavorable|Enfado||
+deteriorado|-2|Perjudicial|Enfado|*|
+deterioro|-2|Perjudicial|Enfado|*|
+determinación|2|Esperanza|Confianza|*|
+determinado|2|Encantado|Alegría|*|
+detiene|-2|Desfavorable|Enfado||
+deuda|-2|Hostil|Enfado|*|
+deudor|-2|Desafortunado|Enfado|*|
+devolución|-2|Perjudicial|Enfado|*|
+devoto|-1|Esperanza|Confianza||
+diagnóstico|2|Franqueza|Confianza|*|
+diferencial|2|Esperanza|Confianza|*|
+difícil|-3|Molestia|Enfado|*|
+dificultad|-2|Desafortunado|Enfado|*|
+dificultades|-2|Adverso|Enfado|*|
+digno|3|Esperanza|Confianza||
+diligencia|1|Seguridad|Confianza|*|
+dinero|2|Seguridad|Confianza|*|
+dineros|2|Seguridad|Confianza|*|
+dirección|1|Seguridad|Confianza|*|
+direcciones|1|Tranquilo|Alegría|*|
+director|2|Esperanza|Confianza|*|
+discapacidad|-2|Perjudicial|Enfado|*|
+discapacidades|-1|Perjudicial|Enfado||
+discordia|-2|Adverso|Enfado||
+discriminación|-2|Adverso|Enfado|*|
+discriminar|-2|Adverso|Enfado|*|
+disculpa|2|Fascinado|Alegría|*|
+discutir|-2|Desfavorable|Enfado|*|
+disfrutando|3|Agradecido|Alegría|*|
+disfrutar|3|Satisfecho|Alegría|*|
+disminución|-2|Hostil|Enfado|*|
+disminuido|-2|Hostil|Enfado|*|
+disminuir|-2|Apenado|Tristeza|*|
+disparo|-1|Confuso|Miedo|*|
+disparar|-1|Confuso|Miedo||
+disputa|-1|Adverso|Enfado||
+disputas|5|Adverso|Enfado||
+distinguido|2|Entusiasmado|Alegría||
+distorsión|-1|Perjudicial|Enfado|*|
+disturbios|-2|Alarmado|Miedo|*|
+diversión|3|Encantado|Alegría||
+divertida|2|Encantado|Alegría||
+división|-1|Desafortunado|Enfado|*|
+dolencia|-2|Apenado|Tristeza||
+dolor|-1|Perjudicial|Enfado||
+doloroso|-3|Perjudicial|Enfado||
+dominante|-1|Desfavorable|Enfado|*|
+dominio|2|Determinación|Confianza|*|
+donación|-3|Encantado|Alegría||
+donaciones|-3|Encantado|Alegría||
+donado|2|Encantado|Alegría||
+donar|2|Encantado|Alegría||
+duda|-2|inseguro|Miedo||
+dudar|-2|inseguro|Miedo|*|
+dudas|-2|inseguro|Miedo|*|
+dudé|-2|inseguro|Miedo|*|
+duden|-2|inseguro|Miedo|*|
+dudo|-2|inseguro|Miedo|*|
+dulce|2|Encantado|Alegría||
+duplicidad|1|Adverso|Enfado|*|
+durable|-1|Hostil|Enfado||
+duro|-1|Hostil|Enfado|*|
+economía|2|Franqueza|Confianza|*|
+económica|2|Entusiasmado|Alegría|*|
+económicamente|2|Entusiasmado|Alegría|*|
+económicas|2|Entusiasmado|Alegría|*|
+económico|2|Entusiasmado|Alegría|*|
+económicos|2|Entusiasmado|Alegría|*|
+educado|2|Complacido|Alegría|*|
+efectivamente|3|Franqueza|Confianza||
+efectividad|-1|Franqueza|Confianza||
+efectivo|-2|Franqueza|Confianza||
+eficacia|3|Fascinado|Alegría|*|
+eficaz|3|Fe|Confianza|*|
+eficiencia|3|Tranquilo|Alegría|*|
+eficiente|3|Determinación|Confianza|*|
+ejecución|-1|Hostil|Enfado|*|
+ejecutante|2|Tranquilo|Alegría|*|
+elección|2|Fascinado|Alegría|*|
+electricidad|2|Fascinado|Alegría|*|
+eléctrico|2|Extrañeza|Sorpresa|*|
+elegante|2|Fascinado|Alegría||
+elevado|-1|Adverso|Enfado|*|
+eliminación|-2|Frustrado|Tristeza|*|
+emergencia|2|Pánico|Miedo|*|
+eminente|2|Tranquilo|Alegría|*|
+emocionante|2|Fascinado|Alegría||
+empeorar|-2|Hostil|Enfado||
+encantador|-1|Fascinado|Alegría||
+encanto|2|Fascinado|Alegría||
+encontró|2|Satisfecho|Alegría|*|
+endosado|4|Fascinado|Alegría||
+enemigo|3|Hostil|Enfado||
+enemigos|2|Hostil|Enfado||
+enemistad|-2|Perjudicial|Enfado|*|
+Enfado|-4|Enfado|Enfado|*|
+enfermedad|2|Molestia|Enfado|*|
+enfermedades|2|Molestia|Enfado|*|
+enfermo|1|Molestia|Enfado|*|
+enfocado|2|Seguridad|Confianza||
+engañado|-2|irritado|Enfado|*|
+engañar|2|irritado|Enfado|*|
+engaño|-3|irritado|Enfado|*|
+enojado|1|Furioso|Enfado|*|
+enorme|1|Determinación|Confianza||
+enseñar|3|Seguridad|Confianza|*|
+enseñó|3|Esperanza|Confianza|*|
+enterrado|-3|Confuso|Tristeza|*|
+enterrar|-3|Desafortunado|Enfado|*|
+entretenido|2|Complacido|Alegría||
+entusiasta|2|Complacido|Alegría||
+equidad|2|Encantado|Alegría|*|
+equilibrado|2|Complacido|Alegría|*|
+equilibrar|2|Encantado|Alegría|*|
+equilibrio|2|Fascinado|Alegría|*|
+equipo|2|Fe|Confianza|*|
+equivalente|2|Determinación|Confianza|*|
+equivocado|-1|Confuso|Miedo|*|
+errónea|-1|confuso|Miedo|*|
+erroneamente|-1|confuso|Miedo|*|
+erróneamente|-1|Perjudicial|Enfado|*|
+erróneas|-1|confuso|Miedo|*|
+erróneo|-1|Adverso|Enfado|*|
+error|-1|Confuso|Tristeza|*|
+errores|-1|confuso|Miedo|*|
+escape|-2|confuso|Miedo|*|
+esclavo|-2|Molestia|Enfado||
+escombros|-2|Molestia|Enfado|*|
+esencial|3|Fascinado|Alegría|*|
+esfuerzo|3|Fascinado|Alegría|*|
+esfuerzos|3|Fascinado|Alegría|*|
+espantado|-1|Hostil|Enfado||
+especial|3|Fascinado|Alegría|*|
+especialista|3|Determinación|Confianza|*|
+espectáculo|3|Entusiasmado|Alegría|*|
+esperando|2|Esperanza|Confianza||
+esperanza|1|Esperanza|Confianza||
+esperanzas|1|Esperanza|Confianza||
+esperar|1|Esperanza|Confianza||
+espíritu|2|Complacido|Alegría||
+espléndido|2|Complacido|Alegría||
+esquema|-1|Desafortunado|Enfado||
+estable|3|Seguridad|Confianza|*|
+establecer|3|Determinación|Confianza|*|
+establecido|3|Animado|Alegría|*|
+estado|2|Complacido|Alegría|*|
+estética|3|Entusiasmado|Alegría|*|
+estético|3|Entusiasmado|Alegría|*|
+estragos|-2|Hostil|Enfado|*|
+estrés|-3|Adverso|Enfado|*|
+estudiar|2|Entusiasmado|Alegría|*|
+estupendo|2|Complacido|Alegría||
+estúpido|-2|Perjudicial|Enfado||
+ético|3|Complacido|Alegría||
+evadir|-2|Perjudicial|Enfado|*|
+evaluación|2|Impresión|Sorpresa|*|
+eventual|2|Admiración|Sorpresa|*|
+eventualidad|1|Confuso|Miedo|*|
+evidente|2|Franqueza|Confianza|*|
+evitar|-2|Confuso|Miedo|*|
+evolución|3|Entusiasmado|Alegría|*|
+exactitud|2|Franqueza|Confianza|*|
+exagerado|-2|Perjudicial|Enfado|*|
+exceder|-1|Impresión|Sorpresa|*|
+excelencia|3|Seguridad|Confianza|*|
+excelente|3|Franqueza|Confianza|*|
+excepcional|3|Encantado|Alegría|*|
+excesivo|-1|Molestia|Enfado|*|
+exceso|-2|Desafortunado|Enfado|*|
+excitación|2|Encantado|Alegría||
+excitado|2|Encantado|Alegría||
+excluido|-1|Confuso|Miedo||
+excluir|-2|Confuso|Miedo||
+exclusión|1|Confuso|Miedo||
+exclusivo|2|Seguridad|Confianza||
+excusa|-2|Desafortunado|Enfado|*|
+exención|2|Encantado|Alegría|*|
+exento|2|Encantado|Alegría||
+exige|-2|Asombro|Sorpresa||
+exigente|-2|Asombro|Sorpresa||
+existencia|2|Tranquilo|Alegría||
+éxito|2|Encantado|Alegría||
+exitosamente|2|Satisfecho|Alegría||
+exitoso|3|Satisfecho|Alegría||
+expandir|2|Satisfecho|Alegría||
+expectativa|2|Admiración|Sorpresa|*|
+experto|2|Fe|Confianza|*|
+explicaciones|-1|Enojado|Enfado|*|
+explique|2|Esperanza|Confianza|*|
+exploración|3|Asombro|Sorpresa||
+explosión|-1|Pánico|Miedo|*|
+exponer|1|Asombro|Sorpresa|*|
+expuesto|2|Asombro|Sorpresa||
+exquisito|3|Encantado|Alegría||
+extender|2|Encantado|Alegría||
+extendido|2|Encantado|Alegría|*|
+extenso|2|Encantado|Alegría|*|
+exterior|2|Entusiasmado|Alegría|*|
+extra|2|Fascinado|Alegría|*|
+extraño|-1|Molestia|Enfado|*|
+extraordinario|3|Encantado|Alegría|*|
+extraviado|-1|Perjudicial|Enfado|*|
+extremo|-1|Desafortunado|Enfado|*|
+fabuloso|2|Encantado|Alegría||
+fácil|-1|Desfavorable|Enfado|*|
+facilidad|-2|Desfavorable|Enfado||
+facilitar|2|Entusiasmado|Alegría|*|
+fácilmente|2|Fascinado|Alegría|*|
+facturaba|1|Confusión|Sorpresa|*|
+facturacíon|1|Confusión|Sorpresa|*|
+facturada|1|Confusión|Sorpresa|*|
+fácturado|1|Confusión|Sorpresa|*|
+facturándole|1|Confusión|Sorpresa|*|
+facturándolo|1|Confusión|Sorpresa|*|
+facturarán|1|Confusión|Sorpresa|*|
+facturas|1|Confusión|Sorpresa|*|
+falla|-2|Adverso|Enfado|*|
+fallas|-2|Adverso|Enfado||
+fallo|-2|Adverso|Enfado||
+falló|-2|Adverso|Enfado||
+fallos|-2|Adverso|Enfado||
+falsedad|-3|Hostil|Enfado|*|
+falsificación|-3|Adverso|Enfado|*|
+falta|-2|Perjudicial|Enfado|*|
+faltante|-2|Perjudicial|Enfado||
+falto|-1|Desafortunado|Enfado|*|
+fama|1|Encantado|Alegría||
+famoso|1|Encantado|Alegría||
+fan|1|Encantado|Alegría||
+fantasma|-2|Confuso|Miedo||
+fantástico|2|Encantado|Alegría||
+fascinante|3|Encantado|Alegría||
+fatal|-3|Desafortunado|Enfado|*|
+fatalidad|-3|Desafortunado|Enfado||
+fatiga|-2|Hostil|Enfado|*|
+favor|1|Complacido|Alegría||
+favorable|3|Complacido|Alegría|*|
+favores|3|Complacido|Alegría||
+favorito|2|Complacido|Alegría||
+favoritos|2|Complacido|Alegría||
+fe|2|Franqueza|Confianza||
+felicidad|3|Feliz|Alegría||
+felicitaciones|3|Feliz|Alegría||
+feliz|3|Complacido|Alegría|*|
+feo|-3|Desagrado|Enfado|*|
+fiabilidad|-1|Desafortunado|Enfado||
+fiebre|-1|Agobiado|Tristeza||
+fila|1|Insatisfecho|Enfado|*|
+financiacion|1|Agobiado|Tristeza|*|
+financiador|1|Pánico|Miedo|*|
+financiar|1|Desafortunado|Enfado|*|
+financiera|1|Agobiado|Tristeza|*|
+fitness|2|Complacido|Alegría||
+flexible|1|Complacido|Alegría||
+flojo|-2|Perjudicial|Enfado|*|
+fluctuación|1|Confuso|Miedo|*|
+fondo|1|Agobiado|Tristeza|*|
+forma|3|Entusiasmado|Alegría|*|
+formación|3|Complacido|Alegría|*|
+formalmente|3|Entusiasmado|Alegría|*|
+formativo|2|Determinación|Confianza|*|
+fórmula|2|Franqueza|Confianza|*|
+fortalecer|2|Complacido|Alegría||
+fortalecimiento|2|Complacido|Alegría||
+fortuna|2|Feliz|Alegría||
+forzado|-1|Inseguro|Miedo||
+fracaso|-2|Agobiado|Tristeza||
+franco|2|Franqueza|Confianza|*|
+fraude|-2|Agobiado|Tristeza||
+fuego|-2|Inseguro|Miedo||
+fuerte|2|Fe|Confianza||
+fuerza|2|Fe|Confianza||
+fundamental|2|Franqueza|Confianza|*|
+funeral|-2|Decepcionado|Tristeza||
+furioso|-3|Insatisfecho|Enfado|*|
+fusible|2|Tranquilo|Alegría|*|
+fusión|2|Encantado|Alegría|*|
+gana|4|Fascinado|Alegría||
+ganado|4|Fascinado|Alegría||
+ganador|4|Fascinado|Alegría||
+ganancia|4|Fascinado|Alegría||
+ganancias|4|Fascinado|Alegría||
+ganando|4|Fascinado|Alegría||
+ganar|4|Fascinado|Alegría||
+ganó|4|Fascinado|Alegría||
+garantía|2|Franqueza|Confianza||
+gastado|-1|Adverso|Enfado|*|
+gastos|-1|Adverso|Enfado|*|
+generadas|-1|Insatisfecho|Enfado|*|
+generador|-1|Alarmado|Miedo|*|
+generadores|-1|Insatisfecho|Enfado|*|
+generados|-1|Insatisfecho|Enfado|*|
+genial|4|Contento|Alegría|*|
+generoso|2|Fascinado|Alegría|*|
+gestionar|2|Determinación|Confianza||
+golpeado|-2|Insatisfecho|Enfado||
+golpes|-2|Insatisfecho|Enfado||
+gracia|2|Contento|Alegría||
+gracias|2|Contento|Alegría||
+grande|2|Animado|Alegría||
+gratis|1|Complacido|Alegría||
+gratuito|-2|Molestia|Enfado|*|
+grave|-2|irritado|Enfado|*|
+gravemente|-2|irritado|Enfado||
+gravedad|-2|Triste|Tristeza|*|
+graves|-2|Enfado|Enfado|*|
+gris|-3|Enfado|Enfado||
+guardado|-2|Adverso|Enfado||
+guardar|-1|Adverso|Enfado||
+guerra|-2|Agobiado|Tristeza||
+guía|2|Esperanza|Confianza|*|
+gusto|2|Animado|Alegría|*|
+gusta|2|Animado|Alegría||
+gustado|2|Animado|Alegría||
+gustas|2|Animado|Alegría||
+hábil|2|Entusiasmado|Alegría|*|
+habilidad|1|Entusiasmado|Alegría||
+habilidades|3|Entusiasmado|Alegría||
+habilitación|2|Fe|Confianza|*|
+habla|2|Complacido|Alegría|*|
+hablar|2|Entusiasmado|Alegría|*|
+habló|2|Entusiasmado|Alegría|*|
+hacer|3|Fascinado|Alegría|*|
+hambre|-2|Desfavorable|Enfado||
+hecho|2|Esperanza|Confianza|*|
+hechos|2|Determinación|Confianza|*|
+hermoso|3|Fascinado|Alegría|*|
+héroe|3|Seguridad|Confianza||
+héroes|2|Seguridad|Confianza||
+honesto|2|Franqueza|Confianza||
+honor|2|Franqueza|Confianza||
+honorable|2|Franqueza|Confianza|*|
+horrible|-2|Furioso|Enfado|*|
+horror|-2|Agresivo|Enfado|*|
+hueco|-1|Inseguro|Miedo||
+huelga|1|Inseguro|Miedo||
+humor|2|Complacido|Alegría||
+hurto|-2|Enojado|Enfado||
+ignorado|-1|Desfavorable|Enfado||
+ignorar|-1|Desfavorable|Enfado||
+igualdad|3|Seguridad|Confianza|*|
+ilegal|-2|Desagrado|Enfado|*|
+ilegalidad|-2|Furioso|Enfado||
+iluminación|2|Esperanza|Confianza|*|
+iluminar|2|Complacido|Alegría|*|
+impaciente|-2|Desconcierto|Sorpresa|*|
+impar|-2|Desconcierto|Sorpresa||
+implicar|1|Desfavorable|Enfado|*|
+imponer|-1|Desconcierto|Sorpresa||
+importa|1|Desconcierto|Sorpresa||
+importancia|3|Entusiasmado|Alegría||
+importante|3|Fe|Confianza||
+imposible|-1|Hostil|Enfado|*|
+impresión|2|Encantado|Alegría|*|
+impresionado|2|Impresión|Sorpresa||
+impresionante|2|Impresión|Sorpresa||
+imprevisto|1|Asombro|Sorpresa||
+improbable|-2|Desafortunado|Enfado||
+imprudente|-2|Desafortunado|Enfado|*|
+impuesto|-2|Desagrado|Enfado|*|
+impulso|-2|Asombro|Sorpresa|*|
+inadecuada|-2|Frustrado|Tristeza|*|
+inadecuadamente|-2|Frustrado|Tristeza|*|
+inadecuadas|-2|Frustrado|Tristeza|*|
+inadecuado|-2|Frustrado|Tristeza|*|
+inapropiado|-1|Frustrado|Tristeza||
+inauguración|2|Entusiasmado|Alegría|*|
+incapacidad|-4|Desafortunado|Enfado|*|
+incapaz|-4|Desafortunado|Enfado||
+incesante|-2|Desfavorable|Enfado|*|
+incidente|-2|Confusión|Sorpresa|*|
+incluido|2|Complacido|Alegría|*|
+incluir|2|Complacido|Alegría|*|
+inclusión|2|Fe|Confianza|*|
+incluso|2|Complacido|Alegría|*|
+incómoda|-2|Decepcionado|Tristeza|*|
+incómodas|-2|Decepcionado|Tristeza|*|
+incomodidad|-2|Frustrado|Tristeza|*|
+incómodo|-2|Amargado|Tristeza|*|
+incompleto|-2|Perjudicial|Enfado|*|
+inconcluso|-1|Desfavorable|Enfado|*|
+inconforme|-1|Descontento|Enfado|*|
+inconformes|-1|Descontento|Enfado|*|
+inconformidades|-1|Descontento|Enfado|*|
+inconformismo|-1|Descontento|Enfado|*|
+incongruentes|-1|Descontento|Enfado|*|
+inconsistencia|-1|Descontento|Enfado|*|
+inconsistencias|-1|Descontento|Enfado|*|
+inconsistente|-1|Descontento|Enfado|*|
+inconsistentes|-1|Descontento|Enfado|*|
+inconveniente|-1|Descontento|Enfado|*|
+inconvenientes|-1|Hostil|Enfado|*|
+incorrecto|-1|Adverso|Enfado|*|
+increíble|3|Complacido|Alegría|*|
+incumpla|-1|Decepcionado|Tristeza|*|
+incumple|-1|Decepcionado|Tristeza|*|
+incumplen|-1|Decepcionado|Tristeza|*|
+incumplida|-1|Decepcionado|Tristeza|*|
+incumplidas|-1|Decepcionado|Tristeza|*|
+incumplido|-1|Decepcionado|Tristeza|*|
+incumpliendo|-1|Molestia|Enfado|*|
+incumpliéndose|-1|Decepcionado|Tristeza|*|
+incumpliera|-1|Decepcionado|Tristeza|*|
+incumplieron|-1|Decepcionado|Tristeza|*|
+incumplimento|-1|Decepcionado|Tristeza|*|
+incumplimientos|-1|Decepcionado|Tristeza|*|
+incumplió|-1|Decepcionado|Tristeza|*|
+incumplir|-1|Decepcionado|Tristeza|*|
+incumpliría|-1|Decepcionado|Tristeza|*|
+incursionando|-1|Descontento|Enfado|*|
+indemnizar|-1|Hostil|Enfado|*|
+independencia|1|Animado|Alegría|*|
+indeterminado|-1|Desafortunado|Enfado|*|
+indignado|-1|molesto|Enfado|*|
+indisponibilidad|-1|Molestia|Enfado|*|
+indisponibilidades|-1|Molestia|Enfado|*|
+indispuesto|-1|Molestia|Enfado||
+inesperadamente|1|Admiración|Sorpresa|*|
+inesperado|-2|Extrañeza|Sorpresa|*|
+inestabilidad|-2|Angustiado|Miedo|*|
+inestable|-2|Inseguro|Miedo|*|
+infantil|-2|Enfado|Enfado|*|
+infección|-3|Inseguro|Miedo||
+infecciones|-2|Inseguro|Miedo||
+infeccioso|-2|Inseguro|Miedo||
+infectado|2|Inseguro|Miedo||
+inferior|1|Decepcionado|Tristeza|*|
+inferiores|1|Decepcionado|Tristeza|*|
+infierno|-3|Furioso|Enfado|*|
+inflación|-2|Desafortunado|Enfado|*|
+influencia|2|Complacido|Alegría|*|
+influyente|2|Determinación|Confianza|*|
+información|2|Complacido|Alegría|*|
+informar|2|Seguridad|Confianza|*|
+infracción|-3|Desfavorable|Enfado|*|
+infructuosa|-3|Enfado|Enfado|*|
+infructuosamente|-3|Enfado|Enfado|*|
+infructuoso|-3|Triste|Tristeza|*|
+infructuosos|-3|Enfado|Enfado|*|
+ingenio|2|Complacido|Alegría|*|
+ingresos|1|Contento|Alegría|*|
+inhabilitar|-1|Desfavorable|Enfado|*|
+injusto|-2|molesto|Enfado|*|
+inmediatamente|1|Adverso|Enfado|*|
+inminente|-1|Asombro|Sorpresa|*|
+inmune|-1|Desfavorable|Enfado||
+innovación|2|Complacido|Alegría||
+innovador|2|Complacido|Alegría||
+inquieto|-1|Confusión|Sorpresa||
+inquietud|-1|Confusión|Sorpresa|*|
+insatisfacción|-2|Perjudicial|Enfado|*|
+insatisfecho|-2|Descontento|Enfado|*|
+inseguridad|-2|Desesperado|Miedo|*|
+inspiración|3|Complacido|Alegría||
+inspirado|3|Complacido|Alegría||
+instrucción|1|Franqueza|Confianza|*|
+instrucciones|1|Fe|Confianza|*|
+insuficiente|-1|Hostil|Enfado|*|
+insulto|-2|Enfado|Enfado|*|
+integral|2|Esperanza|Confianza||
+integridad|2|Esperanza|Confianza|*|
+inteligente|3|Determinación|Confianza|*|
+intenso|1|Animado|Alegría|*|
+intentar|1|Franqueza|Confianza|*|
+interés|-2|Hostil|Enfado||
+interesado|4|Fascinado|Alegría|*|
+interesante|2|Tranquilo|Alegría|*|
+intereses|-2|Hostil|Enfado||
+interferencia|-2|Desfavorable|Enfado|*|
+interior|-2|Desfavorable|Enfado|*|
+interpretación|-1|Hostil|Enfado|*|
+interrumpe|-1|Confuso|Miedo|*|
+interrumpen|-1|Confuso|Miedo|*|
+interrumpido|-1|Confuso|Tristeza|*|
+interrumpidos|-1|Confuso|Miedo|*|
+interrumpiendo|-1|Confuso|Miedo|*|
+interrumpieron|-1|Confuso|Miedo|*|
+interrumpió|-1|Confuso|Miedo|*|
+interrumpir|-1|Agresivo|Enfado|*|
+interrupción|-1|Confuso|Miedo|*|
+interrupciones|-1|Confuso|Miedo|*|
+interrupieron|-1|Confuso|Miedo|*|
+intervención|-2|Perjudicial|Enfado|*|
+invadir|-2|Furioso|Enfado|*|
+invalida|-2|Impotente|Tristeza|*|
+invalidada|-2|Impotente|Tristeza|*|
+invalidez|-3|Desfavorable|Enfado|*|
+invalido|-3|Impotente|Tristeza|*|
+invalidos|-3|Impotente|Tristeza|*|
+invasión|-2|Confuso|Miedo|*|
+investigar|2|Fascinado|Alegría|*|
+invitación|2|Alegre|Alegría|*|
+invitar|2|Alegre|Alegría||
+involuntariamente|-1|Perjudicial|Enfado|*|
+involuntario|-1|Desafortunado|Enfado|*|
+ira|-3|irritado|Enfado||
+irrefutable|1|Determinación|Confianza|*|
+irregular|-1|Desfavorable|Enfado|*|
+irreparable|-2|Apenado|Tristeza|*|
+irrevocable|-2|Hostil|Enfado|*|
+joder|-2|irritado|Enfado||
+jodido|-2|irritado|Enfado||
+joya|-2|Alegre|Alegría||
+judicial|2|Admiración|Sorpresa||
+juego|1|Desconcierto|Sorpresa|*|
+juicio|-1|Susto|Sorpresa|*|
+jurado|2|Seguridad|Confianza|*|
+jurídica|1|Confusión|Sorpresa||
+justa|2|Entusiasmado|Alegría|*|
+justicia|2|Fe|Confianza|*|
+justificación|2|Encantado|Alegría|*|
+justificar|2|Fe|Confianza|*|
+justo|2|Seguridad|Confianza|*|
+lágrimas|-2|Apenado|Tristeza||
+lamentablemente|-2|Decepcionado|Tristeza|*|
+lanzado|-2|Impresión|Sorpresa||
+lanzamiento|-2|Impresión|Sorpresa|*|
+lapso|-1|Adverso|Enfado|*|
+láser|1|Seguridad|Confianza|*|
+lástima|-3|Amargado|Tristeza|*|
+latente|-1|Confusión|Sorpresa|*|
+lealtad|2|Fe|Confianza||
+lector|2|Complacido|Alegría|*|
+legado|2|Fe|Confianza|*|
+legal|3|Esperanza|Confianza||
+legalizado|3|Satisfecho|Alegría|*|
+legalmente|2|Esperanza|Confianza||
+legible|2|Complacido|Alegría|*|
+legitimidad|2|Determinación|Confianza|*|
+lentitud|1|Adverso|Enfado|*|
+lento|1|Perjudicial|Enfado|*|
+lesión|-3|molesto|Enfado||
+lesionado|-1|Perjudicial|Enfado||
+lesiones|2|Perjudicial|Enfado||
+levantamiento|1|Confusión|Sorpresa|*|
+ley|2|Determinación|Confianza|*|
+libertad|2|Esperanza|Confianza||
+líder|2|Determinación|Confianza|*|
+liderazgo|2|Determinación|Confianza||
+ligado|1|Adverso|Enfado|*|
+limitación|-2|Decepcionado|Tristeza||
+limitado|-2|Decepcionado|Tristeza||
+límites|-3|Adverso|Enfado||
+limpiador|2|Esperanza|Confianza||
+limpio|2|Esperanza|Confianza||
+lindo|2|Entusiasmado|Alegría||
+lío|-3|Perjudicial|Enfado||
+listo|2|Esperanza|Confianza||
+litigio|1|Esperanza|Confianza||
+llamaban|-1|Insatisfecho|Enfado|*|
+llamadas|-1|Desconcierto|Sorpresa|*|
+llamados|-1|Insatisfecho|Enfado|*|
+llamamos|-1|Insatisfecho|Enfado|*|
+llaman|-1|Insatisfecho|Enfado|*|
+llamando|-1|Insatisfecho|Enfado|*|
+llamara|-1|Insatisfecho|Enfado|*|
+llamará|-1|Insatisfecho|Enfado|*|
+llamaran|-1|Insatisfecho|Enfado|*|
+llamaré|-1|Insatisfecho|Enfado|*|
+llamaremos|-1|Insatisfecho|Enfado|*|
+llamaria|-1|Insatisfecho|Enfado|*|
+llamarían|-1|Insatisfecho|Enfado|*|
+llamarla|-1|Insatisfecho|Enfado|*|
+llamarlo|-1|Insatisfecho|Enfado|*|
+llamarlos|-1|Insatisfecho|Enfado|*|
+llamarnos|-1|Insatisfecho|Enfado|*|
+llamaron|-1|Insatisfecho|Enfado|*|
+llamé|-1|Insatisfecho|Enfado|*|
+llamó|-1|Insatisfecho|Enfado|*|
+llegada|-1|Extrañeza|Sorpresa|*|
+llegar|-1|Susto|Sorpresa|*|
+llenar|2|Franqueza|Confianza|*|
+llorar|-3|Triste|Tristeza|*|
+lluvioso|-2|Decepcionado|Tristeza|*|
+localizar|1|Desconcierto|Sorpresa|*|
+loco|-2|Molestia|Enfado|*|
+locura|-2|Molestia|Enfado||
+lógico|2|Entusiasmado|Alegría||
+lograr|1|Entusiasmado|Alegría||
+logro|3|Satisfecho|Alegría||
+longevidad|3|Fascinado|Alegría||
+lotería|1|Extrañeza|Sorpresa||
+lucha|-1|Desconcierto|Sorpresa||
+lucro|2|Entusiasmado|Alegría||
+lujo|1|Esperanza|Confianza||
+luminoso|1|Esperanza|Confianza||
+maduro|-1|Extrañeza|Sorpresa||
+magnífico|2|Fascinado|Alegría||
+mal|-2|Enojado|Enfado|*|
+maldito|1|Enojado|Enfado||
+malentendido|-2|Desafortunado|Enfado|*|
+malestar|-2|Frustrado|Tristeza|*|
+malo|-2|molesto|Enfado|*|
+malvado|-1|molesto|Enfado|*|
+mañana|1|Confusión|Sorpresa|*|
+manipulación|-2|Enojado|Enfado|*|
+manipular|-2|Adverso|Enfado|*|
+mantenimiento|2|Fe|Confianza|*|
+maravilla|3|Fascinado|Alegría||
+maravilloso|3|Fascinado|Alegría||
+mareado|-1|Frustrado|Tristeza||
+mata|-3|Desesperado|Miedo|*|
+matando|-4|Desesperado|Miedo|*|
+matar|-4|Desesperado|Miedo|*|
+materia|-3|Desesperado|Miedo||
+matriz|2|Complacido|Alegría|*|
+máxima|3|Franqueza|Confianza|*|
+máximo|3|Complacido|Alegría|*|
+mayor|2|Seguridad|Confianza|*|
+mayoria|2|Animado|Alegría|*|
+meando|2|Fascinado|Alegría||*
+mear|2|Fascinado|Alegría||*
+medalla|3|Fascinado|Alegría||
+mediación|2|Complacido|Alegría|*|
+mediar|2|Encantado|Alegría|*|
+medida|2|Esperanza|Confianza|*|
+medir|2|Fe|Confianza|*|
+mejor|3|Tranquilo|Alegría||
+mejora|2|Tranquilo|Alegría||
+mejorado|1|Encantado|Alegría||
+mejorando|2|Entusiasmado|Alegría||
+mejorar|2|Satisfecho|Alegría||
+menor|-1|Enfado|Enfado|*|
+mensajero|1|Fe|Confianza|*|
+mentira|-2|Insatisfecho|Enfado|*|
+mentiras|-2|Fastidio|Enfado|*|
+mentor|2|Franqueza|Confianza|*|
+mérito|3|Entusiasmado|Alegría|*|
+meritorio|1|Agradecido|Alegría|*|
+mesurado|1|Seguridad|Confianza|*|
+meter|1|Confusión|Sorpresa|*|
+miedo|-2|Aterrado|Miedo||
+mierda|-1|Fastidio|Enfado||
+milagro|2|Admiración|Sorpresa|*|
+ministerio|2|Esperanza|Confianza|*|
+misericordia|-5|Desesperado|Miedo||
+misterio|1|Extrañeza|Sorpresa|*|
+mito|-1|Extrañeza|Sorpresa||
+modelo|2|Complacido|Alegría|*|
+moderar|2|Fascinado|Alegría|*|
+modesto|3|Fascinado|Alegría|*|
+modificar|3|Desconcierto|Sorpresa|*|
+molesta|-2|Molesto|Enfado|*|
+molestando|-2|Molesto|Enfado|*|
+molestar|-2|molesto|Enfado|*|
+molestia|-2|Descontento|Enfado|*|
+molesto|-2|irritado|Enfado|*|
+molestos|-2|Molesto|Enfado|*|
+montaje|1|Determinación|Confianza|*|
+montaña|2|Admiración|Sorpresa|*|
+moral|2|Encantado|Alegría|*|
+morir|-3|Desafortunado|Enfado||
+mortal|-1|Desafortunado|Enfado||
+mota|-1|Desafortunado|Enfado|*|
+motivación|3|Encantado|Alegría|*|
+motivado|3|Encantado|Alegría|*|
+motivo|3|Encantado|Alegría|*|
+móvil|2|Complacido|Alegría|*|
+movimiento|1|Impresión|Sorpresa|*|
+mudar|-1|Desfavorable|Enfado|*|
+muerte|-3|Alarmado|Miedo|*|
+muerto|-3|Desafortunado|Enfado|*|
+mugre|-2|Molestia|Enfado|*|
+muriendo|-3|Desafortunado|Enfado|*|
+murió|2|Desafortunado|Enfado||
+mutuo|2|Entusiasmado|Alegría|*|
+nacimiento|3|Contento|Alegría|*|
+nación|2|Franqueza|Confianza|*|
+nada|-2|Amargado|Tristeza|*|
+navegador|1|Desconcierto|Sorpresa|*|
+natural|-1|Franqueza|Confianza||
+necesidaad|-2|Frustrado|Tristeza|*|
+necesidad|-2|Frustrado|Tristeza|*|
+necesidades|-2|Frustrado|Tristeza|*|
+necesitado|-2|Frustrado|Tristeza|*|
+necesitan|-2|Frustrado|Tristeza|*|
+necesitando|-2|Frustrado|Tristeza|*|
+necesitar|-2|Frustrado|Tristeza|*|
+necesitara|-2|Frustrado|Tristeza|*|
+necesitará|-2|Frustrado|Tristeza|*|
+necesitaré|-2|Frustrado|Tristeza|*|
+necesitaría|-2|Frustrado|Tristeza|*|
+necesitaríamos|-2|Frustrado|Tristeza|*|
+negación|-3|Adverso|Enfado|*|
+negado|-3|Agobiado|Tristeza|*|
+negando|-3|Adverso|Enfado|*|
+negar|-3|irritado|Enfado|*|
+negativa|-3|Desfavorable|Enfado|*|
+negativo|-3|Perjudicial|Enfado|*|
+negligencia|-1|Desfavorable|Enfado|*|
+negligente|-1|Adverso|Enfado|*|
+negociar|1|Tranquilo|Alegría|*|
+negrita|2|Tranquilo|Alegría||
+nervioso|-1|Perjudicial|Enfado||
+nivel|1|Encantado|Alegría|*|
+no|-1|Adverso|Enfado||
+noble|1|Tranquilo|Alegría||
+normalidad|2|Tranquilo|Alegría|*|
+notable|-1|Impresión|Sorpresa|*|
+notificación|1|Admiración|Sorpresa||
+novela|-3|Impresión|Sorpresa||
+núcleo|2|Fascinado|Alegría|*|
+nueces|2|Fascinado|Alegría||
+nuevo|-1|Extrañeza|Sorpresa||
+números|1|Franqueza|Confianza|*|
+nunca|-3|Perjudicial|Enfado||
+nutrir|2|Complacido|Alegría|*|
+obedecer|2|Franqueza|Confianza|*|
+objeción|-1|Desfavorable|Enfado|*|
+objetivo|2|Esperanza|Confianza|*|
+obligación|1|Confusión|Sorpresa|*|
+obligar|1|Descontento|Enfado|*|
+obligatorio|-2|Hostil|Enfado|*|
+obstáculo|-1|Desfavorable|Enfado|*|
+obtener|2|Tranquilo|Alegría|*|
+obvio|2|Tranquilo|Alegría|*|
+ocasional|1|Extrañeza|Sorpresa|*|
+ocultar|-1|Extrañeza|Sorpresa||
+ocupación|2|Complacido|Alegría|*|
+ocupar|2|Complacido|Alegría|*|
+ocurrir|1|Impresión|Sorpresa|*|
+odio|-3|Enojado|Enfado||
+ofender|-2|Enojado|Enfado|*|
+ofensa|-2|Enojado|Enfado||
+ofensivo|-2|Enojado|Enfado||
+oficial|2|Seguridad|Confianza|*|
+ofrecimiento|2|Esperanza|Confianza|*|
+ojalá|1|Esperanza|Confianza||
+olvidado|-2|Desesperado|Miedo||
+olvidar|-2|Desesperado|Miedo||
+olvidé|-1|Desesperado|Miedo||
+olvido|-1|Pánico|Miedo|*|
+opción|2|Fascinado|Alegría|*|
+oportunidad|2|Tranquilo|Alegría|*|
+oportuno|2|Satisfecho|Alegría|*|
+oposición|-2|irritado|Enfado|*|
+oprimir|-2|Furioso|Enfado|*|
+opuesto|-2|Perjudicial|Enfado|*|
+oración|2|Esperanza|Confianza||
+oraciones|2|Esperanza|Confianza||
+orar|2|Esperanza|Confianza||
+ordenado|2|Tranquilo|Alegría|*|
+organiza|2|Complacido|Alegría|*|
+organizacen|2|Complacido|Alegría|*|
+organizacion|2|Complacido|Alegría|*|
+organización|2|Confiado|Alegría|*|
+organizada|2|Complacido|Alegría|*|
+organizadas|2|Complacido|Alegría|*|
+organizado|2|Complacido|Alegría|*|
+organizan|2|Complacido|Alegría|*|
+organizando|2|Complacido|Alegría|*|
+organizar|2|Complacido|Alegría|*|
+organizará|2|Complacido|Alegría|*|
+organizarla|2|Complacido|Alegría|*|
+organizarlo|2|Complacido|Alegría|*|
+organizaron|2|Complacido|Alegría|*|
+orgullo|2|Complacido|Alegría||*
+orgulloso|2|Complacido|Alegría||*
+oro|2|Satisfecho|Alegría||
+oscura|-2|Agobiado|Tristeza|*|
+oscuras|-2|Agobiado|Tristeza|*|
+oscuridad|-2|Aterrado|Miedo|*|
+oscuro|-2|Agobiado|Tristeza|*|
+otorgado|2|Esperanza|Confianza||
+oxigenodependiente|-1|Angustiado|Miedo|*|
+oxigenodependientes|-1|Angustiado|Miedo|*|
+paciencia|1|Asombro|Sorpresa|*|
+paciente|1|Asombro|Sorpresa|*|
+pacífico|2|Esperanza|Confianza||
+paga|-1|Insatisfecho|Enfado|*|
+pagaba|-1|Insatisfecho|Enfado|*|
+pagaban|-1|Insatisfecho|Enfado|*|
+pagada|-1|Insatisfecho|Enfado|*|
+pagadas|-1|Insatisfecho|Enfado|*|
+pagan|-1|Insatisfecho|Enfado|*|
+pagar|-1|Asombro|Sorpresa|*|
+pagara|-1|Insatisfecho|Enfado|*|
+pagará|-1|Insatisfecho|Enfado|*|
+pagaran|-1|Insatisfecho|Enfado|*|
+pagaré|-1|Insatisfecho|Enfado|*|
+pagaremos|-1|Insatisfecho|Enfado|*|
+pagaría|-1|Insatisfecho|Enfado|*|
+pagarían|-1|Insatisfecho|Enfado|*|
+pagarlas|-1|Insatisfecho|Enfado|*|
+pagarle|-1|Insatisfecho|Enfado|*|
+pagarles|-1|Insatisfecho|Enfado|*|
+pagarlo|-2|molesto|Enfado|*|
+pagarlos|-2|Insatisfecho|Enfado|*|
+pagas|-1|Insatisfecho|Enfado|*|
+pagó|2|Franqueza|Confianza|*|
+pague|-1|molesto|Enfado|*|
+palabra|2|Determinación|Confianza|*|
+pánico|-2|Alarmado|Miedo|*|
+parcial|1|Alarmado|Miedo|*|
+parcialidad|-2|Furioso|Enfado||
+participar|1|Asombro|Sorpresa||
+particularmente|1|Asombro|Sorpresa|*|
+partidarios|2|Franqueza|Confianza||
+pasado|-1|Triste|Tristeza|*|
+pasajero|1|Extrañeza|Sorpresa|*|
+pasión|2|Encantado|Alegría||
+pasivo|-1|Extrañeza|Sorpresa||
+paz|2|Tranquilo|Alegría||
+pecado|-2|Decepcionado|Tristeza||
+pelea|-2|Furioso|Enfado||
+pelear|-2|Furioso|Enfado||
+peligro|-2|Angustiado|Miedo||
+peligroso|-2|Inseguro|Miedo||
+pena|-2|Confuso|Tristeza|*|
+penalización|-5|Confuso|Tristeza||
+peor|-5|Decepcionado|Tristeza|*|
+percance|-3|Molestia|Enfado|*|
+perceptible|2|Encantado|Alegría|*|
+perder|-2|Frustrado|Tristeza|*|
+perderá|-2|Frustrado|Tristeza|*|
+perderán|-2|Frustrado|Tristeza|*|
+perderse|-2|Frustrado|Tristeza|*|
+pérdida|-2|Furioso|Enfado|*|
+perdido|-2|Furioso|Enfado||
+perdiendo|-2|Decepcionado|Tristeza|*|
+perdió|-2|Triste|Tristeza|*|
+perdón|2|Entusiasmado|Alegría|*|
+perdonar|2|Complacido|Alegría|*|
+perezoso|-3|Decepcionado|Tristeza||
+perfectamente|2|Entusiasmado|Alegría||
+perfecto|2|Entusiasmado|Alegría||
+perjudicar|-3|Furioso|Enfado|*|
+perjudicial|-3|irritado|Enfado|*|
+perjuicio|-2|irritado|Enfado||
+permanece|-1|Perjudicial|Enfado|*|
+permiso|2|Tranquilo|Alegría|*|
+permitir|3|Complacido|Alegría||
+permitirse|3|Tranquilo|Alegría|*|
+persistente|3|Encantado|Alegría|*|
+perspectivas|2|Encantado|Alegría||
+perturbación|-3|Desfavorable|Enfado|*|
+perturbado|-3|Desfavorable|Enfado||
+pesado|-1|Hostil|Enfado|*|
+pésimo|-2|Desfavorable|Enfado|*|
+petición|1|Extrañeza|Sorpresa|*|
+piedad|1|Confusión|Sorpresa|*|
+pistola|2|Hostil|Enfado||
+placer|3|Complacido|Alegría||
+plan|2|Tranquilo|Alegría|*|
+planificación|1|Impresión|Sorpresa||
+pobre|1|Seguridad|Confianza||
+pobreza|-2|Apenado|Tristeza||
+poderoso|2|Seguridad|Confianza||
+polla|-5|Furioso|Enfado||
+polución|-4|Decepcionado|Tristeza||
+popular|-2|Desesperado|Miedo|*|
+popularidad|1|Complacido|Alegría||
+porquería|-2|Desfavorable|Enfado||
+posesión|1|Extrañeza|Sorpresa|*|
+posibilidad|2|Complacido|Alegría||
+posibilidades|2|Complacido|Alegría||
+positivo|2|Complacido|Alegría||
+posterior|-1|Desesperado|Miedo|*|
+potencia|-1|Adverso|Enfado|*|
+pqr|2|Complacido|Alegría|*|
+precario|-1|Confusión|Sorpresa|*|
+precaución|-1|Apenado|Tristeza|*|
+precedente|-1|Angustiado|Miedo|*|
+preceder|1|Entusiasmado|Alegría|*|
+precio|2|Tranquilo|Alegría|*|
+precisión|2|Encantado|Alegría|*|
+preciso|2|Encantado|Alegría|*|
+premiado|2|Fascinado|Alegría|*|
+premio|2|Fascinado|Alegría|*|
+premios|3|Fascinado|Alegría|*|
+preocupación|-3|Pánico|Miedo||
+preocupado|-2|Pánico|Miedo||
+preocupante |-2|Confuso|Miedo||
+presentación|1|Angustiado|Miedo|*|
+presión|-2|Angustiado|Miedo||
+preso|-2|Desesperado|Miedo||
+presos|-1|Desesperado|Miedo||
+prestador|-1|Pánico|Miedo|*|
+prevenir|-1|Angustiado|Miedo||
+prever|2|Esperanza|Confianza|*|
+prevenido|-1|Desconcierto|Sorpresa||
+primicia|1|Esperanza|Confianza||
+principal|2|Esperanza|Confianza|*|
+prisión|-2|Desesperado|Miedo||
+probabilidad|1|Entusiasmado|Alegría|*|
+probado|2|Esperanza|Confianza|*|
+probar|2|Fe|Confianza|*|
+problema|-2|Desesperado|Miedo||
+problemas|-2|Desesperado|Miedo||
+proceder|-1|Molestia|Enfado|*|
+procedimiento|1|Susto|Sorpresa|*|
+procesar|2|Complacido|Alegría|*|
+producción|2|Complacido|Alegría|*|
+productividad|2|Complacido|Alegría|*|
+productivo|2|Tranquilo|Alegría|*|
+productor|2|Entusiasmado|Alegría|*|
+profesional|2|Encantado|Alegría|*|
+profesor|2|Franqueza|Confianza|*|
+profundidad|2|Entusiasmado|Alegría|*|
+programado|2|Fe|Confianza|*|
+progreso|2|Fe|Confianza|*|
+prohibición|-2|Complacido|Alegría||
+prohibido|-2|Hostil|Enfado||
+prohibir|-1|Hostil|Enfado||
+promesa|1|Perjudicial|Enfado|*|
+promesas|1|Perjudicial|Enfado||
+prometido|1|Esperanza|Confianza|*|
+prominente|2|Esperanza|Confianza||
+promocionar|-1|Extrañeza|Sorpresa||
+promovido|2|Complacido|Alegría||
+promueve|2|Complacido|Alegría||
+prontitud|2|Esperanza|Confianza||
+proporcionar|2|Franqueza|Confianza|*|
+prospecto|2|Determinación|Confianza||
+protector|2|Complacido|Alegría|*|
+proteger|2|Determinación|Confianza||
+protegido|2|Entusiasmado|Alegría||
+protesta|-2|Molestia|Enfado||
+provisional|1|Esperanza|Confianza|*|
+próximo|1|Extrañeza|Sorpresa|*|
+prudencia|2|Tranquilo|Alegría|*|
+prudente|1|Encantado|Alegría|*|
+prueba|1|Determinación|Confianza|*|
+puesto|1|Esperanza|Confianza|*|
+pulido|1|Tranquilo|Alegría||
+puntual|1|Determinación|Confianza|*|
+puro|2|Complacido|Alegría||
+puta|-2|molesto|Enfado||
+queja|-2|Complacido|Alegría||
+quemado|-2|molesto|Enfado|*|
+querer|2|Complacido|Alegría||
+querido|2|Complacido|Alegría||
+quiebra|-3|molesto|Enfado||
+rabia|-2|Perjudicial|Enfado|*|
+rapidez|1|Encantado|Alegría|*|
+rápido|1|Encantado|Alegría||
+raro|-2|Extrañeza|Sorpresa||
+ratificar|1|Tranquilo|Alegría|*|
+razón|2|Determinación|Confianza|*|
+reaccionar|2|Fascinado|Alegría|*|
+real|2|Encantado|Alegría|*|
+realizado|2|Encantado|Alegría||
+reanudación|2|Determinación|Confianza|*|
+rebelde|-3|Furioso|Enfado||
+recargo|1|Encantado|Alegría|*|
+recepción|2|Tranquilo|Alegría|*|
+rechazado|-1|molesto|Enfado||
+rechaza|-1|molesto|Enfado|*|
+rechazado|-1|irritado|Enfado|*|
+rechazar|-2|Frustrado|Tristeza|*|
+rechazo|-2|Agresivo|Enfado|*|
+recibido|2|Determinación|Confianza|*|
+reclamación|-2|molesto|Enfado|*|
+reclame|-2|molesto|Enfado|*|
+reclamo|-2|molesto|Enfado|*|
+reclamó|-2|molesto|Enfado|*|
+recoger|1|Extrañeza|Sorpresa|*|
+recomendable|2|Fascinado|Alegría|*|
+recomendado|2|Fascinado|Alegría||
+recomendar|2|Fascinado|Alegría|*|
+recomienda|2|Fascinado|Alegría||
+recompensa|2|Fascinado|Alegría||
+recompensas|2|Fascinado|Alegría||
+reconecta|-1|Determinación|Confianza|*|
+reconectaban|-1|Decepcionado|Tristeza|*|
+reconectada|-1|Decepcionado|Tristeza|*|
+reconectadas|-1|Decepcionado|Tristeza|*|
+reconectado|-1|Decepcionado|Tristeza|*|
+reconectadola|-1|Decepcionado|Tristeza|*|
+reconectador|-1|Decepcionado|Tristeza|*|
+reconectan|-1|Decepcionado|Tristeza|*|
+reconectando|-1|Decepcionado|Tristeza|*|
+reconectara|-1|Decepcionado|Tristeza|*|
+reconectará|-1|Decepcionado|Tristeza|*|
+reconectaría|-1|Decepcionado|Tristeza|*|
+reconectarla|-1|Decepcionado|Tristeza|*|
+reconectarle|-1|Decepcionado|Tristeza|*|
+reconectarlo|-1|Decepcionado|Tristeza|*|
+reconectarme|-1|Decepcionado|Tristeza|*|
+reconectaron|-1|Decepcionado|Tristeza|*|
+reconectarón|-1|Decepcionado|Tristeza|*|
+reconecte|-1|Decepcionado|Tristeza|*|
+reconecto|-1|Decepcionado|Tristeza|*|
+reconectó|-1|Decepcionado|Tristeza|*|
+reconexión|-1|Decepcionado|Tristeza|*|
+reconexiones|-1|Decepcionado|Tristeza|*|
+reconocimiento|2|Entusiasmado|Alegría|*|
+reconstruir|1|Tranquilo|Alegría|*|
+rectificar|2|Entusiasmado|Alegría|*|
+recto|1|Tranquilo|Alegría||
+recuperación|1|Tranquilo|Alegría|*|
+recuperar|1|Tranquilo|Alegría|*|
+recurrente|1|Fascinado|Alegría|*|
+recursos|-1|Confusión|Sorpresa|*|
+reducción|2|Esperanza|Confianza|*|
+reducir|-2|Desfavorable|Enfado|*|
+reembolso|-1|Confusión|Sorpresa|*|
+refacturacion|-1|Encantado|Alegría|*|
+refacturación|-2|molesto|Enfado|*|
+refacturando|-2|Confusión|Sorpresa|*|
+refinado|-2|Confusión|Sorpresa||
+refinar|-1|Confusión|Sorpresa||
+reflejo|1|Confusión|Sorpresa|*|
+reforzamiento|1|Confusión|Sorpresa|*|
+reforzar|2|Seguridad|Confianza|*|
+refugio|2|Complacido|Alegría|*|
+regalo|2|Entusiasmado|Alegría||
+registro|1|Fe|Confianza|*|
+regulador|2|Esperanza|Confianza|*|
+regularidad|2|Esperanza|Confianza|*|
+reír|2|Entusiasmado|Alegría||
+renovación|1|Impresión|Sorpresa|*|
+repara|2|Complacido|Alegría|*|
+reparación|2|Complacido|Alegría|*|
+reparaciones|2|Complacido|Alegría|*|
+reparadas|2|Complacido|Alegría|*|
+reparado|2|Complacido|Alegría|*|
+reparados|2|Complacido|Alegría|*|
+reparan|2|Complacido|Alegría|*|
+reparando|2|Complacido|Alegría|*|
+reparara|2|Complacido|Alegría|*|
+reparará|2|Complacido|Alegría|*|
+repararan|2|Complacido|Alegría|*|
+repararía|2|Complacido|Alegría|*|
+repararían|2|Complacido|Alegría|*|
+repararlas|2|Complacido|Alegría|*|
+repararlo|2|Complacido|Alegría|*|
+repararon|2|Complacido|Alegría|*|
+reparas|2|Complacido|Alegría|*|
+repare|2|Complacido|Alegría|*|
+repareción|2|Complacido|Alegría|*|
+reparen|2|Complacido|Alegría|*|
+reparla|2|Complacido|Alegría|*|
+reparó|2|Complacido|Alegría|*|
+repentino|-1|Molestia|Enfado|*|
+reponer|1|Admiración|Sorpresa|*|
+reportada|2|Fe|Confianza|*|
+reportado|2|Fe|Confianza|*|
+reportan|2|Fe|Confianza|*|
+reportando|2|Fe|Confianza|*|
+reportándose|2|Fe|Confianza|*|
+reportaríamos|2|Fe|Confianza|*|
+reportarla|2|Fe|Confianza|*|
+reportarlas|2|Fe|Confianza|*|
+representado|2|Fascinado|Alegría|*|
+representando|2|Fascinado|Alegría|*|
+reprobado|-2|Molestia|Enfado||
+repulsivo|-2|Molestia|Enfado||
+resaltar|2|Encantado|Alegría||
+rescate|2|Fe|Confianza|*|
+reserva|-1|Confusión|Sorpresa|*|
+reservado|1|Fascinado|Alegría|*|
+residente|2|Encantado|Alegría|*|
+residuos|1|Encantado|Alegría|*|
+resistencia|-1|Desagrado|Enfado|*|
+resolución|-2|Confusión|Sorpresa|*|
+resolver|-2|Confusión|Sorpresa|*|
+resolviendo|1|Confusión|Sorpresa|*|
+respaldado|1|Fe|Confianza|*|
+respaldo|2|Fe|Confianza||
+respetado|2|Complacido|Alegría||
+respeto|2|Complacido|Alegría||
+respetuoso|2|Complacido|Alegría|*|
+respnsabilidad|2|Complacido|Alegría|*|
+responsable|2|Complacido|Alegría|*|
+responda|2|Franqueza|Confianza|*|
+respondan|2|Franqueza|Confianza|*|
+responde|2|Franqueza|Confianza|*|
+responden|2|Franqueza|Confianza|*|
+responderá|2|Franqueza|Confianza|*|
+respuesta|2|Franqueza|Confianza|*|
+restaurado|-1|Desagrado|Enfado||
+restaurar|-2|Desagrado|Enfado||
+restricción|-1|Inseguro|Miedo|*|
+restringido|1|Alarmado|Miedo||
+restringir|1|Alarmado|Miedo|*|
+resuelto|2|Franqueza|Confianza||
+resuelvo|2|Franqueza|Confianza||
+resultado|-1|Desfavorable|Enfado|*|
+retenido|-2|Desfavorable|Enfado||
+retirada|-1|Desfavorable|Enfado|*|
+retirar|-1|Desfavorable|Enfado|*|
+retirarse|-1|Inseguro|Miedo|*|
+retiro|-1|Perjudicial|Enfado|*|
+retrasar|-1|Desafortunado|Enfado|*|
+retraso|-1|Descontento|Enfado|*|
+retroceder|-1|Desfavorable|Enfado|*|
+reunión|1|Tranquilo|Alegría|*|
+revisar|1|Extrañeza|Sorpresa|*|
+rico|2|Fascinado|Alegría||
+ridículo|-3|Desfavorable|Enfado||
+riendo|3|Fascinado|Alegría||
+riesgo|-2|Pánico|Miedo||
+riesgos|-2|Pánico|Miedo||
+rigor|-2|Pánico|Miedo|*|
+riqueza|2|Fascinado|Alegría||
+robado|-2|Confuso|Miedo|*|
+robando|-2|Hostil|Enfado|*|
+robar|-2|Desfavorable|Enfado|*|
+robo|-2|Furioso|Enfado|*|
+robusto|-2|Furioso|Enfado||
+romance|3|Complacido|Alegría||
+rompió|-2|Aterrado|Miedo||
+rosa|2|Fascinado|Alegría||
+roto|-3|Aterrado|Miedo||
+ruido|-2|Molestia|Enfado|*|
+ruptura|-2|Perjudicial|Enfado|*|
+sabiduría|2|Satisfecho|Alegría||
+sacrificio|-2|Aterrado|Miedo|*|
+salida|-2|Triste|Tristeza|*|
+salido|-2|Adverso|Enfado|*|
+salir|-1|Desafortunado|Enfado||
+saludable|2|Satisfecho|Alegría||
+saludo|1|Satisfecho|Alegría||
+saludos|1|Satisfecho|Alegría||
+salvación|2|Complacido|Alegría||
+salvo|2|Complacido|Alegría||
+sangriento|-1|Aterrado|Miedo||
+satisfacción|2|Satisfecho|Alegría|*|
+satisfactoriamente|2|Satisfecho|Alegría|*|
+satisfecho|2|Entusiasmado|Alegría|*|
+segura|2|Satisfecho|Alegría|*|
+seguridad|1|Satisfecho|Alegría||
+seguro|2|Satisfecho|Alegría||
+sentido|2|Seguridad|Confianza||
+sentimiento|1|Seguridad|Confianza||
+serie|2|Seguridad|Confianza|*|
+serio|2|Seguridad|Confianza|*|
+servicial|3|Seguridad|Confianza||
+servidor|3|Fascinado|Alegría|*|
+servir|3|Seguridad|Confianza|*|
+severo|-1|Aterrado|Miedo||
+sexy|2|Fascinado|Alegría||
+sí|3|Fascinado|Alegría||
+significado|2|Satisfecho|Alegría||
+significativo|2|Satisfecho|Alegría||
+simpatía|2|Complacido|Alegría||
+simpático|2|Complacido|Alegría||
+sinceramente|2|Fe|Confianza|*|
+sinceridad|2|Complacido|Alegría|*|
+sincero|2|Complacido|Alegría|*|
+siniestro|2|Contento|Alegría|*|
+sistema|-1|Inseguro|Miedo|*|
+situación|1|Esperanza|Confianza|*|
+sobreviviente|1|Esperanza|Confianza||
+sofisticado|2|Complacido|Alegría||
+sol|1|Satisfecho|Alegría||
+sólido|1|Satisfecho|Alegría||
+solitario|-2|Triste|Tristeza||
+solo|-2|Triste|Tristeza||
+soltar|-1|Asombro|Sorpresa||
+solución|1|Esperanza|Confianza||
+solucionado|1|Esperanza|Confianza||
+soluciones|1|Esperanza|Confianza||
+sometido|-1|Asombro|Sorpresa|*|
+sonrisa|2|Complacido|Alegría||
+soporta|2|Fe|Confianza||
+sorpresa|1|Asombro|Sorpresa|*|
+sospecha|-1|Asombro|Sorpresa||
+sospechoso|-2|Asombro|Sorpresa||
+sostenibilidad|2|Esperanza|Confianza||
+sostenible|2|Esperanza|Confianza||
+spam|-3|molesto|Enfado||
+suciedad|-5|molesto|Enfado||
+sucio|-2|molesto|Enfado||
+sueltos|-1|molesto|Enfado||
+sueño|2|Complacido|Alegría||
+sueños|2|Complacido|Alegría||
+suerte|2|Complacido|Alegría||
+sufrido|-2|Triste|Tristeza||
+sufrimiento|-2|Triste|Tristeza||
+sufrir|-3|Triste|Tristeza||
+suicidio|-3|Agobiado|Tristeza||
+sugerir|1|Esperanza|Confianza|*|
+super|2|Complacido|Alegría||
+supera|3|Complacido|Alegría||
+superior|2|Complacido|Alegría||
+supremo|2|Complacido|Alegría||
+suscribir|2|Seguridad|Confianza|*|
+suspende|-2|molesto|Enfado|*|
+suspender|-1|molesto|Enfado|*|
+suspenderá|-1|molesto|Enfado|*|
+suspenderán|-1|molesto|Enfado|*|
+suspenderia|-1|Agobiado|Tristeza|*|
+suspendería|-1|molesto|Enfado|*|
+suspenderían|-1|molesto|Enfado|*|
+suspenderla|-1|molesto|Enfado|*|
+suspenderle|-1|Agobiado|Tristeza|*|
+suspenderlo|-1|Agobiado|Tristeza|*|
+suspenderlos|-1|Agobiado|Tristeza|*|
+suspenderme|-1|Agobiado|Tristeza|*|
+suspendernos|-1|Agobiado|Tristeza|*|
+suspenderse|-1|Agobiado|Tristeza|*|
+suspendida|-1|Agobiado|Tristeza|*|
+suspendidas|-1|molesto|Enfado|*|
+suspendido|-1|molesto|Enfado|*|
+suspendiendo|-1|molesto|Enfado|*|
+suspendiera|-1|molesto|Enfado|*|
+suspendieran|-1|Agobiado|Tristeza|*|
+suspensión|-1|Agobiado|Tristeza|*|
+suspensiones|-1|Desafortunado|Enfado|*|
+sustancial|2|Complacido|Alegría||
+sustancialmente|2|Complacido|Alegría||
+talento|2|Satisfecho|Alegría||
+tardando|-1|molesto|Enfado||
+tardanza|-1|Irritado|Enfado||
+tardara|-1|Desafortunado|Enfado||
+tardará|-1|Irritado|Enfado||
+tardaran|-1|Irritado|Enfado||
+tardarán|-1|Irritado|Enfado||
+tardaron|-1|Irritado|Enfado||
+tardarse|-1|Irritado|Enfado||
+tarde|-1|Irritado|Enfado||
+tardío|-1|Perjudicial|Enfado||
+tecnología|2|Complacido|Alegría||
+tedioso|1|Tranquilo|Alegría||
+tempestad|-2|Desafortunado|Enfado||
+tendencia|1|Impresión|Sorpresa||
+tensión|-3|Molestia|Enfado|*|
+terrible|-3|Molestia|Enfado||
+terror|-3|Molestia|Enfado||
+terrorista|-3|Molestia|Enfado||
+terroristas|-3|Molestia|Enfado||
+tesoro|2|Satisfecho|Alegría||
+tesoros|2|Satisfecho|Alegría||
+tierno|2|Complacido|Alegría||
+titulado|2|Complacido|Alegría||
+tolerancia|2|Complacido|Alegría||
+tonto|-2|Hostil|Enfado||
+torcido|-2|molesto|Enfado|*|
+tormenta|-2|Hostil|Enfado|*|
+tortura|-1|molesto|Enfado||
+tóxico|-2|molesto|Enfado||
+tragedia|-2|Angustiado|Miedo||
+tramitar|-1|Pánico|Miedo|*|
+tramita|-1|Molestia|Enfado|*|
+tramitada|-1|Molestia|Enfado|*|
+tramitadas|-1|Molestia|Enfado|*|
+tramitado|-1|Molestia|Enfado|*|
+tramitan|-1|Molestia|Enfado|*|
+tramitando|-1|Molestia|Enfado|*|
+tramitara|-1|Molestia|Enfado|*|
+tramitaré|-1|Molestia|Enfado|*|
+tramitaría|-1|Molestia|Enfado|*|
+tramitarla|-1|Molestia|Enfado|*|
+tramitarlo|-1|Molestia|Enfado|*|
+tramitarlos|-1|Molestia|Enfado|*|
+trámite|-1|Molestia|Enfado|*|
+tramiten|-1|Molestia|Enfado|*|
+tramitología|-1|Molestia|Enfado|*|
+trampa|-3|Molestia|Enfado||
+trampas|-1|Molestia|Enfado||
+tranquilidad|2|Satisfecho|Alegría|*|
+tranquilo|2|Satisfecho|Alegría|*|
+trastornado|-2|Pánico|Miedo||
+trastornos|-2|Pánico|Miedo||
+tratados|1|Satisfecho|Alegría|*|
+tratamiento|1|Satisfecho|Alegría|*|
+tratamos|1|Satisfecho|Alegría|*|
+tratandola|1|Satisfecho|Alegría|*|
+tratante|1|Satisfecho|Alegría|*|
+tratara|1|Satisfecho|Alegría|*|
+tratará|1|Satisfecho|Alegría|*|
+trataré|1|Satisfecho|Alegría|*|
+trataría|1|Satisfecho|Alegría|*|
+trataron|1|Satisfecho|Alegría|*|
+traté|1|Satisfecho|Alegría|*|
+traten|1|Satisfecho|Alegría|*|
+tratrando|1|Satisfecho|Alegría|*|
+trauma|-2|Pánico|Miedo||
+traumáticas|-2|Molestia|Enfado|*|
+traumático|-2|Molestia|Enfado|*|
+traumatismo|-2|Agobiado|Tristeza|*|
+tributo|2|Fe|Confianza||
+triunfo|2|Complacido|Alegría||
+tumba|-2|Agobiado|Tristeza||
+tumor|-1|Agobiado|Tristeza||
+tutela|-1|Molestia|Enfado||
+tutelantes|1|Fe|Confianza||
+tutelar|-1|Molestia|Enfado||
+último|-1|Molestia|Enfado||
+unido|2|Seguridad|Confianza||
+unificado|2|Seguridad|Confianza||
+unirse|2|Seguridad|Confianza||
+urgencia|-3|Confusión|Sorpresa||
+urgente|-3|Angustiado|Miedo||
+usual|2|Seguridad|Confianza||
+usará|1|Seguridad|Confianza||
+útil|2|Seguridad|Confianza||
+utilidad|2|Seguridad|Confianza||
+vacío|-3|Agobiado|Tristeza||
+vale|1|Complacido|Alegría||
+válido|2|Determinación|Confianza||
+valiente|3|Determinación|Confianza||
+valioso|3|Determinación|Confianza||
+valor|3|Fascinado|Alegría||
+valores|3|Fascinado|Alegría||
+variable|3|Seguridad|Confianza||
+venciendo|-2|Confusión|Sorpresa||
+vencieron|-2|Agobiado|Tristeza||
+vencimientos|-2|Agobiado|Tristeza||
+veneno|-1|Agobiado|Tristeza||
+venganza|-3|Molestia|Enfado||
+ventaja|3|Seguridad|Confianza||
+ventajas|2|Seguridad|Confianza||
+veracidad|2|Seguridad|Confianza||
+veraz|2|Franqueza|Confianza||
+verdad|2|Franqueza|Confianza||
+verificación|2|Fe|Confianza||
+verificada|2|Determinación|Confianza|*|
+verificadas|2|Determinación|Confianza|*|
+verificado|2|Determinación|Confianza|*|
+verifican|2|Determinación|Confianza|*|
+verificara|2|Determinación|Confianza|*|
+verificará|2|Determinación|Confianza|*|
+verificaran|2|Determinación|Confianza|*|
+verificarcual|2|Determinación|Confianza|*|
+verificaré|2|Determinación|Confianza|*|
+verificaría|2|Determinación|Confianza|*|
+verificarla|2|Determinación|Confianza|*|
+verificarle|2|Determinación|Confianza|*|
+verificarlo|2|Determinación|Confianza|*|
+verificarlos|2|Determinación|Confianza|*|
+verificarme|2|Determinación|Confianza|*|
+verificarse|2|Determinación|Confianza|*|
+verificas|2|Determinación|Confianza|*|
+verificcion|2|Determinación|Confianza|*|
+verificio|2|Determinación|Confianza|*|
+verifición|2|Determinación|Confianza|*|
+verífico|2|Determinación|Confianza|*|
+vergüenza|-2|Confusión|Sorpresa||
+víctima|-1|Agobiado|Tristeza||
+víctimas|-1|Agobiado|Tristeza||
+victoria|2|Fascinado|Alegría||
+vigilancia|-1|Desesperado|Miedo||
+vil|-1|Desesperado|Miedo||
+violación|-2|Desesperado|Miedo|*|
+violaciones|-2|Adverso|Enfado|*|
+violar|2|Desesperado|Miedo|*|
+violencia|-3|Adverso|Enfado|*|
+violento|-3|Desesperado|Miedo|*|
+visión|2|Determinación|Confianza|*|
+vitamina|2|Determinación|Confianza|*|
+vivo|2|Complacido|Alegría||
+volcar|-2|Pánico|Miedo||
+volvamos|1|Esperanza|Confianza|*|
+volvemos|1|Esperanza|Confianza|*|
+volveremos|1|Esperanza|Confianza|*|
+volverlas|1|Esperanza|Confianza|*|
+volverlo|1|Esperanza|Confianza|*|
+volverlos|1|Esperanza|Confianza|*|
+volverse|1|Esperanza|Confianza|*|
+vulnerabilidad|2|Desafortunado|Enfado||
+vulnerable|1|Desafortunado|Enfado||
+yeah|2|Complacido|Alegría||
+zorra|6|Negaciones|Negaciones||
 nada|6|Negaciones|Negaciones||
-nadie|6|Negaciones|Negaciones||
 ni|6|Negaciones|Negaciones||
 ningún|6|Negaciones|Negaciones||
 ningún|6|Negaciones|Negaciones||
 ninguna|6|Negaciones|Negaciones||
 ninguno|6|Negaciones|Negaciones||
-no|6|Negaciones|Negaciones||
+no|7|Superlativos|Superlativos||
 buenísimo|7|Superlativos|Superlativos||
 extra|7|Superlativos|Superlativos||
 máximo|7|Superlativos|Superlativos||
@@ -911,9 +2084,8 @@ mejores |7|Superlativos|Superlativos||
 muy|7|Superlativos|Superlativos||
 óptimo|7|Superlativos|Superlativos||
 prontísimo|7|Superlativos|Superlativos||
-super|7|Superlativos|Superlativos||
 súper|7|Superlativos|Superlativos||
-tan|7|Superlativos|Superlativos||
+tan|8|Superlativos Negativos|Superlativos Negativos||
 malísimo|8|Superlativos Negativos|Superlativos Negativos||
 mínimo|8|Superlativos Negativos|Superlativos Negativos||
 pésimo|8|Superlativos Negativos|Superlativos Negativos||

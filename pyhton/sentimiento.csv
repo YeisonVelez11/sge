@@ -1,18 +1,18 @@
 column_1,ID,aux1,anio,mes,word1,word2,score,sentimiento
-1,201891,1,2018,9,chec,atendido,0,sin catalogar
-2,201891,1,2018,9,atendido,asesores,0,sin catalogar
-3,201892,2,2018,9,muy,chec,0,sin catalogar
-4,201892,2,2018,9,chec,deysi,0,sin catalogar
-5,201892,2,2018,9,deysi,gil,0,sin catalogar
-6,201892,2,2018,9,gil,asesora,0,sin catalogar
-7,201892,2,2018,9,asesora,estaconsulta,0,sin catalogar
+1,201891,1,2018,9,chec,atendido,1,positivo
+2,201891,1,2018,9,atendido,asesores,-0,sin catalogar
+3,201892,2,2018,9,muy,chec,-0,sin catalogar
+4,201892,2,2018,9,chec,deysi,-0,sin catalogar
+5,201892,2,2018,9,deysi,gil,-0,sin catalogar
+6,201892,2,2018,9,gil,asesora,-0,sin catalogar
+7,201892,2,2018,9,asesora,estaconsulta,-0,sin catalogar
 8,201893,3,2018,9,ayuda,problema,3,positivo
 9,201893,3,2018,9,problema,molesto,-1,negativo
-10,201893,3,2018,9,molesto,texto,0,sin catalogar
-11,201893,3,2018,9,texto,gómez,0,sin catalogar
-12,201893,3,2018,9,gómez,prueba,0,sin catalogar
-13,201893,3,2018,9,prueba,puedes,0,sin catalogar
-14,201893,3,2018,9,puedes,encontrar,0,sin catalogar
-15,201893,3,2018,9,encontrar,www.google.com,0,sin catalogar
-16,201893,3,2018,9,www.google.com,quisiera,0,sin catalogar
-17,201893,3,2018,9,quisiera,encontrarla,0,sin catalogar
+10,201893,3,2018,9,molesto,texto,-0,sin catalogar
+11,201893,3,2018,9,texto,gómez,-0,sin catalogar
+12,201893,3,2018,9,gómez,prueba,-0,sin catalogar
+13,201893,3,2018,9,prueba,puedes,-0,sin catalogar
+14,201893,3,2018,9,puedes,encontrar,-0,sin catalogar
+15,201893,3,2018,9,encontrar,www.google.com,-0,sin catalogar
+16,201893,3,2018,9,www.google.com,quisiera,-0,sin catalogar
+17,201893,3,2018,9,quisiera,encontrarla,-0,sin catalogar
