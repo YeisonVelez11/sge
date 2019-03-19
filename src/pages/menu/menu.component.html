@@ -42,7 +42,7 @@
     <mdb-navbar-brand>
       <!-- SideNav slide-out button -->
         <a (click)="sidenav.show()" class="button-collapse hidden-nav-button-collapse">
-          <i class="fas fa-bars" [ngClass]="!bPrimeraVez?'bola_resalte':''"></i>
+          <i class="fas fa-bars" [ngClass]="!bPrimeraVez?'bola_resalte':''" style="color:white"></i>
         </a>
       <!--/. SideNav slide-out button -->
 
@@ -55,13 +55,32 @@
       <img *ngIf="oFuenteSeleccionada" [src]="oFuenteSeleccionada?.icon" height="35">
       <span class="ml-3 color-texto-gris font-weight-bold text-uppercase">{{oFuenteSeleccionada?.nombre}}</span>
     </mdb-navbar-brand>
-    <mdb-navbar-brand>
-    <a class="navbar-brand" href="#">
+    <mdb-navbar-brand style="display: inherit;">
+    <!-- routerLink="/reuniones" routerLinkActive="active-link"-->
+    <a class="nav-item dropdown d-inline elementos_menu"  >
+        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Objetivos</span>
+    </a>
+    <div class="menuHovering sombra">
+      <span class="font-weight-bold">Objetivos</span>
+    </div>
+    <a class="nav-item dropdown d-inline elementos_menu"  >
+        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Misión</span>
+    </a>
+     <div class="menuHovering sombra">
+      <span class="font-weight-bold">Misión</span>
+    </div>
+    <a class="nav-item dropdown d-inline elementos_menu"  >
+        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Visión</span>
+    </a>
+    <div class="menuHovering sombra">
+      <span class="font-weight-bold">Visión</span>
+    </div>
+    <!--<a class="navbar-brand" href="#">
         <img src="/assets/img/logoum2.png" height="35" alt="">
     </a>      
     <a class="navbar-brand" href="#">
         <img src="/assets/img/logo_chec.png" height="35" alt="">
-    </a>
+    </a>-->
     </mdb-navbar-brand>
 
     <!--<navlinks>
@@ -80,4 +99,10 @@
   <!--/. Navbar -->
 
 </header>
+<div class="fixed-action-btn boton_flotante" >
+  <a class="btn-floating btn-lg waves-light boton_flotante verde_oscuro" size="lg" mdbWavesEffect>
+    <i class="fas fa-sitemap"></i>
+  </a>
+
+</div>
 <!--/.Double navigation-->
