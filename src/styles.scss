@@ -1,3 +1,46 @@
+.texto_menu{
+  color: white;
+  font-size: 19px;
+}
+
+.boton_flotante{
+  bottom: 0%; 
+  right: 10px; 
+
+}
+.verde_oscuro{
+    background-color:rgba(104,192,77,0.8);
+}
+
+.menuHovering{
+  width: 100%;
+  height: 0px;
+  transition: all 0.5s ease;
+  top:55px;
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  pointer-events:none;
+  background-color: red;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background: url('./assets/img/mascara_seccion.png') right top repeat-x #FFFFFF;
+  opacity: 0;
+  z-index: 999;
+  color:#666666;
+  border-radius:5px;
+}
+
+.elementos_menu:hover + div.menuHovering{
+  __top:200px;
+  height: 55px;
+  opacity: 1;
+
+}
+
 .forma_titulos{
   height: 38px;
   width: 558px;
@@ -1160,9 +1203,10 @@ a.nav-link.waves-light.font-weight-bold,a.nav-link.waves-light{
 }
 
 .verde_header{
-  _background: #88B93F;
-  background: linear-gradient(40deg, #DCE35B, #45B649) !important;
+  background-color:#a8cf45;
+  __background: linear-gradient(40deg, #DCE35B, #45B649) !important;
 }
+
 
 .verde_header_reverse{
   _background: #88B93F;
