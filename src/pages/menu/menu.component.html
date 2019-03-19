@@ -2,31 +2,39 @@
 <header>
 
   <!-- Sidebar navigation sn-bg-1  -->
-  <mdb-side-nav #sidenav class="background_gris" [fixed]="false">
+  <mdb-side-nav #sidenav class="background_sidemenu" [fixed]="false">
 
-    <div class="container_fuentes color_texto_gris">
-      <div class="fuente m-2 view overlay zoom pointer" *ngFor="let fuente of aFuentes; let i=index;" (click)="sidenav.hide();oFuenteSeleccionada=fuente;bPrimeraVez=true;iFuenteSeleccionada=i;fn_setFuente(fuente);" >
-        <div class="ribbon" [hidden]="i!=iFuenteSeleccionada"><span>Actual</span></div>
-        <div class="row h-100  no-gutters">
-          <div class="col-sm-8 ">
-            
-            <div class="row no-gutters p-1" >
-              <div class="col-sm-12 d-flex flex-center font-weight-bold cabecera_fuente text-center text-uppercase" >
-                {{fuente.nombre}}
-              </div>
-            </div>
-            <div class="row no-gutters p-1 font-weight-normal  h-75">
-              <div class="col-sm-12 d-flex flex-center text-center"  >
-                {{fuente.descripcion}}
-              </div>
-            </div>
-          </div>
+    <div class="container_fuentes color_texto_gris" style="background: transparent;">
 
-          <div class="col-sm-4 d-flex flex-center pr-1">
-            <img [src]="fuente.icon" class="img-fluid">
-          </div>
-        </div>
+      <!--<div class="d-flex flex-center">
+        <img src="./assets/img/logoum.jpg" class="img-fluid">
+      </div>-->
+      <div class="d-flex flex-center mb-2 sombra" style="background: white;border: 4px solid rgba(104,192,77,1);">
+        <img src="./assets/img/acreditacion.png" style="width:80%">
       </div>
+      <mdb-accordion [multiple]="true"  >
+        <mdb-accordion-item [collapsed]="true" *ngFor="let item of aFuentes" >
+          <mdb-accordion-item-head [ngClass]="item.fuente_hijos.length==0?'quitar_flecha_accordion':''" >
+            {{item.fuente}}
+          </mdb-accordion-item-head>
+          <mdb-accordion-item-body *ngIf="item.fuente_hijos.length!=0">
+
+            <mdb-accordion [multiple]="true" >
+              <mdb-accordion-item [collapsed]="true" *ngFor="let hijo of item.fuente_hijos">
+                <mdb-accordion-item-head [ngClass]="hijo.nietos.length==0?'quitar_flecha_accordion':''">
+                  {{hijo.hijo_nombre}}
+                  <mdb-accordion-item-body *ngIf="hijo.nietos.length!=0">
+                    holi
+                  </mdb-accordion-item-body>
+
+                </mdb-accordion-item-head>
+              </mdb-accordion-item>
+            </mdb-accordion>
+
+          </mdb-accordion-item-body>
+        </mdb-accordion-item>
+      </mdb-accordion>
+
     </div>
 
 
