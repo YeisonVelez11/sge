@@ -11,9 +11,14 @@ export class MenuComponent implements OnInit {
 bPrimeraVez=false;
 iFuenteSeleccionada:number=-1;
 oFuenteSeleccionada:any;
-
-@Output()
-fn_dashboard = new EventEmitter()
+bMostraMapa:any=""; //true oculta el mapa
+bMostraMenu:any="";
+categoria="";
+titulo=""
+/*@Output()
+fn_dashboard = new EventEmitter()*/
+/*@Output()
+outupSeleccionProceso = new EventEmitter()*/
 
 aFuentes:any=
   [
@@ -76,7 +81,15 @@ aFuentes:any=
     private router : Router
 ) {
       //this.fn_sesion();
-    
+      console.log(window.location.href.split("/")[3]!="")
+      if(window.location.href.split("/")[3]!=""){
+          this.bMostraMenu=false;
+          this.bMostraMapa=false;
+        } 
+        else{
+          this.bMostraMenu=true;
+          this.bMostraMapa=true;
+        }
   }
 
 
@@ -85,9 +98,26 @@ aFuentes:any=
 
   }
 
-  fn_setFuente(item:any){
-    this.fn_dashboard.emit(item)
+  fn_mostrarMapa(){
+    this.bMostraMapa=false;
   }
+
+  fn_goProcess(categoria:any,bienes:any){
+    this.categoria=categoria;
+    this.titulo=bienes;
+    this.bMostraMenu=false;
+    this.bMostraMapa=false;
+    this.router.navigate(["financiera"]);
+    //this.outupSeleccionProceso.emit({"categoria":this.categoria,"titulo":this.titulo});
+  }
+
+  fn_getProceso(){
+    console.log("aqui")
+    //this.outupSeleccionProceso.emit({"categoria":1});
+    this.bMostraMenu=false;
+    this.router.navigate(["financiera"]);
+  }
+
 
  
 

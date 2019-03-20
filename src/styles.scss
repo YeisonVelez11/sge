@@ -27,9 +27,42 @@
 }
 
 
+.animation_opacity{
+  transition: all 2s ease;
+  opacity: 1;
+}
 
+.animation_opacity_ocultar{
+  pointer-events:none;
+  opacity:0;
+}
 
+.animation_opacity_mostrar{
+  opacity:1;
+  pointer-events:all;
 
+}
+
+.animation_mapa{
+  transition: all 0.5s ease;
+}
+
+.animation_mapa_ocultar{
+  transform: translate(100%, 0%);
+}
+
+.animation_mapa_mostrar{
+
+}
+.contenedor_mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -3px !important;
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+}
 
 .background_sidemenu .card{
    background: transparent;

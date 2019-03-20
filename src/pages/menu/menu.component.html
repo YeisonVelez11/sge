@@ -49,7 +49,7 @@
 
     <mdb-navbar-brand>
       <!-- SideNav slide-out button -->
-        <a (click)="sidenav.show()" class="button-collapse hidden-nav-button-collapse">
+        <a (click)="sidenav.show()" [ngClass]="bMostraMenu?'animation_opacity_ocultar':'animation_opacity_mostrar'" (click)="bPrimeraVez=true;" class="button-collapse hidden-nav-button-collapse animation_opacity">
           <i class="fas fa-bars" [ngClass]="!bPrimeraVez?'bola_resalte':''" style="color:white"></i>
         </a>
       <!--/. SideNav slide-out button -->
@@ -151,13 +151,14 @@
   <!--/. Navbar -->
 
 </header>
-<div class="fixed-action-btn boton_flotante" >
+<div class="fixed-action-btn boton_flotante" [ngClass]="bMostraMenu?'animation_opacity_ocultar':'animation_opacity_mostrar'" (click)="bMostraMapa=!bMostraMapa">
   <a class="btn-floating btn-lg waves-light boton_flotante verde_oscuro" size="lg" mdbWavesEffect>
-    <i class="fas fa-sitemap"></i>
+    <i class="fas" [ngClass]="bMostraMapa?'fa-times':'fa-sitemap'"></i>
   </a>
 
 </div>
-          <div class="row no-gutters  pt-4 mx-3"  style="display:flex;justify-content: center;align-items: center;margin-top: 37px !important;position: relative;">
+      <div class="contenedor_ppal_mapa" style="overflow-x: hidden;">
+        <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'">
             <div style="margin-right:71px;">
               <div class="text-center contenedor_bloque_izq" style=" position:  relative;">
                   <i class="fas fa-long-arrow-alt-right flecha_derecha" style="top: 91px;" ></i>
@@ -266,7 +267,8 @@
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='bienes';titulo='apoyo'" [ngClass]="categoria=='bienes'?'seleccion_categoria':''">
+                          <!-- fn_goProcess('bienes','apoyo') fn_getProceso()--> 
+                          <div class="rectangulo_categoria" mdbWavesEffect  (click)="fn_goProcess('bienes','apoyo')"   [ngClass]="categoria=='bienes'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 " >Gestión Financiera</p>
                             <img class="icon_1" src="./assets/img/financiera.svg"   >
                           </div>
@@ -294,6 +296,6 @@
                <i class="fas fa-minus linea_union" ></i>
             </div>
 
-           </div>
-
+        </div>
+      </div>
 <!--/.Double navigation-->

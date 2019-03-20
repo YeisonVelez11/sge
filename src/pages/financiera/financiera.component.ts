@@ -14,7 +14,7 @@ import * as d3 from 'd3';
   styleUrls: ['./financiera.component.scss']
 })
 export class FinancieraComponent implements OnInit {
-
+bMostraMapa=true; //muestra botones el mapa
   constructor(
     private ServicesProvider: ServicesProvider,
 private http: HttpClient
@@ -38,6 +38,10 @@ private http: HttpClient
     this.fn_getCamposFuente(item.fichero);
   }*/
 
+
+  /*fn_getProceso(item:any){
+    console.log(item);
+  }*/
 
 
 

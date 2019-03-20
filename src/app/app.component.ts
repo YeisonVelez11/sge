@@ -11,7 +11,5 @@ export class AppComponent {
     		private router : Router
 		){
 		    console.log(this.router.url);
-
-
 	}
 }
