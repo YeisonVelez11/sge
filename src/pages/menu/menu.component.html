@@ -66,22 +66,66 @@
     <mdb-navbar-brand style="display: inherit;">
     <!-- routerLink="/reuniones" routerLinkActive="active-link"-->
     <a class="nav-item dropdown d-inline elementos_menu"  >
-        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Objetivos</span>
+        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Política de calidad</span>
     </a>
     <div class="menuHovering sombra">
-      <span class="font-weight-bold">Objetivos</span>
+      <div style="width: 40%;background: white;">
+        <img src="./assets/img/logoum.jpg" class="img-fluid">
+      </div>
+      <div class="elemento_submenu">
+        <span class="font-weight-bold" style="font-size: 17px;">Política de Calidad</span> 
+        <br><br>
+        <span class="font-weight-bold">La Universidad de Manizales</span>  con un talento humano comprometido con la  <span class="font-weight-bold">excelencia, los principios y valores insitucionales, satisface las necesidades y expectativas de la sociedad universitaria;</span> brindando servicios de educación superior soportados en una gestión eficiente, eficaz, efectiva de sus procesos, y con la prevención del riesgo,  <span class="font-weight-bold">fortaleciendo la mejora continua de su sistema de gestión.</span>
+      </div>
     </div>
     <a class="nav-item dropdown d-inline elementos_menu"  >
-        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Misión</span>
+        <span class="elemento_submenu" dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Objetivos</span>
     </a>
      <div class="menuHovering sombra">
-      <span class="font-weight-bold">Misión</span>
+      <div style="width: 40%;background: white; height: 100%; display:flex;justify-content: center;align-items: center;height: inherit">
+        <img src="./assets/img/logoum.jpg" class="img-fluid">
+      </div>
+      <div class="elemento_submenu">
+        <span class="font-weight-bold" style="font-size: 17px;">Objetivos de Calidad</span> 
+        <br><br>
+        <div class="container_check">
+          <div class="mr-2"><mdb-icon fas icon="check" class="ml-3 texto_verde_oscuro"></mdb-icon></div>
+          <div> Consolidar la competencia del talento humano; tomando como base el plan de carrera diseña y desarrollado por la institución. </div>
+        </div>
+
+        <div class="container_check">
+          <div class="mr-2"><mdb-icon fas icon="check" class="ml-3 texto_verde_oscuro"></mdb-icon></div>
+          <div> Mantener y mejorar la satisfacción de la sociedad universitaria. </div>
+        </div>
+
+        <div class="container_check">
+          <div class="mr-2"><mdb-icon fas icon="check" class="ml-3 texto_verde_oscuro"></mdb-icon></div>
+          <div> Mantener y mejorar la calidad de la oferta académica de la universidad mediante el cumplimiento de los lineamientos del C.N.A, (acreditación institucional y de pregrado y posgrado). </div>
+        </div>
+
+        <div class="container_check">
+          <div class="mr-2"><mdb-icon fas icon="check" class="ml-3 texto_verde_oscuro"></mdb-icon></div>
+          <div> Diseñar, desarrollar e implementar el Sistema de Gestión del Riesgo. </div>
+        </div>
+
+        <div class="container_check">
+          <div class="mr-2"><mdb-icon fas icon="check" class="ml-3 texto_verde_oscuro"></mdb-icon></div>
+          <div> Fortalecer el mejoramiento continuo del Sistema de Gestión de la Calidad bajo los lineamientos de la norma ISO 90001:2015. </div>
+        </div>
+      </div>
     </div>
     <a class="nav-item dropdown d-inline elementos_menu"  >
-        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Visión</span>
+        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Alcance</span>
     </a>
     <div class="menuHovering sombra">
-      <span class="font-weight-bold">Visión</span>
+      <div style="width: 40%;background: white;">
+        <img src="./assets/img/logoum.jpg" class="img-fluid">
+      </div>
+      <div class="elemento_submenu">
+        <span class="font-weight-bold" style="font-size: 17px;">Alcance del Sistema</span> 
+        <br><br>
+        <span >Servicios de educación superior de pregrado y posgrado.</span>
+      </div>
     </div>
     <!--<a class="navbar-brand" href="#">
         <img src="/assets/img/logoum2.png" height="35" alt="">
@@ -122,7 +166,7 @@
                  <div mdbWavesEffect class="bloque_izq sombra" (click)="categoria='clientes';titulo='';" [ngClass]="categoria=='clientes'?'seleccion_categoria':''" >
                     <p class="p-0 m-0 texto_titulos texto_bloque_izquierdo">                  
 
-                      Clientes y Necesidades</p>
+                      Grupos de Interés</p>
                  </div>
                  <i class="fas fa-long-arrow-alt-up flecha_arriba" ></i>
 
@@ -144,7 +188,7 @@
                       <div class="d-flex justify-content-around">
                         <div  class="contenedor_engranen">
                           <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='gestion_academico';titulo='gerenciales'" [ngClass]="categoria=='gestion_academico'?'seleccion_categoria':''">
-                            <p  class="texto_engranen_1 p-0 m-0" >Gestion Recursos de Apoyo Académico</p>
+                            <p  class="texto_engranen_1 p-0 m-0" >Planeación Institucional</p>
                             <img class="icon_1" src="./assets/img/gestion_estrategica.svg"   >
                           </div>
                         </div>
@@ -223,8 +267,8 @@
                         </div>
                         <div  class="contenedor_engranen">
                           <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='bienes';titulo='apoyo'" [ngClass]="categoria=='bienes'?'seleccion_categoria':''">
-                            <p  class="texto_engranen_1 p-0 m-0 " >Gestión de Bienes Servicios</p>
-                            <img class="icon_1" src="./assets/img/servicios.svg"   >
+                            <p  class="texto_engranen_1 p-0 m-0 " >Gestión Financiera</p>
+                            <img class="icon_1" src="./assets/img/financiera.svg"   >
                           </div>
                         </div>
 

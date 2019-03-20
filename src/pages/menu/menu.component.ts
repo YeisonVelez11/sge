@@ -18,7 +18,13 @@ fn_dashboard = new EventEmitter()
 aFuentes:any=
   [
     {
-      "fuente":"Indicadores",
+      "fuente":"Caracterización",
+      "fuente_hijos": 
+        [
+        ]
+    },
+    {
+      "fuente":"Procedimientos",
       "fuente_hijos": 
         [
           {
@@ -41,36 +47,26 @@ aFuentes:any=
         ]
     },
     {
-      "fuente":"Indicadores",
+      "fuente":"Instructivos",
       "fuente_hijos": 
         [
-
+        ]
+    },
+    {
+      "fuente":"Formatos",
+      "fuente_hijos": 
+        [
         ]
     },
     {
       "fuente":"Indicadores",
       "fuente_hijos": 
         [
-          {
-            "hijo_nombre":"hijo 1",
-            "nietos":[
 
-            ]
-          },
-          {
-            "hijo_nombre":"hijo 2",
-            "nietos":[
-              
-            ]
-          },
-          {
-            "hijo_nombre":"hijo 3",
-            "nietos":[
-              
-            ]
-          }
         ]
     }
+
+
   ]
 
 
