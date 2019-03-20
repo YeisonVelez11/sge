@@ -17,7 +17,7 @@ import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 //import {ToastModule, ToastService} from '../../projects/ng-uikit-pro-standard/src/lib/pro/alerts';
-import { NotFoundComponent,MenuComponent,DashboardComponent} from '../pages/index.paginas';
+import { NotFoundComponent,MenuComponent,DashboardComponent,FinancieraComponent} from '../pages/index.paginas';
 import { ServicesProvider } from '../providers/services';
 import { routing, appRoutingProviders } from './app.routing'
 import { HttpModule } from '@angular/http';
@@ -29,7 +29,8 @@ import { DatePipe } from '@angular/common';
     AppComponent,
     MenuComponent,
     NotFoundComponent,
-    DashboardComponent
+    DashboardComponent,
+    FinancieraComponent
 
   ],
   imports: [

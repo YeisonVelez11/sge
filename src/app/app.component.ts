@@ -12,14 +12,6 @@ export class AppComponent {
 		){
 		    console.log(this.router.url);
 
-		if(!localStorage.getItem("idusuario")){
-      		this.router.navigate(["/"]);
-		}
 
-		//else if(localStorage.getItem("idusuario") && this.router.url=="/"){
-		else if(localStorage.getItem("idusuario") && this.router.url=="/"){
-
-      		this.router.navigate(["dashboard"]);
-		}
 	}
 }

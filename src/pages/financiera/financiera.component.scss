@@ -1,0 +1,78 @@
+
+
+
+/*.col-sm-3{
+	border: 1px solid blue;
+}
+
+td
+
+.col-sm-12{
+	border: 1px solid red;
+}*/
+
+
+.boton_flip{
+	position: absolute;
+	top: 50%;
+	right: 0px;
+	transform: translate(0%,-50%);
+	z-index: 999;
+}
+
+.resalte_campo{
+	background: yellow !important;
+}
+
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+
+.testimonial-card .avatar {
+	background:white;
+	width: 80px;
+    height: 80px;
+    margin-top: -45px;
+
+}
+
+.image_medio_circulo{
+	height: 54px;
+	margin-top: 9px;
+}
+
+
+.testimonial-card .card-up {
+    height: 59px;
+}
+
+
+.tamano_imagen_icono_circulo{
+    height: 58px;
+    width: 53px;
+	margin: 5px auto;
+}
+
+.card .card-body {
+    padding: 1px;
+}
+
+.elementos_nombres{
+  /*display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 0;
+*/
+	text-decoration: none;
+}
+
+.pagination.pg-blue .page-item.active .page-link {
+    background-color: #49B749;
+}
+
+
+
+
