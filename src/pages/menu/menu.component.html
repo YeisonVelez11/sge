@@ -49,11 +49,11 @@
 
     <mdb-navbar-brand>
       <!-- SideNav slide-out button -->
-        <a (click)="sidenav.show()" [ngClass]="bMostraMenu?'animation_opacity_ocultar':'animation_opacity_mostrar'" (click)="bPrimeraVez=true;" class="button-collapse hidden-nav-button-collapse animation_opacity">
+        <a (click)="sidenav.show()" [ngClass]="bMostraMenu?'animation_opacity_ocultar':'animation_opacity_mostrar'" (click)="bPrimeraVez=true;" class="button-collapse hidden-nav-button-collapse animation_opacity d-inline">
           <i class="fas fa-bars" [ngClass]="!bPrimeraVez?'bola_resalte':''" style="color:white"></i>
         </a>
       <!--/. SideNav slide-out button -->
-
+      <img src="./assets/img/logoum.jpg" style="height: 46px;" class="p-0 ml-5">
 
       <!-- Breadcrumb-->
 
@@ -65,26 +65,38 @@
     </mdb-navbar-brand>
     <mdb-navbar-brand style="display: inherit;">
     <!-- routerLink="/reuniones" routerLinkActive="active-link"-->
+
+    <a class="nav-item dropdown d-inline elementos_menu"  >
+        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Alcance</span>
+    </a>
+    <div class="menuHovering sombra">
+
+      <div class="elemento_submenu">
+        <span class="font-weight-bold" style="font-size: 17px;">Alcance del Sistema</span> 
+        <br><br>
+        <span >Servicios de educación superior de pregrado y posgrado.</span>
+      </div>
+    </div>
+
     <a class="nav-item dropdown d-inline elementos_menu"  >
         <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Política de calidad</span>
     </a>
     <div class="menuHovering sombra">
-      <div style="width: 40%;background: white;">
-        <img src="./assets/img/logoum.jpg" class="img-fluid">
-      </div>
       <div class="elemento_submenu">
         <span class="font-weight-bold" style="font-size: 17px;">Política de Calidad</span> 
         <br><br>
         <span class="font-weight-bold">La Universidad de Manizales</span>  con un talento humano comprometido con la  <span class="font-weight-bold">excelencia, los principios y valores insitucionales, satisface las necesidades y expectativas de la sociedad universitaria;</span> brindando servicios de educación superior soportados en una gestión eficiente, eficaz, efectiva de sus procesos, y con la prevención del riesgo,  <span class="font-weight-bold">fortaleciendo la mejora continua de su sistema de gestión.</span>
       </div>
     </div>
+
+
     <a class="nav-item dropdown d-inline elementos_menu"  >
         <span class="elemento_submenu" dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Objetivos</span>
     </a>
      <div class="menuHovering sombra">
-      <div style="width: 40%;background: white; height: 100%; display:flex;justify-content: center;align-items: center;height: inherit">
+      <!--<div style="width: 40%;background: white; height: 100%; display:flex;justify-content: center;align-items: center;height: inherit">
         <img src="./assets/img/logoum.jpg" class="img-fluid">
-      </div>
+      </div>-->
       <div class="elemento_submenu">
         <span class="font-weight-bold" style="font-size: 17px;">Objetivos de Calidad</span> 
         <br><br>
@@ -114,19 +126,7 @@
         </div>
       </div>
     </div>
-    <a class="nav-item dropdown d-inline elementos_menu"  >
-        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Alcance</span>
-    </a>
-    <div class="menuHovering sombra">
-      <div style="width: 40%;background: white;">
-        <img src="./assets/img/logoum.jpg" class="img-fluid">
-      </div>
-      <div class="elemento_submenu">
-        <span class="font-weight-bold" style="font-size: 17px;">Alcance del Sistema</span> 
-        <br><br>
-        <span >Servicios de educación superior de pregrado y posgrado.</span>
-      </div>
-    </div>
+
     <!--<a class="navbar-brand" href="#">
         <img src="/assets/img/logoum2.png" height="35" alt="">
     </a>      
@@ -156,8 +156,10 @@
     <i class="fas" [ngClass]="bMostraMapa?'fa-times':'fa-sitemap'"></i>
   </a>
 
+
+
 </div>
-      <div class="contenedor_ppal_mapa" style="overflow-x: hidden;">
+      <div class="contenedor_ppal_mapa" >
         <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'">
             <div style="margin-right:71px;">
               <div class="text-center contenedor_bloque_izq" style=" position:  relative;">
