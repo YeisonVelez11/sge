@@ -33,7 +33,8 @@
               "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
               "projects/ng-uikit-pro-standard/src/lib/assets/scss/bootstrap/bootstrap.scss",
               "projects/ng-uikit-pro-standard/src/lib/assets/scss/mdb.scss",
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/c3/c3.min.css" 
             ],
             "scripts": [
               "node_modules/chart.js/dist/Chart.js",

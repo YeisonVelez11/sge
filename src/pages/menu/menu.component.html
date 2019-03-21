@@ -14,7 +14,7 @@
       </div>
       <mdb-accordion [multiple]="true"  >
         <mdb-accordion-item [collapsed]="true" *ngFor="let item of aFuentes" >
-          <mdb-accordion-item-head [ngClass]="item.fuente_hijos.length==0?'quitar_flecha_accordion':''" >
+          <mdb-accordion-item-head [ngClass]="item.fuente_hijos.length==0?'quitar_flecha_accordion':''"  mdbWavesEffect>
             {{item.fuente}}
           </mdb-accordion-item-head>
           <mdb-accordion-item-body *ngIf="item.fuente_hijos.length!=0">
@@ -160,7 +160,7 @@
 
 </div>
       <div class="contenedor_ppal_mapa" >
-        <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'">
+        <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'" style="z-index:9 !important;background:   white;background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(234, 234, 234, 0.8);">
             <div style="margin-right:71px;">
               <div class="text-center contenedor_bloque_izq" style=" position:  relative;">
                   <i class="fas fa-long-arrow-alt-right flecha_derecha" style="top: 91px;" ></i>

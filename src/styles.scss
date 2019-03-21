@@ -1,3 +1,7 @@
+.c3-chart-arc path {
+  stroke: white;
+}
+
 .texto_menu{
   color: white;
   font-size: 19px;
@@ -48,12 +52,17 @@
 }
 
 .animation_mapa_ocultar{
-  transform: translate(100%, 0%);
+  transform: translate(101%, 0%);
 }
 
 .animation_mapa_mostrar{
 
 }
+
+.sombra:hover{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.40), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
 .contenedor_mapa{
   display: flex;
   justify-content: center;
@@ -166,15 +175,32 @@
 
 .breadcum{
   width:100%;
+  margin-top: 60px;
+  margin-bottom:5px;
+}
+
+.sidebar_right{
+  width: 272px;
+  height: 100vh;
+  transition: all 0.2s ease;
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  z-index: 9999999999999 !important;
+}
+.sidebar_right_open{
   
 }
+.sidebar_right_close{
+  transform: translate(272px, 0);  
+}
+
 
 .titulo_secciones{
   height: 41px;
   width: 100%;
   position: relative;
-  top: 25px;
-  margin-top: 32px;
+  top: 56px;
   background-color: rgba(234, 234, 234, 0.8);
   display: flex;
   justify-content: center;
@@ -185,12 +211,49 @@
   color: white;
 
 }
+.estilo_flecha_animacion{
+  font-size: 60px; 
+  color:#dcdcdc;
+}
 
+.container_flecha_animacion_izq{
+  position:absolute;
+  transform: translate(0%, -50%);
+  top:50%;
+  animation: animacion_flecha_izq 2s linear infinite;
+  cursor:pointer;
+}
+/*.container_flecha_animacion{
+  animation: animacion_flecha_izq 3s linear infinite;
+}*/
+.container_flecha_animacion_der{
+  position:absolute;
+  transform: translate(0%, -50%);
+  top:50%;
+  animation: animacion_flecha_der 2s linear infinite;
+  cursor:pointer;
+}
+
+
+@keyframes animacion_flecha_izq {
+  from {right: 0px;}
+  to {right: 25px;}
+}
+@keyframes animacion_flecha_der {
+  from {right: 300px;}
+  to {right: 260px;}
+}
+
+.contenedor_seccion{
+  overflow-x:hidden;
+  height:100vh;
+  __position:relative;
+}
 .centrado_horizontal{
-    position:absolute;
-    left: 50%;
-    -webkit-transform: translate(50%, 50%);
-    transform: translate(-50%, 0%);
+  position:absolute;
+  left: 50%;
+  -webkit-transform: translate(50%, 50%);
+  transform: translate(-50%, 0%);
 }
 
 .centrado_texto_titulos {
@@ -1085,6 +1148,7 @@ a.nav-link.waves-light.font-weight-bold,a.nav-link.waves-light{
 }
 
 .sombra{
+  transition: all ease 0.5s;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
