@@ -1,18 +1,34 @@
-<div class="titulo_secciones  sombra">
-	Gestión Financiera
-</div>
 
-<div class="breadcum mt-4">
-<mdb-breadcrumb customClass="black-text">
-  <mdb-breadcrumb-item class="cursor_pointer" routerLink="/dashboard">
-    <mdb-icon ></mdb-icon><i class="fa fa-home ml-1" aria-hidden="true"></i> Inicio
-  </mdb-breadcrumb-item>
-  <mdb-breadcrumb-item class="active" >
-    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon><i class="fa fa-ellipsis-h ml-1" aria-hidden="true"></i> Gestión
-  </mdb-breadcrumb-item >
-  <!--<mdb-breadcrumb-item class="active">
-    <mdb-icon fas icon="angle-double-right" class="mr-1"></mdb-icon><i class="fa fa-sign-out ml-1" aria-hidden="true"></i> Data
-  </mdb-breadcrumb-item>-->
-</mdb-breadcrumb>
+
+<div class="contenedor_seccion">
+	<div class="titulo_secciones  sombra">
+	<img height="25" src="./assets/img/financiera.svg">  Gestión Financiera
+
+	</div>
+
+
+	<div class="breadcum">
+		<mdb-breadcrumb customClass="black-text">
+		  <mdb-breadcrumb-item class="cursor_pointer" routerLink="/dashboard">
+		    <mdb-icon ></mdb-icon><img height="25" src="./assets/img/financiera.svg"> Financiero
+		  </mdb-breadcrumb-item>
+		  <mdb-breadcrumb-item class="active" >
+		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon><i class="fa fa-ellipsis-h ml-1" aria-hidden="true"></i> Gestión
+		  </mdb-breadcrumb-item >
+		  <!--<mdb-breadcrumb-item class="active">
+		    <mdb-icon fas icon="angle-double-right" class="mr-1"></mdb-icon><i class="fa fa-sign-out ml-1" aria-hidden="true"></i> Data
+		  </mdb-breadcrumb-item>-->
+		</mdb-breadcrumb>
+
+	</div>	
+
+
+		<div  [ngClass]="bFlecha_animacion?'container_flecha_animacion_izq':'container_flecha_animacion_der'" (click)="bFlecha_animacion=!bFlecha_animacion">
+			<i mdbWavesEffect class="fas estilo_flecha_animacion" [ngClass]="bFlecha_animacion?'fa-angle-double-left':'fa-angle-double-right'" ></i>
+		</div>
+		<div class="sidebar_right background_sidemenu" [ngClass]="bFlecha_animacion?'sidebar_right_close':'sidebar_right_open'">
+
+		</div>
+
 
 </div>

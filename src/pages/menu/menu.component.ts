@@ -81,15 +81,22 @@ aFuentes:any=
     private router : Router
 ) {
       //this.fn_sesion();
-      console.log(window.location.href.split("/")[3]!="")
-      if(window.location.href.split("/")[3]!=""){
+      var categoria=window.location.href.split("/")[3];
+      if(categoria!=""){
           this.bMostraMenu=false;
           this.bMostraMapa=false;
+          this.categoria=categoria;
+
+          if(this.categoria=="financiera"){
+            this.titulo="apoyo";
+          }
+
         } 
         else{
           this.bMostraMenu=true;
           this.bMostraMapa=true;
         }
+
   }
 
 

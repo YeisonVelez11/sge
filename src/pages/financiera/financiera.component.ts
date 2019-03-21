@@ -15,6 +15,8 @@ import * as d3 from 'd3';
 })
 export class FinancieraComponent implements OnInit {
 bMostraMapa=true; //muestra botones el mapa
+sidebar_right=false;
+bFlecha_animacion=true; //true es la animación de la izquierda
   constructor(
     private ServicesProvider: ServicesProvider,
 private http: HttpClient
