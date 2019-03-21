@@ -14,6 +14,8 @@ import * as d3 from 'd3';
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
+
+  
 icon_flip:boolean=true;
 bSeleccionFuente:boolean=false;
 oFuente:any;

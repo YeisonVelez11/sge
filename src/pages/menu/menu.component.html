@@ -14,14 +14,14 @@
       </div>
       <mdb-accordion [multiple]="true"  >
         <mdb-accordion-item [collapsed]="true" *ngFor="let item of aFuentes" >
-          <mdb-accordion-item-head [ngClass]="item.fuente_hijos.length==0?'quitar_flecha_accordion':''"  mdbWavesEffect>
+          <mdb-accordion-item-head [ngClass]="item.fuente_hijos.length==0?'quitar_flecha_accordion':''"  (click)="item.fuente_hijos.length==0?fn_setOptionMenu(item,null):'';;" mdbWavesEffect>
             {{item.fuente}}
           </mdb-accordion-item-head>
           <mdb-accordion-item-body *ngIf="item.fuente_hijos.length!=0">
 
             <mdb-accordion [multiple]="true" >
               <mdb-accordion-item [collapsed]="true" *ngFor="let hijo of item.fuente_hijos">
-                <mdb-accordion-item-head [ngClass]="hijo.nietos.length==0?'quitar_flecha_accordion':''">
+                <mdb-accordion-item-head [ngClass]="hijo.nietos.length==0?'quitar_flecha_accordion':''" (click)="fn_setOptionMenu(item,hijo);">
                   {{hijo.hijo_nombre}}
                   <mdb-accordion-item-body *ngIf="hijo.nietos.length!=0">
                     holi
@@ -65,6 +65,15 @@
     </mdb-navbar-brand>
     <mdb-navbar-brand style="display: inherit;">
     <!-- routerLink="/reuniones" routerLinkActive="active-link"-->
+
+
+    <a class="nav-item dropdown d-inline elementos_menu"  >
+        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Plan de Calidad</span>
+    </a>
+    <div class="menuHovering sombra">
+
+    </div>
+
 
     <a class="nav-item dropdown d-inline elementos_menu"  >
         <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Alcance</span>
@@ -158,9 +167,9 @@
 
 
 
-</div>
-      <div class="contenedor_ppal_mapa" >
-        <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'" style="z-index:9 !important;background:   white;background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(234, 234, 234, 0.8);">
+</div><!-- [ngClass]="!bMostraMapa?'d-none':''" -->
+      <div class="contenedor_ppal_mapa" [ngStyle]="{'z-index':!bMostraMapa?-1:''}" >
+        <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'" style="z-index:9 !important;background:   white;background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(255, 255, 255, 0.9);">
             <div style="margin-right:71px;">
               <div class="text-center contenedor_bloque_izq" style=" position:  relative;">
                   <i class="fas fa-long-arrow-alt-right flecha_derecha" style="top: 91px;" ></i>

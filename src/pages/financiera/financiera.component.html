@@ -13,7 +13,7 @@
 		    <mdb-icon ></mdb-icon><img height="25" src="./assets/img/financiera.svg"> Gestión Financiera
 		  </mdb-breadcrumb-item>
 		  <mdb-breadcrumb-item class="active" >
-		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon> Indicadores
+		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon> {{seleccionMenu?.fuente}}
 		  </mdb-breadcrumb-item >
 		  <!--<mdb-breadcrumb-item class="active">
 		    <mdb-icon fas icon="angle-double-right" class="mr-1"></mdb-icon><i class="fa fa-sign-out ml-1" aria-hidden="true"></i> Data
@@ -22,30 +22,59 @@
 
 	</div>	
 
-	<div class="row mb-5">
-		<div class="col-sm-12 ">
-			<div  id="bar_chart" class="sombra" style="border-radius:5px;"></div>
+
+
+	<div class="contenedor_indicadores" [ngClass]="seleccionMenu?.fuente=='Indicadores'?'':'d-none'">
+		<div class="row mb-5">
+			<div class="col-sm-12" >
+				<div  id="bar_chart" class="sombra" style="border-radius:5px;"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 " >
+				<div id="chart_puntos" class="sombra mr-4"></div>
+			</div>
+			<div class="col-sm-6 ">
+				<div id="pie" class="sombra" style="border-radius:5px;"></div>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-6 ">
-			<div id="chart_puntos" class="sombra mr-4"></div>
+
+		<a   href="{{seleccionMenu?.anexo_carga_mostrar}}" *ngIf="seleccionMenu?.anexo_carga_mostrar" download="{{seleccionMenu?.anexo_carga_mostrar.split('/')[4]}}" style="margin-left: 10%;" >{{seleccionMenu?.anexo_carga_mostrar.split("/")[4]}}</a>
+		<div class="contenedor_caracterizacion sombra scrollbar thin scrollbar-gris scroll_y" style="max-height: 72%;height: 72%;margin: 0 auto;" [ngClass]="seleccionMenu?.fuente!='Indicadores'?'':'d-none'" >
+			
+		      <pdf-viewer [src]="seleccionMenu.anexo_carga_mostrar"
+		                  *ngIf="seleccionMenu?.anexo_carga_mostrar"
+		                  [render-text]="false"
+		                  [original-size]="true"
+		                  [page]="1"
+		                  [autoresize]="true"
+		                  [show-all]="false"
+		                  style="display: block; width:100%;margin:5px 0px;"
+		                  
+		      ></pdf-viewer>
 		</div>
-		<div class="col-sm-6 ">
-			<div id="pie" class="sombra" style="border-radius:5px;"></div>
+<!-- (page-rendered)="pageRendered($event)"-->
+	<span [ngClass]="seleccionMenu?.hijos?.formatos?.length>0?'':'d-none'">
+		<div  [ngClass]="bFlecha_animacion?'container_flecha_animacion_izq':'container_flecha_animacion_der'" (click)="bFlecha_animacion=!bFlecha_animacion">
+			<i mdbWavesEffect class="fas estilo_flecha_animacion" [ngClass]="bFlecha_animacion?'fa-angle-double-left':'fa-angle-double-right'" ></i>
 		</div>
-
-	</div>
-
-
-
-
-	<div  [ngClass]="bFlecha_animacion?'container_flecha_animacion_izq':'container_flecha_animacion_der'" (click)="bFlecha_animacion=!bFlecha_animacion">
-		<i mdbWavesEffect class="fas estilo_flecha_animacion" [ngClass]="bFlecha_animacion?'fa-angle-double-left':'fa-angle-double-right'" ></i>
-	</div>
+	</span>
 	<div class="sidebar_right background_sidemenu" [ngClass]="bFlecha_animacion?'sidebar_right_close':'sidebar_right_open'">
+		<div class="container_accordion_right">
 
+	      <mdb-accordion [multiple]="true"  >
+	        <mdb-accordion-item [collapsed]="false" *ngIf="seleccionMenu?.hijos" >
+	          <mdb-accordion-item-head   mdbWavesEffect>
+	            Formatos
+	          </mdb-accordion-item-head>
+
+	          <mdb-accordion-item-body mdbWavesEffect *ngFor="let item of seleccionMenu.hijos.formatos" (click)="fn_setRigthOption(item)" style="cursor:pointer;">	          	
+	          	{{item.hijo_nombre}}
+	          </mdb-accordion-item-body>
+	        </mdb-accordion-item>
+	      </mdb-accordion>
+		</div>
 	</div>
-
 
 </div>

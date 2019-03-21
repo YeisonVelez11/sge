@@ -19,6 +19,8 @@ export class FinancieraComponent implements OnInit {
 bMostraMapa=true; //muestra botones el mapa
 sidebar_right=false;
 bFlecha_animacion=true; //true es la animación de la izquierda
+archivo_adjunto:any;
+seleccionMenu:any;
   constructor(
     private ServicesProvider: ServicesProvider,
 private http: HttpClient
@@ -33,15 +35,24 @@ private http: HttpClient
 
   ngOnInit() {
 
+    this.archivo_adjunto=this.seleccionMenu;
+    this.seleccionMenu=
+      {
+        "fuente":"Indicadores",
+        "fuente_hijos": 
+          [
+
+          ]
+      }
     var formatoPesos=d3.format(",.0f");
-    var aColors=['#1f77b4', '#aec7e8', '#ff7f0e', '#ffbb78', '#2ca02c', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5'];
+    var aColors=['#68C04D', '#002E00', '#009644', '#399422', '#097400', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5'];
     var aAnios=[2014,2015,2016,2017,2018];
     var barchart = c3.generate({
         bindto:"#bar_chart",
         data: {
             size:{
-                height:500,
-                width: 500
+                height:320,
+                width: 320
             },
             columns: [
                 ['Ingresos Operacionales', 42951108, 45600446, 51502249, 59528814, 63476014],
@@ -177,6 +188,40 @@ private http: HttpClient
 
 
   }
+
+
+ loadPdf(source){
+    console.log("entra")
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', source, true);
+    xhr.responseType = 'blob';
+    xhr.onload = (e: any) => {
+      if (xhr.status === 200) {
+        const blob = new Blob([xhr.response], {type: 'application/pdf'});
+        this.archivo_adjunto = URL.createObjectURL(blob);
+        console.log(xhr);
+
+      }
+    };
+    xhr.send();
+  }
+
+  fn_setRigthOption(item){
+    console.log(item);
+    /*{
+    "hijo_nombre":"GFI-FOR-003.   Devoluciones",
+    "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-003.   Devoluciones.pdf",
+    "nietos":[]
+    }*/
+    this.seleccionMenu["anexo_carga_mostrar"]=item.anexo;
+
+  }
+
+/*
+  pageRendered(e: CustomEvent) {
+    setTimeout(()=>{
+      this.ServicesProvider.preloaderOff();
+    },500);*/
 
 
 

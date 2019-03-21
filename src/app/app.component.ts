@@ -7,9 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+	private activatedComponent;
 	constructor(
     		private router : Router
 		){
 		    console.log(this.router.url);
 	}
+
+  onActivate(component:any){
+    this.activatedComponent = component;
+  }
+
+  setOptionMenu(item:any){
+    this.activatedComponent.seleccionMenu = item;
+  }
+
 }

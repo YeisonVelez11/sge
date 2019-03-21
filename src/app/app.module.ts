@@ -22,6 +22,7 @@ import { ServicesProvider } from '../providers/services';
 import { routing, appRoutingProviders } from './app.routing'
 import { HttpModule } from '@angular/http';
 import { DatePipe } from '@angular/common';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 ;
 @NgModule({
@@ -41,7 +42,8 @@ import { DatePipe } from '@angular/common';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpModule,
-    routing
+    routing,
+    PdfViewerModule
   ],
   entryComponents: [  ],
   providers: [
