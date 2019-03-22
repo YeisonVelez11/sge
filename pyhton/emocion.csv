@@ -1,6 +1,6 @@
 column_1,ID,aux1,anio,mes,word1,word2,score,sub,emotion
 1,201891,1,2018,9, ,chec,999,Deconocida,Deconocida
-2,201891,1,2018,9,chec,atendido,1,Decepcionado,Tristeza
+2,201891,1,2018,9,chec,atendido,3,Seguridad,Confianza
 3,201891,1,2018,9,atendido,asesores,999,Deconocida,Deconocida
 4,201892,2,2018,9, ,muy,7,Superlativos,Superlativos
 5,201892,2,2018,9,muy,chec,999,Deconocida,Deconocida
@@ -8,15 +8,15 @@ column_1,ID,aux1,anio,mes,word1,word2,score,sub,emotion
 7,201892,2,2018,9,deysi,gil,999,Deconocida,Deconocida
 8,201892,2,2018,9,gil,asesora,999,Deconocida,Deconocida
 9,201892,2,2018,9,asesora,estaconsulta,999,Deconocida,Deconocida
-10,201893,3,2018,9, ,ayuda,2,Complacido,Alegría
-11,201893,3,2018,9,ayuda,problema,3,Sin Calificar,Sin Calificar
-12,201893,3,2018,9,problema,molesto,-1,Sin Calificar,Sin Calificar
+10,201893,3,2018,9, ,ayuda,3,Complacido,Alegría
+11,201893,3,2018,9,ayuda,problema,-2,Desesperado,Miedo
+12,201893,3,2018,9,problema,molesto,-2,irritado,Enfado
 13,201893,3,2018,9,molesto,texto,999,Deconocida,Deconocida
 14,201893,3,2018,9,texto,gómez,999,Deconocida,Deconocida
-15,201893,3,2018,9,gómez,prueba,999,Deconocida,Deconocida
+15,201893,3,2018,9,gómez,prueba,1,Determinación,Confianza
 16,201893,3,2018,9,prueba,puedes,999,Deconocida,Deconocida
-17,201893,3,2018,9,puedes,encontrar,999,Deconocida,Deconocida
-18,201893,3,2018,9,encontrar,www.google.com,999,Deconocida,Deconocida
+17,201893,3,2018,9,puedes,encontrarla,999,Deconocida,Deconocida
+18,201893,3,2018,9,encontrarla,www.google.com,999,Deconocida,Deconocida
 19,201893,3,2018,9,www.google.com,quisiera,999,Deconocida,Deconocida
 20,201893,3,2018,9,quisiera,encontrarla,999,Deconocida,Deconocida
 21,201893,3,2018,9,encontrarla,mamá,999,Deconocida,Deconocida
