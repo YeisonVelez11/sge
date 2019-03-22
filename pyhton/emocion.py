@@ -310,11 +310,19 @@ with open('chatprueba.csv') as csv_leido:
                                         #se agrega la última fila
                                         corp["word"]=lemmaService["palabra_original"]
                                         lineaCorpus=fn_jsonToLineCsv(corp,True)
-                                        lines.insert(int(idxcorp+1),lineaCorpus+"\n")
-                                        FilecorpusCiad.write(''.join(lines))                                           
-                                        
+                                        if(lemmaService["categoria"].lower()!="sin catalogar"):
+                                            lines.insert(int(idxcorp+1),lineaCorpus+"\n")
+                                            corp["word"]=lemmaService["lemma"]
+                                            if(lemmaService["palabra_original"]!=lemmaService["lemma"]):
+                                                lineaCorpus=fn_jsonToLineCsv(corp,True)
+                                                lines.insert(int(idxcorp+2),lineaCorpus+"\n")
+                                            FilecorpusCiad.write(''.join(lines))                                           
+
+                                        else:
+                                            FilecorpusCiad.write(''.join(lines))                                           
+                                            lines.insert(int(idxcorp+1),lineaCorpus+"\n")
                                         #se agrega también la forma lematizada
-                                        print(lemmaService["categoria"].lower())
+#                                        print(lemmaService["categoria"].lower())
 #                                        if(lemmaService["categoria"].lower()!="sin catalogar"):
 #                                            corp["word"]=lemmaService["lemma"]
 #                                            lineaCorpus=fn_jsonToLineCsv(corp,True)
