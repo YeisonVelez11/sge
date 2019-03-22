@@ -7,7 +7,6 @@ import { NotFoundComponent,DashboardComponent,FinancieraComponent} from '../page
 
 const appRoutes: Routes = [
 	{path: '', component: DashboardComponent},
-	{path: 'dashboard', component: DashboardComponent},
 	{path: 'financiera', component: FinancieraComponent},
 
 	//{path: 'producto/:id', component: ProductoDetailComponent},

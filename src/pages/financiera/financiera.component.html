@@ -23,6 +23,11 @@
 	</div>	
 
 
+	<object *ngIf="seleccionMenu?.anexo_carga_mostrar" data="./assets/data/Caracterizacion/1.5.  CARACTERIZACION FINANCIERA GFI.pdf" type="application/pdf" width="100%" height="100%">
+	<p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
+	<a href="../pdf/sample-3pp.pdf">Download PDF</a>.</p>
+	</object>
+
 
 	<div class="contenedor_indicadores" [ngClass]="seleccionMenu?.fuente=='Indicadores'?'':'d-none'">
 		<div class="row mb-5">

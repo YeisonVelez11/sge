@@ -1,12 +1,11 @@
 #import spacy
 #pip install validators
-import validators
 import nltk
 import csv
-import json
 import requests
-import threading
 import re
+import json
+
 #tokeniza el texto pero el problema es que incluye puntuacion
 from nltk.tokenize import word_tokenize
 numeroPeticiones=0
@@ -49,7 +48,7 @@ def fn_checkUrl(url):
 #            else:
 #                json_palabra["lemma"]=aSeparar[0]
 #                json_palabra["categoria"]=aSeparar[1]
-#            json_palabra["categoria"]=json_palabra["categoria"].replace("+"," ") 
+#            json_palabra["categoria"]=json_palabra["categoria"].replace("+"," ")
 #            if json_palabra["categoria"].lower().find("infini")!=-1 or json_palabra["categoria"].lower().find("parti")!=-1 or json_palabra["categoria"].lower().find("impe")!=-1:
 #                json_palabra["categoria"]="Verbos"
 #            elif json_palabra["categoria"].lower().find("nombre")!=-1:
@@ -61,12 +60,35 @@ def fn_checkUrl(url):
 #        return json_palabra
 #    else:
 #        return False
+#recibe un json {"hola"3, "hola1":4} y lo devuelve en linea de csv para el nuevo corpus 1 | 3
+def fn_jsonToLineCsv(lineaCorpus,esVacio):
+    aLineaNuevoCorpus=[]
+    for idx,key in enumerate(lineaCorpus.keys()): 
+        linea=lineaCorpus[key].strip()
+        #"no reemplazar primer valor que es la palabra"
+        if(idx==0):
+          aLineaNuevoCorpus.append(linea)
+        else:
+          if(esVacio):
+              aLineaNuevoCorpus.append("")
+          else:
+              aLineaNuevoCorpus.append(linea)
+    aLineaNuevoCorpus=str(aLineaNuevoCorpus)    
+    print(aLineaNuevoCorpus)
+
+    #aLineaNuevoCorpus = aLineaNuevoCorpus[:-1]
+    aLineaNuevoCorpus=aLineaNuevoCorpus.replace("'","")
+    aLineaNuevoCorpus=aLineaNuevoCorpus.replace("[","")
+    aLineaNuevoCorpus=aLineaNuevoCorpus.replace("]","")
+    aLineaNuevoCorpus=aLineaNuevoCorpus.replace(", ",delimitadorCorpus)
+    return aLineaNuevoCorpus
 
 def fn_limpiarPalabra(palabra,  palabra_original):
-    lemma=palabra[1].replace(" ","")
+    lemma=palabra[1].replace(" ","").lower()
     if lemma=="-":
         lemma=palabra_original
     categoria=palabra[0].replace(" ","")
+   
     if categoria.lower()=="n":
         categoria="Sustantivo"
     elif categoria.lower()=="v":
@@ -75,6 +97,9 @@ def fn_limpiarPalabra(palabra,  palabra_original):
         categoria="Sin Catalogar"
     elif categoria.lower()=="adj":
         categoria="Adjetivo"
+    #q es cantidad
+    elif categoria.lower()=="q":
+        categoria="Adverbio"    
     elif len(categoria.lower().split("|"))>=1:
         categoria=categoria.lower().split("|")[1]
         if categoria.lower()=="n":
@@ -85,10 +110,11 @@ def fn_limpiarPalabra(palabra,  palabra_original):
             categoria="Sin Catalogar"
         elif categoria.lower()=="adj":
             categoria="Adjetivo"      
-        
-        
-        
-    json_palabra={"lemma":lemma, "categoria":categoria,palabra_original:palabra_original}
+        elif categoria.lower()=="q":
+            categoria="Adverbio"  
+       
+       
+    json_palabra={"lemma":lemma, "categoria":categoria,"palabra_original":palabra_original}
     return json_palabra
 #print (json.dumps(['foo', {'bar': ('baz', None, 1.0, 2)}]))
 
@@ -96,21 +122,22 @@ def fn_limpiarPalabra(palabra,  palabra_original):
 #from nltk.corpus import stopwords
 #stop_words =set(stopwords.words('spanish'))
 aStop_words= []
-with open('stopWords.csv', newline='') as File:  
-    reader = csv.reader(File)
+with open('stopWords.csv', newline='') as FileStopWord:  
+    reader = csv.reader(FileStopWord)
     for row in reader:
         aStop_words.append(row[0])
-
+FileStopWord.close()
 aCorpusCiad= []
+corpusCiad='nuevo_corpus.csv'
+delimitadorCorpus="|"
+#with open('CorpusCIAD.csv', newline='') as File:  
+with open(corpusCiad, newline='') as File:  
+    reader = csv.reader(File,delimiter=delimitadorCorpus)
+    for row in reader:
+        aCorpusCiad.append({"word":row[0],"score":row[1],"sub":row[2],"emotion":row[3] })
 File.close()
 
-#with open('CorpusCIAD.csv', newline='') as File:  
-with open('nuevo_corpus.csv', newline='') as File:  
- 
-    reader = csv.reader(File,delimiter='|')
-    for row in reader:
-        aCorpusCiad.append({"word":row[0],"score":row[1],"sub":row[2],"emotion":row[3]})
-File.close()
+
 csv_reader=""
 operador="system"
 with open('chatprueba.csv') as csv_leido:
@@ -128,7 +155,7 @@ with open('chatprueba.csv') as csv_leido:
                 if row[6].lower()!=operador:
                     if(row[6].lower()==""):
                         operador=row[6].lower()
-                    else: 
+                    else:
                         idOperador=idOperador+1
                     operador=row[6].lower() #define si actualmente es system,agent o consumer
 
@@ -141,7 +168,7 @@ with open('chatprueba.csv') as csv_leido:
 #                texto=texto.replace(",","")
 #                texto=texto.replace(").","")
 #                texto=texto.replace("(","")
-                
+               
                 #TOKENIZAR PALABRAS
                 palabras_tokenizadas=(word_tokenize(texto,"spanish"))
                 #mejorar esta parte
@@ -156,7 +183,7 @@ with open('chatprueba.csv') as csv_leido:
                
                 #manera de eliminar caracteres a partir de un array
                 #palabras_tokenizadas = [ palabra for palabra in palabras_tokenizadas if palabra not in punctuation ]
-                
+               
                 #freq = nltk.FreqDist(palabras_tokenizadas)
 #                for idx,palabra in enumerate(palabras_tokenizadas):
 #                    #palabras terminadas en rle
@@ -169,13 +196,13 @@ with open('chatprueba.csv') as csv_leido:
 #                    # quitar rte | rme ej: comerte comerme
 #                    elif palabra[-3:]=="rte" or palabra[-3:]=="rme":
 #                        if palabra[len(palabra)-4] in vocales:
-#                            palabras_tokenizadas[idx]=palabra[:-2]+"" 
-                          
+#                            palabras_tokenizadas[idx]=palabra[:-2]+""
+                         
                 ##if first in 'aeiou'
                 texto=' '.join(palabras_tokenizadas)
 
-                
-                
+               
+               
                 #quitando stopwords
                 aFrase_sin_stopwords = [" "] #primera posicion una cadena vacia para que se analicen todos los elementos del bigrama
                 for word in palabras_tokenizadas:
@@ -183,14 +210,14 @@ with open('chatprueba.csv') as csv_leido:
                      aFrase_sin_stopwords.append(word)
                 texto=' '.join(aFrase_sin_stopwords)
                 #print(aFrase_sin_stopwords)
-                
+               
                 print(aFrase_sin_stopwords)
 
-                
+               
                 #convierte un array en un string ' '.join(new_sentence) esto lo pide nlp(text)
                 aFraseLematizada=[];
                 aLemmasOracion=[]
-                            
+                           
                 aBigrama=(list(nltk.bigrams(aFrase_sin_stopwords)))
 
                 for idx,bigrama in enumerate(aBigrama):
@@ -205,7 +232,6 @@ with open('chatprueba.csv') as csv_leido:
                         token=aBigrama[idx][1]
                         palabraEncontrada=False #indica si se encontró la palabra en el corpus
                         if corp["word"].lower()==aBigrama[idx][1]:
-                            print("encuentra",token)
                             sub=corp["sub"]
                             emotion=corp["emotion"]
                             score=corp["score"]
@@ -214,11 +240,10 @@ with open('chatprueba.csv') as csv_leido:
                                 negacion=1 #se usa para corroborar  si hubo una negación
                                 #para afectar la siguiente fila, entonces se sumará de a 1 para evitar afectarseen la siguiente iteracion para cuando sea 2 se reinicie
                                 # hola, nadie aqui se sabe que se niega negacion=1
-                                #nadie, ayudar en esta iteraicon será 2 entonces se debe reiniciar 
+                                #nadie, ayudar en esta iteraicon será 2 entonces se debe reiniciar
                             palabraEncontrada=True
                             break
                     if palabraEncontrada==False:
-                        print("no encuentra",token)
                         iPeticionWebFirstTime=iPeticionWebFirstTime+1
                         token_tmp={}
                         if iPeticionWebFirstTime==1:
@@ -228,21 +253,19 @@ with open('chatprueba.csv') as csv_leido:
                             cookie=session.cookies.get_dict()
                             getId=session.cookies.get_dict()
                             getId=getId["CGISESSID"]
-        
+       
                         getLemma=requests.get("http://cartago.lllf.uam.es/grampal/grampal.cgi?m=analiza&csrf="+getId+"&e="+token, cookies=cookie)
                         respuestaLemma=getLemma.text
                         getId=re.search('name="csrf" value="(.+)?"',respuestaLemma)[1]
                         aLemma = re.findall(r'<span style="font-weight:bold">(.*?)<', respuestaLemma)
-
                         #verificar que sea una url valida
-                        #para no tener que mover mucho el codigo, esta bandera indica si no es una palabra valida, no se agregue el elemento 
+                        #para no tener que mover mucho el codigo, esta bandera indica si no es una palabra valida, no se agregue el elemento
                         omitirPalabra=False
                         if fn_checkUrl(token):
                            token_tmp["lemma"]=token
                            token_tmp["palabra_original"]=token
                            token_tmp["tipo"]="Enlace Web"
-                           token="link"
-                           omitirPalabra=True
+                           omitirPalabra=False
                         #verificar que sea una palabra valida
                         elif token.isalpha()==False:
                            token_tmp["lemma"]=token
@@ -250,19 +273,68 @@ with open('chatprueba.csv') as csv_leido:
                            token_tmp["tipo"]="Palabra sin Catalogar"
                            token="error"
                            omitirPalabra=True
-    
+   
 
                         #se obtiene lo necseairo del servicio y se elimina codigo basura
 
-    
+   
                         if(omitirPalabra==False):
-                                
+                               
                             lemmaService=fn_limpiarPalabra(aLemma,token)
+                            #aqui se compara si existe la palabra lematizada en el corpus para añadirla por ejemplo si estar comer y se esta buscando comeremos, se agregará despues de comer
+
+
+
+
+                            with open(corpusCiad, "r") as FilecorpusCiad:
+                                lines = FilecorpusCiad.readlines()
+
+                                for idxcorp,corp in enumerate(aCorpusCiad):
+                                    encontadoCorpus=False
+                                    
+                                    
+                                    if corp["word"].lower()==lemmaService["lemma"]:
+                                        encontadoCorpus=True
+                                        print("************",corp)
+                                        oLineaCorpusEncontrado=corp
+                                        #json.dumps(oLineaCorpusEncontrado)
+                                        break
+
+                                
+                                #este es el camino para leer y escribir al mismo tiempo
+                                #en esta parte como no se encontró la palabra se verifica si existe en el corpus alguna variacion agregandola al lado de su variación o al final
+                                with open(corpusCiad, "w") as FilecorpusCiad:
+
+
+                                    if(encontadoCorpus==False):
+                                        #se agrega la última fila
+                                        corp["word"]=lemmaService["palabra_original"]
+                                        lineaCorpus=fn_jsonToLineCsv(corp,True)
+                                        lines.insert(int(idxcorp+1),lineaCorpus+"\n")
+                                        FilecorpusCiad.write(''.join(lines))                                           
+                                        
+                                        #se agrega también la forma lematizada
+                                        print(lemmaService["categoria"].lower())
+#                                        if(lemmaService["categoria"].lower()!="sin catalogar"):
+#                                            corp["word"]=lemmaService["lemma"]
+#                                            lineaCorpus=fn_jsonToLineCsv(corp,True)
+#                                            lines.insert(int(idxcorp+1),lineaCorpus+"\n")
+#                                            FilecorpusCiad.write(''.join(lines))
+
+                                    else:
+                                        oLineaCorpusEncontrado["word"]=lemmaService["palabra_original"]
+                                        lineaCorpus=fn_jsonToLineCsv(oLineaCorpusEncontrado,False)
+                                        lines.insert(int(idxcorp+1), lineaCorpus+"\n")
+                                        FilecorpusCiad.write(''.join(lines))
+
+
+
+                            FilecorpusCiad.close()
                             if lemmaService:
                                token_tmp["lemma"]=lemmaService["lemma"]
                                token_tmp["tipo"]=lemmaService["categoria"]
                                token_tmp["palabra_original"]=token
-    
+   
             #                   if token_tmp["tipo"]=="Sin catalogar":
             #                       corregirPalabra=requests.post("https://languagetool.org/api/v2/check", headers = cabecera1, data = {"disabledRules": "WHITESPACE_RULE","allowIncompleteResults":True,"text":token_tmp["texto"],"language": "es"})
             #                       corregirPalabra=corregirPalabra.text
@@ -270,12 +342,12 @@ with open('chatprueba.csv') as csv_leido:
                             else:
                                token_tmp["lemma"]=token
                                token_tmp["tipo"]="sin catalogar"
-                        print(token_tmp)       
+                        print(token_tmp)      
                         #aFraseLematizada.append(token_tmp)
-                        #aLemmasOracion.append(token_tmp["palabra_original"]) 
-    
+                        #aLemmasOracion.append(token_tmp["palabra_original"])
+   
                                 #print(token_tmp["texto"], token_tmp["lemma"], token_tmp["tipo"])    
-                        
+                       
                         #print(corp["word"], " == ",aBigrama[idx][1])
                         #print(sub, emotion)
                     if negacion==2 and emotion.lower()=="sorpresa":
@@ -295,21 +367,21 @@ with open('chatprueba.csv') as csv_leido:
 
                     elif negacion==2 and emotion.lower()=="tristeza":
                         sub="Alegre"
-                        emotion="Alegría" 
+                        emotion="Alegría"
                         negacion=0
-                        
+                       
                     elif negacion==2 and emotion.lower()=="confianza":
                         sub="Aterrado"
                         emotion="Miedo"
                         negacion=0
                     elif negacion==2 and emotion.lower()=="miedo":
                         sub="Confianza"
-                        emotion="Seguridad"   
+                        emotion="Seguridad"  
                     negacion=negacion+1
                     writer.writerow({'column_1': column_1, 'ID': row[3]+row[4]+str(idOperador), 'aux1': idOperador,'anio':row[3],'mes': row[4], "word1":aBigrama[idx][0],"word2":aBigrama[idx][1],"score":score, "sub":sub, "emotion":emotion})    
             line_count=line_count+1
     csv_creado.close()
-        
+       
 
 
 
@@ -317,13 +389,4 @@ with open('chatprueba.csv') as csv_leido:
 
 
 
-
-
-
-
-
-
-
-
-    
 
