@@ -221,10 +221,12 @@ with open('chatprueba.csv') as csv_leido:
                 aBigrama=(list(nltk.bigrams(aFrase_sin_stopwords)))
 
                 for idx,bigrama in enumerate(aBigrama):
+                    
                     column_1=column_1+1
                     #escribinedo palabra
                     #print(idx, " ", bigrama, " ", idOperador)
                     for corp in aCorpusCiad:
+                        aElementosDucplicados=[]
                         sub="Deconocida"
                         emotion="Deconocida"
                         score="999"
@@ -304,36 +306,51 @@ with open('chatprueba.csv') as csv_leido:
                                 #este es el camino para leer y escribir al mismo tiempo
                                 #en esta parte como no se encontró la palabra se verifica si existe en el corpus alguna variacion agregandola al lado de su variación o al final
                                 with open(corpusCiad, "w") as FilecorpusCiad:
-
-
+                                    incrementoInsertados=0;
+                                    #si no se encuentra en el corpus
                                     if(encontadoCorpus==False):
-                                        #se agrega la última fila
-                                        corp["word"]=lemmaService["palabra_original"]
-                                        lineaCorpus=fn_jsonToLineCsv(corp,True)
-                                        if(lemmaService["categoria"].lower()!="sin catalogar"):
-                                            lines.insert(int(idxcorp+1),lineaCorpus+"\n")
-                                            corp["word"]=lemmaService["lemma"]
-                                            if(lemmaService["palabra_original"]!=lemmaService["lemma"]):
-                                                lineaCorpus=fn_jsonToLineCsv(corp,True)
-                                                lines.insert(int(idxcorp+2),lineaCorpus+"\n")
-                                            FilecorpusCiad.write(''.join(lines))                                           
-
-                                        else:
-                                            FilecorpusCiad.write(''.join(lines))                                           
-                                            lines.insert(int(idxcorp+1),lineaCorpus+"\n")
-                                        #se agrega también la forma lematizada
-#                                        print(lemmaService["categoria"].lower())
-#                                        if(lemmaService["categoria"].lower()!="sin catalogar"):
-#                                            corp["word"]=lemmaService["lemma"]
-#                                            lineaCorpus=fn_jsonToLineCsv(corp,True)
-#                                            lines.insert(int(idxcorp+1),lineaCorpus+"\n")
-#                                            FilecorpusCiad.write(''.join(lines))
-
+                                        
+                                        if corp["word"] not in aElementosDucplicados:
+                                            #print("no esta")
+                                            #se agrega la última fila
+                                            corp["word"]=lemmaService["palabra_original"]
+                                            lineaCorpus=fn_jsonToLineCsv(corp,True)
+                                            #se agrega dos veces, el lema y la frase que ese esta buscando siempre y cuando tengan una categoria valida adj,sustantivo, etc
+                                            if(lemmaService["categoria"].lower()!="sin catalogar"):
+                                                incrementoInsertados=incrementoInsertados+1;
+                                                lines.insert(int(idxcorp+1+incrementoInsertados),lineaCorpus+"\n")
+                                                aElementosDucplicados.append(corp["word"])
+                                                corp["word"]=lemmaService["lemma"]
+                                                aElementosDucplicados.append(corp["word"])
+                                                if(lemmaService["palabra_original"]!=lemmaService["lemma"]):
+                                                    incrementoInsertados=incrementoInsertados+1;
+                                                    lineaCorpus=fn_jsonToLineCsv(corp,True)
+                                                    lines.insert(int(idxcorp+1+incrementoInsertados),lineaCorpus+"\n")
+    
+                                                FilecorpusCiad.write(''.join(lines))                                           
+                                            #si es una palabra desconocida se agrega una sola vez 
+                                            else:
+                                                #if corp["word"] not in aElementosDucplicados:
+                                                incrementoInsertados=incrementoInsertados+1;
+                                                lines.insert(int(idxcorp+1+incrementoInsertados),lineaCorpus+"\n")
+                                                FilecorpusCiad.write(''.join(lines))   
+                                                #**incrementoInsertados=incrementoInsertados+1;
+                                                aElementosDucplicados.append(corp["word"])
+                                            #se agrega también la forma lematizada
+    #                                        print(lemmaService["categoria"].lower())
+    #                                        if(lemmaService["categoria"].lower()!="sin catalogar"):
+    #                                            corp["word"]=lemmaService["lemma"]
+    #                                            lineaCorpus=fn_jsonToLineCsv(corp,True)
+    #                                            lines.insert(int(idxcorp+1),lineaCorpus+"\n")
+    #                                            FilecorpusCiad.write(''.join(lines))
+                                        #si se encuentra en el corpus
                                     else:
+                                        incrementoInsertados=incrementoInsertados+1;
                                         oLineaCorpusEncontrado["word"]=lemmaService["palabra_original"]
                                         lineaCorpus=fn_jsonToLineCsv(oLineaCorpusEncontrado,False)
-                                        lines.insert(int(idxcorp+1), lineaCorpus+"\n")
+                                        lines.insert(int(idxcorp+1+incrementoInsertados), lineaCorpus+"\n")
                                         FilecorpusCiad.write(''.join(lines))
+
 
 
 
