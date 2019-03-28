@@ -38,6 +38,7 @@ private http: HttpClient
     this.archivo_adjunto=this.seleccionMenu;
     this.seleccionMenu=
       {
+        "bFlecha_animacion":true,
         "fuente":"Indicadores",
         "fuente_hijos": 
           [
@@ -189,7 +190,7 @@ private http: HttpClient
 
   }
 
-
+/*
  loadPdf(source){
     console.log("entra")
     const xhr = new XMLHttpRequest();
@@ -204,16 +205,38 @@ private http: HttpClient
       }
     };
     xhr.send();
+  }*/
+
+  fn_setAdjuntoActual(anexo, tipo_adjunto){
+    this.seleccionMenu["anexo_carga_mostrar"]=anexo;
+    if(tipo_adjunto=="hijo"){
+      this.seleccionMenu.nieto_seleccionado=null;
+    }
   }
 
-  fn_setRigthOption(item){
+
+  fn_setRigthOption(item,tipo){
     console.log(item);
     /*{
     "hijo_nombre":"GFI-FOR-003.   Devoluciones",
     "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-003.   Devoluciones.pdf",
     "nietos":[]
     }*/
+    if(tipo=="formatos"){
+      this.seleccionMenu["seleccion_formato"]=true;
+      this.seleccionMenu["seleccion_instructivo"]=false;
+
+    }
+    else{
+      this.seleccionMenu["seleccion_instructivo"]=true;
+      this.seleccionMenu["seleccion_formato"]=false;
+    }
     this.seleccionMenu["anexo_carga_mostrar"]=item.anexo;
+    this.seleccionMenu["nieto_seleccionado"]=
+    {
+      "nieto_seleccionado_nombre":item.hijo_nombre,
+      "nieto_seleccionado_anexo":item.anexo
+    }
 
   }
 

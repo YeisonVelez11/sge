@@ -5,6 +5,7 @@ import csv
 import requests
 import re
 import json
+from bs4 import BeautifulSoup
 
 #tokeniza el texto pero el problema es que incluye puntuacion
 from nltk.tokenize import word_tokenize
@@ -88,6 +89,7 @@ def fn_limpiarPalabra(palabra,  palabra_original):
     if lemma=="-":
         lemma=palabra_original
     categoria=palabra[0].replace(" ","")
+    categoria=categoria.replace("\n","")
    
     if categoria.lower()=="n":
         categoria="Sustantivo"
@@ -97,6 +99,16 @@ def fn_limpiarPalabra(palabra,  palabra_original):
         categoria="Sin Catalogar"
     elif categoria.lower()=="adj":
         categoria="Adjetivo"
+    elif categoria.lower()=="p":
+        categoria="Pronombre"
+    elif categoria.lower()=="prep":
+        categoria="Preposición"  
+    elif categoria.lower()=="intj":
+        categoria="Interjección"    
+    elif categoria.lower()=="md":
+        categoria="Marcador Discursivo"  
+    elif categoria.lower()=="c":
+            categoria="Conjunción"              
     #q es cantidad
     elif categoria.lower()=="q":
         categoria="Adverbio"    
@@ -112,8 +124,16 @@ def fn_limpiarPalabra(palabra,  palabra_original):
             categoria="Adjetivo"      
         elif categoria.lower()=="q":
             categoria="Adverbio"  
-       
-       
+        elif categoria.lower()=="p":
+            categoria="Pronombre"    
+        elif categoria.lower()=="prep":
+            categoria="Preposición"          
+        elif categoria.lower()=="intj":
+            categoria="Interjección"         
+        elif categoria.lower()=="md":
+            categoria="Marcador Discursivo"
+        elif categoria.lower()=="c":
+            categoria="Conjunción"                
     json_palabra={"lemma":lemma, "categoria":categoria,"palabra_original":palabra_original}
     return json_palabra
 #print (json.dumps(['foo', {'bar': ('baz', None, 1.0, 2)}]))
@@ -259,7 +279,12 @@ with open('chatprueba.csv') as csv_leido:
                         getLemma=requests.get("http://cartago.lllf.uam.es/grampal/grampal.cgi?m=analiza&csrf="+getId+"&e="+token, cookies=cookie)
                         respuestaLemma=getLemma.text
                         getId=re.search('name="csrf" value="(.+)?"',respuestaLemma)[1]
-                        aLemma = re.findall(r'<span style="font-weight:bold">(.*?)<', respuestaLemma)
+
+                        soup = BeautifulSoup(respuestaLemma,features="lxml")
+                        spans = soup.find_all("span",attrs={'style':"font-weight:bold"})
+                        aLemma=[]
+                        for idx,span in enumerate(spans):
+                            aLemma.append(spans[idx].text)  
                         #verificar que sea una url valida
                         #para no tener que mover mucho el codigo, esta bandera indica si no es una palabra valida, no se agregue el elemento
                         omitirPalabra=False

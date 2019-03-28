@@ -2,27 +2,28 @@
 <header>
 
   <!-- Sidebar navigation sn-bg-1  -->
-  <mdb-side-nav #sidenav class="background_sidemenu" [fixed]="false">
+  <mdb-side-nav #sidenav class="background_sidemenu" [ngClass]="bMostraMenu?'d-none':''" >
 
     <div class="container_fuentes color_texto_gris" style="background: transparent;">
 
       <!--<div class="d-flex flex-center">
         <img src="./assets/img/logoum.jpg" class="img-fluid">
       </div>-->
-      <div class="d-flex flex-center mb-2 sombra" style="background: white;border: 4px solid rgba(104,192,77,1);">
+      <!--<div class="d-flex flex-center mb-2 sombra" style="background: white;border: 4px solid rgba(104,192,77,1);">
         <img src="./assets/img/acreditacion.png" style="width:80%">
-      </div>
+      </div>-->
       <mdb-accordion [multiple]="true"  >
         <mdb-accordion-item [collapsed]="true" *ngFor="let item of aFuentes" >
           <mdb-accordion-item-head [ngClass]="item.fuente_hijos.length==0?'quitar_flecha_accordion':''"  (click)="item.fuente_hijos.length==0?fn_setOptionMenu(item,null):'';;" mdbWavesEffect>
-            {{item.fuente}}
+            <span [ngStyle]="{'font-weight':oMenuSeleccionado?.fuente==item.fuente?'bold':'unset'}">{{item.fuente}}</span>
           </mdb-accordion-item-head>
           <mdb-accordion-item-body *ngIf="item.fuente_hijos.length!=0">
 
             <mdb-accordion [multiple]="true" >
               <mdb-accordion-item [collapsed]="true" *ngFor="let hijo of item.fuente_hijos">
-                <mdb-accordion-item-head [ngClass]="hijo.nietos.length==0?'quitar_flecha_accordion':''" (click)="fn_setOptionMenu(item,hijo);">
-                  {{hijo.hijo_nombre}}
+                <mdb-accordion-item-head [ngClass]="hijo.nietos.length==0?'quitar_flecha_accordion':''" (click)="fn_setOptionMenu(item,hijo);" >
+                  <span [ngStyle]="{'font-weight':oMenuSeleccionado?.hijo_seleccionado?.hijo_nombre==hijo?.hijo_nombre?'bold':'unset'}">{{hijo.hijo_nombre}}</span>
+
                   <mdb-accordion-item-body *ngIf="hijo.nietos.length!=0">
                     holi
                   </mdb-accordion-item-body>
@@ -49,11 +50,11 @@
 
     <mdb-navbar-brand>
       <!-- SideNav slide-out button -->
-        <a (click)="sidenav.show()" [ngClass]="bMostraMenu?'animation_opacity_ocultar':'animation_opacity_mostrar'" (click)="bPrimeraVez=true;" class="button-collapse hidden-nav-button-collapse animation_opacity d-inline">
+        <!--<a (click)="sidenav.show()" [ngClass]="bMostraMenu?'animation_opacity_ocultar':'animation_opacity_mostrar'" (click)="bPrimeraVez=true;" class="button-collapse hidden-nav-button-collapse animation_opacity d-inline">
           <i class="fas fa-bars" [ngClass]="!bPrimeraVez?'bola_resalte':''" style="color:white"></i>
-        </a>
+        </a>-->
       <!--/. SideNav slide-out button -->
-      <img src="./assets/img/logoum.jpg" style="height: 46px;" class="p-0 ml-5">
+      <img src="./assets/img/logoum.jpg" style="height: 46px;" class="p-0">
 
       <!-- Breadcrumb-->
 
@@ -66,13 +67,6 @@
     <mdb-navbar-brand style="display: inherit;">
     <!-- routerLink="/reuniones" routerLinkActive="active-link"-->
 
-
-    <a class="nav-item dropdown d-inline elementos_menu"  >
-        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Plan de Calidad</span>
-    </a>
-    <div class="menuHovering sombra">
-
-    </div>
 
 
     <a class="nav-item dropdown d-inline elementos_menu"  >
@@ -135,7 +129,18 @@
         </div>
       </div>
     </div>
+    <a class="nav-item dropdown d-inline elementos_menu no_ocultar_menu"  >
+        <span dropdownToggle mdbWavesEffect type="button" class="nav-link waves-light font-weight-bold texto_menu" mdbWavesEffect>Plan de Calidad</span>
+    </a>
+    <div class="sombra menuHovering no_ocultar_menu" style="height: 80vh; width: 90%">
 
+    <object  class="no_ocultar_menu" data="./assets/data/Plan de Calidad - ISO 9001.pdf" type="application/pdf" width="100%" height="100%">
+      <p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
+      <a href="./assets/data/Plan de Calidad - ISO 9001.pdf">Download PDF</a>.</p>
+    </object>
+
+
+    </div>
     <!--<a class="navbar-brand" href="#">
         <img src="/assets/img/logoum2.png" height="35" alt="">
     </a>      
@@ -169,7 +174,7 @@
 
 </div><!-- [ngClass]="!bMostraMapa?'d-none':''" -->
       <div class="contenedor_ppal_mapa" [ngStyle]="{'z-index':!bMostraMapa?-1:''}" >
-        <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'" style="z-index:9 !important;background:   white;background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(255, 255, 255, 0.9);">
+        <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'" style="z-index:1003 !important;background:   white;background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(255, 255, 255, 0.9);">
             <div style="margin-right:71px;">
               <div class="text-center contenedor_bloque_izq" style=" position:  relative;">
                   <i class="fas fa-long-arrow-alt-right flecha_derecha" style="top: 91px;" ></i>
@@ -233,7 +238,7 @@
                         </div>
                         <div  class="contenedor_engranen">
                           <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='investigacion';titulo='misionales'" [ngClass]="categoria=='investigacion'?'seleccion_categoria':''">
-                            <p  class="texto_engranen_1 p-0 m-0 " >Investigación y Postgrados</p>
+                            <p  class="texto_engranen_1 p-0 m-0 " >Postgrados</p>
                             <img class="icon_1" src="./assets/img/investigacion.svg"   >
                           </div>
                         </div>
@@ -278,7 +283,6 @@
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <!-- fn_goProcess('bienes','apoyo') fn_getProceso()--> 
                           <div class="rectangulo_categoria" mdbWavesEffect  (click)="fn_goProcess('financiera','apoyo')"   [ngClass]="categoria=='financiera'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 " >Gestión Financiera</p>
                             <img class="icon_1" src="./assets/img/financiera.svg"   >

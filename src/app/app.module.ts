@@ -11,7 +11,7 @@ import { MDBBootstrapModulesPro } from '../../projects/ng-uikit-pro-standard/src
 import { MDBSpinningPreloader } from '../../projects/ng-uikit-pro-standard/src/lib/pro/mdb-pro.module';
 */
 
-import { NgModule } from '@angular/core';
+import { NgModule,Pipe, PipeTransform } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -22,17 +22,25 @@ import { ServicesProvider } from '../providers/services';
 import { routing, appRoutingProviders } from './app.routing'
 import { HttpModule } from '@angular/http';
 import { DatePipe } from '@angular/common';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
+//import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { DomSanitizer} from '@angular/platform-browser';
 
-;
+@Pipe({ name: 'safe' })
+export class SafePipe implements PipeTransform {
+  constructor(private sanitizer: DomSanitizer) {}
+  transform(url) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+} 
+
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     NotFoundComponent,
     DashboardComponent,
-    FinancieraComponent
-
+    FinancieraComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
@@ -42,8 +50,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpModule,
-    routing,
-    PdfViewerModule
+    routing
+    //PdfViewerModule
   ],
   entryComponents: [  ],
   providers: [

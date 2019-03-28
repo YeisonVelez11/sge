@@ -15,7 +15,9 @@ bMostraMapa:any=""; //true oculta el mapa
 bMostraMenu:any="";
 categoria="";
 titulo=""
+oMenuSeleccionado={"fuente":"Indicadores"};
 @ViewChild('sidenav') sidenav: any;
+
 /*@Output()
 fn_dashboard = new EventEmitter()*/
 /*@Output()
@@ -57,7 +59,7 @@ aFuentes:any=
                 },
                 {
                   "hijo_nombre":"GFI-FOR-005.   Formulrios de Financiación.pdf",
-                  "anexo":"./assets/data/GFI-FOR-005.   Formulrios de Financiación.pdf",
+                  "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-005.   Formulrios de Financiación.pdf",
                   "nietos":[
                   ]
                 } 
@@ -157,8 +159,6 @@ aFuentes:any=
       "anexo":"./assets/data/matriz/1.9.   MATRIZ DE RIESGOS FINANCIERA  V 2.pdf",
       "fuente_hijos": 
         [
-
-
         ]
     }
 
@@ -190,18 +190,35 @@ aFuentes:any=
           this.bMostraMenu=true;
           this.bMostraMapa=true;
         }
-
   }
+
   fn_setOptionMenu(item:any,hijo:any){
     this.sidenav.hide();
-    item["hijos"]=hijo;
+    item["nieto_seleccionado"]=null;
+    item["formatos"]=null;
+    item["instructivos"]=null;
+    item["hijo_seleccionado"]=null;
+    item["bFlecha_animacion"]=true;
+    item["seleccion_instructivo"]=true;
+    item["seleccion_formato"]=false;
+
+
     if(hijo){
       item["anexo_carga_mostrar"]=hijo.anexo;
+      item["hijo_seleccionado"]=
+      {
+        "hijo_nombre":hijo.hijo_nombre,
+        "hijo_anexo":hijo.anexo
+      };
+      item["formatos"]=hijo.formatos;
+      item["instructivos"]=hijo.instructivos;
+
     }
     else{
       item["anexo_carga_mostrar"]=item.anexo;
     }
-    console.log(item);
+    this.oMenuSeleccionado=item;
+
     this.setOptionMenu.emit(item);
 
   }
@@ -223,13 +240,6 @@ aFuentes:any=
     this.bMostraMapa=false;
     this.router.navigate(["financiera"]);
     //this.outupSeleccionProceso.emit({"categoria":this.categoria,"titulo":this.titulo});
-  }
-
-  fn_getProceso(){
-    console.log("aqui")
-    //this.outupSeleccionProceso.emit({"categoria":1});
-    this.bMostraMenu=false;
-    this.router.navigate(["financiera"]);
   }
 
 

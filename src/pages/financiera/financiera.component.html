@@ -2,6 +2,8 @@
 
 <div class="contenedor_seccion">
 	<div class="titulo_secciones  sombra">
+	 
+	<img height="25" src="./assets/img/financiera_b.svg" style="height: 39px;/* margin-right: 10px; */ position: absolute;left: 37%;">
 	  Gestión Financiera
 
 	</div>
@@ -15,6 +17,13 @@
 		  <mdb-breadcrumb-item class="active" >
 		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon> {{seleccionMenu?.fuente}}
 		  </mdb-breadcrumb-item >
+
+  		<mdb-breadcrumb-item class="active" *ngIf="seleccionMenu?.hijo_seleccionado?.hijo_nombre" style="cursor: pointer;" (click)="fn_setAdjuntoActual(seleccionMenu.hijo_seleccionado.hijo_anexo,'hijo')">
+		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon> {{seleccionMenu.hijo_seleccionado.hijo_nombre}}
+		 </mdb-breadcrumb-item >
+  		<mdb-breadcrumb-item class="active" *ngIf="seleccionMenu?.nieto_seleccionado?.nieto_seleccionado_nombre" (click)="fn_setAdjuntoActual(seleccionMenu.nieto_seleccionado.nieto_seleccionado_anexo,'nieto')" style="cursor: pointer;">
+		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon> {{seleccionMenu.nieto_seleccionado.nieto_seleccionado_nombre}}
+		 </mdb-breadcrumb-item >
 		  <!--<mdb-breadcrumb-item class="active">
 		    <mdb-icon fas icon="angle-double-right" class="mr-1"></mdb-icon><i class="fa fa-sign-out ml-1" aria-hidden="true"></i> Data
 		  </mdb-breadcrumb-item>-->
@@ -23,32 +32,36 @@
 	</div>	
 
 
-	<object *ngIf="seleccionMenu?.anexo_carga_mostrar" data="./assets/data/Caracterizacion/1.5.  CARACTERIZACION FINANCIERA GFI.pdf" type="application/pdf" width="100%" height="100%">
-	<p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
-	<a href="../pdf/sample-3pp.pdf">Download PDF</a>.</p>
-	</object>
 
+
+	<!--<object *ngIf="seleccionMenu.anexo_carga_mostrar" [data]="seleccionMenu.anexo_carga_mostrar | safe" type="application/pdf" width="100%" height="100%">
+	<p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
+	<a href="seleccionMenu.anexo_carga_mostrar">Download PDF</a>.</p>
+	</object>-->
 
 	<div class="contenedor_indicadores" [ngClass]="seleccionMenu?.fuente=='Indicadores'?'':'d-none'">
-		<div class="row mb-5">
+		<div class="row mb-3">
 			<div class="col-sm-12" >
-				<div  id="bar_chart" class="sombra" style="border-radius:5px;"></div>
+				<div  id="bar_chart"  class="sombra" style="border-radius:5px; height: 225px;"></div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-6 " >
-				<div id="chart_puntos" class="sombra mr-4"></div>
+			<div class="col-sm-6 "  >
+				<div id="chart_puntos"  class="sombra mr-4" style="border-radius:5px; height: 225px;"></div>
 			</div>
-			<div class="col-sm-6 ">
-				<div id="pie" class="sombra" style="border-radius:5px;"></div>
+			<div class="col-sm-6 " >
+				<div id="pie"  class="sombra" style="border-radius:5px; height: 225px; "></div>
 			</div>
 		</div>
 	</div>
 
 		<a   href="{{seleccionMenu?.anexo_carga_mostrar}}" *ngIf="seleccionMenu?.anexo_carga_mostrar" download="{{seleccionMenu?.anexo_carga_mostrar.split('/')[4]}}" style="margin-left: 10%;" >{{seleccionMenu?.anexo_carga_mostrar.split("/")[4]}}</a>
-		<div class="contenedor_caracterizacion sombra scrollbar thin scrollbar-gris scroll_y" style="max-height: 72%;height: 72%;margin: 0 auto;" [ngClass]="seleccionMenu?.fuente!='Indicadores'?'':'d-none'" >
-			
-		      <pdf-viewer [src]="seleccionMenu.anexo_carga_mostrar"
+		<div class="contenedor_caracterizacion sombra  scroll_y" style="max-height: 72%;height: 72%;margin: 0 auto;" [ngClass]="seleccionMenu?.fuente!='Indicadores'?'':'d-none'" >
+			<object *ngIf="seleccionMenu.anexo_carga_mostrar" [data]="seleccionMenu.anexo_carga_mostrar | safe" type="application/pdf" width="100%" height="100%">
+			<p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
+			<a href="seleccionMenu.anexo_carga_mostrar">Download PDF</a>.</p>
+			</object>
+		      <!--<pdf-viewer [src]="seleccionMenu.anexo_carga_mostrar"
 		                  *ngIf="seleccionMenu?.anexo_carga_mostrar"
 		                  [render-text]="false"
 		                  [original-size]="true"
@@ -57,29 +70,39 @@
 		                  [show-all]="false"
 		                  style="display: block; width:100%;margin:5px 0px;"
 		                  
-		      ></pdf-viewer>
+		      ></pdf-viewer>-->
 		</div>
 <!-- (page-rendered)="pageRendered($event)"-->
-	<span [ngClass]="seleccionMenu?.hijos?.formatos?.length>0?'':'d-none'">
-		<div  [ngClass]="bFlecha_animacion?'container_flecha_animacion_izq':'container_flecha_animacion_der'" (click)="bFlecha_animacion=!bFlecha_animacion">
-			<i mdbWavesEffect class="fas estilo_flecha_animacion" [ngClass]="bFlecha_animacion?'fa-angle-double-left':'fa-angle-double-right'" ></i>
+	<span [ngClass]="seleccionMenu?.formatos?.length>0?'':'d-none'">
+		<div  [ngClass]="seleccionMenu.bFlecha_animacion?'container_flecha_animacion_izq':'container_flecha_animacion_der'" (click)="seleccionMenu.bFlecha_animacion=!seleccionMenu.bFlecha_animacion">
+			<i mdbWavesEffect class="fas estilo_flecha_animacion" [ngClass]="seleccionMenu.bFlecha_animacion?'fa-angle-double-left':'fa-angle-double-right'" ></i>
 		</div>
 	</span>
-	<div class="sidebar_right background_sidemenu" [ngClass]="bFlecha_animacion?'sidebar_right_close':'sidebar_right_open'">
+	<div class="sidebar_right background_sidemenu" [ngClass]="seleccionMenu.bFlecha_animacion?'sidebar_right_close':'sidebar_right_open'">
 		<div class="container_accordion_right">
 
-	      <mdb-accordion [multiple]="true"  >
-	        <mdb-accordion-item [collapsed]="false" *ngIf="seleccionMenu?.hijos" >
+	      <mdb-accordion [multiple]="true"  *ngIf="seleccionMenu?.formatos">
+	        <mdb-accordion-item [collapsed]="false"  >
 	          <mdb-accordion-item-head   mdbWavesEffect>
-	            Formatos
+	            <span [ngStyle]="{'font-weight':seleccionMenu?.seleccion_formato?'bold':'unset'}">Formatos</span>
+
+
 	          </mdb-accordion-item-head>
 
-	          <mdb-accordion-item-body mdbWavesEffect *ngFor="let item of seleccionMenu.hijos.formatos" (click)="fn_setRigthOption(item)" style="cursor:pointer;">	          	
-	          	{{item.hijo_nombre}}
+	          <mdb-accordion-item-body mdbWavesEffect>		
+	          	<div  *ngFor="let item of seleccionMenu?.formatos" (click)="fn_setRigthOption(item,'formatos');seleccionMenu.bFlecha_animacion=!seleccionMenu.bFlecha_animacion" style="cursor:pointer;"
+	          		>
+		         <span [ngStyle]="{'font-weight':seleccionMenu?.nieto_seleccionado?.nieto_seleccionado_nombre==item.hijo_nombre?'bold':'unset'}">{{item.hijo_nombre}}</span>
+
+
+	          	</div>
 	          </mdb-accordion-item-body>
 	        </mdb-accordion-item>
 	      </mdb-accordion>
 		</div>
 	</div>
 
+
 </div>
+
+
