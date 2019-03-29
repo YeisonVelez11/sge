@@ -2,11 +2,12 @@ word|score|sub|emotion|tipo_palabra|lemma|empresa|entidad|lugar|tiempo
 abandonados|1|Decepcionado|Tristeza|Adjetivo|abandonado||||
 abandonado|1|Decepcionado|Tristeza|Adjetivo|abandonado||||
 abogado|2|Seguridad|Confianza|Sustantivo|abogado||||
-aburrido|-1|Por Definir|Por Definir|Adjetivo|aburrido||||
+aburrido|-1|Desagrado|Enfado|Adjetivo|aburrido||||
 absoluto|2|Entusiasmado|Alegría|Adjetivo|absoluto||||
 absurdo|-2|Desafortunado|Enfado|Adjetivo|absurdo||||
 abuso|2|molesto|Enfado|Sustantivo|abuso||||
 asesor|2|seguridad|Confianza|Sustantivo|asesor||||
+asesores|2|seguridad|Confianza|Sustantivo|asesor||||
 asesora|2|seguridad|Confianza|Sustantivo|asesor||||
 accesible|2|Seguridad|Confianza|Adjetivo|accesible||||
 accidente|2|Aterrado|Miedo|Sustantivo|accidente||||
@@ -575,7 +576,7 @@ cualidades|2|Entusiasmado|Alegría|Sustantivo|cualidad||||
 cubrir|2|Seguridad|Confianza|Verbo|cubrir||||
 cuidado|2|Seguridad|Confianza|Interjección|cuidado||||
 cuidadoso|2|Seguridad|Confianza|Adjetivo|cuidadoso||||
-cuidando|2|Confianza||Verbo|cuidar||||
+cuidando|2|Confianza|Seguridad|Verbo|cuidar||||
 culminación|3|Entusiasmado|Alegría|Sustantivo|culminación||||
 culpa|-2|Desfavorable|Enfado|Sustantivo|culpa||||
 culpabilidad|-2|Hostil|Enfado|Sustantivo|culpabilidad||||
@@ -2092,3 +2093,5 @@ mínimo|8|Superlativos Negativos|Superlativos Negativos|Adjetivo|mínimo||||
 pésimo|8|Superlativos Negativos|Superlativos Negativos|Adjetivo|pésimo||||
 poco|8|Superlativos Negativos|Superlativos Negativos|Adverbio|poco||||
 tardísimo|8|Superlativos Negativos|Superlativos Negativos|Adjetivo|tardísimo||||
+indios|||||||||
+indio|||||||||

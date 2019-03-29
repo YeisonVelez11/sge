@@ -72,7 +72,6 @@ def fn_checkUrl(url):
 #recibe un json {"hola"3, "hola1":4} y lo devuelve en linea de csv para el nuevo corpus 1 | 3
 def fn_jsonToLineCsv(lineaCorpus,esVacio):
     
-    print(lineaCorpus,esVacio)
     
     aLineaNuevoCorpus=[]
     for idx,key in enumerate(lineaCorpus.keys()): 
@@ -86,7 +85,6 @@ def fn_jsonToLineCsv(lineaCorpus,esVacio):
           else:
               aLineaNuevoCorpus.append(linea)
     aLineaNuevoCorpus=str(aLineaNuevoCorpus)    
-    print(aLineaNuevoCorpus)
 
     #aLineaNuevoCorpus = aLineaNuevoCorpus[:-1]
     aLineaNuevoCorpus=aLineaNuevoCorpus.replace("'","")
@@ -158,14 +156,20 @@ with open('stopWords.csv', newline='') as FileStopWord:
     for row in reader:
         aStop_words.append(row[0])
 FileStopWord.close()
-aCorpusCiad= []
+
 corpusCiad='nuevo_corpus.csv'
 delimitadorCorpus="|"
-#with open('CorpusCIAD.csv', newline='') as File:  
-with open(corpusCiad, newline='') as File:  
-    reader = csv.reader(File,delimiter=delimitadorCorpus)
+aCorpusCiad=[]
+#se almacena en un array jsones con el valor de la columna y el valor
+with open(corpusCiad) as File:
+    reader = csv.reader(File, delimiter=delimitadorCorpus)
+    header = next(reader)
     for row in reader:
-        aCorpusCiad.append({"word":row[0],"score":row[1],"sub":row[2],"emotion":row[3] })
+        dict_row = {}
+        for i,field in enumerate(header):
+             #do stuff but if you want to read
+             dict_row[field] = row[i]
+        aCorpusCiad += [dict_row]
 File.close()
 
 
@@ -296,8 +300,8 @@ with open('chatprueba.csv') as csv_leido:
                         spans = soup.find_all("span",attrs={'style':"font-weight:bold"})
                         #se almacena el resultaod del servicio web, se obtiene el lemma y el tipo de palabra
                         aLemma=[]
-                        for idx,span in enumerate(spans):
-                            aLemma.append(spans[idx].text)  
+                        for idxlem,span in enumerate(spans):
+                            aLemma.append(spans[idxlem].text)  
                         #verificar que sea una url valida
                         #para no tener que mover mucho el codigo, esta bandera indica si no es una palabra valida, no se agregue el elemento
                         omitirPalabra=False
