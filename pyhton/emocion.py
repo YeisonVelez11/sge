@@ -5,7 +5,10 @@ import csv
 import requests
 import re
 import json
+#limpia codigo html que resulta de hacer la petición web
 from bs4 import BeautifulSoup
+#se usa para limpiar acentos a palabras
+import unicodedata
 
 #tokeniza el texto pero el problema es que incluye puntuacion
 from nltk.tokenize import word_tokenize
@@ -21,6 +24,11 @@ aPalabras=["correría","llegando","jugando","explorando","mejorarlo","pensé"]
 iPeticionWebFirstTime=0
 vocales="aeiou"
 punctuation = [",", ";", ".", "..","...", ",.", "...."] # The tokens that you want to skip
+
+def strip_accents(s):
+   return ''.join(c for c in unicodedata.normalize('NFD', s)
+                  if unicodedata.category(c) != 'Mn')
+   
 
 def fn_checkUrl(url):
     expr=re.compile(r'((([A-Za-z]{3,9}:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(:[0-9]+)?|(?:www.|[-;:&=\+\$,\w]+@)[A-Za-z0-9.-]+)((?:\/[\+~%\/.\w-]*)?\??(?:[-\+=&;%@.\w]*)#?(?:[\w]*))?)')
@@ -63,6 +71,9 @@ def fn_checkUrl(url):
 #        return False
 #recibe un json {"hola"3, "hola1":4} y lo devuelve en linea de csv para el nuevo corpus 1 | 3
 def fn_jsonToLineCsv(lineaCorpus,esVacio):
+    
+    print(lineaCorpus,esVacio)
+    
     aLineaNuevoCorpus=[]
     for idx,key in enumerate(lineaCorpus.keys()): 
         linea=lineaCorpus[key].strip()
@@ -253,7 +264,8 @@ with open('chatprueba.csv') as csv_leido:
                         negacion=0
                         token=aBigrama[idx][1]
                         palabraEncontrada=False #indica si se encontró la palabra en el corpus
-                        if corp["word"].lower()==aBigrama[idx][1]:
+                        #se quita los acentos de las palabras
+                        if strip_accents(corp["word"].lower())==strip_accents(aBigrama[idx][1]):
                             sub=corp["sub"]
                             emotion=corp["emotion"]
                             score=corp["score"]
@@ -282,6 +294,7 @@ with open('chatprueba.csv') as csv_leido:
 
                         soup = BeautifulSoup(respuestaLemma,features="lxml")
                         spans = soup.find_all("span",attrs={'style':"font-weight:bold"})
+                        #se almacena el resultaod del servicio web, se obtiene el lemma y el tipo de palabra
                         aLemma=[]
                         for idx,span in enumerate(spans):
                             aLemma.append(spans[idx].text)  
@@ -319,8 +332,7 @@ with open('chatprueba.csv') as csv_leido:
                                 for idxcorp,corp in enumerate(aCorpusCiad):
                                     encontadoCorpus=False
                                     
-                                    
-                                    if corp["word"].lower()==lemmaService["lemma"]:
+                                    if strip_accents(corp["word"].lower())==strip_accents(lemmaService["lemma"]):
                                         encontadoCorpus=True
                                         print("************",corp)
                                         oLineaCorpusEncontrado=corp
