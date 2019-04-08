@@ -23,7 +23,14 @@ timeout=10
 aPalabras=["correría","llegando","jugando","explorando","mejorarlo","pensé"]
 iPeticionWebFirstTime=0
 vocales="aeiou"
-punctuation = [",", ";", ".", "..","...", ",.", "...."] # The tokens that you want to skip
+punctuation = [",", ";", ".", "..","...", ",.","...."] # The tokens that you want to skip
+
+def fn_checkEmail(exp):
+    match = re.match('^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$', exp)    
+    if match == None:
+    	return False
+    else:
+        return True
 
 def strip_accents(s):
    return ''.join(c for c in unicodedata.normalize('NFD', s)
@@ -37,38 +44,7 @@ def fn_checkUrl(url):
     else:
         return False
 
-#
-#def fn_limpiarPalabra(palabra,palabra_original):
-#    json_palabra={"lemma":"", "categoria":""}
-#    aSeparar=palabra.split("&3&3&3&")
-#    if len(aSeparar)>1:
-#        aSeparar=aSeparar[1].replace("%3B","%23")
-#        aSeparar=aSeparar.replace("&3&","%23")
-#        aSeparar=aSeparar.split("%23")
-#        
-#        if len(aSeparar)>2:
-#          for i, item in enumerate(aSeparar):
-#            if aSeparar[i].lower().find("adjetiv")!=-1:
-#                json_palabra={ "lemma":aSeparar[0], "categoria":"Adjetivos"}
-#                break
-#            if aSeparar[i].lower().find("adjetiv")!=-1:
-#                json_palabra={ "lemma":aSeparar[0], "categoria":"Adjetivos"}
-#                break
-#            else:
-#                json_palabra["lemma"]=aSeparar[0]
-#                json_palabra["categoria"]=aSeparar[1]
-#            json_palabra["categoria"]=json_palabra["categoria"].replace("+"," ")
-#            if json_palabra["categoria"].lower().find("infini")!=-1 or json_palabra["categoria"].lower().find("parti")!=-1 or json_palabra["categoria"].lower().find("impe")!=-1:
-#                json_palabra["categoria"]="Verbos"
-#            elif json_palabra["categoria"].lower().find("nombre")!=-1:
-#                json_palabra["categoria"]="Sustantivos"
-#            if json_palabra["lemma"].find("%")!=-1:
-#                json_palabra["lemma"]=palabra_original
-#            json_palabra["palabra_original"]=palabra_original
-#        #print(json_palabra)
-#        return json_palabra
-#    else:
-#        return False
+
 #recibe un json {"hola"3, "hola1":4} y lo devuelve en linea de csv para el nuevo corpus 1 | 3
 def fn_jsonToLineCsv(lineaCorpus,esVacio):
     
@@ -176,7 +152,7 @@ with open(corpusCiad,errors='ignore',encoding='utf-8') as File:
         aCorpusCiad += [dict_row]
 File.close()
 
-
+aElementosDucplicados=[]
 csv_reader=""
 operador="system"
 with open('chatprueba.csv') as csv_leido:
@@ -185,7 +161,7 @@ with open('chatprueba.csv') as csv_leido:
     line_count = 0
     column_1=0
     idOperador=1 #define el id para quien esta hablando
-    with open('emocion.csv', mode='w',newline='') as csv_creado:
+    with open('emocion.csv', mode='w',newline='',errors='ignore',encoding='utf-8') as csv_creado:
         fieldnames = ['column_1', 'ID', 'aux1', "anio","mes","word1","word2","score","sub","emotion"]
         writer = csv.DictWriter(csv_creado, fieldnames=fieldnames)
         writer.writeheader()
@@ -203,41 +179,49 @@ with open('chatprueba.csv') as csv_leido:
                 texto=texto.lower();
 #                # la biblioteca de nltooklit no limpia la puntuacion
 
-#                texto=texto.replace(".","")
-#                texto=texto.replace(",","")
-#                texto=texto.replace(").","")
-#                texto=texto.replace("(","")
-               
+
                 #TOKENIZAR PALABRAS
-                palabras_tokenizadas=(word_tokenize(texto,"spanish"))
-                #mejorar esta parte
-                palabras_tokenizadas = [ palabra for palabra in palabras_tokenizadas if palabra not in punctuation ]
+#                palabras_tokenizadas=(word_tokenize(texto,"spanish"))
+#                #mejorar esta parte
+#                palabras_tokenizadas = [ palabra for palabra in palabras_tokenizadas if palabra not in punctuation ]
+#                palabras_tokenizadas=[s.rstrip('.;, ') for s in palabras_tokenizadas]
+# 
+                #Tokenizacion de palabras
+                texto=texto.split(" ")
+                palabras_tokenizadas=[]
+                esAlfa=False
+                for indexToken,i in enumerate(texto):
+                    string=""
+                    for j in i:
 
-                palabras_tokenizadas=[s.rstrip('.;, ') for s in palabras_tokenizadas]
- 
+                            
+                        if j.isalpha():
+                            string+=j
+                            esAlfa=True
+                        else:
+    #                        #validar correo 
+    #                        if(fn_checkEmail(i)):
+    #                            palabras_tokenizadas.append(i)
+    #                            break
+    #                        #validar url
+    #                        if(fn_checkUrl(i)):
+    #                            palabras_tokenizadas.append(i)
+    #                            break                            
+                            
+                            #si la cadena es al estilo 2323.4242.232 se reemplazan los puntos y si es numerico se agrega o no
+                            if(i.replace('.',"").isdigit()):
+                                #en este caso no se agrega
+                                palabras_tokenizadas.append(i.replace('.',""))
+                                string=""
+                                break
 
-
-
-               
-               
-                #manera de eliminar caracteres a partir de un array
-                #palabras_tokenizadas = [ palabra for palabra in palabras_tokenizadas if palabra not in punctuation ]
-               
-                #freq = nltk.FreqDist(palabras_tokenizadas)
-#                for idx,palabra in enumerate(palabras_tokenizadas):
-#                    #palabras terminadas en rle
-#                    if palabra[-3:]=="rle":
-#                        palabras_tokenizadas[idx]=palabra[:-2]
-#                    #poner tilde a palabras terminas en ría que deben tener tilde ej permitiría
-#                    elif palabra[-3:]=="ria":
-#                        if palabra[len(palabra)-4] in vocales:
-#                            palabras_tokenizadas[idx]=palabra[:-3]+"ría"
-#                    # quitar rte | rme ej: comerte comerme
-#                    elif palabra[-3:]=="rte" or palabra[-3:]=="rme":
-#                        if palabra[len(palabra)-4] in vocales:
-#                            palabras_tokenizadas[idx]=palabra[:-2]+""
-                         
-                ##if first in 'aeiou'
+                            if(j=="@" or j=="/" or j=="_" ):
+                                string=""
+                            break
+                    if(esAlfa==True):
+                        if(string):
+                            palabras_tokenizadas.append(string)
+                print(palabras_tokenizadas)
                 texto=' '.join(palabras_tokenizadas)
 
                
@@ -256,7 +240,7 @@ with open('chatprueba.csv') as csv_leido:
                 #convierte un array en un string ' '.join(new_sentence) esto lo pide nlp(text)
                 aFraseLematizada=[];
                 aLemmasOracion=[]
-                aElementosDucplicados=[]
+
                 incrementoInsertados=0;
 
                 aBigrama=(list(nltk.bigrams(aFrase_sin_stopwords)))
@@ -310,6 +294,7 @@ with open('chatprueba.csv') as csv_leido:
                         #verificar que sea una url valida
                         #para no tener que mover mucho el codigo, esta bandera indica si no es una palabra valida, no se agregue el elemento
                         omitirPalabra=False
+                        print(token)
                         if fn_checkUrl(token):
                            token_tmp["lemma"]=token
                            token_tmp["palabra_original"]=token
@@ -371,13 +356,12 @@ with open('chatprueba.csv') as csv_leido:
                                                     print("AQUI1",idxcorp,lemmaService["palabra_original"],"\n")
                                                     incrementoInsertados=incrementoInsertados+1;
                                                     lines.insert(int(idxcorp+2+incrementoInsertados),lineaCorpus+"\n")
-                                                    corp["word"]=lemmaService["lemma"]
-                                                    corp["lemma"]=lemmaService["lemma"]
-                                                    corp["tipo_palabra"]=lemmaService["categoria"]
-                                                    
-                                                    aElementosDucplicados.append(corp["word"])
-        
+
                                                     if(lemmaService["palabra_original"]!=lemmaService["lemma"]):
+                                                        corp["word"]=lemmaService["lemma"]
+                                                        corp["lemma"]=lemmaService["lemma"]
+                                                        corp["tipo_palabra"]=lemmaService["categoria"]
+                                                        aElementosDucplicados.append(corp["word"])
                                                         incrementoInsertados=incrementoInsertados+1;
                                                         lineaCorpus=fn_jsonToLineCsv(corp,True)
                                                         lines.insert(int(idxcorp+2+incrementoInsertados),lineaCorpus+"\n")
