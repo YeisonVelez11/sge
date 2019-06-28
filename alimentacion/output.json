@@ -1,0 +1,289 @@
+{
+    "_nombre caracterizacion": [
+        "PS-CRT-001 Caracterización de procesos de Proyección Social"
+    ],
+    "_ruta caracterizacion": [
+        "5_Proyeccion Social/Caracterizacion/PS-CRT-001 Caracterizacion de procesos de Proyeccion Social.pdf"
+    ],
+    "_nombre procedimiento": [
+        "PS-PRO-001 Procedimiento para la adquisición y legalización de convenios y_o contratos de asesoría y consultoría - desarrollo social",
+        "PS-PRO-002 Procedimiento para la planeación y ejecución de convenios y_o contratos de asesoría y consultoría - desarrollo social",
+        "PS-PRO-003 Procedimiento para la Gestión de Graduados",
+        "PS-PRO-004 Procedimiento para la pre e incubación de empresas",
+        "PS-PRO-005 Procedimiento para la oferta y ejecución de programas de educación continuada",
+        "PS-PRO-006 Procedimiento para la gestión de prácticas sociales estudiantiles",
+        "PS-PRO-007 Procedimiento de Intermediación Laboral"
+    ],
+    "_ruta procedimiento": [
+        "5_Proyeccion Social/Procedimientos/PS-PRO-001 Procedimiento para la adquisicion y legalizacion de convenios y_o contratos de asesoria y consultoria - desarrollo social.pdf",
+        "5_Proyeccion Social/Procedimientos/PS-PRO-002 Procedimiento para la planeacion y ejecucion de convenios y_o contratos de asesoria y consultoria - desarrollo social.pdf",
+        "5_Proyeccion Social/Procedimientos/PS-PRO-003 Procedimiento para la Gestion de Graduados.pdf",
+        "5_Proyeccion Social/Procedimientos/PS-PRO-004 Procedimiento para la pre e incubacion de empresas.pdf",
+        "5_Proyeccion Social/Procedimientos/PS-PRO-005 Procedimiento para la oferta y ejecucion de programas de educacion continuada.pdf",
+        "5_Proyeccion Social/Procedimientos/PS-PRO-006 Procedimiento para la gestion de practicas sociales estudiantiles.pdf",
+        "5_Proyeccion Social/Procedimientos/PS-PRO-007 Procedimiento de Intermediacion Laboral.pdf"
+    ],
+    "_formato asociado  proc nombre": [
+        "PS-FOR-008 Presentación de convenios y proyectos de asesoría y consultoría - desarrollo social",
+        "PS-FOR-002 Instrumento de empleabilidad para graduado\nPS-FOR-003 Instrumento de empleabilidad para empleador\nPS-FOR-004 Registro de asistencia OG\nPS-FOR-005 Instrumento de salida",
+        "PS-FOR-017 Formato de evaluación de satisfacción preincubación\nPS-FOR-018 Formato de evaluación de satisfacción Incubación",
+        "PS-FOR-009 Propuesta de formación\nPS-FOR-010 Evaluación del proceso de formación",
+        "PS-FOR-011 Acta de compromiso ético\nPS-FOR-012 Acta de acompañamiento\nPS-FOR-013 Plan de trabajo prácticas estudiantiles\nPS-FOR-014 Evaluación de la práctica por parte de la empresa\nPS-FOR-015 Informe final de prácticas estudiantiles\nPS-FOR-016 Evaluación de tutores de práctica"
+    ],
+    "_formato asociado proc ruta": [
+        "5_Proyeccion Social/Formatos/PS-FOR-008 Presentacion de convenios y_o proyectos de asesoria - desarrollo social.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-002 Instrumento de empleabilidad para graduado.pdf\n5_Proyeccion Social/Formatos/PS-FOR-003 Instrumento de empleabilidad para empleador.pdf\n5_Proyeccion Social/Formatos/PS-FOR-004 Registro de asistencia OG.pdf\n5_Proyeccion Social/Formatos/PS-FOR-005 Instrumento de salida.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-017 Formato de evaluacion de satisfaccion preincubacion.pdf\n5_Proyeccion Social/Formatos/PS-FOR-018 Formato de evaluacion de satisfaccion Incubacion.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-009 Propuesta de formacion.pdf\n5_Proyeccion Social/Formatos/PS-FOR-010 Evaluacion del proceso de formacion.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-011 Acta de compromiso etico.pdf\n5_Proyeccion Social/Formatos/PS-FOR-012 Acta de acompañamiento.pdf\n5_Proyeccion Social/Formatos/PS-FOR-013 Plan de trabajo practicas estudiantiles.pdf\n5_Proyeccion Social/Formatos/PS-FOR-014 Evaluacion de la practica por parte de la empresa.pdf\n5_Proyeccion Social/Formatos/PS-FOR-015 Informe final de practicas estudiantiles.pdf\n5_Proyeccion Social/Formatos/PS-FOR-016 Evaluacion de tutores de practica.pdf"
+    ],
+    "_instructivo nombre": [
+        "PS-IT-001 Instructivo para Carnetización",
+        "PS-IT-002 Instructivo para la Administración del Portal de Empleo",
+        "PS-IT-003 Instructivo para la pre e inscripción en programas de educación continuada"
+    ],
+    "_instructivo ruta": [
+        "5_Proyeccion Social/Instructivos/PS-IT-001 Instructivo para Carnetizacion.pdf",
+        "5_Proyeccion Social/Instructivos/PS-IT-002 Instructivo para la Administracion del Portal de Empleo.pdf",
+        "5_Proyeccion Social/Instructivos/PS-IT-003 Instructivo para la pre e inscripcion en programas de educacion continuada.pdf"
+    ],
+    "_formato asociado instructivo": [],
+    "_formato asociado instructivo ruta": [],
+    "_lista formatos nombre": [
+        "PS-FOR-002 Instrumento de empleabilidad para graduado",
+        "PS-FOR-003 Instrumento de empleabilidad para empleador",
+        "PS-FOR-004 Registro de asistencia OG",
+        "PS-FOR-005 Instrumento de salida",
+        "PS-FOR-008 Presentación de convenios y proyectos de asesoría y consultoría - desarrollo social",
+        "PS-FOR-009 Propuesta de formación",
+        "PS-FOR-010 Evaluación del proceso de formación",
+        "PS-FOR-011 Acta de compromiso ético",
+        "PS-FOR-012 Acta de acompañamiento",
+        "PS-FOR-013 Plan de trabajo prácticas estudiantiles",
+        "PS-FOR-014 Evaluación de la práctica por parte de la empresa",
+        "PS-FOR-015 Informe final de prácticas estudiantiles",
+        "PS-FOR-016 Evaluación de tutores de práctica"
+    ],
+    "_lista iformatos ruta": [
+        "5_Proyeccion Social/Formatos/PS-FOR-002 Instrumento de empleabilidad para graduado.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-003 Instrumento de empleabilidad para empleador.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-004 Registro de asistencia OG.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-005 Instrumento de salida.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-008 Presentacion de convenios y_o proyectos de asesoria - desarrollo social.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-009 Propuesta de formacion.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-010 Evaluacion del proceso de formacion.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-011 Acta de compromiso etico.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-012 Acta de acompañamiento.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-013 Plan de trabajo practicas estudiantiles.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-014 Evaluacion de la practica por parte de la empresa.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-015 Informe final de practicas estudiantiles.pdf",
+        "5_Proyeccion Social/Formatos/PS-FOR-016 Evaluacion de tutores de practica.pdf"
+    ],
+    "_indicadores proyeccion social nombre": [
+        "PS-FOR-006 Indicadores del proceso Proyección Social"
+    ],
+    "_indicadores proyección social ruta": [
+        "5_Proyeccion Social/Caracterizacion/PS-FOR-006 Indicadores del proceso Proyeccion Social.pdf"
+    ],
+    "_matriz comunicaciones nombre": [
+        "PS-FOR-007 Matriz de comunicaciones Proyección Social"
+    ],
+    "_matriz comunicaicones ruta": [
+        "5_Proyeccion Social/Caracterizacion/PS-FOR-007 Matriz de comunicaciones Proyeccion Social.pdf"
+    ],
+    "_matriz riesgo nombre": [
+        "PS-FOR-019 Matriz de Riesgos Proyección Social"
+    ],
+    "_matriz riesgo ruta": [
+        "5_Proyeccion Social/Caracterizacion/PS-FOR-019 Matriz de Riesgos Proyeccion Social.pdf"
+    ],
+    "_Registro de indicadores": [
+        {
+            "nombre_indicador": "Porcentaje de planes estratégicos entregados a planeación",
+            "aMedicionUnica": [
+                "Porcentaje de planes estratégicos entregados a planeación",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+            ]
+        },
+        {
+            "nombre_indicador": "Porcentaje de cumplimiento del plan de desarrollo",
+            "aMedicionUnica": [
+                "Porcentaje de cumplimiento del plan de desarrollo"
+            ]
+        },
+        {
+            "nombre_indicador": "Covertura del proceso de planeación por áreas académico administrativa",
+            "aMedicionUnica": [
+                "Covertura del proceso de planeación por áreas académico administrativa"
+            ]
+        },
+        {
+            "nombre_indicador": "Cumplimiento de la agenda de planeación",
+            "aMedicionUnica": [
+                "Cumplimiento de la agenda de planeación"
+            ]
+        },
+        {
+            "nombre_indicador": "Evolución del capital de trabajo",
+            "aMedicionUnica": [
+                "Evolución del capital de trabajo",
+                "Activo corriente",
+                "10.990.093",
+                "25.769.854",
+                "31.716.054",
+                "24.611.211",
+                "18.227.453",
+                "Pasivo corriente",
+                "4.204.592",
+                "5.195.788",
+                "6.947.133",
+                "9.144.517",
+                "11.927.610"
+            ]
+        },
+        {
+            "nombre_indicador": "Evolución de activos corrientes",
+            "aMedicionUnica": [
+                "Evolución de activos corrientes",
+                "Caja y bancos",
+                "5.210.253",
+                "16.270.965",
+                "21.171.611",
+                "8.901.717",
+                "8.975.766",
+                "Inversiones",
+                "1.787.511",
+                "3.901.634",
+                "5.219.292",
+                "11.086.710",
+                "3.026.504",
+                "Deudores",
+                "3.850.153",
+                "5.368.381",
+                "5.256.439",
+                "4.518.197",
+                "6.155.510"
+            ]
+        },
+        {
+            "nombre_indicador": "Evolución de la operación",
+            "aMedicionUnica": [
+                "Evolución de la operación",
+                "Ingresos operacionales",
+                "38.950.070",
+                "42.951.108",
+                "45.600.446",
+                "51.502.249",
+                "59.528.814",
+                "Egresos operacionales",
+                "36.596.236",
+                "40.717.422",
+                "44.060.235",
+                "50.273.294",
+                "56.610.806",
+                "Superavit o deficit operacional",
+                "2.380.834",
+                "2.233.686",
+                "1.540.211",
+                "1.228.955",
+                "2.918.008"
+            ]
+        },
+        {
+            "nombre_indicador": "Evolución de los ingresos y egresos operacionales",
+            "aMedicionUnica": [
+                "Evolución de los ingresos y egresos operacionales",
+                "Ingresos operacionales",
+                "38.950.070",
+                "42.951.108",
+                "45.600.446",
+                "51.502.249",
+                "59.528.814",
+                "Egresos operacionales",
+                "36.596.236",
+                "40.717.422",
+                "44.060.235",
+                "50.273.294",
+                "56.610.806"
+            ]
+        },
+        {
+            "nombre_indicador": "Evolución de los ingresos y egresos no operacionales",
+            "aMedicionUnica": [
+                "Evolución de los ingresos y egresos no operacionales",
+                "Ingresos no operacionales",
+                "757.545",
+                "953.688",
+                "1.726.760",
+                "2.244.379",
+                "1.963.922",
+                "Egresos no operacionales",
+                "660.889",
+                "550.220",
+                "1.398.443",
+                "1.601.145",
+                "1.969.049"
+            ]
+        },
+        {
+            "nombre_indicador": "Evolución de activos fijos, cargos diferidos e inversiones corrientes",
+            "aMedicionUnica": [
+                "Evolución de activos fijos, cargos diferidos e inversiones corrientes",
+                "Activos fijos",
+                "12.282.257",
+                "12.723.662",
+                "34.644.125",
+                "47.119.418",
+                "57.725.132",
+                "Cargos diferidos",
+                "2.451.109",
+                "2.206.859",
+                "2.061.831",
+                "2.067.329",
+                "Inversiones corrientes",
+                "1.787.511",
+                "3.901.634",
+                "5.219.292",
+                "11.086.710",
+                "3.026.504"
+            ]
+        },
+        {
+            "nombre_indicador": "Flujo de caja libre",
+            "aMedicionUnica": [
+                "Flujo de caja libre",
+                "3.894.648",
+                "4.092.515",
+                "3.284.217",
+                "3.389.707",
+                "4.377.754"
+            ]
+        },
+        {
+            "nombre_indicador": "Razón Corriente",
+            "aMedicionUnica": [
+                "Razón Corriente",
+                "2,61",
+                "4,96",
+                "4,66",
+                "2,74"
+            ]
+        },
+        {
+            "nombre_indicador": "Ebidta",
+            "aMedicionUnica": [
+                "Ebidta",
+                "3.472.631",
+                "3.324.859",
+                "2.944.596",
+                "2.635.648",
+                "4.452.208"
+            ]
+        }
+    ]
+}
