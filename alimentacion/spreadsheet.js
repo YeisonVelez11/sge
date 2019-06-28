@@ -75,7 +75,7 @@ doc.useServiceAccountAuth(creds, function (err) {
 								let indexHeaders=0;
 								//se ingresa la sección de anios
 								if(indexCorteAnios<=parseInt(cell.col)-1){
-									if(indexCorteAnios==parseInt(cell.col)-1){ //si es la primera ocurrencia, se definirá la clave una sola vez
+									if(indexCorteAnios==parseInt(cell.col)-1 && cell.value.trim()!="" ){ //si es la primera ocurrencia, se definirá la clave una sola vez
 										indexHeaders=indexCorteAnios;
 										var valoractual=(cell.value).trim();
 										console.log("es la primera vez")
@@ -84,7 +84,8 @@ doc.useServiceAccountAuth(creds, function (err) {
 											{
 												
 																		"nombre_indicador":(cell.value).trim(),
-																		"aMedicionUnica":[(cell.value).trim()]
+																		"aMedicionUnica":[(cell.value).trim()],
+																		"aMediciones":[]
 												
 											}
 										);
@@ -100,6 +101,12 @@ doc.useServiceAccountAuth(creds, function (err) {
 										oIndicadorActual[oIndicadorActual.length-1].aMedicionUnica.push(cell.value.trim());
 									}
 
+									if(cell.value.trim()!="" && parseInt(cell.col)-1==indexCorteAnios+1){
+										oIndicadorActual[oIndicadorActual.length-1].aMediciones.push(cell.value.trim())
+									}
+									if(cell.value.trim()!="" && parseInt(cell.col)-1>indexCorteAnios+1){
+										oIndicadorActual[oIndicadorActual.length-1].aMediciones.push(cell.value.trim())
+									}
 									
 								}
 								//se ingresan los otros valores
