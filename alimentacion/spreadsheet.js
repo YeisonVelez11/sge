@@ -23,9 +23,8 @@ doc.useServiceAccountAuth(creds, function (err) {
   doc.getInfo(function (err, info) {
     console.log('Loaded doc: ' + info.title + ' by ' + info.author.email);
 
-    sheet = info.worksheets[1];
+    sheet = info.worksheets[0];
 
-    console.log(info.worksheets);
 
     console.log('sheet 1: ' + sheet.title + ' ' + sheet.rowCount + 'x' + sheet.colCount);
     var aData = {};
@@ -61,7 +60,7 @@ doc.useServiceAccountAuth(creds, function (err) {
                 aData._formato_asociado = [];
               }
               else if ((cell.value).trim().toLowerCase() == "instructivo nombre") {
-                aData._instructivo_asociado = [];
+                aData._instructivo = [];
               }
               else if ((cell.value).trim().toLowerCase() == "formato asociado instructivo") {
                 aData._formato_asociado_instructivo = [];
@@ -177,8 +176,7 @@ doc.useServiceAccountAuth(creds, function (err) {
                     {
                       "nombre_procedimiento": (cell.value).trim(),
                       "formato_asociado": [],
-                      "instructivo": [],
-                      "instructivo_asociado": []
+   
                     }
                   )
                 }
@@ -209,36 +207,38 @@ doc.useServiceAccountAuth(creds, function (err) {
                 }
                 else if (parseInt(cell.col) == 7) { //nombre instructivo 
 
-                  aData._procedimientos[aData._procedimientos.length - 1].instructivo.push
-                    (
-                      {
-                        "instructivo_nombre": (cell.value).trim()
-                      }
-                    )
+                  aData._instructivo.push(
+                    {
+                      "nombre_instructivo": (cell.value).trim(),
+                      "formato_asociado": [],
 
+                    }
+                  )
+
+ 
 
                 }
                 else if (parseInt(cell.col) == 8) { //ruta instructivo 
 
-                  aData._procedimientos[aData._procedimientos.length - 1].instructivo[0].ruta_instructivo = (cell.value).trim()
+                  aData._instructivo[aData._instructivo.length - 1].ruta_instructivo = (cell.value).trim()
                 }
 
                 else if (parseInt(cell.col) == 9) { //nombre formato asociado instructivo
 
-                  let aNombresInstrucAso = (cell.value).trim().split("\n");
-                  for (var i in aNombresInstrucAso) {
-                    aData._procedimientos[aData._procedimientos.length - 1].instructivo_asociado.push
+                  let aNombresInsForAso = (cell.value).trim().split("\n");
+                  for (var i in aNombresInsForAso) {
+                    aData._instructivo[aData._instructivo.length - 1].formato_asociado.push
                       (
-                        { "nombre_instructivo_asociado": aNombresInstrucAso[i] }
+                        { "nombre_formato_asociado": aNombresInsForAso[i] }
                       )
                   }
 
                 }
-                else if (parseInt(cell.col) == 9) { //nombre formato asociado instructivo
+                else if (parseInt(cell.col) == 10) { //ruta formato asociado instructivo
 
-                  let aRutaInsAso = (cell.value).trim().split("\n");
-                  for (var i in aRutaInsAso) {
-                    aData._procedimientos[aData._procedimientos.length - 1].instructivo_asociado[i].ruta_instructivo_asociado = aRutaInsAso[i];
+                  let aRutaInsFormAso = (cell.value).trim().split("\n");
+                  for (var i in aRutaInsFormAso) {
+                    aData._instructivo[aData._instructivo.length - 1].formato_asociado[i].ruta_formato_asociado = aRutaInsFormAso[i];
                   }
 
                 }
