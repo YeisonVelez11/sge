@@ -21,9 +21,7 @@
   		<mdb-breadcrumb-item class="active" *ngIf="seleccionMenu?.hijo_seleccionado?.hijo_nombre" style="cursor: pointer;" (click)="fn_setAdjuntoActual(seleccionMenu.hijo_seleccionado.hijo_anexo,'hijo')">
 		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon> {{seleccionMenu.hijo_seleccionado.hijo_nombre}}
 		 </mdb-breadcrumb-item >
-  		<mdb-breadcrumb-item class="active" *ngIf="seleccionMenu?.nieto_seleccionado?.nieto_seleccionado_nombre" (click)="fn_setAdjuntoActual(seleccionMenu.nieto_seleccionado.nieto_seleccionado_anexo,'nieto')" style="cursor: pointer;">
-		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon> {{seleccionMenu.nieto_seleccionado.nieto_seleccionado_nombre}}
-		 </mdb-breadcrumb-item >
+
 		  <!--<mdb-breadcrumb-item class="active">
 		    <mdb-icon fas icon="angle-double-right" class="mr-1"></mdb-icon><i class="fa fa-sign-out ml-1" aria-hidden="true"></i> Data
 		  </mdb-breadcrumb-item>-->

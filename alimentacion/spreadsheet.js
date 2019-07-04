@@ -301,6 +301,13 @@ doc.useServiceAccountAuth(creds, function (err) {
             }
 
             aData.aAnios = aAnios;
+
+
+
+
+
+
+
             //TODO se crean y no hacen nada, no confundirllos con os que estan dentro de procedimientos
             delete aData["_formato_asociado"];
             delete aData["_instructivo_asociado"];
@@ -310,7 +317,97 @@ doc.useServiceAccountAuth(creds, function (err) {
             delete aData["_formato asociado proc ruta"];
             delete aData["_instructivo ruta"];
 
-            fs.writeFileSync("data/"+fileName + ".json", JSON.stringify(aData, null, 4), 'utf8');
+             var ruta="./assets/data/";
+              var aHardocredJson=[];
+              aHardocredJson.push({
+                "fuente":"Caracterización",
+                "anexo_mostrar":aData["_nombre caracterizacion"][0],
+                "anexo":ruta+aData["_ruta caracterizacion"][0],
+                "fuente_hijos":[]
+              });
+
+              aHardocredJson.push({
+                "fuente":"Procedimientos",
+                "fuente_hijos":[]
+              })
+
+              for(var i in aData["_procedimientos"]){
+
+                aHardocredJson[1].fuente_hijos.push({
+                  "hijo_nombre":aData["_procedimientos"][i].nombre_procedimiento,
+                  "anexo":ruta+aData["_procedimientos"][i].ruta_procedimiento,
+                  "formatos":aData["_procedimientos"][i].formato_asociado
+                })
+                let index=aHardocredJson[1].fuente_hijos.length-1;
+                for(var j in  aHardocredJson[1].fuente_hijos[index].formatos){
+                  aHardocredJson[1].fuente_hijos[index].formatos[j]["hijo_nombre"]=aHardocredJson[1].fuente_hijos[index].formatos[j].nombre_formato_asociado
+                  aHardocredJson[1].fuente_hijos[index].formatos[j]["anexo"]=ruta+aHardocredJson[1].fuente_hijos[index].formatos[j].ruta_procedimiento_asociado
+                  delete aHardocredJson[1].fuente_hijos[index].formatos[j].nombre_formato_asociado;
+                  delete aHardocredJson[1].fuente_hijos[index].formatos[j].ruta_procedimiento_asociado;
+                }
+              }
+
+              aHardocredJson.push({
+                "fuente":"Instructivos",
+                "fuente_hijos":[]
+              })
+
+
+              for(var i in aData["_instructivo"]){
+
+                aHardocredJson[2].fuente_hijos.push({
+                  "hijo_nombre":aData["_instructivo"][i].nombre_instructivo,
+                  "anexo":ruta+aData["_instructivo"][i].ruta_instructivo,
+                  "formatos":aData["_instructivo"][i].formato_asociado
+                })
+                let index=aHardocredJson[2].fuente_hijos.length-1;
+                for(var j in  aHardocredJson[2].fuente_hijos[index].formatos){
+                  aHardocredJson[2].fuente_hijos[index].formatos[j]["hijo_nombre"]=aHardocredJson[2].fuente_hijos[index].formatos[j].nombre_formato_asociado
+                  aHardocredJson[2].fuente_hijos[index].formatos[j]["anexo"]=ruta+aHardocredJson[2].fuente_hijos[index].formatos[j].ruta_formato_asociado
+                  delete aHardocredJson[2].fuente_hijos[index].formatos[j].nombre_formato_asociado;
+                  delete aHardocredJson[2].fuente_hijos[index].formatos[j].ruta_formato_asociado;
+                }
+              }
+
+              aHardocredJson.push({
+                "fuente":"Formatos",
+                "fuente_hijos":[]
+              })
+
+              for(var i=0; i<aData["_lista formatos nombre"].length; i++){
+
+
+                   aHardocredJson[3].fuente_hijos.push({
+                     "hijo_nombre":aData["_lista formatos nombre"][i],
+                     "anexo":ruta+aData["_lista formatos ruta"][i]
+                   })
+              }
+
+
+              aHardocredJson.push({
+                "fuente":"Indicadores",
+                "fuente_hijos":[],
+                "indicadores":[],
+                "indicador_proyeccion_social_nombre":aData["_indicadores proyeccion social nombre"],
+                "indicador_proyeccion_social_ruta":ruta+aData["_indicadores proyección social ruta"]
+              })
+
+              aHardocredJson.push({
+                "fuente":"Matriz de Riesgos",
+                "fuente_hijos":[],
+                "anexo_mostrar":aData["_matriz riesgo nombre"],
+                "anexo":ruta+aData["_matriz riesgo ruta"]
+              })
+
+
+              aHardocredJson.push({
+                "fuente":"Matriz de Comunicaciones",
+                "fuente_hijos":[],
+                "anexo_mostrar":aData["_matriz comunicaciones nombre"],
+                "anexo":ruta+aData["_matriz comunicaicones ruta"]
+              })
+
+            fs.writeFileSync("data/"+fileName + ".json", JSON.stringify(aHardocredJson, null, 4), 'utf8');
 
             //console.log(aData);
             console.log(aAnios);

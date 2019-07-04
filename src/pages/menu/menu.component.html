@@ -21,12 +21,10 @@
 
             <mdb-accordion [multiple]="true" >
               <mdb-accordion-item [collapsed]="true" *ngFor="let hijo of item.fuente_hijos">
-                <mdb-accordion-item-head [ngClass]="hijo.nietos.length==0?'quitar_flecha_accordion':''" (click)="fn_setOptionMenu(item,hijo);" >
+                <mdb-accordion-item-head class="quitar_flecha_accordion" (click)="fn_setOptionMenu(item,hijo);" >
                   <span [ngStyle]="{'font-weight':oMenuSeleccionado?.hijo_seleccionado?.hijo_nombre==hijo?.hijo_nombre?'bold':'unset'}">{{hijo.hijo_nombre}}</span>
 
-                  <mdb-accordion-item-body *ngIf="hijo.nietos.length!=0">
-                    holi
-                  </mdb-accordion-item-body>
+
 
                 </mdb-accordion-item-head>
               </mdb-accordion-item>
