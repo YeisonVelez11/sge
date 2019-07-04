@@ -531,4 +531,35 @@ export class ServicesProvider {
       });
     });
   }
+
+  public getjson(inUrl: string, params: any): Promise<any> {
+    //const formedUrl = this.filterAccents(inUrl.split(' ').join('-'));
+    return new Promise((resolve, reject) => {
+      const headers = new Headers({
+        'Content-Type': 'application/json'
+      });
+      const options = new RequestOptions({
+        headers: headers,
+        params: params
+      });
+      this.http.get(inUrl, options)
+      .subscribe(response => {
+        try {
+          response = response.json();
+          resolve(response);
+        } catch (error) {
+          console.log('[api-274]', response);
+          reject(response);
+        }
+      }, fail => {
+        try {
+          fail = fail.json();
+        } catch (error) {
+          console.log('[api-162]', fail);
+        }
+        reject(fail);
+      });
+    });
+  }
+  
 }

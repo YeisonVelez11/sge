@@ -23,157 +23,32 @@ fn_dashboard = new EventEmitter()*/
 /*@Output()
 outupSeleccionProceso = new EventEmitter()*/
 
-aFuentes:any=
-  [
-    {
-      "fuente":"Caracterización",
-      "anexo":"./assets/data/Caracterizacion/1.5.  CARACTERIZACION FINANCIERA GFI.pdf",
-      "fuente_hijos": 
-        [
-        ]
-    },
-    {
-      "fuente":"Procedimientos",
-      "fuente_hijos": 
-        [
+aFuentes:any=[];
+aJsonFuentes={
+  "Proyección Social":{
+    "nombre":"Proyección Social",
+    "ruta": "./assets/data/Proyeccion Social.json", 
+    "icon_white":"./assets/img/proyeccion_social_b.svg",
+    "icon_black":"./assets/img/proyeccion_social.svg"
+  },
 
-          {
-            "hijo_nombre":"GFI-PRO-001.   Procedimiento Cartera y Financiacion de Matricula",
-            "anexo":"./assets/data/4.2.   PROCEDIMIENTOS/GFI-PRO-001.   Procedimiento Cartera y Financiacion de Matricula.pdf",
-            "nietos":[
-            ],
-            "formatos":
-            [
-
-                {
-                  "hijo_nombre":"GFI-FOR-003.   Devoluciones",
-                  "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-003.   Devoluciones.pdf",
-                  "nietos":[
-                  ]
-                },
-                {
-                  "hijo_nombre":"GFI-FOR-004.   Saldos a Favor.pdf",
-                  "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-004.   Saldos a Favor.pdf",
-                  "nietos":[
-                  ]
-                },
-                {
-                  "hijo_nombre":"GFI-FOR-005.   Formulrios de Financiación.pdf",
-                  "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-005.   Formulrios de Financiación.pdf",
-                  "nietos":[
-                  ]
-                } 
-            ]
-
-
-          },
-          {
-            "hijo_nombre":"GFI-PRO-002.   Procedimiento Adquisición Bienes y Servicios",
-            "anexo":"./assets/data/4.2.   PROCEDIMIENTOS/GFI-PRO-002.   Procedimiento Adquisición Bienes y Servicios.pdf",
-            "nietos":[
-            ]
-          }
-        ]
-    },
-    {
-      "fuente":"Instructivos",
-      "fuente_hijos": 
-        [
-
-          {
-            "hijo_nombre":"GFI-INS-001   Instructivo Anticipos",
-            "anexo":"./assets/data/4.5   INSTRUCTIVOS/GFI-INS-001   Instructivo Anticipos.pdf",
-            "nietos":[
-            ],
-            "formatos":
-            [
-
-              {
-                "hijo_nombre":"GFI-FOR-001.   Legalizacion Anticipo",
-                "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-001.   Legalizacion Anticipo.pdf",
-                "nietos":[
-                ]
-              },
-              {
-                "hijo_nombre":"GFI-FOR-002.  Pagos menores.pdf",
-                "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-002.  Pagos menores.pdf",
-                "nietos":[
-                ]
-              } 
-              
-            ],
-            "instructivos":
-            [
-
-            ]
-
-
-          },
-          {
-            "hijo_nombre":"GFI-INS-002.   Instructivo Conciliaciones Bancarias",
-            "anexo":"./assets/data/4.5   INSTRUCTIVOS/GFI-INS-002.   Instructivo Conciliaciones Bancarias.pdf",
-            "nietos":[
-            ]
-          }
-
-        ]
-
-    },
-    {
-      "fuente":"Indicadores",
-      "fuente_hijos": 
-        [
-
-        ]
-    },
-
-    {
-      "fuente":"Formatos",
-      "fuente_hijos": 
-        [
-
-          {
-            "hijo_nombre":"GFI-FOR-001.   Legalizacion Anticipo",
-            "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-001.   Legalizacion Anticipo.pdf",
-            "nietos":[
-            ]
-          },
-          {
-            "hijo_nombre":"GFI-FOR-002.  Pagos menores.pdf",
-            "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-002.  Pagos menores.pdf",
-            "nietos":[
-            ]
-          }        
-        ]
-    },
-    {
-      "fuente":"Matriz de Comunicaciones",
-      "anexo":"./assets/data/matriz/1.9.   MATRIZ DE RIESGOS FINANCIERA  V 2.pdf",
-      "fuente_hijos": 
-        [
-      
-        ]
-    },
-    {
-      "fuente":"Matriz de Riesgos",
-      "anexo":"./assets/data/matriz/1.9.   MATRIZ DE RIESGOS FINANCIERA  V 2.pdf",
-      "fuente_hijos": 
-        [
-        ]
-    }
-
-
-
-
-  ]
-
+  "Planeación Institucional":{
+    "nombre":"Planeacion Institucional",
+    "ruta": "./assets/data/Planeacion Institucional.json", 
+    "icon_white":"./assets/img/gestion_estrategica_b.svg",
+    "icon_black":"./assets/img/gestion_estrategica.svg"
+  }
+}
 
   @Output() setOptionMenu: EventEmitter<any>;
+  @Output() setTitulo: EventEmitter<any>;
+
   constructor(
     private ServicesProvider: ServicesProvider,
     private router : Router
 ) {
       this.setOptionMenu = new EventEmitter();
+      this.setTitulo = new EventEmitter();
       //this.fn_sesion();
       var categoria=window.location.href.split("/")[3];
       if(categoria!=""){
@@ -233,13 +108,25 @@ aFuentes:any=
     this.bMostraMapa=false;
   }
 
-  fn_goProcess(categoria:any,bienes:any){
-    this.categoria=categoria;
-    this.titulo=bienes;
-    this.bMostraMenu=false;
-    this.bMostraMapa=false;
-    this.router.navigate(["financiera"]);
-    //this.outupSeleccionProceso.emit({"categoria":this.categoria,"titulo":this.titulo});
+  fn_goProcess(categoria:any,titulo:any,json){
+
+    console.log(this.aJsonFuentes[json]);
+    this.ServicesProvider.getjson(this.aJsonFuentes[json].ruta,{}).then(data=>{
+      
+
+      this.aFuentes=data;
+      this.categoria=categoria;
+      this.titulo=titulo;
+      this.bMostraMenu=false;
+      this.bMostraMapa=false;
+      this.router.navigate(["financiera"]);
+      //this.outupSeleccionProceso.emit({"categoria":this.categoria,"titulo":this.titulo});
+      setTimeout(()=>{
+        this.setTitulo.emit(this.aJsonFuentes[json]);
+      })
+
+      
+    })
   }
 
 

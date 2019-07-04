@@ -204,7 +204,7 @@
                     <div   id="gerenciales" style=" margin-top:-14px;" class="p-0 contenedor_categorias sombra" >
                       <div class="d-flex justify-content-around">
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='gestion_academico';titulo='gerenciales'" [ngClass]="categoria=='gestion_academico'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('gestion_academico','gerenciales','Planeación Institucional')"  [ngClass]="categoria=='gestion_academico'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0" >Planeación Institucional</p>
                             <img class="icon_1" src="./assets/img/gestion_estrategica.svg"   >
                           </div>
@@ -243,7 +243,7 @@
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='proyeccion';titulo='misionales'" [ngClass]="categoria=='proyeccion'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('proyeccion','misionales','Proyección Social')"   [ngClass]="categoria=='proyeccion'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 " >Proyección Social</p>
                             <img class="icon_1" src="./assets/img/proyeccion_social.svg"   >
                           </div>
@@ -283,7 +283,7 @@
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect  (click)="fn_goProcess('financiera','apoyo')"   [ngClass]="categoria=='financiera'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect  (click)="fn_goProcess('financiera','apoyo','proyeccion_social')"   [ngClass]="categoria=='financiera'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 " >Gestión Financiera</p>
                             <img class="icon_1" src="./assets/img/financiera.svg"   >
                           </div>

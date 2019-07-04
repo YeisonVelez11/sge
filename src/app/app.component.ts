@@ -18,8 +18,15 @@ export class AppComponent {
     this.activatedComponent = component;
   }
 
+  fn_setTituloProceso(item){
+    this.activatedComponent.titulo_proceso = item;
+    console.log(item);
+  }
+
   setOptionMenu(item:any){
     this.activatedComponent.seleccionMenu = item;
+
+    console.log(this.activatedComponent.seleccionMenu );
   }
 
 }

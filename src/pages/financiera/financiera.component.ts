@@ -21,6 +21,7 @@ sidebar_right=false;
 bFlecha_animacion=true; //true es la animación de la izquierda
 archivo_adjunto:any;
 seleccionMenu:any;
+titulo_proceso:any;
   constructor(
     private ServicesProvider: ServicesProvider,
 private http: HttpClient
@@ -34,7 +35,7 @@ private http: HttpClient
 
 
   ngOnInit() {
-
+    console.log(this.seleccionMenu,this.titulo_proceso);
     this.archivo_adjunto=this.seleccionMenu;
     this.seleccionMenu=
       {
