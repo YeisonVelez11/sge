@@ -5,7 +5,7 @@ const fs = require('fs');
 // Create a document object using the ID of the spreadsheet - obtained from its URL.
 var doc = new GoogleSpreadsheet('1FmLzv7XIxbqdqDPZky5P__5ipuhGGi8OHK2IpqijLrM');
 var sheet;
-var aHojas = ["Hoja 2", "Proyección Social"];
+var aHojas = ["Hoja 2", "Proyeccion Social"];
 //var aHojas=[];
 var iContadorSheet=0;
 
@@ -158,7 +158,9 @@ doc.useServiceAccountAuth(creds, function (err) {
                   //columna de cabecera que puede estar vacia o no 
                   if ((parseInt(cell.col) - 1 >= indexCorteAnios + 1) && multipleMediciones == true) {
                     if (parseInt(cell.col) - 1 == indexCorteAnios + 1) {
-                      oIndicadorActual[oIndicadorActual.length - 1].aMediciones.push({ "nombre_indicador": valoractual, "valores": [valoractual] })
+                     //oIndicadorActual[oIndicadorActual.length - 1].aMediciones.push({ "nombre_indicador": valoractual, "valores": [valoractual] })
+                    oIndicadorActual[oIndicadorActual.length - 1].aMediciones.push({ "nombre_indicador": valoractual, "valores": [valoractual] })
+
                     }
                     else {
                       let indexIndicadorActual = oIndicadorActual[oIndicadorActual.length - 1].aMediciones.length - 1;
@@ -300,7 +302,7 @@ doc.useServiceAccountAuth(creds, function (err) {
               //aDataMatriz[index].push();
             }
 
-            aData.aAnios = aAnios;
+            aData["aAnios"] = aAnios;
 
 
 
@@ -387,9 +389,10 @@ doc.useServiceAccountAuth(creds, function (err) {
               aHardocredJson.push({
                 "fuente":"Indicadores",
                 "fuente_hijos":[],
-                "indicadores":[],
-                "indicador_proyeccion_social_nombre":aData["_indicadores proyeccion social nombre"],
-                "indicador_proyeccion_social_ruta":ruta+aData["_indicadores proyección social ruta"]
+                "anios":aData["aAnios"],
+                "indicadores":aData["_Registro de indicadores"],
+                "indicador_proyeccion_social_nombre":aData["_indicadores nombre"],
+                "indicador_proyeccion_social_ruta":ruta+aData["_indicadores ruta"]
               })
 
               aHardocredJson.push({
@@ -404,10 +407,13 @@ doc.useServiceAccountAuth(creds, function (err) {
                 "fuente":"Matriz de Comunicaciones",
                 "fuente_hijos":[],
                 "anexo_mostrar":aData["_matriz comunicaciones nombre"],
-                "anexo":ruta+aData["_matriz comunicaicones ruta"]
+                "anexo":ruta+aData["_matriz comunicaciones ruta"]
               })
 
-            fs.writeFileSync("data/"+fileName + ".json", JSON.stringify(aHardocredJson, null, 4), 'utf8');
+
+
+            //fs.writeFileSync("data/"+fileName + ".json", JSON.stringify(aHardocredJson, null, 4), 'utf8');
+             fs.writeFileSync("../src/assets/data/"+fileName + ".json", JSON.stringify(aHardocredJson, null, 4), 'utf8');
 
             //console.log(aData);
             console.log(aAnios);

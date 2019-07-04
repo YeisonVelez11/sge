@@ -11,7 +11,7 @@
 	<div class="breadcum">
 		<mdb-breadcrumb customClass="black-text">
 		  <mdb-breadcrumb-item class="cursor_pointer" routerLink="/dashboard">
-		    <mdb-icon class="mr-2"></mdb-icon><img height="25"  *ngIf="titulo_proceso" [src]="titulo_proceso.icon_black" >  {{titulo_proceso?.nombre}} 
+		    <mdb-icon class="mr-2"></mdb-icon><img height="25" class="mr-2"  *ngIf="titulo_proceso" [src]="titulo_proceso.icon_black" >  {{titulo_proceso?.nombre}} 
 		  </mdb-breadcrumb-item>
 		  <mdb-breadcrumb-item class="active" >
 		    <mdb-icon  fas icon="angle-double-right" class="mr-1 "></mdb-icon> {{seleccionMenu?.fuente}}
@@ -36,7 +36,7 @@
 	<a href="seleccionMenu.anexo_carga_mostrar">Download PDF</a>.</p>
 	</object>-->
 
-	<div class="contenedor_indicadores" [ngClass]="seleccionMenu?.fuente=='Indicadores'?'':'d-none'">
+	<!--<div class="contenedor_indicadores" [ngClass]="seleccionMenu?.fuente=='Indicadores'?'':'d-none'">
 		<div class="row mb-3">
 			<div class="col-sm-12" >
 				<div  id="bar_chart"  class="sombra" style="border-radius:5px; height: 225px;"></div>
@@ -50,13 +50,65 @@
 				<div id="pie"  class="sombra" style="border-radius:5px; height: 225px; "></div>
 			</div>
 		</div>
-	</div>
+	</div>-->
+	<mdb-tabset [buttonClass]="'classic-tabs'" [contentClass]="'card'" class="classic-tabs" [ngClass]="seleccionMenu?.fuente=='Indicadores'?'':'d-none'">
+		<mdb-tab heading="Indicadores">
+				<div class="contenedor_indicadores mt-2" [ngClass]="seleccionMenu?.fuente=='Indicadores'?'':'d-none'">
+						<div class="row">
+							<div class="col-sm-12" >
+								<div class="md-form mb-3">
+									<label for="dependencias" class="col-form-label pl-2">Categoría de Servicio</label>
+									<select class="browser-default custom-select" 
+										[(ngModel)]="indicador" (change)="fn_generarGrafica()" mdbInput mdbValidate id="titulo_proceso">
+										<option [ngValue]="null"
+											*ngIf="!indicador">Selecciona
+											Indicador</option>
+										<option *ngFor="let item of titulo_proceso?.indicadores" [ngValue]="item">
+											{{item.nombre_indicador}}</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-12 d-flex align-items-center justify-content-center">
+								<div #bar_chart id="bar_chart"  class="sombra" style="border-radius:5px;width:80%;"></div>
+							</div>
+						</div>
+					</div>
+				
+		</mdb-tab>
 
-		<a   href="{{seleccionMenu?.anexo_carga_mostrar}}" *ngIf="seleccionMenu?.anexo_carga_mostrar" download="{{seleccionMenu?.anexo_carga_mostrar.split('/')[4]}}" style="margin-left: 10%;" >{{seleccionMenu?.anexo_carga_mostrar.split("/")[4]}}</a>
-		<div class="contenedor_caracterizacion sombra  scroll_y" style="max-height: 72%;height: 72%;margin: 0 auto;" [ngClass]="seleccionMenu?.fuente!='Indicadores'?'':'d-none'" >
-			<object *ngIf="seleccionMenu.anexo_carga_mostrar" [data]="seleccionMenu.anexo_carga_mostrar | safe" type="application/pdf" width="100%" height="100%">
+		<mdb-tab class="tab_indicador" heading="Indicador de Proyección Social" style="height:63vh;">
+
+			<a   class="mt-2" href="{{titulo_proceso?.indicador_proyeccion_social_ruta}}" *ngIf="titulo_proceso?.indicador_proyeccion_social_ruta" download="{{titulo_proceso?.indicador_proyeccion_social_nombre}}" >{{titulo_proceso?.indicador_proyeccion_social_nombre}}</a>
+			<div class="contenedor_caracterizacion sombra mt-1" style="height:100%; width:100%;margin: 0 auto;" >
+				<object *ngIf="titulo_proceso?.indicador_proyeccion_social_ruta" [data]="titulo_proceso?.indicador_proyeccion_social_ruta | safe" type="application/pdf" width="100%" height="100%">
+				<p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
+				<a href="titulo_proceso?.indicador_proyeccion_social_nombre">Download PDF</a>.</p>
+				</object>
+					<!--<pdf-viewer [src]="seleccionMenu.anexo_carga_mostrar"
+								*ngIf="seleccionMenu?.anexo_carga_mostrar"
+								[render-text]="false"
+								[original-size]="true"
+								[page]="1"
+								[autoresize]="true"
+								[show-all]="false"
+								style="display: block; width:100%;margin:5px 0px;"
+								
+					></pdf-viewer>-->
+			</div>
+
+		</mdb-tab>
+
+	</mdb-tabset>
+
+
+
+
+
+		<a   href="{{seleccionMenu?.anexo}}" *ngIf="seleccionMenu?.anexo_carga_mostrar" download="{{seleccionMenu?.anexo_carga_mostrar}}" style="margin-left: 6%;" >{{seleccionMenu?.anexo_carga_mostrar}}</a>
+		<div class="contenedor_caracterizacion sombra" style="max-height: 72%;height: 71%;margin: 0 auto;" [ngClass]="seleccionMenu?.fuente!='Indicadores'?'':'d-none'" >
+			<object *ngIf="seleccionMenu.anexo_carga_mostrar" [data]="seleccionMenu.anexo | safe" type="application/pdf" width="100%" height="100%">
 			<p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
-			<a href="seleccionMenu.anexo_carga_mostrar">Download PDF</a>.</p>
+			<a href="{{seleccionMenu.anexo}}">Download PDF</a>.</p>
 			</object>
 		      <!--<pdf-viewer [src]="seleccionMenu.anexo_carga_mostrar"
 		                  *ngIf="seleccionMenu?.anexo_carga_mostrar"

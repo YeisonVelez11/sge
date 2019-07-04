@@ -1,3 +1,9 @@
+$verde_umanizalesb:  #a8cf45;
+$verde_umanizales2: #76c04e;
+$gris_umanizales_background: #666666;
+$gris_claro: #eaeaea;
+$gris_oscuro:#343434;
+
 .background_sidemenu.side-nav{
     transform: translateX(0%) !important;
     opacity:1;
@@ -277,7 +283,7 @@
 }
 .estilo_flecha_animacion{
   font-size: 60px; 
-  color:#dcdcdc;
+  color:#9c9595;
 }
 
 .container_flecha_animacion_izq{
@@ -1303,6 +1309,28 @@ a.nav-link.waves-light.font-weight-bold,a.nav-link.waves-light{
   margin:0px !important; 
   padding:0px !important; 
 }
+
+.classic-tabs .nav li a{
+  font-weight: bold;
+}
+
+.classic-tabs .nav li a:not(.active) {
+  color: white;
+}
+.classic-tabs {
+  white-space: normal;
+  background: $verde_umanizalesb;
+}
+
+.classic-tabs .tab-content {
+  margin-bottom:0px !important;
+  margin-top:0px !important;;
+}
+
+.tab_indicador tab-content .card{
+  height:70vh !important;
+}
+
 
 /* esconder / en breadcum*/
 

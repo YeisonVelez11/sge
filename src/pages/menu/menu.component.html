@@ -208,7 +208,7 @@
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='calidad';titulo='gerenciales'" [ngClass]="categoria=='calidad'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('calidad','gerenciales','Gestion de Calidad')"  [ngClass]="categoria=='calidad'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0" >Sistema de Gestión de la Calidad</p>
                             <img class="icon_1" src="./assets/img/quality.svg"   >
                           </div>
@@ -229,13 +229,13 @@
                     <div  id="misionales"   style=" margin-top:-14px;" class="p-0 contenedor_categorias sombra" >
                       <div class="d-flex justify-content-around">
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='docencia';titulo='misionales'" [ngClass]="categoria=='docencia'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('docencia','misionales','Docencia')"   [ngClass]="categoria=='docencia'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 "  >Docencia</p>
                             <img class="icon_1" src="./assets/img/docencia.svg"   >
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='investigacion';titulo='misionales'" [ngClass]="categoria=='investigacion'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('investigacion','misionales','Investigacion y Posgrados')" [ngClass]="categoria=='investigacion'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 " >Postgrados</p>
                             <img class="icon_1" src="./assets/img/investigacion.svg"   >
                           </div>
@@ -263,25 +263,25 @@
                     <div  id="apoyo_soporte"   style=" margin-top:-14px;" class="p-0 contenedor_categorias sombra" >
                       <div class="d-flex justify-content-around">
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='humano';titulo='apoyo'" [ngClass]="categoria=='humano'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('humano','apoyo','Desarrollo Humano')"  [ngClass]="categoria=='humano'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 " >Gestión Desarrollo Humano</p>
                             <img class="icon_1" src="./assets/img/desarrollo_humano.svg"   >
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='infraestructura';titulo='apoyo'" [ngClass]="categoria=='infraestructura'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('infraestructura','apoyo','infraestructura')"  [ngClass]="categoria=='infraestructura'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 "  >Gestión de Infraestructura</p>
                             <img class="icon_1" src="./assets/img/infraestructura.svg"   >
                          </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="categoria='academico';titulo='apoyo'" [ngClass]="categoria=='academico'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('academico','apoyo','Recursos de Apoyo Academico')"  [ngClass]="categoria=='academico'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 "  >Gestión Recursos de Apoyo Académico</p>
                             <img class="icon_1" src="./assets/img/academico.svg"   >
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect  (click)="fn_goProcess('financiera','apoyo','proyeccion_social')"   [ngClass]="categoria=='financiera'?'seleccion_categoria':''">
+                          <div class="rectangulo_categoria" mdbWavesEffect  (click)="fn_goProcess('financiera','apoyo','Gestion Financiera')"   [ngClass]="categoria=='financiera'?'seleccion_categoria':''">
                             <p  class="texto_engranen_1 p-0 m-0 " >Gestión Financiera</p>
                             <img class="icon_1" src="./assets/img/financiera.svg"   >
                           </div>

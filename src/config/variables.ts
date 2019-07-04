@@ -64,6 +64,117 @@ export const VARIABLES:any = {
         "alta": "bola_roja",
         "media": "bola_amarilla",
         "baja": "bola_gris"
+    },
+    oFuentes:{
+      "Proyección Social":{
+        "nombre":"Proyección Social",
+        "ruta": "./assets/data/Proyeccion Social.json", 
+        "icon_white":"./assets/img/proyeccion_social_b.svg",
+        "icon_black":"./assets/img/proyeccion_social.svg"
+      },
+    
+      "Planeación Institucional":{
+        "nombre":"Planeación Institucional",
+        "ruta": "./assets/data/Planeacion Institucional.json", 
+        "icon_white":"./assets/img/gestion_estrategica_b.svg",
+        "icon_black":"./assets/img/gestion_estrategica.svg"
+      },
+    
+      "Gestion de Calidad":{
+        "nombre":"Gestion de Calidad",
+        "ruta": "./assets/data/Gestion de Calidad.json", 
+        "icon_white":"./assets/img/quality_b.svg",
+        "icon_black":"./assets/img/quality.svg"
+      },
+    
+      "Docencia":{
+        "nombre":"Docencia",
+        "ruta": "./assets/data/Docencia.json", 
+        "icon_white":"./assets/img/docencia_b.svg",
+        "icon_black":"./assets/img/docencia.svg"
+      },
+    
+      "Investigacion y Posgrados":{
+        "nombre":"Investigación y Posgrados",
+        "ruta": "./assets/data/Investigacion y Posgrados.json", 
+        "icon_white":"./assets/img/investigacion_b.svg",
+        "icon_black":"./assets/img/investigacion.svg"
+      },
+    
+      "Recursos de Apoyo Academico":{
+        "nombre":"Recursos de Apoyo Académico",
+        "ruta": "./assets/data/Recursos de Apoyo Academico.json", 
+        "icon_white":"./assets/img/academico_b.svg",
+        "icon_black":"./assets/img/academico.svg"
+      },
+      
+      "Desarrollo Humano":{
+        "nombre":"Desarrollo Humano",
+        "ruta": "./assets/data/Desarrollo Humano.json", 
+        "icon_white":"./assets/img/desarrollo_humano_b.svg",
+        "icon_black":"./assets/img/desarrollo_humano.svg"
+      },
+    
+      "Infraestructura":{
+        "nombre":"Infraestructura",
+        "ruta": "./assets/data/Infraestructura.json", 
+        "icon_white":"./assets/img/infraestructura_b.svg",
+        "icon_black":"./assets/img/infraestructura.svg"
+      },
+    
+      "Gestion Financiera":{
+        "nombre":"Gestión Financiera",
+        "ruta": "./assets/data/Gestion Financiera.json", 
+        "icon_white":"./assets/img/financiera_b.svg",
+        "icon_black":"./assets/img/financiera.svg"
+      }
+    },
+    oUrlFuentes:{
+      "gestion_academico":
+      { 
+        "categoria":"Planeación Institucional",
+        "titulo":"gerenciales"
+      },
+      "calidad":
+      { 
+        "categoria":"Gestion de Calidad",
+        "titulo":"gerenciales"
+      },
+      "docencia":
+      { 
+        "categoria":"Docencia",
+        "titulo":"misionales"
+      },
+      "investigacion":
+      { 
+        "categoria":"Investigacion y Posgrados",
+        "titulo":"misionales"
+      },
+      "proyeccion":
+      { 
+        "categoria":"Proyección Social",
+        "titulo":"misionales"
+      },
+      "humano":
+      { 
+        "categoria":"Desarrollo Humano",
+        "titulo":"apoyo"
+      },
+      "infraestructura":
+      { 
+        "categoria":"infraestructura",
+        "titulo":"apoyo"
+      },
+      "academico":
+      { 
+        "categoria":"Recursos de Apoyo Academico",
+        "titulo":"apoyo"
+      },
+      "financiera":{ 
+        "categoria":"Gestion Financiera",
+        "titulo":"apoyo"
+      }      
+
     }
 
   };
