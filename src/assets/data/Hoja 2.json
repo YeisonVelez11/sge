@@ -1,0 +1,548 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "PS-CRT-001 Caracterización de procesos de Proyección Social",
+        "anexo": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-CRT-001 Caracterizacion de procesos de Proyeccion Social.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "PS-PRO-001 Procedimiento para la adquisición y legalización de convenios y_o contratos de asesoría y consultoría - desarrollo social",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-001 Procedimiento para la adquisicion y legalizacion de convenios y_o contratos de asesoria y consultoria - desarrollo social.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-008 Presentación de convenios y proyectos de asesoría y consultoría - desarrollo social",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-008 Presentacion de convenios y_o proyectos de asesoria - desarrollo social.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-002 Procedimiento para la planeación y ejecución de convenios y_o contratos de asesoría y consultoría - desarrollo social",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-002 Procedimiento para la planeacion y ejecucion de convenios y_o contratos de asesoria y consultoria - desarrollo social.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "PS-PRO-003 Procedimiento para la Gestión de Graduados",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-003 Procedimiento para la Gestion de Graduados.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-002 Instrumento de empleabilidad para graduado",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-002 Instrumento de empleabilidad para graduado.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-003 Instrumento de empleabilidad para empleador",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-003 Instrumento de empleabilidad para empleador.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-004 Registro de asistencia OG",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-004 Registro de asistencia OG.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-005 Instrumento de salida",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-005 Instrumento de salida.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-004 Procedimiento para la pre e incubación de empresas",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-004 Procedimiento para la pre e incubacion de empresas.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-017 Formato de evaluación de satisfacción preincubación",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-017 Formato de evaluacion de satisfaccion preincubacion.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-018 Formato de evaluación de satisfacción Incubación",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-018 Formato de evaluacion de satisfaccion Incubacion.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-005 Procedimiento para la oferta y ejecución de programas de educación continuada",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-005 Procedimiento para la oferta y ejecucion de programas de educacion continuada.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-009 Propuesta de formación",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-009 Propuesta de formacion.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-010 Evaluación del proceso de formación",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-010 Evaluacion del proceso de formacion.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-006 Procedimiento para la gestión de prácticas sociales estudiantiles",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-006 Procedimiento para la gestion de practicas sociales estudiantiles.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-011 Acta de compromiso ético",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-011 Acta de compromiso etico.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-012 Acta de acompañamiento",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-012 Acta de acompañamiento.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-013 Plan de trabajo prácticas estudiantiles",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-013 Plan de trabajo practicas estudiantiles.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-014 Evaluación de la práctica por parte de la empresa",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-014 Evaluacion de la practica por parte de la empresa.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-015 Informe final de prácticas estudiantiles",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-015 Informe final de practicas estudiantiles.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-016 Evaluación de tutores de práctica",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-016 Evaluacion de tutores de practica.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-007 Procedimiento de Intermediación Laboral",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-007 Procedimiento de Intermediacion Laboral.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "PS-IT-001 Instructivo para Carnetización",
+                "anexo": "./assets/data/5_Proyeccion Social/Instructivos/PS-IT-001 Instructivo para Carnetizacion.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-002 Instrumento de empleabilidad para graduado",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-002 Instrumento de empleabilidad para graduado.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-003 Instrumento de empleabilidad para empleador",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-003 Instrumento de empleabilidad para empleador.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-004 Registro de asistencia OG",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-004 Registro de asistencia OG.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-005 Instrumento de salida",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-005 Instrumento de salida.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-IT-002 Instructivo para la Administración del Portal de Empleo",
+                "anexo": "./assets/data/5_Proyeccion Social/Instructivos/PS-IT-002 Instructivo para la Administracion del Portal de Empleo.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "PS-IT-003 Instructivo para la pre e inscripción en programas de educación continuada",
+                "anexo": "./assets/data/5_Proyeccion Social/Instructivos/PS-IT-003 Instructivo para la pre e inscripcion en programas de educacion continuada.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "PS-FOR-002 Instrumento de empleabilidad para graduado",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-002 Instrumento de empleabilidad para graduado.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-003 Instrumento de empleabilidad para empleador",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-003 Instrumento de empleabilidad para empleador.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-004 Registro de asistencia OG",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-004 Registro de asistencia OG.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-005 Instrumento de salida",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-005 Instrumento de salida.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-008 Presentación de convenios y proyectos de asesoría y consultoría - desarrollo social",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-008 Presentacion de convenios y_o proyectos de asesoria - desarrollo social.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-009 Propuesta de formación",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-009 Propuesta de formacion.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-010 Evaluación del proceso de formación",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-010 Evaluacion del proceso de formacion.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-011 Acta de compromiso ético",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-011 Acta de compromiso etico.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-012 Acta de acompañamiento",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-012 Acta de acompañamiento.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-013 Plan de trabajo prácticas estudiantiles",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-013 Plan de trabajo practicas estudiantiles.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-014 Evaluación de la práctica por parte de la empresa",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-014 Evaluacion de la practica por parte de la empresa.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-015 Informe final de prácticas estudiantiles",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-015 Informe final de practicas estudiantiles.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-016 Evaluación de tutores de práctica",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-016 Evaluacion de tutores de practica.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2013",
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "Porcentaje de planes estratégicos entregados a planeación",
+                "aMedicionUnica": [
+                    "Porcentaje de planes estratégicos entregados a planeación",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Porcentaje de cumplimiento del plan de desarrollo",
+                "aMedicionUnica": [
+                    "Porcentaje de cumplimiento del plan de desarrollo",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Covertura del proceso de planeación por áreas académico administrativa",
+                "aMedicionUnica": [
+                    "Covertura del proceso de planeación por áreas académico administrativa",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Cumplimiento de la agenda de planeación",
+                "aMedicionUnica": [
+                    "Cumplimiento de la agenda de planeación",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Evolución del capital de trabajo",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Activo corriente",
+                        "valores": [
+                            "Activo corriente",
+                            10990093,
+                            25769854,
+                            31716054,
+                            24611211,
+                            18227453,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Pasivo corriente",
+                        "valores": [
+                            "Pasivo corriente",
+                            4204592,
+                            5195788,
+                            6947133,
+                            9144517,
+                            11927610,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de activos corrientes",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Caja y bancos",
+                        "valores": [
+                            "Caja y bancos",
+                            5210253,
+                            16270965,
+                            21171611,
+                            8901717,
+                            8975766,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Inversiones",
+                        "valores": [
+                            "Inversiones",
+                            1787511,
+                            3901634,
+                            5219292,
+                            11086710,
+                            3026504,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Deudores",
+                        "valores": [
+                            "Deudores",
+                            3850153,
+                            5368381,
+                            5256439,
+                            4518197,
+                            6155510,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de la operación",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Ingresos operacionales",
+                        "valores": [
+                            "Ingresos operacionales",
+                            38950070,
+                            42951108,
+                            45600446,
+                            51502249,
+                            59528814,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Egresos operacionales",
+                        "valores": [
+                            "Egresos operacionales",
+                            36596236,
+                            40717422,
+                            44060235,
+                            50273294,
+                            56610806,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Superavit o deficit operacional",
+                        "valores": [
+                            "Superavit o deficit operacional",
+                            2380834,
+                            2233686,
+                            1540211,
+                            1228955,
+                            2918008,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de los ingresos y egresos operacionales",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Ingresos operacionales",
+                        "valores": [
+                            "Ingresos operacionales",
+                            38950070,
+                            42951108,
+                            45600446,
+                            51502249,
+                            59528814,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Egresos operacionales",
+                        "valores": [
+                            "Egresos operacionales",
+                            36596236,
+                            40717422,
+                            44060235,
+                            50273294,
+                            56610806,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de los ingresos y egresos no operacionales",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Ingresos no operacionales",
+                        "valores": [
+                            "Ingresos no operacionales",
+                            757545,
+                            953688,
+                            1726760,
+                            2244379,
+                            1963922,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Egresos no operacionales",
+                        "valores": [
+                            "Egresos no operacionales",
+                            660889,
+                            550220,
+                            1398443,
+                            1601145,
+                            1969049,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de activos fijos, cargos diferidos e inversiones corrientes",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Activos fijos",
+                        "valores": [
+                            "Activos fijos",
+                            12282257,
+                            12723662,
+                            34644125,
+                            47119418,
+                            57725132,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Cargos diferidos",
+                        "valores": [
+                            "Cargos diferidos",
+                            2451109,
+                            2206859,
+                            2061831,
+                            2067329,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Inversiones corrientes",
+                        "valores": [
+                            "Inversiones corrientes",
+                            1787511,
+                            3901634,
+                            5219292,
+                            11086710,
+                            3026504,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Flujo de caja libre",
+                "aMedicionUnica": [
+                    "Flujo de caja libre",
+                    3894648,
+                    4092515,
+                    3284217,
+                    3389707,
+                    4377754,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Razón Corriente",
+                "aMedicionUnica": [
+                    "Razón Corriente",
+                    261,
+                    496,
+                    466,
+                    274,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Ebidta",
+                "aMedicionUnica": [
+                    "Ebidta",
+                    3472631,
+                    3324859,
+                    2944596,
+                    2635648,
+                    4452208,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [
+            "PS-FOR-006 Indicadores del proceso Proyección Social"
+        ],
+        "indicador_proyeccion_social_ruta": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-FOR-006 Indicadores del proceso Proyeccion Social.pdf"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "PS-FOR-019 Matriz de Riesgos Proyección Social"
+        ],
+        "anexo": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-FOR-019 Matriz de Riesgos Proyeccion Social.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "PS-FOR-007 Matriz de comunicaciones Proyección Social"
+        ],
+        "anexo": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-FOR-007 Matriz de comunicaciones Proyeccion Social.pdf"
+    }
+]

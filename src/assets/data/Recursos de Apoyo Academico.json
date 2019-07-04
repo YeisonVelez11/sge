@@ -1,0 +1,129 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "GRA-CRT-001 Caracterización Proceso Gestión de Recursos de Apoyo Académico",
+        "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-CRT-001 Caracterizacion Proceso Gestion de Recursos de Apoyo Academico.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GRA-PRO-001 Procedimiento para la preinscripcion e inscripcion de aspirantes",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Procedimientos/GRA-PRO-001 Procedimiento para la preinscripcion e inscripcion de aspirantes.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "GRA-PRO-002 Procedimiento para la elaboracion de certificados",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Procedimientos/GRA-PRO-002 Procedimiento para la elaboracion de certificados.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GRA-FOR-008 Formato solicitud de certificados",
+                        "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Formatos/GRA-FOR-008 Formato solicitud de certificados.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GRA-PRO-003 Procedimiento para la elaboracion de paz y salvos",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Procedimientos/GRA-PRO-003 Procedimiento para la elaboracion de paz y salvos.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "GRA-PRO-004 Procedimiento para el reingreso de estudiantes inactivos",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Procedimientos/GRA-PRO-004 Procedimiento para el reingreso de estudiantes inactivos.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GRA-IT-001 Instructivo para matricula de estudiantes y admitidos",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Instructivos/GRA-IT-001 Instructivo para matricula de estudiantes y admitidos.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "GRA-IT-002 Instructivo para realizar adiciones y cancelaciones",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Instructivos/GRA-IT-002 Instructivo para realizar adiciones y cancelaciones.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GRA-FOR-008 Formato solicitud de certificados",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Formatos/GRA-FOR-008 Formato solicitud de certificados.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "indicador",
+                "aMedicionUnica": [
+                    "indicador",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [],
+        "indicador_proyeccion_social_ruta": "./assets/data/"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GRA-FOR-004  Matriz de riesgos Admisiones Registro y Control Académico",
+            "GRA-FOR-006 Matriz de riesgos Biblioteca"
+        ],
+        "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-004  Matriz de riesgos Admisiones Registro y Control Academico.pdf,8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-006 Matriz de riesgos Biblioteca.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GRA-FOR-003 Matriz de comunicaciones Gestión de Recursos de Apoyo Académico"
+        ],
+        "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-003 Matriz de comunicaciones Gestion de Recursos de Apoyo Academico.pdf"
+    }
+]

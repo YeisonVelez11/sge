@@ -1,0 +1,94 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "GI-CRT-001 Caracterizacion de Procesos de Gestion de Infraestructura",
+        "anexo": "./assets/data/7_Gestion de Infraestructura/Caracterizacion/GI-CRT-001 Caracterizacion de Procesos de Gestion de Infraestructura.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GI-PRO-001 Procedimiento para el mantenimiento preventivo",
+                "anexo": "./assets/data/7_Gestion de Infraestructura/Procedimientos/GI-PRO-001 Procedimiento para el mantenimiento preventivo.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GI-FOR-004 Registro de hallazgos para mantenimiento",
+                        "anexo": "./assets/data/7_Gestion de Infraestructura/Formatos/GI-FOR-004 Registro de hallazgos para mantenimiento.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GI-FOR-005 Mantenimiento preventivo",
+                        "anexo": "./assets/data/7_Gestion de Infraestructura/Formatos/GI-FOR-005 Mantenimiento preventivo.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GI-FOR-004 Registro de hallazgos para mantenimiento",
+                "anexo": "./assets/data/7_Gestion de Infraestructura/Formatos/GI-FOR-004 Registro de hallazgos para mantenimiento.pdf"
+            },
+            {
+                "hijo_nombre": "GI-FOR-005 Mantenimiento preventivo",
+                "anexo": "./assets/data/7_Gestion de Infraestructura/Formatos/GI-FOR-005 Mantenimiento preventivo.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "indicador",
+                "aMedicionUnica": [
+                    "indicador",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [],
+        "indicador_proyeccion_social_ruta": "./assets/data/"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GI-FOR-006 Matriz de riesgos Gestión de Infraestructura"
+        ],
+        "anexo": "./assets/data/7_Gestion de Infraestructura/Caracterizacion/GI-FOR-006 Matriz de riesgos Gestion de Infraestructura.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [],
+        "anexo": "./assets/data/"
+    }
+]

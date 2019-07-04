@@ -15,7 +15,7 @@
       <mdb-accordion [multiple]="true"  >
         <mdb-accordion-item [collapsed]="true" *ngFor="let item of aFuentes" >
           <mdb-accordion-item-head [ngClass]="item.fuente_hijos.length==0?'quitar_flecha_accordion':''"  (click)="item.fuente_hijos.length==0?fn_setOptionMenu(item,null):'';;" mdbWavesEffect>
-            <span [ngStyle]="{'font-weight':oMenuSeleccionado?.fuente==item.fuente?'bold':'unset'}">{{item.fuente}}</span>
+            <span [id]="item.fuente" [ngStyle]="{'font-weight':oMenuSeleccionado?.fuente==item.fuente?'bold':'unset'}">{{item.fuente}}</span>
           </mdb-accordion-item-head>
           <mdb-accordion-item-body *ngIf="item.fuente_hijos.length!=0">
 

@@ -1,0 +1,317 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "GC-CRT-001 Caracterizacion de procesos Gestion de la Calidad",
+        "anexo": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-CRT-001 Caracterizacion de procesos Gestion de la Calidad.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GC-PRO-001 Procedimiento para el control de documentos",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Procedimientos/GC-PRO-001 Procedimiento para el control de documentos.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GC-FOR-001 Solicitud  de cambio de documentos UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-001 Solicitud  de cambio de documentos UM.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-002 Distribución Documentos UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-002 Distribucion Documentos UM.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-004 Lista Documentos Externos UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-004 Lista Documentos Externos UM.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GC-PRO-002 Procedimiento para el control de registros",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Procedimientos/GC-PRO-002 Procedimiento para el control de registros.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GC-FOR-005  Control de Registros UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-005  Control de Registros UM.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GC-PRO-003 Procedimiento de Revisión por la Dirección",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Procedimientos/GC-PRO-003 Procedimiento de Revision por la Direccion.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "GC-PRO-004 Procedimiento para la realización de auditorías internas",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Procedimientos/GC-PRO-004 Procedimiento para la realizacion de auditorias internas.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GC-FOR-006 Programa de Auditorías UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-006 Programa de Auditorias UM.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-007 Lista de chequeo UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-007 Lista de chequeo UM.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-009 Informe de Auditoría UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-009 Informe de Auditoria UM.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-010 Evaluación de Auditores Internos UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-010 Evaluacion de Auditores Internos UM.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-011 Competencia de Auditores UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-011 Competencia de Auditores UM.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-012 Plan de Auditorías UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-012 Plan de Auditorias UM.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GC-PRO-005 Procedimiento para la gestión de las no conformidades y acciones correctivas",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Procedimientos/GC-PRO-005 Procedimiento para la gestion de las no conformidades y acciones correctivas.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GC-FOR-008 Acción de Mejoramiento UM",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-008 Accion de Mejoramiento UM.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GC-PRO-006 Procedimiento para la gestión del cambio",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Procedimientos/GC-PRO-006 Procedimiento para la gestion del cambio.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GC-FOR-015 Solicitud y autorización del cambio",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-015 Solicitud y autorizacion del cambio.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-017 Formato Matriz de riesgos",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-017 Formato Matriz de riesgos.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GC-PRO-007 Procedimiento para la gestión del riesgo",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Procedimientos/GC-PRO-007 Procedimiento para la gestion del riesgo.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GC-FOR-017 Formato Matriz de riesgos",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-017 Formato Matriz de riesgos.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GC-FOR-018 Formato Matriz Plan de Acciones",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-018 Formato Matriz Plan de Acciones.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GC-FOR-001 Solicitud  de cambio de documentos UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-001 Solicitud  de cambio de documentos UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-002 Distribución Documentos UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-002 Distribucion Documentos UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-004 Lista Documentos Externos UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-004 Lista Documentos Externos UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-005  Control de Registros UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-005  Control de Registros UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-006 Programa de Auditorías UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-006 Programa de Auditorias UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-007 Lista de chequeo UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-007 Lista de chequeo UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-008 Acción de Mejoramiento UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-008 Accion de Mejoramiento UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-009 Informe de Auditoría UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-009 Informe de Auditoria UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-010 Evaluación de Auditores Internos UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-010 Evaluacion de Auditores Internos UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-011 Competencia de Auditores UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-011 Competencia de Auditores UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-012 Plan de Auditorías UM",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-012 Plan de Auditorias UM.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-015 Solicitud y autorización del cambio",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-015 Solicitud y autorizacion del cambio.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-017 Formato Matriz de riesgos",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-017 Formato Matriz de riesgos.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-018 Formato Matriz Plan de Acciones",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-018 Formato Matriz Plan de Acciones.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "indicador",
+                "aMedicionUnica": [
+                    "indicador",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [
+            "GC-FOR-013 Indicadores del proceso Gestión de la Calidad"
+        ],
+        "indicador_proyeccion_social_ruta": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-013 Indicadores del proceso Gestion de la Calidad.pdf"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GC-FOR-016 Matriz de Riesgos Gestión de la calidad"
+        ],
+        "anexo": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-016 Matriz de Riesgos Gestión de la calidad.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GC-FOR-014 Matriz de comunicaciones Gestión de la Calidad"
+        ],
+        "anexo": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-014 Matriz de comunicaciones Gestión de la Calidad.pdf"
+    }
+]

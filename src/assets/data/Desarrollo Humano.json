@@ -1,0 +1,203 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "DH-CRT-001 Caracterización Proceso Desarrollo Humano",
+        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Caracterizacion/DH-CRT-001 Caracterizacion Proceso Desarrollo Humano.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "DH-PRO-001 Procedimiento para el apoyo estudiantil",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Procedimientos/DH-PRO-001 Procedimiento para el apoyo estudiantil.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "DH-FOR-002 Formulario para solicitud de becas alimentarias",
+                        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-002 Formulario para solicitud de becas alimentarias.pdf"
+                    },
+                    {
+                        "hijo_nombre": "DH-FOR-003 Formulario para solicitud de becas socioeconómicas",
+                        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-003 Formulario para solicitud de becas socioeconomicas.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "DH-PRO-002 Procedimiento para la selección de personal docente",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Procedimientos/DH-PRO-002 Procedimiento para la seleccion de personal docente.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "DH-FOR-007 Formatos para convocatorias internas y externas",
+                        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-007 Formatos para convocatorias internas y externas.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "DH-PRO-003 Procedimiento para la selección de practicantes cuota SENA",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Procedimientos/DH-PRO-003 Procedimiento para la seleccion de practicantes cuota SENA.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "DH-PRO-004 Procedimiento para la liquidación de cesantías",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Procedimientos/DH-PRO-004 Procedimiento para la liquidacion de cesantias.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "DH-FOR-006 Solicitud de retiro de cesantías",
+                        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-006 Solicitud de retiro de cesantias.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "DH-PRO-005 Procedimiento para la liquidación de nómina",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Procedimientos/DH-PRO-005 Procedimiento para la liquidacion de nomina.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "DH-PRO-006 Procedimiento para la liquidación de seguridad social",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Procedimientos/DH-PRO-006 Procedimiento para la liquidacion de seguridad social.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "DH-PRO-007 Procedimiento para la selección de personal administrativo",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Procedimientos/DH-PRO-007 Procedimiento para la selección de personal administrativol.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "DH-FOR-007 Formatos para convocatorias internas y externas",
+                        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-007 Formatos para convocatorias internas y externas.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "DH-IT-001 Instructivo para contratacion",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Instructivos/DH-IT-001 Instructivo para contratacion.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "DH-IT-002 Instructivo para la evaluación individual del desempeño",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Instructivos/DH-IT-002 Instructivo para la evaluacion individual del desempeño.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "DH-FOR-002 Formulario para solicitud de becas alimentarias",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-002 Formulario para solicitud de becas alimentarias.pdf"
+            },
+            {
+                "hijo_nombre": "DH-FOR-003 Formulario para solicitud de becas socioeconómicas",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-003 Formulario para solicitud de becas socioeconomicas.pdf"
+            },
+            {
+                "hijo_nombre": "DH-FOR-006 Solicitud de retiro de cesantías",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-006 Solicitud de retiro de cesantias.pdf"
+            },
+            {
+                "hijo_nombre": "DH-FOR-007 Formatos para convocatorias internas y externas",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-007 Formatos para convocatorias internas y externas.pdf"
+            },
+            {
+                "hijo_nombre": "DH-FOR-008 Contrato de aprendizaje SENA",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-008 Contrato de aprendizaje SENA.pdf"
+            },
+            {
+                "hijo_nombre": "DH-FOR-009 Generación ficha de ingreso",
+                "anexo": "./assets/data/6_Gestion Desarrollo Humano/Formatos/DH-FOR-009 Generacion ficha de ingreso.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "indicador",
+                "aMedicionUnica": [
+                    "indicador",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [],
+        "indicador_proyeccion_social_ruta": "./assets/data/"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "DH-FOR-010 Matriz de Riesgos Desarrollo Humano"
+        ],
+        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Caracterizacion/DH-FOR-010 Matriz de Riesgos Desarrollo Humano.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "DH-FOR-005 Matriz de comunicaciones Desarrollo Humano"
+        ],
+        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Caracterizacion/DH-FOR-005 Matriz de comunicaciones Desarrollo Humano.pdf"
+    }
+]

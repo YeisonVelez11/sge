@@ -1,0 +1,179 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "DO-CRT-001 Caracterización de Procesos Dirección de Docencia",
+        "anexo": "./assets/data/3_Docencia/Caracterizacion/DO-CRT-001 Caracterizacion de Procesos Direccion de Docencia.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "DO-PRO-001 Procedimiento para solicitud de puntos por producción académica",
+                "anexo": "./assets/data/3_Docencia/Procedimientos/DO-PRO-001 Procedimiento para solicitud de puntos por produccion academica.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "DO-FOR-004 Formato Punto Convención",
+                        "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-004 Formato Punto Convencion.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "DO-PRO-002 Procedimiento para la presentación de compromisos académicos",
+                "anexo": "./assets/data/3_Docencia/Procedimientos/DO-PRO-002 Procedimiento para la presentacion de compromisos academicos.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "DO-FOR-005 Concertación de compromisos académicos",
+                        "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-005 Concertacion de compromisos academicos.pdf"
+                    },
+                    {
+                        "hijo_nombre": "DO-FOR-006 Formato acta de entrega de compromisos académicos",
+                        "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-006 Formato acta de entrega de compromisos academicos.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "DO-PRO-003 Procedimiento para la evaluación docente",
+                "anexo": "./assets/data/3_Docencia/Procedimientos/DO-PRO-003 Procedimiento para la evaluacion docente.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "DO-IT-001 Instructivo para administrador plan de vida académico",
+                "anexo": "./assets/data/3_Docencia/Instructivos/DO-IT-001 Instructivo para administrador plan de vida academico.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "DO-IT-002 Instructivo creación de personas plan de vida académico",
+                "anexo": "./assets/data/3_Docencia/Instructivos/DO-IT-002 Instructivo creacion de personas plan de vida academico.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "DO-IT-003 Instructivo para la evaluación docencia",
+                "anexo": "./assets/data/3_Docencia/Instructivos/DO-IT-003 Instructivo para la evaluacion docencia.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "DO-IT-004 Instructivo para la solicitud de creación de contrato",
+                "anexo": "./assets/data/3_Docencia/Instructivos/DO-IT-004 Instructivo para la solicitud de creacion de contrato.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "DO-IT-005 Instructivo para solicitud de puntos por producción académica",
+                "anexo": "./assets/data/3_Docencia/Instructivos/DO-IT-005 Instructivo para solicitud de puntos por produccion academica.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "DO-FOR-004 Formato Punto Convención",
+                "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-004 Formato Punto Convencion.pdf"
+            },
+            {
+                "hijo_nombre": "DO-FOR-005 Concertación de compromisos académicos",
+                "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-005 Concertacion de compromisos academicos.pdf"
+            },
+            {
+                "hijo_nombre": "DO-FOR-006 Formato acta de entrega de compromisos académicos",
+                "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-006 Formato acta de entrega de compromisos academicos.pdf"
+            },
+            {
+                "hijo_nombre": "DO-FOR-007 Formato salidas académicas estudiantiles",
+                "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-007 Formato salidas academicas estudiantiles.pdf"
+            },
+            {
+                "hijo_nombre": "DO-FOR-008 Formato apoyo económico participación eventos",
+                "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-008 Formato apoyo economico participacion eventos.pdf"
+            },
+            {
+                "hijo_nombre": "DO-FOR-009 Formato autorización para modificación de horarios",
+                "anexo": "./assets/data/3_Docencia/Formatos/DO-FOR-009 Formato autorizacion para modificacion de horarios.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "indicador",
+                "aMedicionUnica": [
+                    "indicador",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [],
+        "indicador_proyeccion_social_ruta": "./assets/data/"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "DO-FOR-010 Matriz de Riesgos Docencia"
+        ],
+        "anexo": "./assets/data/3_Docencia/Caracterizacion/DO-FOR-010 Matriz de Riesgos Docencia.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [],
+        "anexo": "./assets/data/"
+    }
+]

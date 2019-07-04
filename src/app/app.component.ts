@@ -20,6 +20,7 @@ export class AppComponent {
 
   fn_setTituloProceso(item){
     this.activatedComponent.titulo_proceso = item;
+    this.activatedComponent.indicador=null;
     console.log(item);
   }
 

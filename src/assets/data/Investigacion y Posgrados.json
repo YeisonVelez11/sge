@@ -1,0 +1,113 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "IP-CRT-001 Caracterización de procesos de Investigación y Posgrados",
+        "anexo": "./assets/data/4_Investigacion Posgrados/Caracterizacion/IP-CRT-001 Caracterizacion de procesos de Investigacion y Posgrados.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "IP-PRO-001 Procedimiento para la apropiación social de conocimiento",
+                "anexo": "./assets/data/4_Investigacion Posgrados/Procedimientos/IP-PRO-001 Procedimiento para la apropiacion social de conocimiento.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "IP-PRO-002 Procedimiento para la generacion de nuevo conocimiento",
+                "anexo": "./assets/data/4_Investigacion Posgrados/Procedimientos/IP-PRO-002 Procedimiento para la generacion de nuevo conocimiento.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "IP-PRO-003 Procedimiento para la investigación formativa",
+                "anexo": "./assets/data/4_Investigacion Posgrados/Procedimientos/IP-PRO-003 Procedimiento para la investigacion formativa.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "IP-PRO-004 Procedimiento para la transferencia tecnológica",
+                "anexo": "./assets/data/4_Investigacion Posgrados/Procedimientos/IP-PRO-004 Procedimiento para la transferencia tecnologica.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "IP-IT-001 Instructivo registro de proyectos de investigacion",
+                "anexo": "./assets/data/4_Investigacion Posgrados/Instructivos/IP-IT-001 Instructivo registro de proyectos de investigacion.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "indicador",
+                "aMedicionUnica": [
+                    "indicador",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [
+            "IP-FOR-002 Indicadores del proceso Investigación y Posgrados"
+        ],
+        "indicador_proyeccion_social_ruta": "./assets/data/4_Investigacion Posgrados/Caracterizacion/IP-FOR-002 Indicadores del proceso Investigacion y Posgrados.pdf"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [],
+        "anexo": "./assets/data/"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "IP-FOR-003 Matriz de comunicaciones Investigacion y Posgrados"
+        ],
+        "anexo": "./assets/data/4_Investigacion Posgrados/Caracterizacion/IP-FOR-003 Matriz de comunicaciones Investigacion y Posgrados.pdf"
+    }
+]

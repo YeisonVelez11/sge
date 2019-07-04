@@ -147,6 +147,7 @@ private http: HttpClient
     }
     else{
       var auxColumn=[];
+      console.log(this.indicador.aMediciones);
       for(var i in this.indicador.aMediciones){
           auxColumn.push(this.indicador.aMediciones[i].valores);
       }
@@ -155,6 +156,7 @@ private http: HttpClient
       auxColumn=null;
     }
     console.log(columns);
+    console.log(aAnios);
     var aAnios=this.titulo_proceso.anios;
 
     var barchart = c3.generate({

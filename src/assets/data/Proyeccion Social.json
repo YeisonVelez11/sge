@@ -116,24 +116,7 @@
             {
                 "hijo_nombre": "PS-IT-001 Instructivo para Carnetización",
                 "anexo": "./assets/data/5_Proyeccion Social/Instructivos/PS-IT-001 Instructivo para Carnetizacion.pdf",
-                "formatos": [
-                    {
-                        "hijo_nombre": "PS-FOR-002 Instrumento de empleabilidad para graduado",
-                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-002 Instrumento de empleabilidad para graduado.pdf"
-                    },
-                    {
-                        "hijo_nombre": "PS-FOR-003 Instrumento de empleabilidad para empleador",
-                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-003 Instrumento de empleabilidad para empleador.pdf"
-                    },
-                    {
-                        "hijo_nombre": "PS-FOR-004 Registro de asistencia OG",
-                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-004 Registro de asistencia OG.pdf"
-                    },
-                    {
-                        "hijo_nombre": "PS-FOR-005 Instrumento de salida",
-                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-005 Instrumento de salida.pdf"
-                    }
-                ]
+                "formatos": []
             },
             {
                 "hijo_nombre": "PS-IT-002 Instructivo para la Administración del Portal de Empleo",
@@ -208,19 +191,173 @@
         "fuente": "Indicadores",
         "fuente_hijos": [],
         "anios": [
-            "2013",
             "2014",
             "2015",
             "2016",
             "2017",
-            "2018"
+            "2018-I"
         ],
         "indicadores": [
             {
-                "nombre_indicador": "Porcentaje de planes estratégicos entregados a planeación",
+                "nombre_indicador": "Contratos/convenios de asesoría y consultoría",
                 "aMedicionUnica": [
-                    "Porcentaje de planes estratégicos entregados a planeación",
-                    0,
+                    "Contratos/convenios de asesoría y consultoría",
+                    18,
+                    15,
+                    15,
+                    13,
+                    4
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Entidades beneficiadas en asesoría y consultoría",
+                "aMedicionUnica": [
+                    "Entidades beneficiadas en asesoría y consultoría",
+                    16,
+                    12,
+                    13,
+                    10,
+                    4
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Valor contratado en asesoría y consultoría",
+                "aMedicionUnica": [
+                    "Valor contratado en asesoría y consultoría",
+                    753200556,
+                    942486210,
+                    2489512017,
+                    1038801887,
+                    476945240
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Contratos/convenios de desarrollo social",
+                "aMedicionUnica": [
+                    "Contratos/convenios de desarrollo social",
+                    10,
+                    13,
+                    11,
+                    16,
+                    7
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Entidades beneficiadas desarrollo social",
+                "aMedicionUnica": [
+                    "Entidades beneficiadas desarrollo social",
+                    49,
+                    119,
+                    103,
+                    116,
+                    165
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Población beneficiada desarrollo social",
+                "aMedicionUnica": [
+                    "Población beneficiada desarrollo social",
+                    5231,
+                    7469,
+                    7741,
+                    57199,
+                    49000
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Contratos/convenios de educación continuada",
+                "aMedicionUnica": [
+                    "Contratos/convenios de educación continuada",
+                    9,
+                    5,
+                    4,
+                    8,
+                    2
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Entidades beneficiadas educación continuada",
+                "aMedicionUnica": [
+                    "Entidades beneficiadas educación continuada",
+                    49,
+                    112,
+                    135,
+                    133,
+                    164
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Ingresos de educación continuada",
+                "aMedicionUnica": [
+                    "Ingresos de educación continuada",
+                    315038861,
+                    266000000,
+                    121290000,
+                    3531445950,
+                    521865343
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "total de prácticas",
+                "aMedicionUnica": [
+                    "total de prácticas",
+                    1455,
+                    1660,
+                    830,
+                    1409,
+                    923
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Sensibilización emprendimiento",
+                "aMedicionUnica": [
+                    "Sensibilización emprendimiento",
+                    9144,
+                    16794,
+                    9194,
+                    9100,
+                    1443
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Formación de emprendedores",
+                "aMedicionUnica": [
+                    "Formación de emprendedores",
+                    148,
+                    5386,
+                    5140,
+                    8235,
+                    3389
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Identificación de ideas (emprendimiento)",
+                "aMedicionUnica": [
+                    "Identificación de ideas (emprendimiento)",
+                    502,
+                    3732,
+                    2592,
+                    1007,
+                    495
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Indice de empleabilidad de graduados",
+                "aMedicionUnica": [
+                    "Indice de empleabilidad de graduados",
                     0,
                     0,
                     0,
@@ -230,295 +367,13 @@
                 "aMediciones": []
             },
             {
-                "nombre_indicador": "Porcentaje de cumplimiento del plan de desarrollo",
+                "nombre_indicador": "Participación en actividades académicas de graduados",
                 "aMedicionUnica": [
-                    "Porcentaje de cumplimiento del plan de desarrollo",
+                    "Participación en actividades académicas de graduados",
                     0,
                     0,
                     0,
                     0,
-                    0,
-                    0
-                ],
-                "aMediciones": []
-            },
-            {
-                "nombre_indicador": "Covertura del proceso de planeación por áreas académico administrativa",
-                "aMedicionUnica": [
-                    "Covertura del proceso de planeación por áreas académico administrativa",
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "aMediciones": []
-            },
-            {
-                "nombre_indicador": "Cumplimiento de la agenda de planeación",
-                "aMedicionUnica": [
-                    "Cumplimiento de la agenda de planeación",
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "aMediciones": []
-            },
-            {
-                "nombre_indicador": "Evolución del capital de trabajo",
-                "aMedicionUnica": [],
-                "aMediciones": [
-                    {
-                        "nombre_indicador": "Activo corriente",
-                        "valores": [
-                            "Activo corriente",
-                            10990093,
-                            25769854,
-                            31716054,
-                            24611211,
-                            18227453,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Pasivo corriente",
-                        "valores": [
-                            "Pasivo corriente",
-                            4204592,
-                            5195788,
-                            6947133,
-                            9144517,
-                            11927610,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "nombre_indicador": "Evolución de activos corrientes",
-                "aMedicionUnica": [],
-                "aMediciones": [
-                    {
-                        "nombre_indicador": "Caja y bancos",
-                        "valores": [
-                            "Caja y bancos",
-                            5210253,
-                            16270965,
-                            21171611,
-                            8901717,
-                            8975766,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Inversiones",
-                        "valores": [
-                            "Inversiones",
-                            1787511,
-                            3901634,
-                            5219292,
-                            11086710,
-                            3026504,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Deudores",
-                        "valores": [
-                            "Deudores",
-                            3850153,
-                            5368381,
-                            5256439,
-                            4518197,
-                            6155510,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "nombre_indicador": "Evolución de la operación",
-                "aMedicionUnica": [],
-                "aMediciones": [
-                    {
-                        "nombre_indicador": "Ingresos operacionales",
-                        "valores": [
-                            "Ingresos operacionales",
-                            38950070,
-                            42951108,
-                            45600446,
-                            51502249,
-                            59528814,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Egresos operacionales",
-                        "valores": [
-                            "Egresos operacionales",
-                            36596236,
-                            40717422,
-                            44060235,
-                            50273294,
-                            56610806,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Superavit o deficit operacional",
-                        "valores": [
-                            "Superavit o deficit operacional",
-                            2380834,
-                            2233686,
-                            1540211,
-                            1228955,
-                            2918008,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "nombre_indicador": "Evolución de los ingresos y egresos operacionales",
-                "aMedicionUnica": [],
-                "aMediciones": [
-                    {
-                        "nombre_indicador": "Ingresos operacionales",
-                        "valores": [
-                            "Ingresos operacionales",
-                            38950070,
-                            42951108,
-                            45600446,
-                            51502249,
-                            59528814,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Egresos operacionales",
-                        "valores": [
-                            "Egresos operacionales",
-                            36596236,
-                            40717422,
-                            44060235,
-                            50273294,
-                            56610806,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "nombre_indicador": "Evolución de los ingresos y egresos no operacionales",
-                "aMedicionUnica": [],
-                "aMediciones": [
-                    {
-                        "nombre_indicador": "Ingresos no operacionales",
-                        "valores": [
-                            "Ingresos no operacionales",
-                            757545,
-                            953688,
-                            1726760,
-                            2244379,
-                            1963922,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Egresos no operacionales",
-                        "valores": [
-                            "Egresos no operacionales",
-                            660889,
-                            550220,
-                            1398443,
-                            1601145,
-                            1969049,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "nombre_indicador": "Evolución de activos fijos, cargos diferidos e inversiones corrientes",
-                "aMedicionUnica": [],
-                "aMediciones": [
-                    {
-                        "nombre_indicador": "Activos fijos",
-                        "valores": [
-                            "Activos fijos",
-                            12282257,
-                            12723662,
-                            34644125,
-                            47119418,
-                            57725132,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Cargos diferidos",
-                        "valores": [
-                            "Cargos diferidos",
-                            2451109,
-                            2206859,
-                            2061831,
-                            2067329,
-                            0,
-                            0
-                        ]
-                    },
-                    {
-                        "nombre_indicador": "Inversiones corrientes",
-                        "valores": [
-                            "Inversiones corrientes",
-                            1787511,
-                            3901634,
-                            5219292,
-                            11086710,
-                            3026504,
-                            0
-                        ]
-                    }
-                ]
-            },
-            {
-                "nombre_indicador": "Flujo de caja libre",
-                "aMedicionUnica": [
-                    "Flujo de caja libre",
-                    3894648,
-                    4092515,
-                    3284217,
-                    3389707,
-                    4377754,
-                    0
-                ],
-                "aMediciones": []
-            },
-            {
-                "nombre_indicador": "Razón Corriente",
-                "aMedicionUnica": [
-                    "Razón Corriente",
-                    261,
-                    496,
-                    466,
-                    274,
-                    0,
-                    0
-                ],
-                "aMediciones": []
-            },
-            {
-                "nombre_indicador": "Ebidta",
-                "aMedicionUnica": [
-                    "Ebidta",
-                    3472631,
-                    3324859,
-                    2944596,
-                    2635648,
-                    4452208,
                     0
                 ],
                 "aMediciones": []

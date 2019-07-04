@@ -118,6 +118,7 @@ oUrlFuentes=VARIABLES.oUrlFuentes;
       this.router.navigate(["proceso",this.categoria]);
       //this.outupSeleccionProceso.emit({"categoria":this.categoria,"titulo":this.titulo});
       setTimeout(()=>{
+        document.getElementById("Indicadores").click();
         delete  this.aJsonFuentes[json]["indicadores"];
         delete  this.aJsonFuentes[json]["anios"];
         delete  this.aJsonFuentes[json]["indicador_proyeccion_social_nombre"];

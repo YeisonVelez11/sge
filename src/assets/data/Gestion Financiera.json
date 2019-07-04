@@ -1,0 +1,408 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "GF-CRT-001 Caracterización Gestión Financiera",
+        "anexo": "./assets/data/9_Financiera/Caracterizacion/GF-CRT-001 Caracterizacion Gestion Financiera.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GF-PRO-001 Procedimiento Cartera y Financiacion de Matricula",
+                "anexo": "./assets/data/9_Financiera/Procedimientos/GF-PRO-001 Procedimiento Cartera y Financiacion de Matricula.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GF-FOR-003 Devoluciones",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-003 Devoluciones.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-004 Saldos a Favor",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-004 Saldos a Favor.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-005 Formularios de Financiación",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-005 Formularios de Financiación.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GF-PRO-002 Procedimiento Adquisicion Bienes y Servicios",
+                "anexo": "./assets/data/9_Financiera/Procedimientos/GF-PRO-002 Procedimiento Adquisicion Bienes y Servicios.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GF-FOR-017 Solicitud Compra de Bienes y Servicios",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-017 Solicitud Compra de Bienes y Servicios.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-018 Pedido Interno de Almacén",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-018 Pedido Interno de Almacen.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-022 Cuadro Comparativo de Precios",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-022 Cuadro Comparativo de Precios.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-023 Entrega de insumos",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-023 Entrega de insumos.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-024 Orden de Compra",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-024 Orden de Compra.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-026 Solicitud Elemento de Almacen",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-026 Solicitud Elemento de Almacen.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GF-FOR-001 Legalización Anticipo",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-001 Legalizacion Anticipo.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-002 Pagos menores",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-002 Pagos menores.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-003 Devoluciones",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-003 Devoluciones.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-004 Saldos a Favor",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-004 Saldos a Favor.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-005 Formularios de Financiación",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-005 Formularios de Financiación.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-006 Conciliaciones cuentas bancarias",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-006 Conciliaciones cuentas bancarias.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-007 Resumen cuentas conciliación",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-007 Resumen cuentas conciliacion.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-008 Solicitud factura",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-008 Solicitud factura.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-009 Plan operativo",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-009 Plan operativo.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-010 Presupuesto diplomados y seminarios",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-010 Presupuesto diplomados y seminarios.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-011 Presupuesto Asesoría consultoría",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-011 Presupuesto Asesoria consultoria.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-012 Presupuesto posgrados",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-012 Presupuesto posgrados.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-013 Presupuesto Pregrado Departamento",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-013 Presupuesto Pregrado Departamento.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-014 Presupuesto Proyectos investigación",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-014 Presupuesto Proyectos investigacion.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-015 Presupuesto Administración gestión",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-015 Presupuesto Administracion gestion.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-016 Presupuesto Capacitación y formación",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-016 Presupuesto Capacitacion y formacion.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-017 Solicitud Compra de Bienes y Servicios",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-017 Solicitud Compra de Bienes y Servicios.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-018 Pedido Interno de Almacén",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-018 Pedido Interno de Almacen.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-019 Hoja de Ruta del Indicador",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-019 Hoja de Ruta del Indicador.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-020 Certificado de Pagos por Educación",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-020 Certificado de Pagos por Educacion.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-021 Indice Contratos",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-021 Indice Contratos.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-022 Cuadro Comparativo de Precios",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-022 Cuadro Comparativo de Precios.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-023 Entrega de insumos",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-023 Entrega de insumos.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-024 Orden de Compra",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-024 Orden de Compra.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-025 Formato Evaluación de Proveedores",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-025 Formato Evaluacion de Proveedores.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-026 Solicitud Elemento de Almacen",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-026 Solicitud Elemento de Almacen.pdf"
+            },
+            {
+                "hijo_nombre": "GF-FOR-027 Reintegro de caja menor",
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-027 Reintegro de caja menor.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "indicador",
+                "aMedicionUnica": [
+                    "indicador",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [
+            "GF-FOR-030 Indicadores del proceso Gestion Financiera"
+        ],
+        "indicador_proyeccion_social_ruta": "./assets/data/9_Financiera/Caracterizacion/GF-FOR-030 Indicadores del proceso Gestion Financiera.pdf"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GF-FOR- 029 Matriz de riesgos Gestion Financiera Bienes y Servicios",
+            "GF-FOR-028 Matriz de riesgos Gestion Financiera Finanzas"
+        ],
+        "anexo": "./assets/data/9_Financiera/Caracterizacion/GF-FOR- 029 Matriz de riesgos Gestion Financiera Bienes y Servicios.pdf,9_Financiera/Caracterizacion/GF-FOR-028 Matriz de riesgos Gestion Financiera Finanzas.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GF-FOR-031 Matriz de comunicaciones Gestion Financiera"
+        ],
+        "anexo": "./assets/data/9_Financiera/Caracterizacion/GF-FOR-031 Matriz de comunicaciones Gestion Financiera.pdf"
+    }
+]

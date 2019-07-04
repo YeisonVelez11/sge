@@ -1,0 +1,384 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "PI-CRT-001 Caracterización de procesos Planeación Institucional",
+        "anexo": "./assets/data/1_Planeacion Institucional/Caracterizacion/PI-CRT-001 Caracterizacion de procesos Planeacion Institucional.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "PI-PRO-001 Procedimiento para la planeación estratégica de la Universidad de Manizales",
+                "anexo": "./assets/data/1_Planeacion Institucional/Procedimientos/PI-PRO-001 Procedimiento para la planeacion estrategica de la Universidad de Manizales.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PI-FOR-002 Formato para la planeación estratégica por área",
+                        "anexo": "./assets/data/1_Planeacion Institucional/Formatos/PI-FOR-002 Formato para la planeacion estrategica por area.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PI-PRO-002 Procedimiento para la planeación de la autoevaluación de la Universidad de Manizales",
+                "anexo": "./assets/data/1_Planeacion Institucional/Procedimientos/PI-PRO-002 Procedimiento para la planeacion de la autoevaluacion de la Universidad de Manizales.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PI-FOR-003 Formato para el cronograma de actividades de la acreditación institucional",
+                        "anexo": "./assets/data/1_Planeacion Institucional/Formatos/PI-FOR-003 Formato para el cronograma de actividades de la acreditacion institucional.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PI-PRO-003 Procedimiento para la ejecución de la autoevaluación de la Universidad de Manizales",
+                "anexo": "./assets/data/1_Planeacion Institucional/Procedimientos/PI-PRO-003 Procedimiento para la ejecucion de la autoevaluacion de la Universidad de Manizales.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PI-FOR-003 Formato para el cronograma de actividades de la acreditación institucional",
+                        "anexo": "./assets/data/1_Planeacion Institucional/Formatos/PI-FOR-003 Formato para el cronograma de actividades de la acreditacion institucional.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PI-FOR-004 Informe de autoevaluación por factor",
+                        "anexo": "./assets/data/1_Planeacion Institucional/Formatos/PI-FOR-004 Informe de autoevaluacion por factor.pdf"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "PI-FOR-002 Formato para la planeación estratégica por área",
+                "anexo": "./assets/data/1_Planeacion Institucional/Formatos/PI-FOR-002 Formato para la planeacion estrategica por area.pdf"
+            },
+            {
+                "hijo_nombre": "PI-FOR-003 Formato para el cronograma de actividades de la acreditación institucional",
+                "anexo": "./assets/data/1_Planeacion Institucional/Formatos/PI-FOR-003 Formato para el cronograma de actividades de la acreditacion institucional.pdf"
+            },
+            {
+                "hijo_nombre": "PI-FOR-004 Informe de autoevaluación por factor",
+                "anexo": "./assets/data/1_Planeacion Institucional/Formatos/PI-FOR-004 Informe de autoevaluacion por factor.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "Porcentaje de planes estratégicos entregados a planeación",
+                "aMedicionUnica": [
+                    "Porcentaje de planes estratégicos entregados a planeación",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Porcentaje de cumplimiento del plan de desarrollo",
+                "aMedicionUnica": [
+                    "Porcentaje de cumplimiento del plan de desarrollo",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Covertura del proceso de planeación por áreas académico administrativa",
+                "aMedicionUnica": [
+                    "Covertura del proceso de planeación por áreas académico administrativa",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Cumplimiento de la agenda de planeación",
+                "aMedicionUnica": [
+                    "Cumplimiento de la agenda de planeación",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Evolución del capital de trabajo",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Activo corriente",
+                        "valores": [
+                            "Activo corriente",
+                            25769854,
+                            31716054,
+                            24611211,
+                            18227453,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Pasivo corriente",
+                        "valores": [
+                            "Pasivo corriente",
+                            5195788,
+                            6947133,
+                            9144517,
+                            11927610,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de activos corrientes",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Caja y bancos",
+                        "valores": [
+                            "Caja y bancos",
+                            16270965,
+                            21171611,
+                            8901717,
+                            8975766,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Inversiones",
+                        "valores": [
+                            "Inversiones",
+                            3901634,
+                            5219292,
+                            11086710,
+                            3026504,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Deudores",
+                        "valores": [
+                            "Deudores",
+                            5368381,
+                            5256439,
+                            4518197,
+                            6155510,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de la operación",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Ingresos operacionales",
+                        "valores": [
+                            "Ingresos operacionales",
+                            42951108,
+                            45600446,
+                            51502249,
+                            59528814,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Egresos operacionales",
+                        "valores": [
+                            "Egresos operacionales",
+                            40717422,
+                            44060235,
+                            50273294,
+                            56610806,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Superavit o deficit operacional",
+                        "valores": [
+                            "Superavit o deficit operacional",
+                            2233686,
+                            1540211,
+                            1228955,
+                            2918008,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de los ingresos y egresos operacionales",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Ingresos operacionales",
+                        "valores": [
+                            "Ingresos operacionales",
+                            42951108,
+                            45600446,
+                            51502249,
+                            59528814,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Egresos operacionales",
+                        "valores": [
+                            "Egresos operacionales",
+                            40717422,
+                            44060235,
+                            50273294,
+                            56610806,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de los ingresos y egresos no operacionales",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Ingresos no operacionales",
+                        "valores": [
+                            "Ingresos no operacionales",
+                            953688,
+                            1726760,
+                            2244379,
+                            1963922,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Egresos no operacionales",
+                        "valores": [
+                            "Egresos no operacionales",
+                            550220,
+                            1398443,
+                            1601145,
+                            1969049,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Evolución de activos fijos, cargos diferidos e inversiones corrientes",
+                "aMedicionUnica": [],
+                "aMediciones": [
+                    {
+                        "nombre_indicador": "Activos fijos",
+                        "valores": [
+                            "Activos fijos",
+                            12723662,
+                            34644125,
+                            47119418,
+                            57725132,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Cargos diferidos",
+                        "valores": [
+                            "Cargos diferidos",
+                            2206859,
+                            2061831,
+                            2067329,
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "nombre_indicador": "Inversiones corrientes",
+                        "valores": [
+                            "Inversiones corrientes",
+                            3901634,
+                            5219292,
+                            11086710,
+                            3026504,
+                            0
+                        ]
+                    }
+                ]
+            },
+            {
+                "nombre_indicador": "Flujo de caja libre",
+                "aMedicionUnica": [
+                    "Flujo de caja libre",
+                    4092515,
+                    3284217,
+                    3389707,
+                    4377754,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Razón Corriente",
+                "aMedicionUnica": [
+                    "Razón Corriente",
+                    496,
+                    466,
+                    274,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Ebidta",
+                "aMedicionUnica": [
+                    "Ebidta",
+                    3324859,
+                    2944596,
+                    2635648,
+                    4452208,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [],
+        "indicador_proyeccion_social_ruta": "./assets/data/"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "PI-FOR-008 Matriz de Riesgos Planeación Institucional"
+        ],
+        "anexo": "./assets/data/1_Planeacion Institucional/Caracterizacion/PI-FOR-008 Matriz de Riesgos Planeacion Institucional.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "PI-FOR-007 Matriz de comunicaciones Planeación Institucional"
+        ],
+        "anexo": "./assets/data/1_Planeacion Institucional/Caracterizacion/PI-FOR-007 Matriz de comunicaciones Planeacion Institucional.pdf"
+    }
+]
