@@ -147,7 +147,6 @@ private http: HttpClient
     }
     else{
       var auxColumn=[];
-      console.log(this.indicador.aMediciones);
       for(var i in this.indicador.aMediciones){
           auxColumn.push(this.indicador.aMediciones[i].valores);
       }
@@ -155,8 +154,7 @@ private http: HttpClient
       columns=auxColumn;
       auxColumn=null;
     }
-    console.log(columns);
-    console.log(aAnios);
+
     var aAnios=this.titulo_proceso.anios;
 
     var barchart = c3.generate({
@@ -240,7 +238,6 @@ private http: HttpClient
 
 
   fn_setRigthOption(item,tipo){
-    console.log(item);
     /*{
     "hijo_nombre":"GFI-FOR-003.   Devoluciones",
     "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-003.   Devoluciones.pdf",
@@ -255,11 +252,13 @@ private http: HttpClient
       this.seleccionMenu["seleccion_instructivo"]=true;
       this.seleccionMenu["seleccion_formato"]=false;
     }
-    this.seleccionMenu["anexo_carga_mostrar"]=item.anexo;
+    this.seleccionMenu["anexo_carga_mostrar"]=item.hijo_nombre;
+    this.seleccionMenu["anexo"]=item.anexo;
+
     this.seleccionMenu["nieto_seleccionado"]=
     {
-      "nieto_seleccionado_nombre":item.hijo_nombre,
-      "nieto_seleccionado_anexo":item.anexo
+      "nieto_seleccionado_nombre":this.seleccionMenu["anexo_carga_mostrar"],
+      "nieto_seleccionado_anexo": this.seleccionMenu["anexo"]
     }
 
   }
