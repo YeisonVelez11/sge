@@ -12,6 +12,10 @@
       <!--<div class="d-flex flex-center mb-2 sombra" style="background: white;border: 4px solid rgba(104,192,77,1);">
         <img src="./assets/img/acreditacion.png" style="width:80%">
       </div>-->
+      <div class="mb-2 p-0 flex-center">
+        <img src="./assets/img/Logo_ UManizales y Acreditación Alta Calidad 1.png" style="width:112px;">
+      </div >
+
       <mdb-accordion [multiple]="true"  >
         <mdb-accordion-item [collapsed]="true" *ngFor="let item of aFuentes" >
           <mdb-accordion-item-head [ngClass]="item.fuente_hijos.length==0?'quitar_flecha_accordion':''"  (click)="item.fuente_hijos.length==0?fn_setOptionMenu(item,null):'';;" mdbWavesEffect>
@@ -52,7 +56,7 @@
           <i class="fas fa-bars" [ngClass]="!bPrimeraVez?'bola_resalte':''" style="color:white"></i>
         </a>-->
       <!--/. SideNav slide-out button -->
-      <img src="./assets/img/logoum.jpg" style="height: 46px;" class="p-0">
+      <!--<img src="./assets/img/logoum.png" style="height: 46px;" class="p-0 ml-3">-->
 
       <!-- Breadcrumb-->
 

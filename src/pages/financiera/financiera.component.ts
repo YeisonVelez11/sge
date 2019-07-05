@@ -143,7 +143,7 @@ private http: HttpClient
     var aColors=['#68C04D', '#002E00', '#009644', '#399422', '#097400', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5'];
     var columns=[];
     if(this.indicador.aMedicionUnica.length!=0){
-      columns=this.indicador.aMedicionUnica;
+      columns=[this.indicador.aMedicionUnica];
     }
     else{
       var auxColumn=[];
@@ -166,9 +166,7 @@ private http: HttpClient
                 height:320,
                 width: 320
             },*/
-            columns: [
-              columns
-            ],
+            columns: columns,
             type: 'bar'
         },
         color: {
