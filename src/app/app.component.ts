@@ -21,13 +21,12 @@ export class AppComponent {
   fn_setTituloProceso(item){
     this.activatedComponent.titulo_proceso = item;
     this.activatedComponent.indicador=null;
-    console.log(item);
   }
 
   setOptionMenu(item:any){
     this.activatedComponent.seleccionMenu = item;
+    this.activatedComponent.seleccionMenu.nieto_seleccionado=null;
 
-    console.log(this.activatedComponent.seleccionMenu );
   }
 
 }

@@ -143,11 +143,10 @@ private http: HttpClient
     var aColors=['#68C04D', '#002E00', '#009644', '#399422', '#097400', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5'];
     var columns=[];
     if(this.indicador.aMedicionUnica.length!=0){
-      columns=this.indicador.aMedicionUnica;
+      columns=[this.indicador.aMedicionUnica];
     }
     else{
       var auxColumn=[];
-      console.log(this.indicador.aMediciones);
       for(var i in this.indicador.aMediciones){
           auxColumn.push(this.indicador.aMediciones[i].valores);
       }
@@ -155,8 +154,7 @@ private http: HttpClient
       columns=auxColumn;
       auxColumn=null;
     }
-    console.log(columns);
-    console.log(aAnios);
+
     var aAnios=this.titulo_proceso.anios;
 
     var barchart = c3.generate({
@@ -166,9 +164,7 @@ private http: HttpClient
                 height:320,
                 width: 320
             },*/
-            columns: [
-              columns
-            ],
+            columns: columns,
             type: 'bar'
         },
         color: {
@@ -242,7 +238,6 @@ private http: HttpClient
 
 
   fn_setRigthOption(item,tipo){
-    console.log(item);
     /*{
     "hijo_nombre":"GFI-FOR-003.   Devoluciones",
     "anexo":"./assets/data/4.5.   FORMATOS/GFI-FOR-003.   Devoluciones.pdf",
@@ -257,11 +252,13 @@ private http: HttpClient
       this.seleccionMenu["seleccion_instructivo"]=true;
       this.seleccionMenu["seleccion_formato"]=false;
     }
-    this.seleccionMenu["anexo_carga_mostrar"]=item.anexo;
+    this.seleccionMenu["anexo_carga_mostrar"]=item.hijo_nombre;
+    this.seleccionMenu["anexo"]=item.anexo;
+
     this.seleccionMenu["nieto_seleccionado"]=
     {
-      "nieto_seleccionado_nombre":item.hijo_nombre,
-      "nieto_seleccionado_anexo":item.anexo
+      "nieto_seleccionado_nombre":this.seleccionMenu["anexo_carga_mostrar"],
+      "nieto_seleccionado_anexo": this.seleccionMenu["anexo"]
     }
 
   }

@@ -46,7 +46,7 @@ doc.useServiceAccountAuth(creds, function (err) {
         var indexCorteAnios = 0;
         var multipleMediciones = false; //describe si existen varias medicione
         var indexHeaders;
-
+        var oCheckIndicadores={"indicador":true,"subindicador":true}; //si ambos son false quiere decir que no existen y entonces se debe omitir
         totalColumnas = sheet.colCount;
 
         sheet.getCells(
@@ -110,16 +110,37 @@ doc.useServiceAccountAuth(creds, function (err) {
                 //indexcortesanios va a indicarme la posicion en que se agregaran los anios
                 if (parseInt(cell.col) == 1) {
                   romperCiclo = 0;
-
+                  oCheckIndicadores.indicador=true;
+                  oCheckIndicadores.subindicador=true;
+                  var filaActual=parseInt(cell.row);
                 }
 
                 //if(cell.value.trim()!=""){ no se agregan nulos
                 indexHeaders = 0;
                 var valoractual = (cell.value).trim();
-
                 //se ingresa la sección de anios
                 //console.log(indexCorteAnios,parseInt(cell.col)-1);
                 if (indexCorteAnios <= parseInt(cell.col) - 1) {
+
+                  if(indexCorteAnios == (parseInt(cell.col) - 1) && valoractual == "" ){
+                    oCheckIndicadores.indicador=false; //si ambos son false quiere decir que no existen y entonces se debe omitir
+
+                 
+                                      console.log(filaActual,indexCorteAnios,parseInt(cell.col) - 1 ,valoractual, oCheckIndicadores);
+                  }
+
+                  if( (indexCorteAnios+1) == (parseInt(cell.col) - 1) && valoractual == ""  ){
+                     oCheckIndicadores.subindicador=false;
+                                                          console.log(filaActual,indexCorteAnios+1,parseInt(cell.col) - 1 ,valoractual, oCheckIndicadores);
+
+                    if(oCheckIndicadores.indicador==false && oCheckIndicadores.subindicador==false){
+                      console.log("elimina");
+                      delete (oIndicadorActual);
+                    }
+                  }
+
+
+
                   if (indexCorteAnios == parseInt(cell.col) - 1 && valoractual != "") { //si es la primera ocurrencia, se definirá la clave una sola vez
                     indexHeaders = indexCorteAnios;
                     //console.log("es la primera vez")
@@ -136,7 +157,6 @@ doc.useServiceAccountAuth(creds, function (err) {
                       );
                     oIndicadorActual = aData[aHeaders[indexHeaders]];
 
-
                   }
                   //detetando si tiene multiples indicadores
                   else if (parseInt(cell.col) - 1 == indexCorteAnios + 1 && valoractual != "") {
@@ -150,9 +170,14 @@ doc.useServiceAccountAuth(creds, function (err) {
 
                   }
                   else if (!multipleMediciones) {
-
-
-                    oIndicadorActual[oIndicadorActual.length - 1].aMedicionUnica.push(valoractual == "" ? 0 : convertToNumber(valoractual));
+/*                    console.log(aData[aHeaders[indexHeaders]]);
+                    console.log(aHeaders[indexHeaders]);
+                    console.log(oIndicadorActual);
+*/
+                    //fix para evitar la generación de muchos ceros
+                    if(typeof oIndicadorActual !== 'undefined'){
+                      oIndicadorActual[oIndicadorActual.length - 1].aMedicionUnica.push(valoractual == "" ? 0 : convertToNumber(valoractual));
+                    }
                   }
 
                   //columna de cabecera que puede estar vacia o no 
@@ -275,29 +300,28 @@ doc.useServiceAccountAuth(creds, function (err) {
               if (romperCiclo == totalColumnas) { //si toda una  fila es vacia se rompe el ciclo porque no hay manera de saber las columnas totales
                 let cabecera = aHeaders[indexCorteAnios];
                 let totalElementos = aData[cabecera].length - 1;
-                let ultimoElemento = aData[cabecera][totalElementos].aMediciones.length - 1;
+                if(typeof oIndicadorActual !== 'undefined'){ //evitar eerror cuando hay filas vacias
 
-                //al final se agregan espacios vacios porque se detiene el ciclo, con esto se eliminan esos valores
-                if (multipleMediciones) {
-                  aData[cabecera][totalElementos].aMediciones.splice(aAnios.length, aAnios.length + 1);
-                  //aData[cabecera][totalElementos].aMedicionUnica=[];
-                  //se borra también la amedicionunica porque por defecto se llena de valores nulos
-                  //aData[cabecera][totalElementos].aMedicionUnica.splice(0,aAnios.length+1)
+                  let ultimoElemento = aData[cabecera][totalElementos].aMediciones.length - 1;
 
-                }
-                else {
-                  if (aData[cabecera][totalElementos].aMedicionUnica.length == aAnios.length) {
-                    aData[cabecera][totalElementos].aMedicionUnica.length = [];
+                  //al final se agregan espacios vacios porque se detiene el ciclo, con esto se eliminan esos valores
+                  if (multipleMediciones) {
+                    aData[cabecera][totalElementos].aMediciones.splice(aAnios.length, aAnios.length + 1);
+                    //se borra también la amedicionunica porque por defecto se llena de valores nulos
+
                   }
                   else {
-                    aData[cabecera][totalElementos].aMedicionUnica.splice(aAnios.length, aAnios.length + 1);
+                    if (aData[cabecera][totalElementos].aMedicionUnica.length == aAnios.length) {
+                      aData[cabecera][totalElementos].aMedicionUnica.length = [];
+                    }
+                    else {
+                      aData[cabecera][totalElementos].aMedicionUnica.splice(aAnios.length, aAnios.length + 1);
 
+                    }
+                    //aData[cabecera][totalElementos].aMediciones=[];
                   }
-                  //aData[cabecera][totalElementos].aMediciones=[];
                 }
-
-                aData
-                break;
+                  break;
               }
               //aDataMatriz[index].push();
             }
