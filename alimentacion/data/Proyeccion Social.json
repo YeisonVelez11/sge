@@ -1,0 +1,403 @@
+[
+    {
+        "fuente": "Caracterización",
+        "anexo_mostrar": "PS-CRT-001 Caracterización de procesos de Proyección Social",
+        "anexo": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-CRT-001 Caracterizacion de procesos de Proyeccion Social.pdf",
+        "fuente_hijos": []
+    },
+    {
+        "fuente": "Procedimientos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "PS-PRO-001 Procedimiento para la adquisición y legalización de convenios y_o contratos de asesoría y consultoría - desarrollo social",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-001 Procedimiento para la adquisicion y legalizacion de convenios y_o contratos de asesoria y consultoria - desarrollo social.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-008 Presentación de convenios y proyectos de asesoría y consultoría - desarrollo social",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-008 Presentacion de convenios y_o proyectos de asesoria - desarrollo social.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-002 Procedimiento para la planeación y ejecución de convenios y_o contratos de asesoría y consultoría - desarrollo social",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-002 Procedimiento para la planeacion y ejecucion de convenios y_o contratos de asesoria y consultoria - desarrollo social.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "PS-PRO-003 Procedimiento para la Gestión de Graduados",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-003 Procedimiento para la Gestion de Graduados.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-002 Instrumento de empleabilidad para graduado",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-002 Instrumento de empleabilidad para graduado.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-003 Instrumento de empleabilidad para empleador",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-003 Instrumento de empleabilidad para empleador.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-004 Registro de asistencia OG",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-004 Registro de asistencia OG.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-005 Instrumento de salida",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-005 Instrumento de salida.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-004 Procedimiento para la pre e incubación de empresas",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-004 Procedimiento para la pre e incubacion de empresas.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-017 Formato de evaluación de satisfacción preincubación",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-017 Formato de evaluacion de satisfaccion preincubacion.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-018 Formato de evaluación de satisfacción Incubación",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-018 Formato de evaluacion de satisfaccion Incubacion.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-005 Procedimiento para la oferta y ejecución de programas de educación continuada",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-005 Procedimiento para la oferta y ejecucion de programas de educacion continuada.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-009 Propuesta de formación",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-009 Propuesta de formacion.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-010 Evaluación del proceso de formación",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-010 Evaluacion del proceso de formacion.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-006 Procedimiento para la gestión de prácticas sociales estudiantiles",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-006 Procedimiento para la gestion de practicas sociales estudiantiles.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "PS-FOR-011 Acta de compromiso ético",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-011 Acta de compromiso etico.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-012 Acta de acompañamiento",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-012 Acta de acompañamiento.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-013 Plan de trabajo prácticas estudiantiles",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-013 Plan de trabajo practicas estudiantiles.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-014 Evaluación de la práctica por parte de la empresa",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-014 Evaluacion de la practica por parte de la empresa.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-015 Informe final de prácticas estudiantiles",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-015 Informe final de practicas estudiantiles.pdf"
+                    },
+                    {
+                        "hijo_nombre": "PS-FOR-016 Evaluación de tutores de práctica",
+                        "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-016 Evaluacion de tutores de practica.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "PS-PRO-007 Procedimiento de Intermediación Laboral",
+                "anexo": "./assets/data/5_Proyeccion Social/Procedimientos/PS-PRO-007 Procedimiento de Intermediacion Laboral.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Instructivos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "PS-IT-001 Instructivo para Carnetización",
+                "anexo": "./assets/data/5_Proyeccion Social/Instructivos/PS-IT-001 Instructivo para Carnetizacion.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "PS-IT-002 Instructivo para la Administración del Portal de Empleo",
+                "anexo": "./assets/data/5_Proyeccion Social/Instructivos/PS-IT-002 Instructivo para la Administracion del Portal de Empleo.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "PS-IT-003 Instructivo para la pre e inscripción en programas de educación continuada",
+                "anexo": "./assets/data/5_Proyeccion Social/Instructivos/PS-IT-003 Instructivo para la pre e inscripcion en programas de educacion continuada.pdf",
+                "formatos": []
+            }
+        ]
+    },
+    {
+        "fuente": "Formatos",
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "PS-FOR-002 Instrumento de empleabilidad para graduado",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-002 Instrumento de empleabilidad para graduado.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-003 Instrumento de empleabilidad para empleador",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-003 Instrumento de empleabilidad para empleador.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-004 Registro de asistencia OG",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-004 Registro de asistencia OG.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-005 Instrumento de salida",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-005 Instrumento de salida.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-008 Presentación de convenios y proyectos de asesoría y consultoría - desarrollo social",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-008 Presentacion de convenios y_o proyectos de asesoria - desarrollo social.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-009 Propuesta de formación",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-009 Propuesta de formacion.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-010 Evaluación del proceso de formación",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-010 Evaluacion del proceso de formacion.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-011 Acta de compromiso ético",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-011 Acta de compromiso etico.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-012 Acta de acompañamiento",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-012 Acta de acompañamiento.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-013 Plan de trabajo prácticas estudiantiles",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-013 Plan de trabajo practicas estudiantiles.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-014 Evaluación de la práctica por parte de la empresa",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-014 Evaluacion de la practica por parte de la empresa.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-015 Informe final de prácticas estudiantiles",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-015 Informe final de practicas estudiantiles.pdf"
+            },
+            {
+                "hijo_nombre": "PS-FOR-016 Evaluación de tutores de práctica",
+                "anexo": "./assets/data/5_Proyeccion Social/Formatos/PS-FOR-016 Evaluacion de tutores de practica.pdf"
+            }
+        ]
+    },
+    {
+        "fuente": "Indicadores",
+        "fuente_hijos": [],
+        "anios": [
+            "2014",
+            "2015",
+            "2016",
+            "2017",
+            "2018-I"
+        ],
+        "indicadores": [
+            {
+                "nombre_indicador": "Contratos/convenios de asesoría y consultoría",
+                "aMedicionUnica": [
+                    "Contratos/convenios de asesoría y consultoría",
+                    18,
+                    15,
+                    15,
+                    13,
+                    4
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Entidades beneficiadas en asesoría y consultoría",
+                "aMedicionUnica": [
+                    "Entidades beneficiadas en asesoría y consultoría",
+                    16,
+                    12,
+                    13,
+                    10,
+                    4
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Valor contratado en asesoría y consultoría",
+                "aMedicionUnica": [
+                    "Valor contratado en asesoría y consultoría",
+                    753200556,
+                    942486210,
+                    2489512017,
+                    1038801887,
+                    476945240
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Contratos/convenios de desarrollo social",
+                "aMedicionUnica": [
+                    "Contratos/convenios de desarrollo social",
+                    10,
+                    13,
+                    11,
+                    16,
+                    7
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Entidades beneficiadas desarrollo social",
+                "aMedicionUnica": [
+                    "Entidades beneficiadas desarrollo social",
+                    49,
+                    119,
+                    103,
+                    116,
+                    165
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Población beneficiada desarrollo social",
+                "aMedicionUnica": [
+                    "Población beneficiada desarrollo social",
+                    5231,
+                    7469,
+                    7741,
+                    57199,
+                    49000
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Contratos/convenios de educación continuada",
+                "aMedicionUnica": [
+                    "Contratos/convenios de educación continuada",
+                    9,
+                    5,
+                    4,
+                    8,
+                    2
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Entidades beneficiadas educación continuada",
+                "aMedicionUnica": [
+                    "Entidades beneficiadas educación continuada",
+                    49,
+                    112,
+                    135,
+                    133,
+                    164
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Ingresos de educación continuada",
+                "aMedicionUnica": [
+                    "Ingresos de educación continuada",
+                    315038861,
+                    266000000,
+                    121290000,
+                    3531445950,
+                    521865343
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "total de prácticas",
+                "aMedicionUnica": [
+                    "total de prácticas",
+                    1455,
+                    1660,
+                    830,
+                    1409,
+                    923
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Sensibilización emprendimiento",
+                "aMedicionUnica": [
+                    "Sensibilización emprendimiento",
+                    9144,
+                    16794,
+                    9194,
+                    9100,
+                    1443
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Formación de emprendedores",
+                "aMedicionUnica": [
+                    "Formación de emprendedores",
+                    148,
+                    5386,
+                    5140,
+                    8235,
+                    3389
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Identificación de ideas (emprendimiento)",
+                "aMedicionUnica": [
+                    "Identificación de ideas (emprendimiento)",
+                    502,
+                    3732,
+                    2592,
+                    1007,
+                    495
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Indice de empleabilidad de graduados",
+                "aMedicionUnica": [
+                    "Indice de empleabilidad de graduados",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            },
+            {
+                "nombre_indicador": "Participación en actividades académicas de graduados",
+                "aMedicionUnica": [
+                    "Participación en actividades académicas de graduados",
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "aMediciones": []
+            }
+        ],
+        "indicador_proyeccion_social_nombre": [
+            "PS-FOR-006 Indicadores del proceso Proyección Social"
+        ],
+        "indicador_proyeccion_social_ruta": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-FOR-006 Indicadores del proceso Proyeccion Social.pdf"
+    },
+    {
+        "fuente": "Matriz de Riesgos",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "PS-FOR-019 Matriz de Riesgos Proyección Social"
+        ],
+        "anexo": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-FOR-019 Matriz de Riesgos Proyeccion Social.pdf"
+    },
+    {
+        "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "PS-FOR-007 Matriz de comunicaciones Proyección Social"
+        ],
+        "anexo": "./assets/data/undefined"
+    }
+]

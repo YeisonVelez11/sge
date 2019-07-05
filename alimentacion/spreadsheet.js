@@ -5,8 +5,8 @@ const fs = require('fs');
 // Create a document object using the ID of the spreadsheet - obtained from its URL.
 var doc = new GoogleSpreadsheet('1FmLzv7XIxbqdqDPZky5P__5ipuhGGi8OHK2IpqijLrM');
 var sheet;
-var aHojas = ["Hoja 2", "Proyeccion Social"];
-//var aHojas=[];
+//var aHojas = ["Hoja 2", "Proyeccion Social"];
+var aHojas=[];
 var iContadorSheet=0;
 
 //convierte a formato entero quitando ,00 y .
@@ -24,9 +24,9 @@ doc.useServiceAccountAuth(creds, function (err) {
 
   doc.getInfo(function (err, info) {
     console.log('Loaded doc: ' + info.title + ' by ' + info.author.email);
-    /*for(var i in  info.worksheets){
+    for(var i in  info.worksheets){
       aHojas.push(info.worksheets[i].title)
-    }*/
+    }
     var recurringFunc = function() {  
     
       if(aHojas.length) {
