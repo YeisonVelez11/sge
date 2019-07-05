@@ -54,43 +54,7 @@
             "2017",
             "2018"
         ],
-        "indicadores": [
-            {
-                "nombre_indicador": "indicador",
-                "aMedicionUnica": [
-                    "indicador",
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "aMediciones": []
-            }
-        ],
+        "indicadores": [],
         "indicador_proyeccion_social_nombre": [
             "IP-FOR-002 Indicadores del proceso Investigación y Posgrados"
         ],

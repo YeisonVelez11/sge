@@ -10,7 +10,7 @@
 
 	<div class="breadcum">
 		<mdb-breadcrumb customClass="black-text">
-		  <mdb-breadcrumb-item class="cursor_pointer" routerLink="/dashboard">
+		  <mdb-breadcrumb-item class="active" >
 		    <mdb-icon class="mr-2"></mdb-icon><img height="25" class="mr-2"  *ngIf="titulo_proceso" [src]="titulo_proceso.icon_black" >  {{titulo_proceso?.nombre}} 
 		  </mdb-breadcrumb-item>
 		  <mdb-breadcrumb-item class="active" >
@@ -86,7 +86,7 @@
 				
 		</mdb-tab>
 
-		<mdb-tab class="tab_indicador" heading="Indicador de Proyección Social" style="height:63vh;">
+		<mdb-tab class="tab_indicador" heading="Matriz de indicadores" style="height:63vh;">
 
 			<a   class="mt-2" href="{{titulo_proceso?.indicador_proyeccion_social_ruta}}" *ngIf="titulo_proceso?.indicador_proyeccion_social_ruta" download="{{titulo_proceso?.indicador_proyeccion_social_nombre}}" >{{titulo_proceso?.indicador_proyeccion_social_nombre}}</a>
 			<div class="contenedor_caracterizacion sombra mt-1" style="height:100%; width:100%;margin: 0 auto;" >
@@ -133,7 +133,7 @@
 		</div>
 <!-- (page-rendered)="pageRendered($event)"-->
 	<span [ngClass]="seleccionMenu?.formatos?.length>0?'':'d-none'">
-		<div  [ngClass]="seleccionMenu.bFlecha_animacion?'container_flecha_animacion_izq':'container_flecha_animacion_der'" (click)="seleccionMenu.bFlecha_animacion=!seleccionMenu.bFlecha_animacion">
+		<div  [ngClass]="seleccionMenu.bFlecha_animacion?'container_flecha_animacion_izq':'container_flecha_animacion_der'" (click)="seleccionMenu.bFlecha_animacion=!seleccionMenu.bFlecha_animacion" mdbTooltip="Formatos asociados" placement="left" >
 			<i mdbWavesEffect class="fas estilo_flecha_animacion" [ngClass]="seleccionMenu.bFlecha_animacion?'fa-angle-double-left':'fa-angle-double-right'" ></i>
 		</div>
 	</span>

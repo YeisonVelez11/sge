@@ -126,15 +126,12 @@ doc.useServiceAccountAuth(creds, function (err) {
                     oCheckIndicadores.indicador=false; //si ambos son false quiere decir que no existen y entonces se debe omitir
 
                  
-                                      console.log(filaActual,indexCorteAnios,parseInt(cell.col) - 1 ,valoractual, oCheckIndicadores);
                   }
 
                   if( (indexCorteAnios+1) == (parseInt(cell.col) - 1) && valoractual == ""  ){
                      oCheckIndicadores.subindicador=false;
-                                                          console.log(filaActual,indexCorteAnios+1,parseInt(cell.col) - 1 ,valoractual, oCheckIndicadores);
 
                     if(oCheckIndicadores.indicador==false && oCheckIndicadores.subindicador==false){
-                      console.log("elimina");
                       delete (oIndicadorActual);
                     }
                   }

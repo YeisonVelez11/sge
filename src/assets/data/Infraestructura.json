@@ -51,29 +51,7 @@
             "2017",
             "2018"
         ],
-        "indicadores": [
-            {
-                "nombre_indicador": "indicador",
-                "aMedicionUnica": [
-                    "indicador",
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "aMediciones": []
-            }
-        ],
+        "indicadores": [],
         "indicador_proyeccion_social_nombre": [],
         "indicador_proyeccion_social_ruta": "./assets/data/"
     },

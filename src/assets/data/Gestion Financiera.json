@@ -60,7 +60,103 @@
     },
     {
         "fuente": "Instructivos",
-        "fuente_hijos": []
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GF-IT-001 Instructivo Anticipos",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-001 Instructivo Anticipos.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GF-FOR-001 Legalización Anticipo",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-001 Legalizacion Anticipo.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-002 Pagos menores",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-002 Pagos menores.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GF-IT-002 Instructivo Conciliaciones Bancarias",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-002 Instructivo Conciliaciones Bancarias.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GF-FOR-006 Conciliaciones cuentas bancarias",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-006 Conciliaciones cuentas bancarias.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-007 Resumen cuentas conciliación",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-007 Resumen cuentas conciliacion.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GF-IT-003 Instructivo Secretaria Direccion Financiera",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-003 Instructivo Secretaria Direccion Financiera.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GF-FOR-003 Devoluciones",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-003 Devoluciones.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-004 Saldos a Favor",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-004 Saldos a Favor.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-020 Certificado de Pagos por Educación",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-020 Certificado de Pagos por Educacion.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GF-IT-004 Instructivo Tesoreria",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-004 Instructivo Tesoreria.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "GF-IT-005 Instructivo Facturacion Servicios",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-005 Instructivo Facturacion Servicios.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GF-FOR-008 Solicitud factura",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-008 Solicitud factura.pdf"
+                    },
+                    {
+                        "hijo_nombre": "GF-FOR-021 Indice Contratos",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-021 Indice Contratos.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GF-IT-006 Instructivo Icetex",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-006 Instructivo Icetex.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "GF-IT-007 Evaluacion de Proveedores",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-007 Evaluacion de Proveedores.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GF-FOR-025 Formato Evaluación de Proveedores",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-025 Formato Evaluacion de Proveedores.pdf"
+                    }
+                ]
+            },
+            {
+                "hijo_nombre": "GF-IT-008 Instructivo Causacion Contable",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-008 Instructivo Causacion Contable.pdf",
+                "formatos": []
+            },
+            {
+                "hijo_nombre": "GF-IT-009 Instructivo Caja Menor",
+                "anexo": "./assets/data/9_Financiera/Instructivos/GF-IT-009 Instructivo Caja Menor.pdf",
+                "formatos": [
+                    {
+                        "hijo_nombre": "GF-FOR-027 Reintegro de caja menor",
+                        "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-027 Reintegro de caja menor.pdf"
+                    }
+                ]
+            }
+        ]
     },
     {
         "fuente": "Formatos",
@@ -185,204 +281,7 @@
             "2017",
             "2018"
         ],
-        "indicadores": [
-            {
-                "nombre_indicador": "indicador",
-                "aMedicionUnica": [
-                    "indicador",
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
-                ],
-                "aMediciones": []
-            }
-        ],
+        "indicadores": [],
         "indicador_proyeccion_social_nombre": [
             "GF-FOR-030 Indicadores del proceso Gestion Financiera"
         ],
