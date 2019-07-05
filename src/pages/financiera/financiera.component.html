@@ -73,8 +73,9 @@
 										<option [ngValue]="null"
 											*ngIf="!indicador">Selecciona
 											Indicador</option>
+											<!-- si el ultimo caracter es $ se borra-->
 										<option *ngFor="let item of titulo_proceso?.indicadores" [ngValue]="item">
-											{{item.nombre_indicador}}</option>
+											{{item.nombre_indicador[item.nombre_indicador.length-1]=='$'?item.nombre_indicador.substring(0, item.nombre_indicador.length - 1):item.nombre_indicador}}</option>
 									</select>
 								</div>
 							</div>
@@ -92,7 +93,7 @@
 			<div class="contenedor_caracterizacion sombra mt-1" style="height:100%; width:100%;margin: 0 auto;" >
 				<object *ngIf="titulo_proceso?.indicador_proyeccion_social_ruta" [data]="titulo_proceso?.indicador_proyeccion_social_ruta | safe" type="application/pdf" width="100%" height="100%">
 				<p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: 
-				<a href="titulo_proceso?.indicador_proyeccion_social_nombre">Download PDF</a>.</p>
+				<a href="titulo_proceso?.indicador_proyeccion_social_ruta">Download PDF</a>.</p>
 				</object>
 					<!--<pdf-viewer [src]="seleccionMenu.anexo_carga_mostrar"
 								*ngIf="seleccionMenu?.anexo_carga_mostrar"

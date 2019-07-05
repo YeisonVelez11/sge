@@ -142,8 +142,28 @@ private http: HttpClient
     var formatoPesos=d3.format(",.0f");
     var aColors=['#68C04D', '#002E00', '#009644', '#399422', '#097400', '#98df8a', '#d62728', '#ff9896', '#9467bd', '#c5b0d5', '#8c564b', '#c49c94', '#e377c2', '#f7b6d2', '#7f7f7f', '#c7c7c7', '#bcbd22', '#dbdb8d', '#17becf', '#9edae5'];
     var columns=[];
+
+    var ultimoCaracter=this.indicador.nombre_indicador[this.indicador.nombre_indicador.length-1];   
+    if(ultimoCaracter=="$"){
+      let str= this.indicador.nombre_indicador;
+      this.indicador.nombre_indicador = str.substring(0, str.length - 1);
+      var formato="$"; //define como se muestran los valores, si en cantidad o en pesos
+    }
+    else{
+      formato="";
+    }
+
+
     if(this.indicador.aMedicionUnica.length!=0){
+      var ultimoCaracter=this.indicador.aMedicionUnica[0][this.indicador.aMedicionUnica[0].length-1];   
+      if(ultimoCaracter=="$"){
+        //se quita el ultimo caracter
+        this.indicador.aMedicionUnica[0] = this.indicador.aMedicionUnica[0].substring(0, this.indicador.aMedicionUnica[0].length - 1);
+      }
+
+
       columns=[this.indicador.aMedicionUnica];
+
     }
     else{
       var auxColumn=[];
@@ -184,7 +204,8 @@ private http: HttpClient
             },
             y : {
                 tick: {
-                    format: d3.format("$,")
+                  //"$,"
+                    format: d3.format(formato+",")
     //                format: function (d) { return "$" + d; }
                 }
             }            
@@ -199,7 +220,7 @@ private http: HttpClient
          tooltip: {
               format: {
                   value: function (d,i,k,l) { 
-                      return formatoPesos(d);
+                      return formatoPesos(d)+" "+formato;
                   },
                   title: function (d) {  return  aAnios[d]; }
                   // etc ...

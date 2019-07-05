@@ -223,9 +223,9 @@
                 "aMediciones": []
             },
             {
-                "nombre_indicador": "Valor contratado en asesoría y consultoría",
+                "nombre_indicador": "Valor contratado en asesoría y consultoría$",
                 "aMedicionUnica": [
-                    "Valor contratado en asesoría y consultoría",
+                    "Valor contratado en asesoría y consultoría$",
                     753200556,
                     942486210,
                     2489512017,
@@ -295,9 +295,9 @@
                 "aMediciones": []
             },
             {
-                "nombre_indicador": "Ingresos de educación continuada",
+                "nombre_indicador": "Ingresos de educación continuada$",
                 "aMedicionUnica": [
-                    "Ingresos de educación continuada",
+                    "Ingresos de educación continuada$",
                     315038861,
                     266000000,
                     121290000,
