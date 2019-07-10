@@ -1,3 +1,4 @@
+
 var GoogleSpreadsheet = require('google-spreadsheet');
 var creds = require('./client_secret.json');
 // file system module to perform file operations
@@ -28,7 +29,7 @@ doc.useServiceAccountAuth(creds, function (err) {
       aHojas.push(info.worksheets[i].title)
     }
     var recurringFunc = function() {  
-    
+   
       if(aHojas.length) {
         var fileName = aHojas.shift();
         sheet = info.worksheets[iContadorSheet];
@@ -81,7 +82,10 @@ doc.useServiceAccountAuth(creds, function (err) {
                 }
 
                 if (bAgregarAnios && (cell.value).trim() != "") {
-                  aAnios.push((cell.value).trim());
+                  if((cell.value).trim().search('meta')==-1){
+                    aAnios.push((cell.value).trim());
+
+                  }
                 }
 
                 else if ((cell.value).trim().toLowerCase() == "registro de indicadores") {
@@ -177,7 +181,7 @@ doc.useServiceAccountAuth(creds, function (err) {
                     }
                   }
 
-                  //columna de cabecera que puede estar vacia o no 
+                  //columna de cabecera que puede estar vacia o no
                   if ((parseInt(cell.col) - 1 >= indexCorteAnios + 1) && multipleMediciones == true) {
                     if (parseInt(cell.col) - 1 == indexCorteAnios + 1) {
                      //oIndicadorActual[oIndicadorActual.length - 1].aMediciones.push({ "nombre_indicador": valoractual, "valores": [valoractual] })
@@ -237,7 +241,7 @@ doc.useServiceAccountAuth(creds, function (err) {
                       }
                       //let indexUltimaPos=aData._procedimientos[aData._procedimientos.length-1].formato_asociado.length-1;
                     }
-                    else if (parseInt(cell.col) == 7) { //nombre instructivo 
+                    else if (parseInt(cell.col) == 7) { //nombre instructivo
 
                       aData._instructivo.push(
                         {
@@ -250,7 +254,7 @@ doc.useServiceAccountAuth(creds, function (err) {
      
 
                     }
-                    else if (parseInt(cell.col) == 8) { //ruta instructivo 
+                    else if (parseInt(cell.col) == 8) { //ruta instructivo
 
                       aData._instructivo[aData._instructivo.length - 1].ruta_instructivo = (cell.value).trim()
                     }
@@ -406,14 +410,109 @@ doc.useServiceAccountAuth(creds, function (err) {
                    })
               }
 
+              console.log("***");
+              for(var i in aData["_Registro de indicadores"]){
 
+                if(aData["_Registro de indicadores"][i].aMedicionUnica.length!=0){
+                  let indicadorActual=[
+                    aData["_Registro de indicadores"][i].aMedicionUnica[0],
+                    aData["_Registro de indicadores"][i].aMedicionUnica[1]
+                  ];
+                  let aMetas=[];
+
+                  for(var j in aData["_Registro de indicadores"][i].aMedicionUnica)
+                  {
+                    if(j>1){
+                      if(j % 2 !=0)
+                      {
+                       console.log("indicadores "+j+ "=>"+aData["_Registro de indicadores"][i].aMedicionUnica[j]);
+
+                        indicadorActual.push(aData["_Registro de indicadores"][i].aMedicionUnica[j]);
+                      }
+                      else
+                      {
+                       console.log("metas "+j+ "=>"+aData["_Registro de indicadores"][i].aMedicionUnica[j]);
+
+
+                        aMetas.push(aData["_Registro de indicadores"][i].aMedicionUnica[j]);
+                      }
+                    }
+                  }
+                  aData["_Registro de indicadores"][i].aMedicionUnica=indicadorActual;
+                  aData["_Registro de indicadores"][i].metas=aMetas;
+                  console.log(aData["_Registro de indicadores"][i].aMedicionUnica)
+                  console.log( aData["_Registro de indicadores"][i].metas);
+
+
+                }
+
+                else{
+                  for(var j in aData["_Registro de indicadores"][i].aMediciones)
+                  {
+                    let indicadorActual=[
+                      aData["_Registro de indicadores"][i].aMediciones[j].valores[0],
+                      aData["_Registro de indicadores"][i].aMediciones[j].valores[1]
+                    ];
+                    let aMetas=[];
+
+                    for(var t in aData["_Registro de indicadores"][i].aMediciones[j].valores)
+                    {
+                      if(t>1){
+                        if(t % 2 !=0)
+                        {
+                         console.log("indicadores "+j+ "=>"+aData["_Registro de indicadores"][i].aMediciones[j].valores[t]);
+
+                          indicadorActual.push(aData["_Registro de indicadores"][i].aMediciones[j].valores[t]);
+                        }
+                        else
+                        {
+                         console.log("metas "+j+ "=>"+aData["_Registro de indicadores"][i].aMediciones[j].valores[t]);
+
+
+                          aMetas.push(aData["_Registro de indicadores"][i].aMediciones[j].valores[t]);
+                        }
+                      }
+
+                    }
+
+                    aData["_Registro de indicadores"][i].aMediciones[j].valores=indicadorActual;
+                    aData["_Registro de indicadores"][i].aMediciones[j].metas=aMetas;
+                    console.log(aData["_Registro de indicadores"][i].aMediciones[j].valores)
+                    console.log(aData["_Registro de indicadores"][i].aMediciones[j].metas);        
+
+                  }
+         
+                }
+
+              }
+
+
+              //fix para ulitmo cero que se crea en la ultima posición del indicador
+              let ultimoindicador=aData["_Registro de indicadores"][aData["_Registro de indicadores"].length-1];
+             
+              console.log(ultimoindicador);
+              if(ultimoindicador){
+                if(ultimoindicador.aMedicionUnica.length!=0){
+                  if(ultimoindicador.aMedicionUnica.length!=aData["aAnios"].length){
+                    ultimoindicador.aMedicionUnica.splice(ultimoindicador.aMedicionUnica.length-1,1);
+                  }
+                  aData["_Registro de indicadores"][aData["_Registro de indicadores"].length-1]=ultimoindicador;
+ 
+                }
+                ultimoindicador=null;
+              }
+              let aIndicadores=[];
+
+
+
+             
               aHardocredJson.push({
                 "fuente":"Indicadores",
                 "fuente_hijos":[],
                 "anios":aData["aAnios"],
-                "indicadores":aData["_Registro de indicadores"],
-                "indicador_proyeccion_social_nombre":aData["_indicadores nombre"],
-                "indicador_proyeccion_social_ruta":ruta+aData["_indicadores ruta"]
+                "indicadores":aData["_Registro de indicadores"]/*,
+                /*"indicador_proyeccion_social_nombre":aData["_indicadores nombre"],
+                "indicador_proyeccion_social_ruta":ruta+aData["_indicadores ruta"]*/
               })
 
               aHardocredJson.push({
@@ -431,6 +530,12 @@ doc.useServiceAccountAuth(creds, function (err) {
                 "anexo":ruta+aData["_matriz comunicaciones ruta"]
               })
 
+              aHardocredJson.push({
+                "fuente":"Matriz de Indicadores",
+                "fuente_hijos":[],
+                "anexo_mostrar":aData["_indicadores nombre"],
+                "anexo":ruta+aData["_indicadores ruta"]
+              })
 
 
             //fs.writeFileSync("data/"+fileName + ".json", JSON.stringify(aHardocredJson, null, 4), 'utf8');
@@ -449,3 +554,5 @@ doc.useServiceAccountAuth(creds, function (err) {
 
 
 });//doc.useServiceAccountAuth
+
+
