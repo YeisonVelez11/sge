@@ -267,6 +267,10 @@ $gris_oscuro:#343434;
   transform: translate(272px, 0);  
 }
 
+.ocultar_linea{
+  opacity: 0;
+  pointer-events: none;
+}
 
 .titulo_secciones{
   height: 41px;

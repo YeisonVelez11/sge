@@ -7,6 +7,7 @@ import { VARIABLES } from '../../config/variables';
 import { HttpClient } from '@angular/common/http'; 
 import * as c3 from 'c3';
 import * as d3 from 'd3';
+import { style } from '@angular/animations';
 
 //import Neo4jd3 from 'Neo4jd3';
 
@@ -136,6 +137,16 @@ private http: HttpClient
 
   }
 
+  /*fn_pintarLinea(){
+    let barra=d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0");
+    let CoordenadasBarra=d3.select(barra).node().getBBox();
+    let linea=d3.selectAll(".c3-ygrid-line")[0];
+    console.log(linea);
+    console.log(CoordenadasBarra);
+    d3.select(barra).style.transform="translate("+CoordenadasBarra.x+"px,"+"0px"+")";
+  }*/
+
+
 
   fn_generarGrafica(){
 
@@ -163,6 +174,27 @@ private http: HttpClient
 
 
       columns=[this.indicador.aMedicionUnica];
+      var maxValueForValues=this.indicador.metas;
+
+      var grid:any=
+      {
+        y: {
+            lines: [
+                
+            ]
+        }
+     }
+     for(var i in maxValueForValues){
+      grid.y.lines.push(
+        {
+          value: maxValueForValues[i], text: 'Label'+ maxValueForValues[i], position: 'middle',class:"ocultar_linea"
+        }
+      ) 
+     }
+
+
+
+
 
     }
     else{
@@ -170,6 +202,9 @@ private http: HttpClient
       for(var i in this.indicador.aMediciones){
           auxColumn.push(this.indicador.aMediciones[i].valores);
       }
+      var maxValueForValues=undefined;
+
+      var grid:any=false;
 
       columns=auxColumn;
       auxColumn=null;
@@ -177,6 +212,8 @@ private http: HttpClient
     var aAnios=this.titulo_proceso.anios;
     console.log(aAnios);
     console.log(columns);
+    console.log(maxValueForValues);
+
 
     var barchart = c3.generate({
         bindto:"#bar_chart",
@@ -186,8 +223,20 @@ private http: HttpClient
                 width: 320
             },*/
             columns: columns,
-            type: 'bar'
+            type: 'bar',
+            labels: {
+              format: function (v, id, i, j) { 
+                if(maxValueForValues){
+                  return (100*v/maxValueForValues[i]).toFixed(2)+"%";
+                }
+                return '';
+              
+              },
+
+             }
         },
+        grid: grid,
+
         color: {
           pattern: aColors
         },
@@ -226,30 +275,206 @@ private http: HttpClient
                   title: function (d) {  return  aAnios[d]; }
                   // etc ...
               }
+          },
+
+
+          onrendered: function () { 
+            setTimeout(()=>{
+
+              d3.selectAll(".lineaMeta").remove();
+              d3.selectAll(".texto_meta").remove();
+
+              d3.selectAll(".c3-texts .c3-text")
+              .style("fill",function(){
+                let valor=d3.select(this).text();
+                valor=parseFloat(valor.split("$")[0]);
+                if(valor<=33.3){
+                  var color:any="#e60808";
+                }
+                else if(valor<=99.9 && valor>=33.3){
+                  var color:any="#d4d400";
+                }
+                else{
+                  var color:any="#40bf16";
+                }
+                console.log(color);
+                return color;
+              })
+              .style("font-weight","bold");
+
+              let barra=d3.selectAll(".c3-shape.c3-bar");
+
+              barra.each(function(d,i) { 
+                let aLineas=d3.selectAll(".c3-ygrid-line line");
+
+
+                //console.log(d3.selectAll(".c3-ygrid-line line")[i]);
+                let lineaActual=d3.select(aLineas._groups[0][i]).node().getBBox();
+                let CoordenadasBarra=d3.select(this).node().getBBox();
+
+                d3.select(this.parentNode).append("text")
+                .attr("class","texto_meta")
+                .style("font-weight","bold")
+                .style("fill", "#aaa")
+                .style("opacity","0")
+                .attr("x",CoordenadasBarra.x-12  )
+                .attr("y",lineaActual.y+3)
+                .text(maxValueForValues[i])
+
+                console.log("barra",CoordenadasBarra)
+                d3.select(this.parentNode).append("line")
+                .attr("x1",0)
+                .attr("x2",CoordenadasBarra.width)
+                .attr("y1",lineaActual.y)
+                .attr("y2",lineaActual.y)
+                .attr("class","lineaMeta")
+                .style("transform","translate("+CoordenadasBarra.x+"px,"+"0px"+")")
+                .style("fill","none")
+                .style("stroke-width","1")
+                .style("pointer-events","all")
+                .style("stroke-dasharray","4 5")
+                .style("stroke","#00000")
+                .on('mouseover',function(){
+                  console.log("hover")
+                  d3.select(this).transition()
+                  .ease(d3.easeLinear)
+                  .style("stroke-width","2");
+                })
+                .on('mouseout',function(){
+                  console.log("hover")
+                  d3.select(this).transition()
+                  .ease(d3.easeLinear)
+                  .style("stroke-width","1");
+                })
+
+              });
+
+
+
+            })
+
+           },
+           onresized:function(){
+
+
+            setTimeout(()=>{
+
+              d3.selectAll(".lineaMeta").remove();
+              d3.selectAll(".texto_meta").remove();
+
+              d3.selectAll(".c3-texts .c3-text")
+              .style("fill",function(){
+                let valor=d3.select(this).text();
+                valor=parseFloat(valor.split("$")[0]);
+                if(valor<=33.3){
+                  var color:any="#e60808";
+                }
+                else if(valor<=99.9 && valor>=33.3){
+                  var color:any="#d4d400";
+                }
+                else{
+                  var color:any="#40bf16";
+                }
+                console.log(color);
+                return color;
+              })
+              .style("font-weight","bold");
+
+              let barra=d3.selectAll(".c3-shape.c3-bar");
+
+              barra.each(function(d,i) { 
+                let aLineas=d3.selectAll(".c3-ygrid-line line");
+
+
+                //console.log(d3.selectAll(".c3-ygrid-line line")[i]);
+                let lineaActual=d3.select(aLineas._groups[0][i]).node().getBBox();
+                let CoordenadasBarra=d3.select(this).node().getBBox();
+
+                d3.select(this.parentNode).append("text")
+                .attr("class","texto_meta")
+                .style("font-weight","bold")
+                .style("fill", "#aaa")
+                .style("opacity","0")
+                .attr("x",CoordenadasBarra.x-12  )
+                .attr("y",lineaActual.y+3)
+                .text(maxValueForValues[i])
+
+                console.log("barra",CoordenadasBarra)
+                d3.select(this.parentNode).append("line")
+                .attr("x1",0)
+                .attr("x2",CoordenadasBarra.width)
+                .attr("y1",lineaActual.y)
+                .attr("y2",lineaActual.y)
+                .attr("class","lineaMeta")
+                .style("transform","translate("+CoordenadasBarra.x+"px,"+"0px"+")")
+                .style("fill","none")
+                .style("stroke-width","1")
+                .style("pointer-events","all")
+                .style("stroke-dasharray","4 5")
+                .style("stroke","#00000")
+                .on('mouseover',function(){
+                  console.log("hover")
+                  d3.select(this).transition()
+                  .ease(d3.easeLinear)
+                  .style("stroke-width","2");
+                })
+                .on('mouseout',function(){
+                  console.log("hover")
+                  d3.select(this).transition()
+                  .ease(d3.easeLinear)
+                  .style("stroke-width","1");
+                })
+
+              });
+
+
+
+            })
+
+
           }
 
 
-        });
 
+
+
+        });
+        console.log(d3.selectAll(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").attr('class'));
+        console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").attr("class"));
+
+        console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0"));
+        /*setTimeout(()=>{
+          console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").node().getBBox());
+                    //console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").node().getboundingBox());
+                    console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").node());
+                    console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").node().getBoundingClientRect());
+
+          /*bottom: 506.5
+          height: 67.90908813476562
+          left: 368.5
+          right: 456.5
+          top: 438.5909118652344
+          width: 88
+          x: 368.5
+          y: 438.5909118652344*/
+
+
+/*
+height: 67.90908813476562
+width: 88
+x: 44
+y: 182.09091186523438
+*/ /*
+
+        },5000)
+*/
+
+       
 
   }
 
-/*
- loadPdf(source){
-    console.log("entra")
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', source, true);
-    xhr.responseType = 'blob';
-    xhr.onload = (e: any) => {
-      if (xhr.status === 200) {
-        const blob = new Blob([xhr.response], {type: 'application/pdf'});
-        this.archivo_adjunto = URL.createObjectURL(blob);
-        console.log(xhr);
 
-      }
-    };
-    xhr.send();
-  }*/
+
 
   fn_setAdjuntoActual(anexo, tipo_adjunto){
     this.seleccionMenu["anexo_carga_mostrar"]=anexo;
