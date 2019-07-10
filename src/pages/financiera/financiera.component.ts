@@ -174,8 +174,9 @@ private http: HttpClient
       columns=auxColumn;
       auxColumn=null;
     }
-
     var aAnios=this.titulo_proceso.anios;
+    console.log(aAnios);
+    console.log(columns);
 
     var barchart = c3.generate({
         bindto:"#bar_chart",
