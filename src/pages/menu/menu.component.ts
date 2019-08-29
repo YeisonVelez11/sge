@@ -48,6 +48,7 @@ oUrlFuentes=VARIABLES.oUrlFuentes;
           this.categoria=categoria;
           if(this.oUrlFuentes[this.categoria]){
             this.titulo=this.oUrlFuentes[this.categoria].titulo;
+            console.log(this.oUrlFuentes,this.categoria);
             this.fn_goProcess(this.categoria,this.titulo,this.oUrlFuentes[this.categoria].categoria)
           }
           else{
@@ -106,7 +107,8 @@ oUrlFuentes=VARIABLES.oUrlFuentes;
   }
 
   fn_goProcess(categoria:any,titulo:any,json){
-
+    this.ServicesProvider.preloaderOn();
+    console.log(this.aJsonFuentes, json)
     this.ServicesProvider.getjson(this.aJsonFuentes[json].ruta,{}).then(data=>{
       
 
@@ -118,6 +120,8 @@ oUrlFuentes=VARIABLES.oUrlFuentes;
       this.router.navigate(["proceso",this.categoria]);
       //this.outupSeleccionProceso.emit({"categoria":this.categoria,"titulo":this.titulo});
       setTimeout(()=>{
+        this.ServicesProvider.preloaderOff();
+
         document.getElementById("Indicadores").click();
         delete  this.aJsonFuentes[json]["indicadores"];
         delete  this.aJsonFuentes[json]["anios"];

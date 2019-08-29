@@ -1,0 +1,202 @@
+-------------------------------------
+drive_fs log started
+version: 32.0.11.0
+-------------------------------------
+2019-08-02T13:14:13.464ZI [13260] instrumentation.cc:107:cello::fs::`anonymous-namespace'::OpenLogFileInDirectory Logging to C:\Users\usuario\AppData\Local\Google\DriveFS\Logs\drive_fs.txt
+2019-08-02T13:14:13.465ZI [14308] drive_fs_main.cc:105:cello::fs::`anonymous-namespace'::LogExistingCrashReports No existing crash reports found.
+2019-08-02T13:14:16.023ZI [14308] drive_fs.cc:310:cello::fs::RunDriveFS Options: argv_0: "C:\\Program Files\\Google\\Drive File Stream\\32.0.11.0\\GoogleDriveFS.exe"
+base_path: "C:\\Users\\usuario\\AppData\\Local\\Google\\DriveFS"
+ipc_pipe_path: "\\\\.\\Pipe\\GoogleDriveFSPipe_usuario"
+shell_ipc_pipe_path: "\\\\.\\Pipe\\GoogleDriveFSPipe_usuario_shell"
+crash_handler_token: "\\\\.\\pipe\\crashpad_17196_ZAQLPFDLMFMXRPFO"
+feature_config {
+  enabled: true
+  virtual_folders: true
+  thumbnails: true
+  deprecated: false
+  drive_dot: true
+  metadata_cache_reset_counter: 0
+  spotlight: true
+  feedback: true
+  share_dialog: true
+  shell_ipc: true
+  changelog_download_throttle_time_ms: 16000
+  temporary_items_virtual_folder: true
+  case_insensitive: true
+  local_disk_aware_get_free_space: true
+  context_menu_copy_link: true
+  dokan_keep_alive_timeout_ms: 1400000000
+  dokan_keep_alive_timeout_after_wakeup_ms: 1400000000
+  pause_syncing_option: true
+  bandwidth_throttling: true
+  attach_logs_to_feedback_option: true
+  max_parallel_background_cloud_queries: 3
+  structured_logging: true
+  drive_dot_ui: true
+  relocatable_content_cache: true
+  onboarding: true
+  content_cache_max_kbytes: 1000000000
+  block_mac_antivirus: true
+  full_trash_folder_support: true
+  context_menu_force_refresh_folder: true
+  enable_kernel_based_change_replayer: true
+  preferences_dialog: true
+  sync_client_migration: true
+  content_download_http_416_workaround: true
+  metadata_db_vacuum: false
+  crash_on_failed_thread_checker_assert: false
+  mount_point_changed_dialog: true
+  allow_windows_system_user_access: false
+  persist_do_not_show_again_preferences: true
+  do_not_fake_operation_success: true
+  status_window_click_show_file_in_file_manager: true
+  use_osxfuse_read_blacklist: false
+  dokan_oplocks: true
+  context_menu_copy_link_notification: true
+  max_parallel_downloads_per_file: 5
+  two_level_folder_prefetch: false
+  max_parallel_push_task_instances: 3
+  emm_support: true
+  use_file_organizer_capabilities: true
+  generate_diagnostic_info: true
+  fetch_content_bytes_before_cancel_percent_multiplier: 500
+  gui_bandwidth_throttling_control: false
+  local_machine_override_preferences: true
+  allow_undo_move: true
+  outlook_addin: true
+  autostart_preference: true
+  gui_autostart_option: true
+  mojave_overlays_fix: false
+  curl_proxy_authentication: true
+  switchblade: true
+  notification_drawer: false
+  gui_reset_preferences_menu_option: true
+  cancel_upload_option: false
+  quicklook_thumbnails: false
+  min_bytes_saved_to_split_request: 0
+  reset_account_after_fatal_local_store_failure: true
+  detect_stable_id_reuse: true
+  force_refresh_folder_normal_menu: false
+  supply_json_gdoc_content: false
+  structured_log_max_file_size_kbytes: 2048
+  dokan_dispatch_monitor_check_ms: 0
+  dokan_dispatch_monitor_warn_ms: 0
+  non_blocking_notifications: false
+  sqlite_normal_transaction_sync: false
+  unlocked_mac_getxattr: false
+  inform_users_of_pending_uploads: true
+  finder_process_names: "DesktopServicesHelper"
+  rename_team_drive: true
+  show_rename_td_notification: true
+  reset_account_after_local_largest_change_id_corrupt: false
+  emm_secondary_identifier: false
+}
+feature_config_override {
+}
+enable_tracing: false
+enable_ui: true
+enable_file_dances: true
+use_fake_cello_fs: false
+drive_api_options {
+  apiary_trace_token: ""
+  apiary_trace_regex: ""
+  inet_family: IPV4_ONLY
+  dapper_trace_regex: ""
+}
+enable_poll_for_changes: true
+drive_create_options {
+  use_fake_cloud_store: false
+  use_console_auth: false
+  authorize_new_user: false
+  refresh_token: ""
+  user_email: ""
+  token_uri: ""
+  auth_uri: ""
+}
+enable_field_event_recording: true
+open_gdoc_path: ""
+started_by_installer: false
+locale: ""
+force_onboarding: false
+log_connection_details: false
+cmdline_preferences {
+}
+core_string_resources {
+  my_drive: "Mi unidad"
+  team_drives: "Unidades compartidas"
+  computers: "Ordenadores"
+}
+use_intranet_connectivity_to_check_online: false
+crash_handler_init_status: SUCCESS
+sync_roots_file_path: ""
+open_gdocs_root: false
+open_gsheets_root: false
+open_gslides_root: false
+crash_on_core_start: false
+use_curl_logging_scribe: false
+mirror_sync: false
+slurp_sync: false
+
+2019-08-02T13:14:16.030ZI [14308] drive_fs.cc:179:cello::fs::`anonymous-namespace'::LogSystemConfig OS: Windows/10.0.10586
+2019-08-02T13:14:16.030ZI [14308] drive_fs.cc:186:cello::fs::`anonymous-namespace'::LogSystemConfig Architecture: 64-bit
+2019-08-02T13:14:16.030ZI [14308] drive_fs.cc:195:cello::fs::`anonymous-namespace'::LogSystemConfig Total RAM: 15 GiB
+2019-08-02T13:14:16.030ZI [14308] drive_fs.cc:211:cello::fs::`anonymous-namespace'::LogSystemConfig Disk space: 86.55 GB free / 313.03 GB total
+2019-08-02T13:14:16.030ZI [14308] drive_fs.cc:227:cello::fs::`anonymous-namespace'::LogSystemConfig Timezone: UTC-0500 (Hora est. Pacífico, Sudamérica)
+2019-08-02T13:14:16.036ZI [14308] client.cc:1946:cello::fs::LoadPreferencesFromDisk preferences: {
+local_machine_defaults {
+}
+local_user {
+  content_cache_base_path: "C:\\Users\\usuario\\AppData\\Local\\Google\\file"
+}
+local_machine_override {
+}
+combined_preferences {
+  content_cache_base_path: "C:\\Users\\usuario\\AppData\\Local\\Google\\file"
+}
+}
+2019-08-02T13:14:16.036ZI [14308] client.cc:1948:cello::fs::LoadPreferencesFromDisk effective_preferences: {
+mount_point_path: "G"
+content_cache_base_path: "C:\\Users\\usuario\\AppData\\Local\\Google\\file"
+trusted_root_certs_file_path: "C:\\Program Files\\Google\\Drive File Stream\\32.0.11.0\\config\\roots.pem"
+disable_ssl_validation: false
+disable_crl_check: false
+direct_connection: false
+force_browser_auth: false
+disable_realtime_presence: false
+do_not_show_dialogs {
+  mount_point_changed: false
+  confirm_shared_folder_move_in: false
+  confirm_shared_folder_move_out: false
+  confirm_td_file_move_out: false
+  confirm_move_to_untrusted_td: false
+  warning_move_to_untrusted_td: false
+  warning_td_file_move_out: false
+  warning_shared_folder_move_in: false
+  warning_shared_folder_move_out: false
+}
+autostart_on_login: true
+outlook_attachment_size_threshold_mbytes: 10
+disable_outlook_plugin: false
+}
+2019-08-02T13:14:16.036ZI [14308] ipc_socket_win.cc:264:cello::fs::IpcSocketServerImpl::GetNextConnection Accepting next connection
+2019-08-02T13:14:16.041ZI [14308] registry_win.cc:261:cello::fs::VerifyRegistryValue Value for registry key [SOFTWARE\Classes\GoogleDriveFS.gdoc\DefaultIcon, ] is incorrect: expected "C:\Program Files\Google\Drive File Stream\32.0.11.0\GoogleDriveFS.exe",-2, got "C:\Program Files\Google\Drive File Stream\32.0.9.0\GoogleDriveFS.exe",-2
+2019-08-02T13:14:16.043ZI [14308] app.cc:447:cello::fs::`anonymous-namespace'::DriveFSAppImpl::RegisterOutlookAddIn Outlook add-in already registered.
+2019-08-02T13:14:16.044ZI [14308] app.cc:904:cello::fs::`anonymous-namespace'::DriveFSAppImpl::GetKnownFolderPath Path doesn't exist: 'C:\Users\usuario\Desktop\Google Drive.lnk'
+2019-08-02T13:14:16.044ZI [14308] app.cc:967:cello::fs::`anonymous-namespace'::DriveFSAppImpl::UpdateIconGoogleSyncShortcut Could not update shortcut icon. Error getting path to link.
+2019-08-02T13:14:16.044ZI [14308] app.cc:904:cello::fs::`anonymous-namespace'::DriveFSAppImpl::GetKnownFolderPath Path doesn't exist: 'C:\Users\usuario\Google Drive'
+2019-08-02T13:14:16.044ZI [14308] app.cc:936:cello::fs::`anonymous-namespace'::DriveFSAppImpl::CleanUpGoogleSyncQuickAccess Could not clean up Quick Access icon. Error getting path.
+2019-08-02T13:14:16.238ZI [8248] credential_store.cc:55:cello::fs::FsCredentialStore::InitCredential Credential initUser: 
+2019-08-02T13:14:16.238ZI [8248] drive_cloud_store.cc:183:cello::fs::DriveCloudStoreFactory::CreateDriveCloudStoreAsync Using Drive API v2
+2019-08-02T13:14:16.238ZI [8248] curl_api.cc:1272:cello::CurlHttpClientFactory::Create SSL verification with CAcerts path: C:\Program Files\Google\Drive File Stream\32.0.11.0\config\roots.pem
+2019-08-02T13:14:16.238ZI [8248] credential_store.cc:55:cello::fs::FsCredentialStore::InitCredential Credential initUser: 
+2019-08-02T13:14:16.244ZI [19092] network_status_listener_win.cc:215:cello::fs::NetworkStatusListenerWinImpl::CheckConnection Checking connection state.
+2019-08-02T13:14:16.245ZI [19092] network_status_listener_win.cc:244:cello::fs::NetworkStatusListenerWinImpl::CheckConnection This adapter is online.
+2019-08-02T13:14:16.245ZI [19092] network_status_listener_win.cc:255:cello::fs::NetworkStatusListenerWinImpl::CheckConnection Result: online
+2019-08-02T13:14:16.245ZI [19092] network_status_listener_win.cc:141:cello::fs::NetworkStatusListenerWinImpl::UpdateState Notifying of change to state 2
+2019-08-02T13:14:37.295ZI [14308] chrome_webview.cc:299:cello::fs::`anonymous-namespace'::ChromeHandler::OnLoadStart Loading https://accounts.google.com/o/oauth2/cl?client_id=<Redacted>                                                              &redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scope=email%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdocs.test%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fdrive.photos.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fpeopleapi.readonly&response_type=code&hl=es
+2019-08-02T13:14:39.396ZI [10808] chrome_webview.cc:267:cello::fs::`anonymous-namespace'::ChromeHandler::OnBeforeResourceLoad User-Agent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36'
+2019-08-02T13:14:40.806ZI [14308] chrome_webview.cc:299:cello::fs::`anonymous-namespace'::ChromeHandler::OnLoadStart Loading https://accounts.google.com/signin/oauth/cl?hl=es&client_id=<Redacted>                                                              &as=52zcUsjkCLA1EwExpxm-rg&approval_state=!ChRWZVpJQzhwZkpOZEhSS0RNaWhqbxIfMDNiVmtvTmVrWmdmVUU3MWpGWk5XazBqSDNjbnhSWQ%E2%88%99AJDr988AAAAAXUWIpx5tTlKFc7OWPtcTmaP5cbHRlmmX&oauthgdpr=1&oauthriskyscope=1&xsrfsig=ChkAeAh8T0cby3GwRko37sgWCy0Dn3Q-ofCYEg5hcHByb3ZhbF9zdGF0ZRILZGVzdGluYXRpb24SBXNvYWN1Eg9vYXV0aHJpc2t5c2NvcGU
+2019-08-02T13:14:41.404ZI [14308] chrome_webview.cc:402:cello::fs::`anonymous-namespace'::ChromeHandler::OnQuery DOM onReady fired.
+2019-08-02T13:17:55.683ZE [14308] client.cc:396:cello::fs::`anonymous-namespace'::DriveFSClientImpl::RequestAuthCode::<lambda_bb46a14ae8f716bc6e8f4cf9b87962fb>::operator () Error getting auth token: CANCELLED
+2019-08-02T13:17:55.731ZI [14308] core_controller.cc:340:cello::fs::CoreController::StopCore StopCore called from client.cc:1317:cello::fs::`anonymous-namespace'::DriveFSClientImpl::SilentSignOut::<lambda_5814b32315c549773f2d6649f6203a27>::operator ()
+2019-08-02T13:17:55.762ZI [8248] core_controller.cc:82:cello::fs::`anonymous-namespace'::MaybeUpdateReturnCode Updating return code to CELLOFS_INIT_INTERRUPTED

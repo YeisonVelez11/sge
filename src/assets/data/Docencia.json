@@ -108,9 +108,7 @@
             "2017",
             "2018"
         ],
-        "indicadores": [],
-        "indicador_proyeccion_social_nombre": [],
-        "indicador_proyeccion_social_ruta": "./assets/data/"
+        "indicadores": []
     },
     {
         "fuente": "Matriz de Riesgos",
@@ -123,7 +121,17 @@
     {
         "fuente": "Matriz de Comunicaciones",
         "fuente_hijos": [],
-        "anexo_mostrar": [],
-        "anexo": "./assets/data/"
+        "anexo_mostrar": [
+            "DO-FOR-003 Matriz de comunicaciones Docencia"
+        ],
+        "anexo": "./assets/data/3_Docencia/Caracterizacion/DO-FOR-003 Matriz de comunicaciones Docencia.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "DO-FOR-002 Indicadores del proceso Dirección Docencia"
+        ],
+        "anexo": "./assets/data/3_Docencia/Caracterizacion/DO-FOR-002 Indicadores del proceso Direccion Docencia.pdf"
     }
 ]

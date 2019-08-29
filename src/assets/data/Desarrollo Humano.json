@@ -123,9 +123,7 @@
             "2017",
             "2018"
         ],
-        "indicadores": [],
-        "indicador_proyeccion_social_nombre": [],
-        "indicador_proyeccion_social_ruta": "./assets/data/"
+        "indicadores": []
     },
     {
         "fuente": "Matriz de Riesgos",
@@ -142,5 +140,13 @@
             "DH-FOR-005 Matriz de comunicaciones Desarrollo Humano"
         ],
         "anexo": "./assets/data/6_Gestion Desarrollo Humano/Caracterizacion/DH-FOR-005 Matriz de comunicaciones Desarrollo Humano.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "DH-FOR-004 Indicadores del proceso Desarrollo Humano"
+        ],
+        "anexo": "./assets/data/6_Gestion Desarrollo Humano/Caracterizacion/DH-FOR-004 Indicadores del proceso Desarrollo Humano.pdf"
     }
 ]

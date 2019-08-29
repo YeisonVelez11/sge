@@ -1,0 +1,6 @@
+-------------------------------------
+parent log started
+version: 32.0.11.0
+-------------------------------------
+2019-08-02T13:14:12.685ZI [2284] instrumentation.cc:107:cello::fs::`anonymous-namespace'::OpenLogFileInDirectory Logging to C:\Users\usuario\AppData\Local\Google\DriveFS\Logs\parent.txt
+2019-08-02T13:14:12.686ZI [7004] drive_fs_main.cc:105:cello::fs::`anonymous-namespace'::LogExistingCrashReports No existing crash reports found.

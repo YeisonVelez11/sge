@@ -1,0 +1,14 @@
+-------------------------------------
+outlook_add_in log started
+version: 32.0.11.0
+-------------------------------------
+2019-08-20T19:36:54.995ZI [6180] instrumentation.cc:107:cello::fs::`anonymous-namespace'::OpenLogFileInDirectory Logging to C:\Users\usuario\AppData\Local\Google\DriveFS\Logs\outlook_add_in.txt
+2019-08-20T19:36:54.996ZE [36540] shell_ipc_client.cc:87:cello::fs::ShellIpcClient::Connect Can't connect to socket at: \\.\Pipe\GoogleDriveFSPipe_usuario_shell
+2019-08-20T19:36:54.996ZI [39416] connect.cc:1089:cello::fs::CConnect::Initialize Failed to do GetLocale UNKNOWN_STATUS.
+2019-08-20T19:36:54.996ZI [39416] connect.cc:526:cello::fs::CConnect::OnConnection Starting outlook Add-In ...
+2019-08-20T19:36:54.997ZI [39416] connect.cc:455:cello::fs::`anonymous-namespace'::RecordOutlookVersion Outlook version: 16.0.0.4266.
+2019-08-20T19:36:54.997ZE [36540] shell_ipc_client.cc:87:cello::fs::ShellIpcClient::Connect Can't connect to socket at: \\.\Pipe\GoogleDriveFSPipe_usuario_shell
+2019-08-20T19:36:54.997ZE [39416] connect.cc:468:cello::fs::`anonymous-namespace'::RecordOutlookVersion Failed to record Outlook version, status: UNKNOWN_STATUS.
+2019-08-20T19:36:54.997ZE [36540] shell_ipc_client.cc:87:cello::fs::ShellIpcClient::Connect Can't connect to socket at: \\.\Pipe\GoogleDriveFSPipe_usuario_shell
+2019-08-20T19:36:54.997ZE [39416] connect.cc:397:cello::fs::`anonymous-namespace'::MaybeShowOnboarding Failed to display onboarding window UNKNOWN_STATUS
+2019-08-28T16:50:12.978ZE [36540] shell_ipc_client.cc:87:cello::fs::ShellIpcClient::Connect Can't connect to socket at: \\.\Pipe\GoogleDriveFSPipe_usuario_shell

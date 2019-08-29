@@ -220,14 +220,22 @@
                 "nombre_indicador": "Porcentaje de planes estratégicos entregados a planeación",
                 "aMedicionUnica": [
                     "Porcentaje de planes estratégicos entregados a planeación",
-                    0,
-                    0,
-                    0,
-                    0,
-                    0,
-                    0
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12
+                ]
             },
             {
                 "nombre_indicador": "Porcentaje de cumplimiento del plan de desarrollo",
@@ -240,7 +248,15 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    10,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Covertura del proceso de planeación por áreas académico administrativa",
@@ -253,7 +269,15 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    10,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Cumplimiento de la agenda de planeación",
@@ -266,7 +290,15 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    10,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Evolución del capital de trabajo",
@@ -282,6 +314,14 @@
                             24611211,
                             18227453,
                             0
+                        ],
+                        "metas": [
+                            7,
+                            8,
+                            9,
+                            10,
+                            11,
+                            0
                         ]
                     },
                     {
@@ -293,6 +333,14 @@
                             6947133,
                             9144517,
                             11927610,
+                            0
+                        ],
+                        "metas": [
+                            7,
+                            8,
+                            9,
+                            10,
+                            11,
                             0
                         ]
                     }
@@ -312,6 +360,14 @@
                             8901717,
                             8975766,
                             0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -324,6 +380,14 @@
                             11086710,
                             3026504,
                             0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -335,6 +399,14 @@
                             5256439,
                             4518197,
                             6155510,
+                            0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     }
@@ -354,6 +426,14 @@
                             51502249,
                             59528814,
                             0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -366,6 +446,14 @@
                             50273294,
                             56610806,
                             0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -377,6 +465,14 @@
                             1540211,
                             1228955,
                             2918008,
+                            0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     }
@@ -396,6 +492,14 @@
                             51502249,
                             59528814,
                             0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -407,6 +511,14 @@
                             44060235,
                             50273294,
                             56610806,
+                            0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     }
@@ -426,6 +538,14 @@
                             2244379,
                             1963922,
                             0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -437,6 +557,14 @@
                             1398443,
                             1601145,
                             1969049,
+                            0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     }
@@ -456,6 +584,14 @@
                             47119418,
                             57725132,
                             0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -466,6 +602,14 @@
                             2206859,
                             2061831,
                             2067329,
+                            0,
+                            0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
                             0,
                             0
                         ]
@@ -479,6 +623,14 @@
                             5219292,
                             11086710,
                             3026504,
+                            0
+                        ],
+                        "metas": [
+                            10,
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     }
@@ -495,7 +647,15 @@
                     4377754,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    10,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Razón Corriente",
@@ -508,7 +668,15 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    10,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Ebidta",
@@ -519,16 +687,19 @@
                     2944596,
                     2635648,
                     4452208,
-                    0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    10,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             }
-        ],
-        "indicador_proyeccion_social_nombre": [
-            "PS-FOR-006 Indicadores del proceso Proyección Social"
-        ],
-        "indicador_proyeccion_social_ruta": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-FOR-006 Indicadores del proceso Proyeccion Social.pdf"
+        ]
     },
     {
         "fuente": "Matriz de Riesgos",
@@ -545,5 +716,13 @@
             "PS-FOR-007 Matriz de comunicaciones Proyección Social"
         ],
         "anexo": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-FOR-007 Matriz de comunicaciones Proyeccion Social.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "PS-FOR-006 Indicadores del proceso Proyección Social"
+        ],
+        "anexo": "./assets/data/5_Proyeccion Social/Caracterizacion/PS-FOR-006 Indicadores del proceso Proyeccion Social.pdf"
     }
 ]

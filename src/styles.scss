@@ -109,6 +109,7 @@ $gris_oscuro:#343434;
   overflow-x: hidden;
   position: absolute;
   width: 100%; 
+  top:40px;
 }
 
 .background_sidemenu .card{
@@ -423,7 +424,7 @@ $gris_oscuro:#343434;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(168,207,69,0.9);
+  background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(168,207,69,1);
 
 }
 
@@ -1649,3 +1650,190 @@ $width: 100px;
     font-weight: bold;
     z-index:9999 !important;
 }
+
+
+  .prueba{
+    border:1px solid red;
+  }
+
+  /*@media (max-width: 1368px) {*/  
+    .rectangulo_categoria {
+
+        width: 185px;
+        height: 40px;
+    }
+
+    .rectangulo_categoria p{
+      font-size:  15px;
+    }
+
+    .contenedor_categorias {
+      width: 799px;
+      height: 84px;
+
+    }
+   
+
+    .bloque_izq {
+      height: 376px;
+      width: 91px;
+    }
+
+    .texto_bloque_izquierdo,.texto_bloque_derecho {
+      font-size: 19px;
+    }
+
+
+    .texto_titulos.texto_titulo_1  {
+      font-size: 16px !important;
+    }
+
+    .flecha_derecha:nth-child(1n){
+      top:40px !important;
+    }
+    .flecha_derecha:nth-child(2n){
+      top:80px !important;
+    }
+    .flecha_derecha:nth-child(3n){
+      top:120px !important;
+    }
+
+
+  /*}*/
+
+
+  .linea_style{
+    border-top: 10px solid #666666;
+    height: 11px;
+    position: absolute !important;
+    width: 37%;
+  }
+
+  .linea_direccion{
+
+  }
+
+  .linea-conector{
+   __width: 37%;
+  }
+
+ .linea-vertical_style{
+    __width: 37%;
+    /* border-right: 1px solid gray; */
+    height: 285px;
+    position: absolute;
+
+    border-right: 10px solid #666666;
+
+  }
+
+  .linea-conector:nth-child(1)  {
+    right: -70px;
+    top: 70px;
+  }
+  .linea-conector:nth-child(2)  {
+    right: -70px;
+    bottom: 16px;
+  }
+
+
+  /* der */
+  .linea-conector1  {
+    left: -70px;
+    top: 70px;
+  }
+  .linea-conector2 {
+    left: -70px;
+    bottom: 16px;
+  }
+
+
+
+
+  .linea-vertica1 {
+    right: -46px;
+    bottom: 20px;
+  }
+
+
+  /*der*/
+  .linea-vertica2{
+    left: -46px;
+    bottom: 20px;
+  }
+
+
+  .fa-caret-right,.fa-caret-left{
+    position:absolute;
+    color:#666666;
+        z-index: 1;
+
+        font-size: 50px;
+  }
+
+  .flechader{
+
+    right: -76px;
+    bottom: -1px;
+  }
+
+
+
+  .flechaizq{
+
+    left: -76px;
+    top: 50px;
+  }
+
+
+
+  .flecha_grande{
+    font-size: 48px;
+    top: 53%;
+    transform: translate(0, -50%);
+    z-index: 1;
+  }
+
+  .flechaa_grande_derecha{ 
+
+    left: -39px;
+  }
+  .flechaa_grande_izq{
+    right: -37px;
+    z-index: -1;
+    }
+
+
+
+  .fa-long-arrow-alt-right,.fa-long-arrow-alt-left{
+    position:absolute;
+    color:#666666;
+    font-size: 48px;
+  }
+
+  .flecha_abajo{
+    font-size: 32px;
+  }
+
+  .imagen_circulo_um{
+    max-width: 16%;
+    top: 45px;
+    right: 22%;
+  }
+
+  .logoum_mapa{
+    max-width: 8%;
+    top: 27px;
+    right: 12%;
+  }
+
+  .mapa_procesos_title{
+    left: 9%;
+    top: 46px;
+    color: #666666;
+    font-weight: bold;
+  }
+
+  .cursor{
+    cursor:auto;
+  }

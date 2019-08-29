@@ -210,9 +210,7 @@ private http: HttpClient
       auxColumn=null;
     }
     var aAnios=this.titulo_proceso.anios;
-    console.log(aAnios);
-    console.log(columns);
-    console.log(maxValueForValues);
+
 
 
     var barchart = c3.generate({
@@ -227,8 +225,11 @@ private http: HttpClient
             labels: {
               format: function (v, id, i, j) { 
                 if(maxValueForValues){
-                  return (100*v/maxValueForValues[i]).toFixed(2)+"%";
+                  if(maxValueForValues[i]!=0){
+                    return (100*v/maxValueForValues[i]).toFixed(2)+"%";
+                  }
                 }
+
                 return '';
               
               },
@@ -279,197 +280,178 @@ private http: HttpClient
 
 
           onrendered: function () { 
-            setTimeout(()=>{
+            if(maxValueForValues){
 
-              d3.selectAll(".lineaMeta").remove();
-              d3.selectAll(".texto_meta").remove();
+              setTimeout(()=>{
 
-              d3.selectAll(".c3-texts .c3-text")
-              .style("fill",function(){
-                let valor=d3.select(this).text();
-                valor=parseFloat(valor.split("$")[0]);
-                if(valor<=33.3){
-                  var color:any="#e60808";
-                }
-                else if(valor<=99.9 && valor>=33.3){
-                  var color:any="#d4d400";
-                }
-                else{
-                  var color:any="#40bf16";
-                }
-                console.log(color);
-                return color;
+                d3.selectAll(".lineaMeta").remove();
+                d3.selectAll(".texto_meta").remove();
+
+                d3.selectAll(".c3-texts .c3-text")
+                .style("fill",function(){
+                  let valor=d3.select(this).text();
+                  valor=parseFloat(valor.split("$")[0]);
+                  if(valor<=33.3){
+                    var color:any="#e60808";
+                  }
+                  else if(valor<=99.9 && valor>=33.3){
+                    var color:any="#d4d400";
+                  }
+                  else{
+                    var color:any="#40bf16";
+                  }
+                  return color;
+                })
+                .style("font-weight","bold");
+
+                let barra=d3.selectAll(".c3-shape.c3-bar");
+
+                barra.each(function(d,i) { 
+                  if(maxValueForValues[i]!=0){
+                    let aLineas=d3.selectAll(".c3-ygrid-line line");
+
+
+                    //console.log(d3.selectAll(".c3-ygrid-line line")[i]);
+                    let lineaActual=d3.select(aLineas._groups[0][i]).node().getBBox();
+                    let CoordenadasBarra=d3.select(this).node().getBBox();
+  
+                    d3.select(this.parentNode).append("text")
+                    .attr("class","texto_meta")
+                    .style("font-weight","bold")
+                    .style("fill", "#aaa")
+                    .style("opacity","0")
+                    .attr("x",CoordenadasBarra.x-12  )
+                    .attr("y",lineaActual.y+3)
+                    .text(maxValueForValues[i])
+  
+                    console.log("barra",CoordenadasBarra)
+                    d3.select(this.parentNode).append("line")
+                    .attr("x1",0)
+                    .attr("x2",CoordenadasBarra.width)
+                    .attr("y1",lineaActual.y)
+                    .attr("y2",lineaActual.y)
+                    .attr("class","lineaMeta")
+                    .style("transform","translate("+CoordenadasBarra.x+"px,"+"0px"+")")
+                    .style("fill","none")
+                    .style("stroke-width","1")
+                    .style("pointer-events","all")
+                    .style("stroke-dasharray","4 5")
+                    .style("stroke","#00000")
+                    .on('mouseover',function(){
+                      console.log("hover")
+                      d3.select(this).transition()
+                      .ease(d3.easeLinear)
+                      .style("stroke-width","2");
+                    })
+                    .on('mouseout',function(){
+                      console.log("hover")
+                      d3.select(this).transition()
+                      .ease(d3.easeLinear)
+                      .style("stroke-width","1");
+                    })
+  
+                  
+                  }
+
+                });
+
+
+
               })
-              .style("font-weight","bold");
-
-              let barra=d3.selectAll(".c3-shape.c3-bar");
-
-              barra.each(function(d,i) { 
-                let aLineas=d3.selectAll(".c3-ygrid-line line");
-
-
-                //console.log(d3.selectAll(".c3-ygrid-line line")[i]);
-                let lineaActual=d3.select(aLineas._groups[0][i]).node().getBBox();
-                let CoordenadasBarra=d3.select(this).node().getBBox();
-
-                d3.select(this.parentNode).append("text")
-                .attr("class","texto_meta")
-                .style("font-weight","bold")
-                .style("fill", "#aaa")
-                .style("opacity","0")
-                .attr("x",CoordenadasBarra.x-12  )
-                .attr("y",lineaActual.y+3)
-                .text(maxValueForValues[i])
-
-                console.log("barra",CoordenadasBarra)
-                d3.select(this.parentNode).append("line")
-                .attr("x1",0)
-                .attr("x2",CoordenadasBarra.width)
-                .attr("y1",lineaActual.y)
-                .attr("y2",lineaActual.y)
-                .attr("class","lineaMeta")
-                .style("transform","translate("+CoordenadasBarra.x+"px,"+"0px"+")")
-                .style("fill","none")
-                .style("stroke-width","1")
-                .style("pointer-events","all")
-                .style("stroke-dasharray","4 5")
-                .style("stroke","#00000")
-                .on('mouseover',function(){
-                  console.log("hover")
-                  d3.select(this).transition()
-                  .ease(d3.easeLinear)
-                  .style("stroke-width","2");
-                })
-                .on('mouseout',function(){
-                  console.log("hover")
-                  d3.select(this).transition()
-                  .ease(d3.easeLinear)
-                  .style("stroke-width","1");
-                })
-
-              });
-
-
-
-            })
-
+            }
            },
            onresized:function(){
+            if(maxValueForValues){
+
+              setTimeout(()=>{
+
+                d3.selectAll(".lineaMeta").remove();
+                d3.selectAll(".texto_meta").remove();
+
+                d3.selectAll(".c3-texts .c3-text")
+                .style("fill",function(){
+                  let valor=d3.select(this).text();
+                  valor=parseFloat(valor.split("$")[0]);
+                  if(valor<=33.3){
+                    var color:any="#e60808";
+                  }
+                  else if(valor<=99.9 && valor>=33.3){
+                    var color:any="#d4d400";
+                  }
+                  else{
+                    var color:any="#40bf16";
+                  }
+                  console.log(color);
+                  return color;
+                })
+                .style("font-weight","bold");
+
+                let barra=d3.selectAll(".c3-shape.c3-bar");
+
+                barra.each(function(d,i) { 
+                  if(maxValueForValues[i]!=0){
+                    let aLineas=d3.selectAll(".c3-ygrid-line line");
 
 
-            setTimeout(()=>{
+                    //console.log(d3.selectAll(".c3-ygrid-line line")[i]);
+                    let lineaActual=d3.select(aLineas._groups[0][i]).node().getBBox();
+                    let CoordenadasBarra=d3.select(this).node().getBBox();
+  
+                    d3.select(this.parentNode).append("text")
+                    .attr("class","texto_meta")
+                    .style("font-weight","bold")
+                    .style("fill", "#aaa")
+                    .style("opacity","0")
+                    .attr("x",CoordenadasBarra.x-12  )
+                    .attr("y",lineaActual.y+3)
+                    .text(maxValueForValues[i])
+  
+                    console.log("barra",CoordenadasBarra)
+                    d3.select(this.parentNode).append("line")
+                    .attr("x1",0)
+                    .attr("x2",CoordenadasBarra.width)
+                    .attr("y1",lineaActual.y)
+                    .attr("y2",lineaActual.y)
+                    .attr("class","lineaMeta")
+                    .style("transform","translate("+CoordenadasBarra.x+"px,"+"0px"+")")
+                    .style("fill","none")
+                    .style("stroke-width","1")
+                    .style("pointer-events","all")
+                    .style("stroke-dasharray","4 5")
+                    .style("stroke","#00000")
+                    .on('mouseover',function(){
+                      console.log("hover")
+                      d3.select(this).transition()
+                      .ease(d3.easeLinear)
+                      .style("stroke-width","2");
+                    })
+                    .on('mouseout',function(){
+                      console.log("hover")
+                      d3.select(this).transition()
+                      .ease(d3.easeLinear)
+                      .style("stroke-width","1");
+                    })
+  
+                  
+                  }
 
-              d3.selectAll(".lineaMeta").remove();
-              d3.selectAll(".texto_meta").remove();
+                });
 
-              d3.selectAll(".c3-texts .c3-text")
-              .style("fill",function(){
-                let valor=d3.select(this).text();
-                valor=parseFloat(valor.split("$")[0]);
-                if(valor<=33.3){
-                  var color:any="#e60808";
-                }
-                else if(valor<=99.9 && valor>=33.3){
-                  var color:any="#d4d400";
-                }
-                else{
-                  var color:any="#40bf16";
-                }
-                console.log(color);
-                return color;
+
+
               })
-              .style("font-weight","bold");
+            }
 
-              let barra=d3.selectAll(".c3-shape.c3-bar");
-
-              barra.each(function(d,i) { 
-                let aLineas=d3.selectAll(".c3-ygrid-line line");
-
-
-                //console.log(d3.selectAll(".c3-ygrid-line line")[i]);
-                let lineaActual=d3.select(aLineas._groups[0][i]).node().getBBox();
-                let CoordenadasBarra=d3.select(this).node().getBBox();
-
-                d3.select(this.parentNode).append("text")
-                .attr("class","texto_meta")
-                .style("font-weight","bold")
-                .style("fill", "#aaa")
-                .style("opacity","0")
-                .attr("x",CoordenadasBarra.x-12  )
-                .attr("y",lineaActual.y+3)
-                .text(maxValueForValues[i])
-
-                console.log("barra",CoordenadasBarra)
-                d3.select(this.parentNode).append("line")
-                .attr("x1",0)
-                .attr("x2",CoordenadasBarra.width)
-                .attr("y1",lineaActual.y)
-                .attr("y2",lineaActual.y)
-                .attr("class","lineaMeta")
-                .style("transform","translate("+CoordenadasBarra.x+"px,"+"0px"+")")
-                .style("fill","none")
-                .style("stroke-width","1")
-                .style("pointer-events","all")
-                .style("stroke-dasharray","4 5")
-                .style("stroke","#00000")
-                .on('mouseover',function(){
-                  console.log("hover")
-                  d3.select(this).transition()
-                  .ease(d3.easeLinear)
-                  .style("stroke-width","2");
-                })
-                .on('mouseout',function(){
-                  console.log("hover")
-                  d3.select(this).transition()
-                  .ease(d3.easeLinear)
-                  .style("stroke-width","1");
-                })
-
-              });
-
-
-
-            })
 
 
           }
-
+ //todo, c3.js no coje las funciones de angular por eso se duplicó como salida rápida
 
 
 
 
         });
-        console.log(d3.selectAll(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").attr('class'));
-        console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").attr("class"));
 
-        console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0"));
-        /*setTimeout(()=>{
-          console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").node().getBBox());
-                    //console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").node().getboundingBox());
-                    console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").node());
-                    console.log(d3.select(".c3-shape.c3-shape-0.c3-bar.c3-bar-0").node().getBoundingClientRect());
-
-          /*bottom: 506.5
-          height: 67.90908813476562
-          left: 368.5
-          right: 456.5
-          top: 438.5909118652344
-          width: 88
-          x: 368.5
-          y: 438.5909118652344*/
-
-
-/*
-height: 67.90908813476562
-width: 88
-x: 44
-y: 182.09091186523438
-*/ /*
-
-        },5000)
-*/
-
-       
 
   }
 

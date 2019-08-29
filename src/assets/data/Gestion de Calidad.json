@@ -39,7 +39,12 @@
             {
                 "hijo_nombre": "GC-PRO-003 Procedimiento de Revisión por la Dirección",
                 "anexo": "./assets/data/2_Gestion de la Calidad/Procedimientos/GC-PRO-003 Procedimiento de Revision por la Direccion.pdf",
-                "formatos": []
+                "formatos": [
+                    {
+                        "hijo_nombre": "GC-FOR-019 Acta de revisión por la dirección",
+                        "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-019 Acta de revision por la direccion.pdf"
+                    }
+                ]
             },
             {
                 "hijo_nombre": "GC-PRO-004 Procedimiento para la realización de auditorías internas",
@@ -173,6 +178,10 @@
             {
                 "hijo_nombre": "GC-FOR-018 Formato Matriz Plan de Acciones",
                 "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-018 Formato Matriz Plan de Acciones.pdf"
+            },
+            {
+                "hijo_nombre": "GC-FOR-019 Acta de revisión por la dirección",
+                "anexo": "./assets/data/2_Gestion de la Calidad/Formatos/GC-FOR-019 Acta de revision por la direccion.pdf"
             }
         ]
     },
@@ -186,11 +195,7 @@
             "2017",
             "2018"
         ],
-        "indicadores": [],
-        "indicador_proyeccion_social_nombre": [
-            "GC-FOR-013 Indicadores del proceso Gestión de la Calidad"
-        ],
-        "indicador_proyeccion_social_ruta": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-013 Indicadores del proceso Gestion de la Calidad.pdf"
+        "indicadores": []
     },
     {
         "fuente": "Matriz de Riesgos",
@@ -198,7 +203,7 @@
         "anexo_mostrar": [
             "GC-FOR-016 Matriz de Riesgos Gestión de la calidad"
         ],
-        "anexo": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-016 Matriz de Riesgos Gestión de la calidad.pdf"
+        "anexo": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-016 Matriz de Riesgos Gestion de la calidad.pdf"
     },
     {
         "fuente": "Matriz de Comunicaciones",
@@ -206,6 +211,14 @@
         "anexo_mostrar": [
             "GC-FOR-014 Matriz de comunicaciones Gestión de la Calidad"
         ],
-        "anexo": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-014 Matriz de comunicaciones Gestión de la Calidad.pdf"
+        "anexo": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-014 Matriz de comunicaciones Gestion de la Calidad.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GC-FOR-013 Indicadores del proceso Gestión de la Calidad"
+        ],
+        "anexo": "./assets/data/2_Gestion de la Calidad/Caracterizacion/GC-FOR-013 Indicadores del proceso Gestion de la Calidad.pdf"
     }
 ]

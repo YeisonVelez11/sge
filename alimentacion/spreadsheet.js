@@ -514,13 +514,33 @@ doc.useServiceAccountAuth(creds, function (err) {
                 /*"indicador_proyeccion_social_nombre":aData["_indicadores nombre"],
                 "indicador_proyeccion_social_ruta":ruta+aData["_indicadores ruta"]*/
               })
-
-              aHardocredJson.push({
+              console.log("nombre",aData["_matriz riesgo nombre"]);
+              console.log(aData["_matriz riesgo ruta"]);
+              let jsonMatriz={
                 "fuente":"Matriz de Riesgos",
-                "fuente_hijos":[],
-                "anexo_mostrar":aData["_matriz riesgo nombre"],
-                "anexo":ruta+aData["_matriz riesgo ruta"]
-              })
+              }
+              if(aData["_matriz riesgo ruta"].length>=1){
+                jsonMatriz.fuente_hijos=[];
+                for(var i in aData["_matriz riesgo ruta"] ){
+                  jsonMatriz.fuente_hijos.push({
+                    "hijo_nombre":aData["_matriz riesgo nombre"][i],
+                    "anexo":ruta+aData["_matriz riesgo ruta"][i] 
+                  })
+                }
+
+              }
+              else{
+                jsonMatriz.fuente_hijos=[],
+                jsonMatriz.anexo_mostrar=aData["_matriz riesgo nombre"],
+                jsonMatriz.anexo=ruta+aData["_matriz riesgo ruta"]
+              }
+
+              aHardocredJson.push(
+                jsonMatriz
+              )
+
+
+
 
 
               aHardocredJson.push({

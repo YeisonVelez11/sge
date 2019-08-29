@@ -81,7 +81,7 @@ export const VARIABLES:any = {
       },
     
       "Gestion de Calidad":{
-        "nombre":"Gestion de Calidad",
+        "nombre":"Gestión de Calidad",
         "ruta": "./assets/data/Gestion de Calidad.json", 
         "icon_white":"./assets/img/quality_b.svg",
         "icon_black":"./assets/img/quality.svg"
@@ -123,7 +123,7 @@ export const VARIABLES:any = {
       },
     
       "Gestion Financiera":{
-        "nombre":"Gestión Financiera",
+        "nombre":"Financiero",
         "ruta": "./assets/data/Gestion Financiera.json", 
         "icon_white":"./assets/img/financiera_b.svg",
         "icon_black":"./assets/img/financiera.svg"
@@ -162,7 +162,7 @@ export const VARIABLES:any = {
       },
       "infraestructura":
       { 
-        "categoria":"infraestructura",
+        "categoria":"Infraestructura",
         "titulo":"apoyo"
       },
       "academico":

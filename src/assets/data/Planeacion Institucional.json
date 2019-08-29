@@ -86,7 +86,14 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Porcentaje de cumplimiento del plan de desarrollo",
@@ -98,7 +105,14 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Covertura del proceso de planeación por áreas académico administrativa",
@@ -110,7 +124,14 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Cumplimiento de la agenda de planeación",
@@ -122,10 +143,17 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
-                "nombre_indicador": "Evolución del capital de trabajo",
+                "nombre_indicador": "Evolución del capital de trabajo$",
                 "aMedicionUnica": [],
                 "aMediciones": [
                     {
@@ -136,6 +164,13 @@
                             31716054,
                             24611211,
                             18227453,
+                            0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     },
@@ -148,12 +183,19 @@
                             9144517,
                             11927610,
                             0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     }
                 ]
             },
             {
-                "nombre_indicador": "Evolución de activos corrientes",
+                "nombre_indicador": "Evolución de activos corrientes$",
                 "aMedicionUnica": [],
                 "aMediciones": [
                     {
@@ -164,6 +206,13 @@
                             21171611,
                             8901717,
                             8975766,
+                            0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     },
@@ -176,6 +225,13 @@
                             11086710,
                             3026504,
                             0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -186,6 +242,13 @@
                             5256439,
                             4518197,
                             6155510,
+                            0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     }
@@ -204,6 +267,13 @@
                             51502249,
                             59528814,
                             0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -214,6 +284,13 @@
                             44060235,
                             50273294,
                             56610806,
+                            0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     },
@@ -226,12 +303,19 @@
                             1228955,
                             2918008,
                             0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     }
                 ]
             },
             {
-                "nombre_indicador": "Evolución de los ingresos y egresos operacionales",
+                "nombre_indicador": "Evolución de los ingresos y egresos operacionales$",
                 "aMedicionUnica": [],
                 "aMediciones": [
                     {
@@ -242,6 +326,13 @@
                             45600446,
                             51502249,
                             59528814,
+                            0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     },
@@ -254,12 +345,19 @@
                             50273294,
                             56610806,
                             0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     }
                 ]
             },
             {
-                "nombre_indicador": "Evolución de los ingresos y egresos no operacionales",
+                "nombre_indicador": "Evolución de los ingresos y egresos no operacionales$",
                 "aMedicionUnica": [],
                 "aMediciones": [
                     {
@@ -270,6 +368,13 @@
                             1726760,
                             2244379,
                             1963922,
+                            0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
                             0
                         ]
                     },
@@ -282,12 +387,19 @@
                             1601145,
                             1969049,
                             0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     }
                 ]
             },
             {
-                "nombre_indicador": "Evolución de activos fijos, cargos diferidos e inversiones corrientes",
+                "nombre_indicador": "Evolución de activos fijos, cargos diferidos e inversiones corrientes$",
                 "aMedicionUnica": [],
                 "aMediciones": [
                     {
@@ -299,6 +411,13 @@
                             47119418,
                             57725132,
                             0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     },
                     {
@@ -308,6 +427,13 @@
                             2206859,
                             2061831,
                             2067329,
+                            0,
+                            0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
                             0,
                             0
                         ]
@@ -321,21 +447,35 @@
                             11086710,
                             3026504,
                             0
+                        ],
+                        "metas": [
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
                         ]
                     }
                 ]
             },
             {
-                "nombre_indicador": "Flujo de caja libre",
+                "nombre_indicador": "Flujo de caja libre$",
                 "aMedicionUnica": [
-                    "Flujo de caja libre",
+                    "Flujo de caja libre$",
                     4092515,
                     3284217,
                     3389707,
                     4377754,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
                 "nombre_indicador": "Razón Corriente",
@@ -347,24 +487,35 @@
                     0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             },
             {
-                "nombre_indicador": "Ebidta",
+                "nombre_indicador": "Ebidta$",
                 "aMedicionUnica": [
-                    "Ebidta",
+                    "Ebidta$",
                     3324859,
                     2944596,
                     2635648,
                     4452208,
-                    0,
                     0
                 ],
-                "aMediciones": []
+                "aMediciones": [],
+                "metas": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
             }
-        ],
-        "indicador_proyeccion_social_nombre": [],
-        "indicador_proyeccion_social_ruta": "./assets/data/"
+        ]
     },
     {
         "fuente": "Matriz de Riesgos",
@@ -381,5 +532,13 @@
             "PI-FOR-007 Matriz de comunicaciones Planeación Institucional"
         ],
         "anexo": "./assets/data/1_Planeacion Institucional/Caracterizacion/PI-FOR-007 Matriz de comunicaciones Planeacion Institucional.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "PI-FOR-006 Indicadores del proceso Planeacion Institucional"
+        ],
+        "anexo": "./assets/data/1_Planeacion Institucional/Caracterizacion/PI-FOR-006 Indicadores del proceso Planeacion Institucional.pdf"
     }
 ]

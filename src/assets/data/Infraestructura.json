@@ -51,9 +51,7 @@
             "2017",
             "2018"
         ],
-        "indicadores": [],
-        "indicador_proyeccion_social_nombre": [],
-        "indicador_proyeccion_social_ruta": "./assets/data/"
+        "indicadores": []
     },
     {
         "fuente": "Matriz de Riesgos",
@@ -65,6 +63,14 @@
     },
     {
         "fuente": "Matriz de Comunicaciones",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GI-FOR-003 Matriz de comunicaciones Gestion de la Infraestructura"
+        ],
+        "anexo": "./assets/data/7_Gestion de Infraestructura/Caracterizacion/GI-FOR-003 Matriz de comunicaciones Gestion de la Infraestructura.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
         "fuente_hijos": [],
         "anexo_mostrar": [],
         "anexo": "./assets/data/"

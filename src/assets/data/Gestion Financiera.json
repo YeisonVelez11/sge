@@ -179,7 +179,7 @@
             },
             {
                 "hijo_nombre": "GF-FOR-005 Formularios de Financiación",
-                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-005 Formularios de Financiación.pdf"
+                "anexo": "./assets/data/9_Financiera/Formatos/GF-FOR-005 Formularios de Financiacion.pdf"
             },
             {
                 "hijo_nombre": "GF-FOR-006 Conciliaciones cuentas bancarias",
@@ -281,11 +281,7 @@
             "2017",
             "2018"
         ],
-        "indicadores": [],
-        "indicador_proyeccion_social_nombre": [
-            "GF-FOR-030 Indicadores del proceso Gestion Financiera"
-        ],
-        "indicador_proyeccion_social_ruta": "./assets/data/9_Financiera/Caracterizacion/GF-FOR-030 Indicadores del proceso Gestion Financiera.pdf"
+        "indicadores": []
     },
     {
         "fuente": "Matriz de Riesgos",
@@ -303,5 +299,13 @@
             "GF-FOR-031 Matriz de comunicaciones Gestion Financiera"
         ],
         "anexo": "./assets/data/9_Financiera/Caracterizacion/GF-FOR-031 Matriz de comunicaciones Gestion Financiera.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GF-FOR-030 Indicadores del proceso Gestion Financiera"
+        ],
+        "anexo": "./assets/data/9_Financiera/Caracterizacion/GF-FOR-030 Indicadores del proceso Gestion Financiera.pdf"
     }
 ]

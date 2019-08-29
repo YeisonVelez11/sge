@@ -9,12 +9,12 @@
         "fuente": "Procedimientos",
         "fuente_hijos": [
             {
-                "hijo_nombre": "GRA-PRO-001 Procedimiento para la preinscripcion e inscripcion de aspirantes",
+                "hijo_nombre": "GRA-PRO-001 Procedimiento para la preinscripción e inscripción de aspirantes",
                 "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Procedimientos/GRA-PRO-001 Procedimiento para la preinscripcion e inscripcion de aspirantes.pdf",
                 "formatos": []
             },
             {
-                "hijo_nombre": "GRA-PRO-002 Procedimiento para la elaboracion de certificados",
+                "hijo_nombre": "GRA-PRO-002 Procedimiento para la elaboración de certificados",
                 "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Procedimientos/GRA-PRO-002 Procedimiento para la elaboracion de certificados.pdf",
                 "formatos": [
                     {
@@ -24,7 +24,7 @@
                 ]
             },
             {
-                "hijo_nombre": "GRA-PRO-003 Procedimiento para la elaboracion de paz y salvos",
+                "hijo_nombre": "GRA-PRO-003 Procedimiento para la elaboración de paz y salvos",
                 "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Procedimientos/GRA-PRO-003 Procedimiento para la elaboracion de paz y salvos.pdf",
                 "formatos": []
             },
@@ -69,18 +69,20 @@
             "2017",
             "2018"
         ],
-        "indicadores": [],
-        "indicador_proyeccion_social_nombre": [],
-        "indicador_proyeccion_social_ruta": "./assets/data/"
+        "indicadores": []
     },
     {
         "fuente": "Matriz de Riesgos",
-        "fuente_hijos": [],
-        "anexo_mostrar": [
-            "GRA-FOR-004  Matriz de riesgos Admisiones Registro y Control Académico",
-            "GRA-FOR-006 Matriz de riesgos Biblioteca"
-        ],
-        "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-004  Matriz de riesgos Admisiones Registro y Control Academico.pdf,8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-006 Matriz de riesgos Biblioteca.pdf"
+        "fuente_hijos": [
+            {
+                "hijo_nombre": "GRA-FOR-004  Matriz de riesgos Admisiones Registro y Control Académico",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-004  Matriz de riesgos Admisiones Registro y Control Academico.pdf"
+            },
+            {
+                "hijo_nombre": "GRA-FOR-006 Matriz de riesgos Biblioteca",
+                "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-006 Matriz de riesgos Biblioteca.pdf"
+            }
+        ]
     },
     {
         "fuente": "Matriz de Comunicaciones",
@@ -89,5 +91,13 @@
             "GRA-FOR-003 Matriz de comunicaciones Gestión de Recursos de Apoyo Académico"
         ],
         "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-003 Matriz de comunicaciones Gestion de Recursos de Apoyo Academico.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "GRA-FOR-002 Indicadores del proceso Gestion de Recursos de Apoyo Academico"
+        ],
+        "anexo": "./assets/data/8_Gestion Recursos de Apoyo Academico/Caracterizacion/GRA-FOR-002 Indicadores del proceso Gestion de Recursos de Apoyo Academico.pdf"
     }
 ]

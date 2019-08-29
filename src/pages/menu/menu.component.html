@@ -175,19 +175,32 @@
 
 
 </div><!-- [ngClass]="!bMostraMapa?'d-none':''" -->
-      <div class="contenedor_ppal_mapa" [ngStyle]="{'z-index':!bMostraMapa?-1:''}" >
+      <div class="contenedor_ppal_mapa" [ngStyle]="{'z-index':!bMostraMapa?-1:''}"  >
         <div class="row no-gutters  pt-4 mx-3 animation_mapa contenedor_mapa" [ngClass]="bMostraMapa?'animation_mapa_mostrar':'animation_mapa_ocultar'" style="z-index:1003 !important;background:   white;background: url('./assets/img/mascara_seccion.png') right top repeat-x rgba(255, 255, 255, 0.9);">
-            <div style="margin-right:71px;">
-              <div class="text-center contenedor_bloque_izq" style=" position:  relative;">
-                  <i class="fas fa-long-arrow-alt-right flecha_derecha" style="top: 91px;" ></i>
-                  <i class="fas fa-long-arrow-alt-right flecha_derecha" style="top: 250px;" ></i>
-                  <i class="fas fa-long-arrow-alt-right flecha_derecha" style="top: 407px;" ></i>
-                 <div mdbWavesEffect class="bloque_izq sombra" (click)="categoria='clientes';titulo='';" [ngClass]="categoria=='clientes'?'seleccion_categoria':''" >
+          <h1 class="position-absolute uppercase mapa_procesos_title">MAPA DE PROCESOS</h1>
+
+          <img src="./assets/img/logoumcirculo.png" class="position-absolute imagen_circulo_um">
+          <img src="./assets/img/logoum.png" class="position-absolute logoum_mapa">
+
+          <div style="margin-right:71px;">
+
+              <div class="text-center contenedor_bloque_izq " style=" position:  relative;">
+                   <!-- izq -->
+                  <div class="linea_style linea-conector"></div>
+                  <div class="linea_style linea-conector"></div>
+                  <i class="fas fa-caret-right flechader"></i>
+                  <div class="linea-vertical_style linea-vertica1"></div>
+                  <i class="fas fa-long-arrow-alt-right flecha_grande flechaa_grande_izq"></i>
+
+
+
+
+                  
+                 <div mdbWavesEffect class="bloque_izq sombra cursor" (click)="categoria='clientes';titulo='';" [ngClass]="categoria=='clientes'?'seleccion_categoria':''"  >
                     <p class="p-0 m-0 texto_titulos texto_bloque_izquierdo">                  
 
                       Grupos de Interés</p>
                  </div>
-                 <i class="fas fa-long-arrow-alt-up flecha_arriba" ></i>
 
               </div>
             </div>
@@ -196,7 +209,7 @@
               <div class="text-center " style="position: relative" >
 
                     <!--Grid row-->
-                    <div  mdbWavesEffect class="d-inline-block" style="position: relative;" >
+                    <div  mdbWavesEffect class="d-inline-block " style="position: relative;" >
                       <p class="m-0 p-0 texto_titulos texto_titulo_1 centrado_texto_titulos" >GERENCIALES</p>
                       <div  class="forma_titulos sombra" [ngClass]="titulo=='gerenciales'?'seleccion_titulo':''">
                         <img src="./assets/img/gerenciales.svg" class="icon_titulo_left" >
@@ -240,7 +253,7 @@
                         </div>
                         <div  class="contenedor_engranen">
                           <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('investigacion','misionales','Investigacion y Posgrados')" [ngClass]="categoria=='investigacion'?'seleccion_categoria':''">
-                            <p  class="texto_engranen_1 p-0 m-0 " >Postgrados</p>
+                            <p  class="texto_engranen_1 p-0 m-0 " >Investigación y Posgrados</p>
                             <img class="icon_1" src="./assets/img/investigacion.svg"   >
                           </div>
                         </div>
@@ -268,49 +281,50 @@
                       <div class="d-flex justify-content-around">
                         <div  class="contenedor_engranen">
                           <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('humano','apoyo','Desarrollo Humano')"  [ngClass]="categoria=='humano'?'seleccion_categoria':''">
-                            <p  class="texto_engranen_1 p-0 m-0 " >Gestión Desarrollo Humano</p>
+                            <p  class="texto_engranen_1 p-0 m-0 " >Desarrollo Humano</p>
                             <img class="icon_1" src="./assets/img/desarrollo_humano.svg"   >
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
-                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('infraestructura','apoyo','infraestructura')"  [ngClass]="categoria=='infraestructura'?'seleccion_categoria':''">
-                            <p  class="texto_engranen_1 p-0 m-0 "  >Gestión de Infraestructura</p>
+                          <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('infraestructura','apoyo','Infraestructura')"  [ngClass]="categoria=='infraestructura'?'seleccion_categoria':''">
+                            <p  class="texto_engranen_1 p-0 m-0 "  >Infraestructura</p>
                             <img class="icon_1" src="./assets/img/infraestructura.svg"   >
                          </div>
                         </div>
                         <div  class="contenedor_engranen">
                           <div class="rectangulo_categoria" mdbWavesEffect (click)="fn_goProcess('academico','apoyo','Recursos de Apoyo Academico')"  [ngClass]="categoria=='academico'?'seleccion_categoria':''">
-                            <p  class="texto_engranen_1 p-0 m-0 "  >Gestión Recursos de Apoyo Académico</p>
+                            <p  class="texto_engranen_1 p-0 m-0 "  >Recursos de Apoyo Académico</p>
                             <img class="icon_1" src="./assets/img/academico.svg"   >
                           </div>
                         </div>
                         <div  class="contenedor_engranen">
                           <div class="rectangulo_categoria" mdbWavesEffect  (click)="fn_goProcess('financiera','apoyo','Gestion Financiera')"   [ngClass]="categoria=='financiera'?'seleccion_categoria':''">
-                            <p  class="texto_engranen_1 p-0 m-0 " >Gestión Financiera</p>
+                            <p  class="texto_engranen_1 p-0 m-0 " >Financiero</p>
                             <img class="icon_1" src="./assets/img/financiera.svg"   >
                           </div>
                         </div>
 
                       </div>
                     </div>
-                    <div class="linea" style="position: relative;">
-                      
-                    </div>
+                 
 
 
               </div>
 
 
             </div>
-            <div class="text-center contenedor_bloque_derecho" style=" position:  relative;">
-               <i class="fas fa-long-arrow-alt-right flecha_derecha_derecha" style="top: 91px;" ></i>
-               <i class="fas fa-long-arrow-alt-right flecha_derecha_derecha" style="top: 250px;" ></i>
-               <i class="fas fa-long-arrow-alt-right flecha_derecha_derecha" style="top: 407px;" ></i>
+            <div class="text-center contenedor_bloque_derecho " style="position:relative;">
+                                 <!-- der -->
+                <div class="linea_style linea-conector1"></div>
+                <div class="linea_style linea-conector2"></div>
+                <i class="fas fa-caret-left flechaizq"></i>
+                <div class="linea-vertical_style linea-vertica2"></div>
+                <i class="fas fa-long-arrow-alt-right flecha_grande flechaa_grande_derecha"></i>
+               
 
-               <div mdbWavesEffect class="bloque_izq sombra" (click)="categoria='satisfaccion';titulo='';" [ngClass]="categoria=='satisfaccion'?'seleccion_categoria':''" >
+               <div mdbWavesEffect class="bloque_izq sombra cursor" (click)="categoria='satisfaccion';titulo='';" [ngClass]="categoria=='satisfaccion'?'seleccion_categoria':''" >
                   <p class="p-0 m-0 texto_titulos texto_bloque_derecho" >Satisfacción de los grupos de interés</p>
                </div>
-               <i class="fas fa-minus linea_union" ></i>
             </div>
 
         </div>

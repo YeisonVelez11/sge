@@ -54,17 +54,15 @@
             "2017",
             "2018"
         ],
-        "indicadores": [],
-        "indicador_proyeccion_social_nombre": [
-            "IP-FOR-002 Indicadores del proceso Investigación y Posgrados"
-        ],
-        "indicador_proyeccion_social_ruta": "./assets/data/4_Investigacion Posgrados/Caracterizacion/IP-FOR-002 Indicadores del proceso Investigacion y Posgrados.pdf"
+        "indicadores": []
     },
     {
         "fuente": "Matriz de Riesgos",
         "fuente_hijos": [],
-        "anexo_mostrar": [],
-        "anexo": "./assets/data/"
+        "anexo_mostrar": [
+            "IP-FOR-004 Matriz Plan de Acciones Investigación y Posgrados"
+        ],
+        "anexo": "./assets/data/4_Investigacion Posgrados/Caracterizacion/IP-FOR-004 Matriz Plan de Acciones Investigacion y Posgrados.pdf"
     },
     {
         "fuente": "Matriz de Comunicaciones",
@@ -73,5 +71,13 @@
             "IP-FOR-003 Matriz de comunicaciones Investigacion y Posgrados"
         ],
         "anexo": "./assets/data/4_Investigacion Posgrados/Caracterizacion/IP-FOR-003 Matriz de comunicaciones Investigacion y Posgrados.pdf"
+    },
+    {
+        "fuente": "Matriz de Indicadores",
+        "fuente_hijos": [],
+        "anexo_mostrar": [
+            "IP-FOR-002 Indicadores del proceso Investigación y Posgrados"
+        ],
+        "anexo": "./assets/data/4_Investigacion Posgrados/Caracterizacion/IP-FOR-002 Indicadores del proceso Investigacion y Posgrados.pdf"
     }
 ]
